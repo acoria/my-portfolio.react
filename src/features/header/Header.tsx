@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
     <div className={styles.header}>
       <Logo className={styles.logo} />
       <div className={styles.navigation}>Navigation</div>
-      <div className={styles.language}>DE|EN</div>
+      <div className={styles.language}>DE | EN</div>
     </div>
   );
 };
