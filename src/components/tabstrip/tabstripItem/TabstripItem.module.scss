@@ -1,0 +1,29 @@
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/components.scss';
+
+$font-weight: 500;
+$font-weight-selected: 700;
+
+.tabstripItem {
+    position: relative;
+    cursor: pointer;
+}
+
+.caption:hover {
+    font-weight: $font-weight-selected;
+}
+
+.caption {
+    color: $color-neutral;
+    font-size: large;
+    font-weight: $font-weight;
+    text-transform: uppercase;
+}
+
+.selected {
+    font-weight: $font-weight-selected;
+}
+
+.selected::after {
+    @include tabstrip-underline;
+}
