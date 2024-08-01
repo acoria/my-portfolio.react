@@ -1,11 +1,11 @@
 import { MutableRefObject, useRef, useState } from "react";
 import { texts } from "../../hooks/useTranslation/texts";
 import { INavItem } from "../../navItems/INavItems";
-import { AboutMe } from "../../pages/AboutMe";
-import { CV } from "../../pages/CV";
-import { Projects } from "../../pages/Projects";
+import { AboutMe } from "../aboutMe/AboutMe";
+import { Projects } from "../projects/Projects";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { Header } from "../header/Header";
+import { CV } from "../cv/CV";
 
 export const Portfolio: React.FC = () => {
   const refAboutMe = useRef(null);
