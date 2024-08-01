@@ -1,0 +1,9 @@
+@import './styles/dimensions.scss';
+
+.content {
+    margin-top: $header-height;
+}
+
+.navContent {
+    scroll-margin-top: $header-height;
+}

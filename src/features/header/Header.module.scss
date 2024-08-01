@@ -1,5 +1,6 @@
 @import '../../styles/colors.module.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/dimensions.scss';
 
 .header {
     display: grid;
@@ -7,6 +8,10 @@
     grid-template-rows: 1fr 1fr;
     padding: 1rem;
     background-color: $color-primary;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height;
 
     @include medium-screen {
         display: flex;

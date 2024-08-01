@@ -1,3 +1,3 @@
 export const CV: React.FC = () => {
-  return <div>CV</div>;
+  return <div style={{ backgroundColor: "lightblue", height: "100vh" }}>CV</div>;
 };
