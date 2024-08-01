@@ -1,12 +1,12 @@
-import styles from "./Header.module.scss";
+import { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 import { Tabstrip } from "../../components/tabstrip/Tabstrip";
+import { Language } from "../language/Language";
+import styles from "./Header.module.scss";
 import { IHeaderProps } from "./IHeaderProps";
-import { useState } from "react";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
   const [selectedTab, setSelectedTab] = useState<number | undefined>(undefined);
-
   return (
     <div className={styles.header}>
       <Logo
@@ -26,7 +26,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           selectedTabIndex={selectedTab}
         />
       </div>
-      <div className={styles.language}>DE | EN</div>
+      <Language className={styles.language} />
     </div>
   );
 };

@@ -1,0 +1,17 @@
+@import '../../styles/colors.module.scss';
+
+.language {
+    color: $color-neutral;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: $color-neutral;
+    cursor: pointer;
+}
+
+.button.selected {
+    font-weight: 800;
+    cursor: auto;
+}

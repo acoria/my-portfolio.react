@@ -2,10 +2,12 @@
 @import '../../../styles/components.scss';
 
 $font-weight: 500;
-$font-weight-selected: 700;
+$font-weight-selected: 600;
 
 .tabstripItem {
     position: relative;
+    background-color: transparent;
+    border:none;
     cursor: pointer;
 }
 
@@ -22,6 +24,7 @@ $font-weight-selected: 700;
 
 .selected {
     font-weight: $font-weight-selected;
+    cursor: auto;
 }
 
 .selected::after {

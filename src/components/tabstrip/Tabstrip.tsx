@@ -15,6 +15,7 @@ export const Tabstrip: React.FC<ITabstripProps> = (props) => {
 
   const tabstrips = props.captions.map((title, index) => (
     <TabstripItem
+      key={`${title}_${index}`}
       caption={title}
       onClick={() => {
         setSelectedIndex(index);
