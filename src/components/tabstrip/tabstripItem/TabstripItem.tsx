@@ -1,11 +1,8 @@
 import { style } from "../../../core/utils/style";
-import { useTranslation } from "../../../hooks/useTranslation/useTranslation";
 import { ITabstripItemProps } from "./ITabstripItemProps";
 import styles from "./TabstripItem.module.scss";
 
 export const TabstripItem: React.FC<ITabstripItemProps> = (props) => {
-  const { t } = useTranslation();
-
   return (
     <button onClick={props.onClick} className={styles.tabstripItem}>
       <div
@@ -15,7 +12,7 @@ export const TabstripItem: React.FC<ITabstripItemProps> = (props) => {
           props.selected ? props.classNameSelected : ""
         )}
       >
-        {t(props.caption)}
+        {props.caption}
       </div>
     </button>
   );
