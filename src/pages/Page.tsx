@@ -7,6 +7,7 @@ import { Projects } from "../features/projects/Projects";
 import { Header } from "../features/header/Header";
 import { AboutMe } from "../features/aboutMe/AboutMe";
 import styles from "./Page.module.scss";
+import { Headline } from "../features/headline/Headline";
 
 export const Page: React.FC = () => {
   const refAboutMe = useRef(null);
@@ -54,8 +55,9 @@ export const Page: React.FC = () => {
         className={styles.content}
       >
         <div ref={refAboutMe} style={{ scrollMarginTop: headerHeightInPixel }}>
-          <AboutMe />
+          <Headline />
         </div>
+        <AboutMe />
         {navContent}
       </div>
     </>
