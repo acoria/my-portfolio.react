@@ -7,17 +7,27 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
+import { Technologies } from "../features/technologies/Technologies";
+import { Skills } from "../features/skills/Skills";
 
 export const Page: React.FC = () => {
   const refAboutMe = useRef(null);
   const refCV = useRef(null);
   const refProjects = useRef(null);
+  const refSkills = useRef(null);
+  const refTechnologies = useRef(null);
   const [headerHeight, setHeaderHeight] = useState<number | undefined>(
     undefined
   );
   const { t } = useTranslation();
   const navItems: INavItem<any>[] = [
     { caption: t(texts.cv), ref: refCV, component: <CV /> },
+    { caption: t(texts.skills), ref: refSkills, component: <Skills /> },
+    {
+      caption: t(texts.technologies),
+      ref: refTechnologies,
+      component: <Technologies />,
+    },
     { caption: t(texts.projects), ref: refProjects, component: <Projects /> },
   ];
 
@@ -35,6 +45,7 @@ export const Page: React.FC = () => {
           style={{ scrollMarginTop: headerHeightInPixel }}
           key={navItem.caption}
         >
+          <h1 className={styles.sectionTitle}>{navItem.caption}</h1>
           {navItem.component}
         </div>
       ))}
@@ -56,7 +67,7 @@ export const Page: React.FC = () => {
         <div ref={refAboutMe} style={{ scrollMarginTop: headerHeightInPixel }}>
           <Headline />
         </div>
-        {navContent}
+        <div className={styles.sections}>{navContent}</div>
       </div>
     </>
   );

@@ -1,5 +1,25 @@
 @import '../styles/colors.module.scss';
 
-.content{
+.content {
     background-color: $color-secondary;
 }
+
+.sections {
+    padding-left: 1rem;
+}
+
+.sectionTitle {
+    font-family: "Antonio";
+    // position: relative;
+    text-align: center;
+}
+
+// .sectionTitle::after {
+//     content: "";
+//     position: absolute;
+//     background-color: $color-primary;
+//     bottom: -0.5rem;
+//     left: 0;
+//     width: 90%;
+//     height: 0.2rem;
+// }

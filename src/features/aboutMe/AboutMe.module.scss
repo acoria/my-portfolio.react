@@ -9,6 +9,7 @@
 .quotationMark {
     font-family: "Antonio";
     color: $color-secondary;
+    font-style: italic;
 }
 
 .quotationMarkLeft {
@@ -20,9 +21,10 @@
 .quotationMarkRight {
     @extend .quotationMark;
     align-self: end;
-    transform: translateY(1rem)
+    transform: translateY(1rem);
 }
 
 .aboutMeQuote {
     color: $color-secondary;
+    font-style: italic;
 }

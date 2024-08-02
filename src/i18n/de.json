@@ -2,16 +2,18 @@
     "aboutMe": {
         "introductionText": "\"Meine Motivation sind die Gesichter meiner Anwender, wenn sich beim Verwenden meiner Software Verständnis oder sogar Freude darauf abzeichnet. Egal, ob es sich dabei um eine Endanwendung oder eine APISchnittstelle handelt, Usability ist neben einer soliden Softwarearchitektur ein wesentlicher Bestandteil meiner Entwürfe. Mein selbstständiges, strukturiertes Arbeiten ermöglicht es mir, Projekte mit hoher Qualität auf möglichst pragmatische Weise abzuschließen.\""
     },
+    "cv": "CV",
     "headline": {
         "headline_1": "Mehr als eine Fullstack Entwicklerin",
         "headline_2": "...eine Lösungsfinderin",
         "headline_3": "...eine Problemlöserin",
         "portraitImageDescription": "Portrait von mir"
     },
-    "cv": "CV",
-    "projects": "Projekte",
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"
-    }
+    },
+    "projects": "Projekte",
+    "skills": "Skills",
+    "technologies": "Technologien"
 }
