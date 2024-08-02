@@ -1,13 +1,12 @@
 import { MutableRefObject, useRef, useState } from "react";
-import { texts } from "../hooks/useTranslation/texts";
-import { INavItem } from "../navItems/INavItems";
-import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { CV } from "../features/cv/CV";
-import { Projects } from "../features/projects/Projects";
 import { Header } from "../features/header/Header";
-import { AboutMe } from "../features/aboutMe/AboutMe";
-import styles from "./Page.module.scss";
 import { Headline } from "../features/headline/Headline";
+import { Projects } from "../features/projects/Projects";
+import { texts } from "../hooks/useTranslation/texts";
+import { useTranslation } from "../hooks/useTranslation/useTranslation";
+import { INavItem } from "../navItems/INavItems";
+import styles from "./Page.module.scss";
 
 export const Page: React.FC = () => {
   const refAboutMe = useRef(null);
@@ -57,7 +56,6 @@ export const Page: React.FC = () => {
         <div ref={refAboutMe} style={{ scrollMarginTop: headerHeightInPixel }}>
           <Headline />
         </div>
-        <AboutMe />
         {navContent}
       </div>
     </>

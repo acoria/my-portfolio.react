@@ -4,49 +4,30 @@
 $animationTime: 1s;
 $animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
 
-.aboutMe {
+.headline {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
     background-color: $color-primary;
     box-shadow: 5px 5px 50px $color-primary-light;
+    padding: 1rem;
+
+    @include large-screen {
+        padding: 6rem 6rem 3rem 6rem;
+
+    }
+}
+
+.imageAndText {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     column-gap: 2rem;
 
     @include large-screen {
-        padding: 6rem;
         column-gap: 8rem;
     }
-}
-
-.headline {
-    color: $color-secondary;
-    margin: 0;
-    font-family: "Antonio";
-    font-weight: 600;
-    font-size: 1.2rem;
-
-    @include large-screen {
-        font-size: 4rem;
-    }
-}
-
-.firstHeadline {
-    @extend .headline;
-    color: $color-accent;
-    animation: $animationMoveLeftOuterElement;
-}
-
-.secondHeadline {
-    @extend .headline;
-    animation: moveLeftMiddleElement $animationTime;
-}
-
-.thirdHeadline {
-    @extend .headline;
-    animation: $animationMoveLeftOuterElement;
-
 }
 
 .portrait {
@@ -58,6 +39,41 @@ $animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
     @include large-screen {
         width: 18rem;
     }
+}
+
+.headlineText {
+    color: $color-secondary;
+    margin: 0;
+    font-family: "Antonio";
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    @include large-screen {
+        font-size: 4rem;
+    }
+}
+
+.firstHeadlineText {
+    @extend .headlineText;
+    color: $color-accent;
+    animation: $animationMoveLeftOuterElement;
+}
+
+.secondHeadlineText {
+    @extend .headlineText;
+    animation: moveLeftMiddleElement $animationTime;
+}
+
+.thirdHeadlineText {
+    @extend .headlineText;
+    animation: $animationMoveLeftOuterElement;
+
+}
+
+.aboutMe{
+    padding: 1rem;
+    width: 25rem;
+    align-self: end;
 }
 
 @keyframes moveRight {

@@ -1,5 +1,28 @@
-// @import '../../styles/colors.module.scss';
-// @import '../../styles/mixins.scss';
+@import '../../styles/colors.module.scss';
 
-.aboutMe {
+.quote {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.quotationMark {
+    font-family: "Antonio";
+    color: $color-secondary;
+}
+
+.quotationMarkLeft {
+    @extend .quotationMark;
+    align-self: start;
+    transform: translateY(-0.8rem)
+}
+
+.quotationMarkRight {
+    @extend .quotationMark;
+    align-self: end;
+    transform: translateY(1rem)
+}
+
+.aboutMeQuote {
+    color: $color-secondary;
 }
