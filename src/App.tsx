@@ -1,11 +1,11 @@
 import { AppContext } from "./context/AppContext";
-import { Portfolio } from "./features/portfolio/Portfolio";
 import { useLanguageStorage } from "./hooks/useLanguage/useLanguageStorage";
+import { Page } from "./pages/Page";
 
 function App() {
   return (
     <AppContext.Provider value={{ language: useLanguageStorage() }}>
-      <Portfolio />
+      <Page />
     </AppContext.Provider>
   );
 }

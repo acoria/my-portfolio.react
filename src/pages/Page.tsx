@@ -1,13 +1,14 @@
 import { MutableRefObject, useRef, useState } from "react";
-import { texts } from "../../hooks/useTranslation/texts";
-import { INavItem } from "../../navItems/INavItems";
-import { AboutMe } from "../aboutMe/AboutMe";
-import { Projects } from "../projects/Projects";
-import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import { Header } from "../header/Header";
-import { CV } from "../cv/CV";
+import { texts } from "../hooks/useTranslation/texts";
+import { INavItem } from "../navItems/INavItems";
+import { useTranslation } from "../hooks/useTranslation/useTranslation";
+import { CV } from "../features/cv/CV";
+import { Projects } from "../features/projects/Projects";
+import { Header } from "../features/header/Header";
+import { AboutMe } from "../features/aboutMe/AboutMe";
+import styles from "./Page.module.scss";
 
-export const Portfolio: React.FC = () => {
+export const Page: React.FC = () => {
   const refAboutMe = useRef(null);
   const refCV = useRef(null);
   const refProjects = useRef(null);
@@ -48,7 +49,10 @@ export const Portfolio: React.FC = () => {
         onLogoClicked={() => scrollTo(refAboutMe)}
         onHeightChange={setHeaderHeight}
       />
-      <div style={{ marginTop: headerHeightInPixel }}>
+      <div
+        style={{ marginTop: headerHeightInPixel }}
+        className={styles.content}
+      >
         <div ref={refAboutMe} style={{ scrollMarginTop: headerHeightInPixel }}>
           <AboutMe />
         </div>
