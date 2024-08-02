@@ -1,4 +1,10 @@
 {
+    "aboutMe": {
+        "headline_1": "More than a fullstack developer",
+        "headline_2": "...a solution finder",
+        "headline_3": "...a problem solver",
+        "portraitImageDescription": "Portrait of me"
+    },
     "cv": "CV",
     "projects": "Projects",
     "languageAbbreviations": {
