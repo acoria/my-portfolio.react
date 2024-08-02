@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./AboutMe.module.scss";
 export const AboutMe: React.FC = () => {
   return (

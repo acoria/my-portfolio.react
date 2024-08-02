@@ -14,7 +14,6 @@ export const Header: React.FC<IHeaderProps> = (props) => {
 
   useEffect(() => {
     onHeightChange?.(ref.current?.offsetHeight ?? 0);
-    console.log(ref.current?.offsetHeight);
   }, [width, onHeightChange]);
 
   return (
