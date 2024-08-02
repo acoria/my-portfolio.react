@@ -2,19 +2,20 @@
 @import '../../styles/mixins.scss';
 
 $animationTime: 1s;
-$animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
+$animationMoveLeft: moveLeft $animationTime forwards;
+$animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 
 .headline {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1rem;
     background-color: $color-primary;
     box-shadow: 5px 5px 50px $color-primary-light;
     padding: 1rem;
 
     @include large-screen {
+        row-gap: 3rem;
         padding: 6rem 6rem 3rem 6rem;
-
     }
 }
 
@@ -56,21 +57,29 @@ $animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
 .firstHeadlineText {
     @extend .headlineText;
     color: $color-accent;
-    animation: $animationMoveLeftOuterElement;
+    animation: $animationMoveLeft;
+
+    @include large-screen {
+        animation: $animationMoveLeftLargeScreen;
+    }
+
 }
 
 .secondHeadlineText {
     @extend .headlineText;
-    animation: moveLeftMiddleElement $animationTime;
+    animation: moveRight $animationTime;
 }
 
 .thirdHeadlineText {
     @extend .headlineText;
-    animation: $animationMoveLeftOuterElement;
+    animation: $animationMoveLeft;
 
+    @include large-screen {
+        animation: $animationMoveLeftLargeScreen;
+    }
 }
 
-.aboutMe{
+.aboutMe {
     padding: 1rem;
     width: 25rem;
     align-self: end;
@@ -78,7 +87,6 @@ $animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
 
 @keyframes moveRight {
     0% {
-        // transform: translateX(-1rem);
         transform: translateX(-5rem);
     }
 
@@ -87,25 +95,22 @@ $animationMoveLeftOuterElement: moveLeftOuterElement $animationTime forwards;
     }
 }
 
-@keyframes moveLeftMiddleElement {
+@keyframes moveLeft {
     0% {
-        // transform: translateX(1rem);
-        transform: translateX(-5rem);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveLeftOuterElement {
-    0% {
-        // transform: translateX(1rem);
         transform: translateX(2rem);
     }
 
     100% {
-        // transform: translateX(-1rem);
+        transform: translateX(-1.2rem);
+    }
+}
+
+@keyframes moveLeftLargeScreen {
+    0% {
+        transform: translateX(2rem);
+    }
+
+    100% {
         transform: translateX(-3rem);
     }
 }
