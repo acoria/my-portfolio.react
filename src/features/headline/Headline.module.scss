@@ -81,8 +81,12 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 
 .aboutMe {
     padding: 1rem;
-    width: 25rem;
     align-self: end;
+
+
+    @include medium-screen {
+        width: 25rem;
+    }
 }
 
 @keyframes moveRight {

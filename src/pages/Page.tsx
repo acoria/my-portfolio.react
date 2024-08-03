@@ -36,7 +36,6 @@ export const Page: React.FC = () => {
   };
 
   const headerHeightInPixel = headerHeight ? `${headerHeight}px` : `0px`;
-
   const navContent = (
     <>
       {navItems.map((navItem) => (

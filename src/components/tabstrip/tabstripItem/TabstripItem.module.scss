@@ -12,22 +12,22 @@ $font-weight-selected: 600;
     cursor: pointer;
 }
 
-.caption:hover {
-    font-weight: $font-weight-selected;
-}
-
 .caption {
     color: $color-secondary;
     font-size: large;
     font-weight: $font-weight;
     text-transform: uppercase;
+
+    &:hover {
+        font-weight: $font-weight-selected;
+    }
 }
 
 .selected {
     font-weight: $font-weight-selected;
     cursor: auto;
-}
 
-.selected::after {
-    @include tabstrip-underline;
+    &::after {
+        @include tabstrip-underline;
+    }
 }
