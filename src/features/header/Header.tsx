@@ -7,7 +7,6 @@ import { IHeaderProps } from "./IHeaderProps";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
-  const [selectedTab, setSelectedTab] = useState<number | undefined>(undefined);
   const ref = useRef<HTMLDivElement>(null);
   const { width } = useWindowDimensions();
   const { onHeightChange } = { ...props };
@@ -22,7 +21,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         className={styles.logo}
         onClick={() => {
           props.onLogoClicked?.();
-          setSelectedTab(undefined);
+          props.onTabSelect?.(undefined);
         }}
       />
       <div className={styles.navigation}>
@@ -30,9 +29,9 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           captions={props.navItems}
           onTabSelect={(index) => {
             props.onNavItemClick?.(index);
-            setSelectedTab(index);
+            props.onTabSelect?.(index);
           }}
-          selectedTabIndex={selectedTab}
+          selectedTabIndex={props.selectedTabIndex}
         />
       </div>
       <Language className={styles.language} />
