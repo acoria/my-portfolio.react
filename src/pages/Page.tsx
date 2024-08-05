@@ -73,6 +73,7 @@ export const Page: React.FC = () => {
     <>
       {navItems.map((navItem, index) => (
         <PageSection
+          key={`${navItem.caption}_${index}`}
           title={navItem.caption}
           onChangeViewportVisibility={(visible: boolean) => {
             if (visible) {

@@ -15,7 +15,9 @@ export const Skills: React.FC = () => {
       </div>
       <div className={styles.content}>
         {skills.map((skill) => (
-          <div className={styles.skill}>{skill}</div>
+          <div className={styles.skill} key={skill}>
+            {skill}
+          </div>
         ))}
       </div>
     </div>

@@ -20,6 +20,6 @@ export function useElementMovedIntoViewportObserver<T extends Element | null>(
     return () => {
       current && intersectionObserver.unobserve(current);
     };
-  }, [elementRef, rootMargin]);
+  }, [elementRef, rootMargin, threshold]);
   return { isVisible };
 }

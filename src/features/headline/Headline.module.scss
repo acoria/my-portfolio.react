@@ -36,9 +36,10 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     height: auto;
     border-radius: 50%;
     animation: moveRight $animationTime;
-
+    
     @include large-screen {
         width: 18rem;
+        animation: moveRightLargeScreen $animationTime;
     }
 }
 
@@ -91,7 +92,7 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 
 @keyframes moveRight {
     0% {
-        transform: translateX(-5rem);
+        transform: translateX(-1rem);
     }
 
     100% {
@@ -106,6 +107,16 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 
     100% {
         transform: translateX(-1.2rem);
+    }
+}
+
+@keyframes moveRightLargeScreen {
+    0% {
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
