@@ -14,7 +14,7 @@ import styles from "./Page.module.scss";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
-  const refAboutMe = useRef<HTMLDivElement>(null);
+  const refHeadline = useRef<HTMLDivElement>(null);
   const [scrollToCVSignal, triggerScrollToCV] = useSignal();
   const [scrollToProjectsSignal, triggerScrollToProjects] = useSignal();
   const [scrollToSkillsSignal, triggerScrollToSkills] = useSignal();
@@ -51,8 +51,8 @@ export const Page: React.FC = () => {
     },
   ];
 
-  const scrollToAboutMe = () => {
-    refAboutMe.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToHeadline = () => {
+    refHeadline.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const addTabToVisibleTabs = (tabIndex: number) =>
@@ -93,6 +93,7 @@ export const Page: React.FC = () => {
           }}
           topOffsetInPixel={headerHeightInPixel}
           scrollIntoViewSignal={navItems[index].scrollToSignal}
+          className={styles.section}
         >
           <h1 className={styles.sectionTitle}>{navItem.caption}</h1>
           {navItem.component}
@@ -112,7 +113,7 @@ export const Page: React.FC = () => {
           navItems[index].signalTrigger();
           addTabToVisibleTabs(index);
         }}
-        onLogoClicked={scrollToAboutMe}
+        onLogoClicked={scrollToHeadline}
         onHeightChange={setHeaderHeight}
         selectedTabIndex={visibleTabs[visibleTabs.length - 1]}
       />
@@ -120,7 +121,7 @@ export const Page: React.FC = () => {
         style={{ marginTop: headerHeightInPixel }}
         className={styles.content}
       >
-        <div ref={refAboutMe} style={{ scrollMarginTop: headerHeightInPixel }}>
+        <div ref={refHeadline} style={{ scrollMarginTop: headerHeightInPixel }}>
           <Headline />
         </div>
         <div className={styles.sections}>{navContent}</div>

@@ -2,6 +2,7 @@ import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import styles from "./AboutMe.module.scss";
 import { IAboutMeProps } from "./IAboutMeProps";
+
 export const AboutMe: React.FC<IAboutMeProps> = (props) => {
   const { t } = useTranslation();
 

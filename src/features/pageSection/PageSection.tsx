@@ -17,7 +17,11 @@ export const PageSection: React.FC<IPageSectionProps> = (props) => {
   }, [props.scrollIntoViewSignal]);
 
   return (
-    <div ref={ref} style={{ scrollMarginTop: props.topOffsetInPixel }}>
+    <div
+      ref={ref}
+      style={{ scrollMarginTop: props.topOffsetInPixel }}
+      className={props.className}
+    >
       {props.children}
     </div>
   );
