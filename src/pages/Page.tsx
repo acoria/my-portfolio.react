@@ -1,63 +1,101 @@
-import { MutableRefObject, useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { Headline } from "../features/headline/Headline";
+import { PageSection } from "../features/pageSection/PageSection";
 import { Projects } from "../features/projects/Projects";
+import { Skills } from "../features/skills/Skills";
+import { Technologies } from "../features/technologies/Technologies";
+import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
-import { Technologies } from "../features/technologies/Technologies";
-import { Skills } from "../features/skills/Skills";
-import { useElementMovedIntoViewportObserver } from "../hooks/useElementMovedIntoViewportObserver";
 
 export const Page: React.FC = () => {
-  const [selectedTab, setSelectedTab] = useState<number | undefined>(undefined);
+  const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
   const refAboutMe = useRef<HTMLDivElement>(null);
-  const refCV = useRef<HTMLDivElement>(null);
-  const refProjects = useRef<HTMLDivElement>(null);
-  const refSkills = useRef<HTMLDivElement>(null);
-  const refTechnologies = useRef<HTMLDivElement>(null);
+  const [scrollToCVSignal, triggerScrollToCV] = useSignal();
+  const [scrollToProjectsSignal, triggerScrollToProjects] = useSignal();
+  const [scrollToSkillsSignal, triggerScrollToSkills] = useSignal();
+  const [scrollToTechnologiesSignal, triggerScrollToTechnologies] = useSignal();
   const [headerHeight, setHeaderHeight] = useState<number | undefined>(
     undefined
   );
 
-  const { isVisible: projectsVisible } =
-    useElementMovedIntoViewportObserver(refProjects);
-
-  useEffect(() => {
-    projectsVisible && setSelectedTab(3);
-  }, [projectsVisible]);
-
   const { t } = useTranslation();
-  const navItems: INavItem<any>[] = [
-    { caption: t(texts.cv), ref: refCV, component: <CV /> },
-    { caption: t(texts.skills), ref: refSkills, component: <Skills /> },
+  const navItems: INavItem[] = [
+    {
+      caption: t(texts.cv),
+      scrollToSignal: scrollToCVSignal,
+      signalTrigger: triggerScrollToCV,
+      component: <CV />,
+    },
+    {
+      caption: t(texts.skills),
+      scrollToSignal: scrollToSkillsSignal,
+      signalTrigger: triggerScrollToSkills,
+      component: <Skills />,
+    },
     {
       caption: t(texts.technologies),
-      ref: refTechnologies,
+      scrollToSignal: scrollToTechnologiesSignal,
+      signalTrigger: triggerScrollToTechnologies,
       component: <Technologies />,
     },
-    { caption: t(texts.projects), ref: refProjects, component: <Projects /> },
+    {
+      caption: t(texts.projects),
+      scrollToSignal: scrollToProjectsSignal,
+      signalTrigger: triggerScrollToProjects,
+      component: <Projects />,
+    },
   ];
-  // const findIndexOfNavItemByElementRef
 
-  const scrollTo = (ref: MutableRefObject<any>) => {
-    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToAboutMe = () => {
+    refAboutMe.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+
+  const addTabToVisibleTabs = (tabIndex: number) =>
+    setVisibleTabs((previous) => {
+      const index = previous.findIndex((item) => item === tabIndex);
+      if (index === -1) {
+        const newTabs = [...previous];
+        newTabs.push(tabIndex);
+        return newTabs;
+      } else {
+        //ignore if it already exists
+        return previous;
+      }
+    });
 
   const headerHeightInPixel = headerHeight ? `${headerHeight}px` : `0px`;
   const navContent = (
     <>
-      {navItems.map((navItem) => (
-        <div
-          ref={navItem.ref}
-          style={{ scrollMarginTop: headerHeightInPixel }}
-          key={navItem.caption}
+      {navItems.map((navItem, index) => (
+        <PageSection
+          title={navItem.caption}
+          onChangeViewportVisibility={(visible: boolean) => {
+            if (visible) {
+              addTabToVisibleTabs(index);
+            } else {
+              setVisibleTabs((previous) => {
+                const foundIndex = previous.findIndex((item) => item === index);
+                if (foundIndex === -1) {
+                  return previous;
+                } else {
+                  const newTabs = [...previous];
+                  newTabs.splice(foundIndex, 1);
+                  return newTabs;
+                }
+              });
+            }
+          }}
+          topOffsetInPixel={headerHeightInPixel}
+          scrollIntoViewSignal={navItems[index].scrollToSignal}
         >
           <h1 className={styles.sectionTitle}>{navItem.caption}</h1>
           {navItem.component}
-        </div>
+        </PageSection>
       ))}
     </>
   );
@@ -66,11 +104,16 @@ export const Page: React.FC = () => {
     <>
       <Header
         navItems={navItems.map((navItem) => navItem.caption)}
-        onNavItemClick={(index: number) => scrollTo(navItems[index].ref)}
-        onLogoClicked={() => scrollTo(refAboutMe)}
+        onNavItemClick={(index) => {
+          if (index === undefined) {
+            return;
+          }
+          navItems[index].signalTrigger();
+          addTabToVisibleTabs(index);
+        }}
+        onLogoClicked={scrollToAboutMe}
         onHeightChange={setHeaderHeight}
-        selectedTabIndex={selectedTab}
-        onTabSelect={(index) => setSelectedTab(index)}
+        selectedTabIndex={visibleTabs[visibleTabs.length - 1]}
       />
       <div
         style={{ marginTop: headerHeightInPixel }}

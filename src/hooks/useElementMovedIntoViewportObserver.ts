@@ -2,7 +2,8 @@ import { MutableRefObject, useEffect, useState } from "react";
 
 export function useElementMovedIntoViewportObserver<T extends Element | null>(
   elementRef: MutableRefObject<T>,
-  rootMargin?: string
+  rootMargin?: string,
+  threshold?: number
 ) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -12,7 +13,7 @@ export function useElementMovedIntoViewportObserver<T extends Element | null>(
       (entries: IntersectionObserverEntry[]) => {
         setIsVisible(entries[0].isIntersecting);
       },
-      { rootMargin }
+      { rootMargin, threshold }
     );
     current && intersectionObserver?.observe(current);
 

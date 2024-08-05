@@ -1,7 +1,9 @@
-import { MutableRefObject, ReactElement } from "react";
+import { ReactElement } from "react";
+import { ISignal } from "../core/types/ISignal";
 
-export interface INavItem<T> {
+export interface INavItem {
   caption: string;
-  ref: MutableRefObject<T>;
+  scrollToSignal: ISignal | undefined;
+  signalTrigger: () => void;
   component: ReactElement;
 }

@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 import { Tabstrip } from "../../components/tabstrip/Tabstrip";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { Language } from "../language/Language";
 import styles from "./Header.module.scss";
 import { IHeaderProps } from "./IHeaderProps";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -21,7 +21,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         className={styles.logo}
         onClick={() => {
           props.onLogoClicked?.();
-          props.onTabSelect?.(undefined);
+          props.onNavItemClick?.(undefined);
         }}
       />
       <div className={styles.navigation}>
@@ -29,7 +29,6 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           captions={props.navItems}
           onTabSelect={(index) => {
             props.onNavItemClick?.(index);
-            props.onTabSelect?.(index);
           }}
           selectedTabIndex={props.selectedTabIndex}
         />
