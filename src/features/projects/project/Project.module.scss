@@ -1,11 +1,6 @@
-@import '../../styles/colors.module.scss';
-@import '../../styles/mixins.scss';
-@import '../../styles/components.scss';
-
-.projects {
-    position: relative;
-    height: 100vh;
-}
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/components.scss';
 
 .projectCard {
     padding: 1rem;
@@ -23,7 +18,15 @@
 }
 
 .roles {
+    margin-bottom: 0;
     @include cardTitle;
+}
+
+.customer {
+    font-size: medium;
+    font-weight: 500;
+    color: $color-primary-light;
+    margin: 0;
 }
 
 .duration {
@@ -78,17 +81,4 @@
 
 .list>li {
     color: $color-primary;
-}
-
-.techStack {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
-}
-
-.tech {
-    background-color: $color-primary-light;
-    color: $color-secondary;
-    padding: 0.6rem;
 }

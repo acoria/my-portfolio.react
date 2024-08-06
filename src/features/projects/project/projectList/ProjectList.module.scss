@@ -1,0 +1,10 @@
+@import '../../../../styles/dimensions.scss';
+
+.projectsWrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.projects {
+    padding: 0 $padding-page;
+}

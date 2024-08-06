@@ -1,14 +1,15 @@
 @import '../../styles/colors.module.scss';
 @import '../../styles/mixins.scss';
 @import '../../styles/components.scss';
+@import '../../styles/dimensions.scss';
 
 $gridSpacing: 2rem;
 
-.skills {
+.skillsWrapper {
     position: relative;
 }
 
-.content {
+.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,7 @@ $gridSpacing: 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 1fr;
         align-items: stretch;
-        padding: $gridSpacing;
+        padding: $padding-page;
         column-gap: $gridSpacing;
         row-gap: $gridSpacing;
     }

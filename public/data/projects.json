@@ -28,25 +28,61 @@
             "Moderating, coordinating and leading through reviews"
         ],
         "techStack": [
-            "ABAP",
-            "BALSAMIQ",
-            "BLUEPRINT_JS",
-            "ENTERPRISE_ARCHITECT",
-            "FIGMA",
-            "GIT",
-            "JAVA",
-            "JAVASCRIPT",
-            "JEST",
-            "ICF_SERVICE",
-            "OPEN_SQL",
-            "REACT",
-            "REACT_ROUTER_DOM",
-            "REST",
-            "SAP_GUI",
-            "SPRING_BOOT",
-            "SCSS",
-            "TYPESCRIPT",
-            "VS_CODE"
+            {
+                "type": "PROGRAMMING_LANGUAGE",
+                "technologies": [
+                    "ABAP",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "SCSS",
+                    "TYPESCRIPT"
+                ]
+            },
+            {
+                "type": "DATABASES",
+                "technologies": [
+                    "OPEN_SQL"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "BLUEPRINT_JS",
+                    "REACT",
+                    "REACT_ROUTER_DOM",
+                    "SPRING_BOOT"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "JEST"
+                ]
+            },
+            {
+                "type": "COMMUNICATION_FRAMEWORKS",
+                "technologies": [
+                    "REST",
+                    "ICF_SERVICE"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "SAP_GUI",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "PROJECT_MANAGEMENT",
+                "technologies": [
+                    "SCRUM"
+                ]
+            }
         ],
         "start": "2023-01-01T01:00:00.031Z",
         "end": "2024-08-05T23:00:00.031Z"

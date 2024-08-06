@@ -1,5 +1,5 @@
-import { Technology } from "../../types/Technology";
 import { ICustomer } from "./ICustomer";
+import { ITechnology } from "./ITechnology";
 
 export interface IProject {
   id: string;
@@ -8,7 +8,7 @@ export interface IProject {
   goal: string;
   requirements: string[];
   tasks: string[];
-  techStack: Technology[];
+  techStack: ITechnology[];
   start: Date;
   end: Date;
 }

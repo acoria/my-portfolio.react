@@ -3,7 +3,6 @@ import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { Headline } from "../features/headline/Headline";
 import { PageSection } from "../features/pageSection/PageSection";
-import { Projects } from "../features/projects/Projects";
 import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
 import { useSignal } from "../hooks/useSignal";
@@ -11,6 +10,9 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
+import { ProjectList } from "../features/projects/project/projectList/ProjectList";
+import { TechnologyType } from "../types/TechnologyTpe";
+import { Technology } from "../types/Technology";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -38,16 +40,25 @@ export const Page: React.FC = () => {
       component: <Skills />,
     },
     {
-      caption: t(texts.technologies),
+      caption: t(texts.technologies.title),
       scrollToSignal: scrollToTechnologiesSignal,
       signalTrigger: triggerScrollToTechnologies,
-      component: <Technologies />,
+      component: (
+        <Technologies
+          technologies={[
+            {
+              type: TechnologyType.PROJECT_MANAGEMENT,
+              technologies: [Technology.SCRUM],
+            },
+          ]}
+        />
+      ),
     },
     {
       caption: t(texts.projects),
       scrollToSignal: scrollToProjectsSignal,
       signalTrigger: triggerScrollToProjects,
-      component: <Projects />,
+      component: <ProjectList />,
     },
   ];
 

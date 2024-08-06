@@ -1,3 +1,25 @@
+@import '../../styles/colors.module.scss';
+
 .technologies {
     height: 80vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.type {}
+
+
+.techStack {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+}
+
+.tech {
+    background-color: $color-primary-light;
+    color: $color-secondary;
+    padding: 0.6rem;
 }

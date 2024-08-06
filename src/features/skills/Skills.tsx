@@ -26,9 +26,9 @@ export const Skills: React.FC = () => {
   ];
 
   return (
-    <div className={styles.skills}>
+    <div className={styles.skillsWrapper}>
       <Background />
-      <div className={styles.content}>
+      <div className={styles.skills}>
         {skills.map((skill) => (
           <div className={styles.skill} key={skill.title}>
             <h1 className={styles.title}>{skill.title}</h1>

@@ -15,5 +15,16 @@
     },
     "projects": "Projects",
     "skills": "Skills",
-    "technologies": "Technologies"
+    "technologies": {
+        "title": "Technologies",
+        "types": {
+            "programming_languages": "Programming languages",
+            "databases": "Databases",
+            "frameworks_concepts": "Frameworks & Concepts",
+            "testing": "Testing Frameworks",
+            "communication_frameworks": "Communication Frameworks & Protocols",
+            "tools": "Tools",
+            "project_management": "Project management"
+        }
+    }
 }

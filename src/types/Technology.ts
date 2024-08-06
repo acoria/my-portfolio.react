@@ -13,6 +13,7 @@ export enum Technology {
   REACT = "React",
   REACT_ROUTER_DOM = "react-router-dom",
   REST = "REST",
+  SCRUM = "Scrum",
   SAP_GUI = "SAP GUI",
   SPRING_BOOT = "Spring Boot",
   SCSS = "SCSS",
