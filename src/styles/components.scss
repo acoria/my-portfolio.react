@@ -7,3 +7,10 @@
     width: 100%;
     height: 0.2rem;
 }
+
+@mixin cardTitle {
+    font-size: x-large;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}

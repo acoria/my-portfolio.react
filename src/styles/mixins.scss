@@ -1,11 +1,18 @@
+@import './colors.module.scss';
+
 @mixin medium-screen {
-  @media (min-width: 28rem) {
+  @media (min-width: 38rem) {
     @content;
   }
 }
 
 @mixin large-screen {
-  @media (min-width: 64rem) {
+  @media (min-width: 60rem) {
     @content;
   }
+}
+
+@mixin glassy {
+  background-color: transparentize($color-secondary-300, 0.8);
+  backdrop-filter: blur(4px);
 }

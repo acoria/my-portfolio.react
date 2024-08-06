@@ -93,7 +93,7 @@ export const Page: React.FC = () => {
           }}
           topOffsetInPixel={headerHeightInPixel}
           scrollIntoViewSignal={navItems[index].scrollToSignal}
-          className={styles.section}
+          className={styles.pageSection}
         >
           <h1 className={styles.sectionTitle}>{navItem.caption}</h1>
           {navItem.component}
@@ -124,7 +124,7 @@ export const Page: React.FC = () => {
         <div ref={refHeadline} style={{ scrollMarginTop: headerHeightInPixel }}>
           <Headline />
         </div>
-        <div className={styles.sections}>{navContent}</div>
+        <div className={styles.pageSections}>{navContent}</div>
       </div>
     </>
   );

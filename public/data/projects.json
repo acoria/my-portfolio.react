@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "myRoles": [
+            "Architect",
+            "UX Designer",
+            "Requirements engineer"
+        ],
+        "customer": {
+            "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
+            "branch": "Internet and information technology",
+            "employeeSize": "1000-5000"
+        },
+        "goal": "Developing and publishing a self-service-web portal for project-specific software for end customers",
+        "requirements": [
+            "REST interface to ERP system to provide software based on accounting projects followed by invoice triggering",
+            "Automatic user creation and management with authentication and authorization",
+            "Generation of software licenses",
+            "Generation of installation guides based on Markdown",
+            "Automatic guidance of the user to solve problems to avoid installation errors and reduce support costs"
+        ],
+        "tasks": [
+            "Coordination between different stakeholders such as customers, delivery, sales and support",
+            "Creating UX designs and running usability tests",
+            "Collecting and clarifying requirements & adding them to backlog",
+            "Creating data model and software architecture",
+            "Implementing frontend, backend & REST interface based on JSON",
+            "Moderating, coordinating and leading through reviews"
+        ],
+        "techStack": [
+            "ABAP",
+            "BALSAMIQ",
+            "BLUEPRINT_JS",
+            "ENTERPRISE_ARCHITECT",
+            "FIGMA",
+            "GIT",
+            "JAVA",
+            "JAVASCRIPT",
+            "JEST",
+            "ICF_SERVICE",
+            "OPEN_SQL",
+            "REACT",
+            "REACT_ROUTER_DOM",
+            "REST",
+            "SAP_GUI",
+            "SPRING_BOOT",
+            "SCSS",
+            "TYPESCRIPT",
+            "VS_CODE"
+        ],
+        "start": "2023-01-01T01:00:00.031Z",
+        "end": "2024-08-05T23:00:00.031Z"
+    }
+]
