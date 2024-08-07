@@ -6,9 +6,10 @@ $animationMoveLeft: moveLeft $animationTime forwards;
 $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 
 .headline {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 3rem;
     background-color: $color-primary;
     box-shadow: 5px 5px 50px $color-primary-light;
     padding: 1rem;
@@ -19,27 +20,15 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     }
 }
 
-.imageAndText {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 2rem;
-
-    @include large-screen {
-        column-gap: 8rem;
-    }
-}
-
 .portrait {
     width: 8rem;
     height: auto;
     border-radius: 50%;
     animation: moveRight $animationTime;
-    
+
     @include large-screen {
         width: 18rem;
-        animation: moveRightLargeScreen $animationTime;
+        animation: moveRightLargeScreenPortrait $animationTime forwards;
     }
 }
 
@@ -69,6 +58,10 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
 .secondHeadlineText {
     @extend .headlineText;
     animation: moveRight $animationTime;
+
+    @include large-screen {
+        animation: moveRightLargeScreenHeadline $animationTime forwards;
+    }
 }
 
 .thirdHeadlineText {
@@ -80,10 +73,35 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     }
 }
 
-.aboutMe {
+.contactAndAboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    grid-column-start: 2;
     padding: 1rem;
-    align-self: end;
+}
 
+.contactMe {
+    padding: 0.5rem 1rem;
+    background-color: $color-accent;
+    font-size: 1.5rem;
+    // font-family: "Antonio";
+    font-weight: 600;
+    // border-style: solid;
+    border-style: none;
+    border-color: $color-accent-dark;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.contactMe>a {
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+.aboutMe {
+    align-self: end;
 
     @include medium-screen {
         width: 25rem;
@@ -110,7 +128,7 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     }
 }
 
-@keyframes moveRightLargeScreen {
+@keyframes moveRightLargeScreenPortrait {
     0% {
         transform: translateX(-5rem);
     }
@@ -120,12 +138,22 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     }
 }
 
-@keyframes moveLeftLargeScreen {
+@keyframes moveRightLargeScreenHeadline {
     0% {
-        transform: translateX(2rem);
+        transform: translateX(-3rem);
     }
 
     100% {
-        transform: translateX(-3rem);
+        transform: translateX(2rem);
+    }
+}
+
+@keyframes moveLeftLargeScreen {
+    0% {
+        transform: translateX(3rem);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }

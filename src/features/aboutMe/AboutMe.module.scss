@@ -15,16 +15,17 @@
 .quotationMarkLeft {
     @extend .quotationMark;
     align-self: start;
-    transform: translateY(-0.8rem)
+    transform: translateY(-1.8rem);
 }
 
 .quotationMarkRight {
     @extend .quotationMark;
     align-self: end;
-    transform: translateY(1rem);
+    transform: translateY(2rem);
 }
 
 .aboutMeQuote {
+    margin: 0;
     color: $color-secondary;
     font-style: italic;
 }
