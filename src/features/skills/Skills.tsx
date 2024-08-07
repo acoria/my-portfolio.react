@@ -5,24 +5,27 @@ import { Background } from "../background/Background";
 export const Skills: React.FC = () => {
   const skills: ISkill[] = [
     {
-      title: "Senior Development",
-      description: "12+ years of experience in various programming languages",
+      title: "High quality software",
+      description: "Senior Development: 12+ years of experience in various programming languages",
     },
     {
-      title: "UX/UI Design",
+      title: "Appealing and easy-to-use interfaces",
       description:
-        "Appealing designs, Lean UX, Usability tests, UX audits. Everything to create the best UX possible",
+        "UX/UI Design: Appealing designs, Lean UX, Usability tests, UX audits. Everything to create the best UX possible",
     },
     {
-      title: "Software architect",
+      title: "Future save",
       description:
-        "A solid architecture ensures that the software is easily expandable, testable and ...",
+        "Adjustments to the software are cheap. -> Software architectures: A solid architecture ensures that the software is easily expandable, testable and ...",
     },
     {
-      title: "Scrum Master",
+      title: "Scrum Mastering",
       description:
-        "9+ years working in various Scrum teams to find the perfect process",
+        "9+ years working in various Scrum teams to find the perfect process to leave everyone the most time for their job",
     },
+    { title: "Presentations and meeting..", description: "Efficient meetings through structured agenda and preparation" },
+    { title: "Development of complex business software", description: "..." },
+    { title: "Project management & organization", description: "..." },
   ];
 
   return (
