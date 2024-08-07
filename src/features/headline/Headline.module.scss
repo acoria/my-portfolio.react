@@ -86,18 +86,11 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime forwards;
     padding: 0.5rem 1rem;
     background-color: $color-accent;
     font-size: 1.5rem;
-    // font-family: "Antonio";
     font-weight: 600;
-    // border-style: solid;
-    border-style: none;
-    border-color: $color-accent-dark;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
     cursor: pointer;
-}
-
-.contactMe>a {
-    color: $color-secondary;
     text-decoration: none;
+    color: $color-secondary;
 }
 
 .aboutMe {

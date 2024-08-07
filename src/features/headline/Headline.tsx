@@ -1,3 +1,4 @@
+import { AppConfig } from "../../AppConfig";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { AboutMe } from "../aboutMe/AboutMe";
@@ -25,9 +26,9 @@ export const Headline: React.FC = () => {
         </h1>
       </div>
       <div className={styles.contactAndAboutMe}>
-        <button className={styles.contactMe}>
-          <a href="mailto:tewes.verena@gmail.com">Contact me</a>
-        </button>
+        <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
+          Contact me
+        </a>
         <AboutMe className={styles.aboutMe} />
       </div>
     </div>
