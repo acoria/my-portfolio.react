@@ -28,16 +28,16 @@ export const Page: React.FC = () => {
   const { t } = useTranslation();
   const navItems: INavItem[] = [
     {
-      caption: t(texts.cv),
-      scrollToSignal: scrollToCVSignal,
-      signalTrigger: triggerScrollToCV,
-      component: <CV />,
-    },
-    {
       caption: t(texts.skills),
       scrollToSignal: scrollToSkillsSignal,
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
+    },
+    {
+      caption: t(texts.projects),
+      scrollToSignal: scrollToProjectsSignal,
+      signalTrigger: triggerScrollToProjects,
+      component: <ProjectList />,
     },
     {
       caption: t(texts.technologies.title),
@@ -55,10 +55,10 @@ export const Page: React.FC = () => {
       ),
     },
     {
-      caption: t(texts.projects),
-      scrollToSignal: scrollToProjectsSignal,
-      signalTrigger: triggerScrollToProjects,
-      component: <ProjectList />,
+      caption: t(texts.cv),
+      scrollToSignal: scrollToCVSignal,
+      signalTrigger: triggerScrollToCV,
+      component: <CV />,
     },
   ];
 

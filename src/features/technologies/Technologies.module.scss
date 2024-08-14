@@ -1,11 +1,16 @@
 @import '../../styles/colors.module.scss';
+@import '../../styles/mixins.scss';
 
 .technologies {
     height: 80vh;
     display: flex;
-    flex-direction: row;
-    column-gap: 0.5rem;
-    justify-content: space-between;
+    flex-direction: column;
+    
+    @include large-screen {
+        flex-direction: row;
+        column-gap: 0.5rem;
+        justify-content: space-between;
+    }
 }
 
 .type {}

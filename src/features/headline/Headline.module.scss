@@ -13,6 +13,8 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     background-color: $color-primary;
     box-shadow: 5px 5px 50px $color-primary-light;
     padding: 1rem;
+    //stops page from jumping during animation
+    overflow-x: hidden;
 
     @include large-screen {
         display: grid;
