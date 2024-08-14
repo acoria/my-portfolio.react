@@ -1,31 +1,49 @@
 import styles from "./Skills.module.scss";
 import { ISkill } from "../../shared/model/ISkill";
 import { Background } from "../background/Background";
+import { useTranslation } from "../../hooks/useTranslation/useTranslation";
+import { texts } from "../../hooks/useTranslation/texts";
 
 export const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   const skills: ISkill[] = [
     {
-      title: "High quality software",
-      description: "Senior Development: 12+ years of experience in various programming languages",
+      title: t(texts.skills.highQualitySoftware.title),
+      descriptions: [
+        t(texts.skills.highQualitySoftware.descriptions.years),
+        t(texts.skills.highQualitySoftware.descriptions.tests),
+      ],
     },
     {
-      title: "Appealing and easy-to-use interfaces",
-      description:
-        "UX/UI Design: Appealing designs, Lean UX, Usability tests, UX audits. Everything to create the best UX possible",
+      title: t(texts.skills.easyToUse.title),
+      descriptions: [
+        t(texts.skills.easyToUse.descriptions.users),
+        t(texts.skills.easyToUse.descriptions.leanUX),
+      ],
     },
     {
-      title: "Future save",
-      description:
-        "Adjustments to the software are cheap. -> Software architectures: A solid architecture ensures that the software is easily expandable, testable and ...",
+      title: t(texts.skills.futureSave.title),
+      descriptions: [t(texts.skills.futureSave.descriptions.architecture)],
     },
     {
-      title: "Scrum Mastering",
-      description:
-        "9+ years working in various Scrum teams to find the perfect process to leave everyone the most time for their job",
+      title: t(texts.skills.projectManagement.title),
+      descriptions: [
+        t(texts.skills.projectManagement.descriptions.management),
+        t(texts.skills.projectManagement.descriptions.scrum),
+      ],
     },
-    { title: "Presentations and meeting..", description: "Efficient meetings through structured agenda and preparation" },
-    { title: "Development of complex business software", description: "..." },
-    { title: "Project management & organization", description: "..." },
+    {
+      title: "Presentations and meeting..",
+      descriptions: [
+        "Efficient meetings through structured agenda and preparation",
+      ],
+    },
+    {
+      title: "Development of complex business software",
+      descriptions: ["..."],
+    },
+    { title: "Project management & organization", descriptions: ["..."] },
   ];
 
   return (
@@ -35,7 +53,9 @@ export const Skills: React.FC = () => {
         {skills.map((skill) => (
           <div className={styles.skill} key={skill.title}>
             <h1 className={styles.title}>{skill.title}</h1>
-            <p className={styles.description}>{skill.description}</p>
+            <p className={styles.description}>
+              {skill.descriptions.join("\n")}
+            </p>
           </div>
         ))}
       </div>

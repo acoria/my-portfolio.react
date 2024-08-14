@@ -1,4 +1,4 @@
 export interface ISkill {
   title: string;
-  description: string;
+  descriptions: string[];
 }

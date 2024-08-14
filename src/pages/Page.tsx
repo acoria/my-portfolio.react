@@ -28,7 +28,7 @@ export const Page: React.FC = () => {
   const { t } = useTranslation();
   const navItems: INavItem[] = [
     {
-      caption: t(texts.skills),
+      caption: t(texts.skills.title),
       scrollToSignal: scrollToSkillsSignal,
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,

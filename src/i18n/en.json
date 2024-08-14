@@ -14,7 +14,36 @@
         "en": "EN"
     },
     "projects": "Projects",
-    "skills": "Skills",
+    "skills": {
+        "title": "Skills",
+        "highQualitySoftware": {
+            "title": "High Quality Software",
+            "descriptions": {
+                "years": "With over 12 12years of programming experience(expertise) in various languages, you get the best from all worlds",
+                "tests": "Tests ensure that bugs are found by the developers, not the users"
+            }
+        },
+        "easyToUse": {
+            "title": "Appealing and easy-to-use interfaces",
+            "descriptions": {
+                "users": "Users are integrated into the development process to find their actual problem",
+                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development"
+            }
+        },
+        "futureSave": {
+            "title": "Future save",
+            "descriptions": {
+                "architecture": "Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development"
+            }
+        },
+        "projectManagement": {
+            "title": "Reliable project planning and estimations",
+            "descriptions": {
+                "management": "Project & development management with Scrum",
+                "scrum": "An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down, clear for everyone and developers can be put to work according on their skills"
+            }
+        }
+    },
     "technologies": {
         "title": "Technologies",
         "types": {
