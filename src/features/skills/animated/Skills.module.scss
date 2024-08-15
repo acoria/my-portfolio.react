@@ -49,15 +49,17 @@ $gridSpacing: 2rem;
     }
 
     &:hover .skillContentList {
-        opacity: 1;
-        height: auto;
         overflow: visible;
+        height: 10rem;
+        opacity: 1;
+            // transition: all 1s;
+    transition: height 2s;
+    // transition: opacity 1s;
     }
-
+    
     &:hover .title{
-        transition: 300ms;
+        transition: font-size 300ms;
         font-size: small;
-        height: auto;
     }
 }
 
@@ -68,10 +70,9 @@ $gridSpacing: 2rem;
 }
 
 .skillContentList {
-    transition: opacity 1s ease-out;
-    opacity: 0;
-    height: 0;
     overflow: hidden;
+    height: 0;
+    opacity: 0;
 }
 
 .description {
