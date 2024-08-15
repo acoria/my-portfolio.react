@@ -3,7 +3,6 @@ import { ProjectAPI } from "../../../../api/ProjectRepository";
 import { request } from "../../../../core/utils/request";
 import { IProject } from "../../../../shared/model/IProject";
 import { Background } from "../../../background/Background";
-import { ProjectTimeline } from "../../../projectTimeline/ProjectTimeline";
 import { Project } from "../Project";
 import styles from "./ProjectList.module.scss";
 
@@ -20,7 +19,6 @@ export const ProjectList: React.FC = () => {
   return (
     <div className={styles.projectsWrapper}>
       <Background />
-      <ProjectTimeline />
       <div className={styles.projects}>
         {projects.map((project) => (
           <Project project={project} key={project.id} />

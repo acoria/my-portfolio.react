@@ -3,6 +3,7 @@ import { ISkill } from "../../shared/model/ISkill";
 import { Background } from "../background/Background";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { texts } from "../../hooks/useTranslation/texts";
+import { text } from "stream/consumers";
 
 export const Skills: React.FC = () => {
   const { t } = useTranslation();
@@ -34,16 +35,20 @@ export const Skills: React.FC = () => {
       ],
     },
     {
-      title: "Presentations and meeting..",
+      title: t(texts.skills.complexBusinessSoftware.title),
       descriptions: [
-        "Efficient meetings through structured agenda and preparation",
+        t(texts.skills.complexBusinessSoftware.descriptions.usableByAnyone),
+        t(texts.skills.complexBusinessSoftware.descriptions.complexToEasy),
       ],
     },
     {
-      title: "Development of complex business software",
-      descriptions: ["..."],
+      title: t(texts.skills.meetings.title),
+      descriptions: [
+        t(texts.skills.meetings.descriptions.liveIsShort),
+        t(texts.skills.meetings.descriptions.meTakeCare),
+        t(texts.skills.meetings.descriptions.planning),
+      ],
     },
-    { title: "Project management & organization", descriptions: ["..."] },
   ];
 
   return (
@@ -53,9 +58,14 @@ export const Skills: React.FC = () => {
         {skills.map((skill) => (
           <div className={styles.skill} key={skill.title}>
             <h1 className={styles.title}>{skill.title}</h1>
-            <p className={styles.description}>
+            <ul className={styles.skillList}>
+              {skill.descriptions.map((description) => (
+                <li key={description}>{description}</li>
+              ))}
+            </ul>
+            {/* <p className={styles.description}>
               {skill.descriptions.join("\n")}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>
