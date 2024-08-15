@@ -1,7 +1,7 @@
-import { texts } from "../../hooks/useTranslation/texts";
-import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import { ISkill } from "../../shared/model/ISkill";
-import { Background } from "../background/Background";
+import { texts } from "../../../hooks/useTranslation/texts";
+import { useTranslation } from "../../../hooks/useTranslation/useTranslation";
+import { ISkill } from "../../../shared/model/ISkill";
+import { Background } from "../../background/Background";
 import styles from "./Skills.module.scss";
 
 export const Skills: React.FC = () => {
@@ -51,11 +51,13 @@ export const Skills: React.FC = () => {
   ];
 
   const skillContent = (skill: ISkill) => (
-    <ul className={styles.skillList}>
-      {skill.descriptions.map((description) => (
-        <li key={description}>{description}</li>
-      ))}
-    </ul>
+    <div className={styles.skillContentList}>
+      <ul>
+        {skill.descriptions.map((description) => (
+          <li key={description}>{description}</li>
+        ))}
+      </ul>
+    </div>
   );
 
   return (

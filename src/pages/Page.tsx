@@ -3,7 +3,7 @@ import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { Headline } from "../features/headline/Headline";
 import { PageSection } from "../features/pageSection/PageSection";
-import { Skills } from "../features/skills/Skills";
+// import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
 import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
@@ -13,6 +13,7 @@ import styles from "./Page.module.scss";
 import { ProjectList } from "../features/projects/project/projectList/ProjectList";
 import { TechnologyType } from "../types/TechnologyTpe";
 import { Technology } from "../types/Technology";
+import { Skills } from "../features/skills/animated/Skills";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -32,6 +33,7 @@ export const Page: React.FC = () => {
       scrollToSignal: scrollToSkillsSignal,
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
+      // component: <Skills />,
     },
     {
       caption: t(texts.projects),
