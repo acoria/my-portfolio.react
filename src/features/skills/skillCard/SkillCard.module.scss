@@ -10,10 +10,10 @@ $transition-time: 500ms;
 .skillCard {
     position: relative;
     cursor: pointer;
-    // pointer-events: none;
+    pointer-events: none;
 
     @include mixins.medium-screen {
-        // pointer-events: all;
+        pointer-events: all;
         &:hover .topCard {
             transform: translateY(0);
         }
