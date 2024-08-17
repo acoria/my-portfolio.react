@@ -1,3 +1,5 @@
+@use './mixins.scss';
+
 @mixin tabstrip-underline {
     content: "";
     position: absolute;
@@ -9,8 +11,13 @@
 }
 
 @mixin cardTitle {
-    font-size: x-large;
-    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    font-size: medium;
+    letter-spacing: 0.3rem;
+    
+    @include mixins.medium-screen {
+        font-size: x-large;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+    }
 }
