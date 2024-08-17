@@ -2,6 +2,7 @@ import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { Technology } from "../../types/Technology";
 import { ITechnologiesProps } from "./ITechnologiesProps";
 import styles from "./Technologies.module.scss";
+
 export const Technologies: React.FC<ITechnologiesProps> = (props) => {
   const {t} = useTranslation();
   const mapTechnologyToText = (tech: Technology): string => {

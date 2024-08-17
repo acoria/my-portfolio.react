@@ -48,10 +48,10 @@ export const Page: React.FC = () => {
       component: (
         <Technologies
           technologies={[
-            {
-              type: TechnologyType.PROJECT_MANAGEMENT,
-              technologies: [Technology.SCRUM],
-            },
+            // {
+            //   type: TechnologyType.PROJECT_MANAGEMENT,
+            //   technologies: [Technology.SCRUM],
+            // },
           ]}
         />
       ),

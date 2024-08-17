@@ -2,7 +2,9 @@
 @use '../../../styles/mixins.scss';
 @use '../../../styles/components.scss';
 
-$card-height: 11rem;
+$card-height: 16rem;
+$card-height-medium-screen: 11rem;
+
 $transition-time: 500ms;
 
 .skillCard {
@@ -31,6 +33,10 @@ $transition-time: 500ms;
     transition: $transition-time;
     transform: translateY($card-height/2);
     z-index: 1;
+
+    @include mixins.medium-screen{
+        height: $card-height-medium-screen;
+    }
 }
 
 .title {
@@ -41,12 +47,16 @@ $transition-time: 500ms;
 }
 
 .bottomCard {
-    // width: $card-width;
     height: $card-height;
     transition: $transition-time;
     transform: translateY($card-height/2*-1);
     opacity: 0;
     @include mixins.glassy;
+
+    @include mixins.medium-screen{
+        height: $card-height-medium-screen;
+        transform: translateY($card-height-medium-screen/2*-1);
+    }
 }
 
 .descriptions {

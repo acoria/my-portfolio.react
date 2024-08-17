@@ -41,7 +41,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <h3 className={styles.subtitle}>Technologies</h3>
       <div className={styles.techStack}>
-        <Technologies technologies={props.project.techStack} />
+        {/* <Technologies technologies={props.project.techStack} /> */}
       </div>
     </div>
   );
