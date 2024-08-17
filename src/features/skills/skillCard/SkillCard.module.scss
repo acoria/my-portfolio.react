@@ -1,0 +1,79 @@
+@use '../../../styles/colors.module.scss';
+@use '../../../styles/mixins.scss';
+@use '../../../styles/components.scss';
+
+$card-height: 11rem;
+$transition-time: 500ms;
+
+.skillCard {
+    position: relative;
+    cursor: pointer;
+
+    &:hover .topCard {
+        transform: translateY(0);
+    }
+
+    &:hover .bottomCard {
+        transform: translateY(0);
+        opacity: 1;
+        border-bottom: 3px solid colors.$color-font;
+    }
+}
+
+.topCard {
+    position: relative;
+    height: $card-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: colors.$color-primary-light;
+    @include mixins.glassy;
+    transition: $transition-time;
+    transform: translateY($card-height/2);
+    z-index: 1;
+}
+
+.title {
+    padding: 1rem;
+    margin: 0;
+    align-self: center;
+    @include components.cardTitle;
+}
+
+.bottomCard {
+    // width: $card-width;
+    height: $card-height;
+    transition: $transition-time;
+    transform: translateY($card-height/2*-1);
+    opacity: 0;
+    @include mixins.glassy;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    color: colors.$color-font;
+    position: relative;
+    align-items: flex-start;
+}
+
+.description {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10%;
+        border-bottom: 2px solid colors.$color-font;
+    }
+
+    &:last-child::after {
+        border: none;
+    }
+}

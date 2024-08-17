@@ -12,7 +12,7 @@
   }
 }
 
-@mixin glassy {
-  background-color: transparentize($color-secondary-300, 0.8);
+@mixin glassy($color: $color-secondary-300) {
+  background-color: transparentize($color, 0.8);
   backdrop-filter: blur(4px);
 }

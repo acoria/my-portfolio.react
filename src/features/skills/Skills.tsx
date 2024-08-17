@@ -44,7 +44,6 @@ export const Skills: React.FC = () => {
       title: t(texts.skills.meetings.title),
       descriptions: [
         t(texts.skills.meetings.descriptions.liveIsShort),
-        t(texts.skills.meetings.descriptions.meTakeCare),
         t(texts.skills.meetings.descriptions.planning),
       ],
     },
@@ -66,9 +65,6 @@ export const Skills: React.FC = () => {
           <div className={styles.skill} key={skill.title}>
             <h1 className={styles.title}>{skill.title}</h1>
             {skillContent(skill)}
-            {/* <p className={styles.description}>
-            {skill.descriptions.join("\n")}
-            </p> */}
           </div>
         ))}
       </div>

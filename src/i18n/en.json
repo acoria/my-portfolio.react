@@ -53,8 +53,7 @@
         "meetings":{
             "title": "Short, efficient meeting moderation",
             "descriptions":{
-                "liveIsShort": "Live is too short to spend it in long meetings!",
-                "meTakeCare": "Let me take care of the meetings and win more time for your actual work",
+                "liveIsShort": "Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work",
                 "planning": "By providing and following an agenda & preparing and collecting all points to be discussed throughout the development process, I keep meeting times to a minimum"
             }
         }

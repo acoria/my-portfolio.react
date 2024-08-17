@@ -2,6 +2,7 @@ import { texts } from "../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../hooks/useTranslation/useTranslation";
 import { ISkill } from "../../../shared/model/ISkill";
 import { Background } from "../../background/Background";
+import { SkillCard } from "../skillCard/SkillCard";
 import styles from "./Skills.module.scss";
 
 export const Skills: React.FC = () => {
@@ -44,34 +45,17 @@ export const Skills: React.FC = () => {
       title: t(texts.skills.meetings.title),
       descriptions: [
         t(texts.skills.meetings.descriptions.liveIsShort),
-        t(texts.skills.meetings.descriptions.meTakeCare),
         t(texts.skills.meetings.descriptions.planning),
       ],
     },
   ];
 
-  const skillContent = (skill: ISkill) => (
-    <div className={styles.skillContentList}>
-      <ul>
-        {skill.descriptions.map((description) => (
-          <li key={description}>{description}</li>
-        ))}
-      </ul>
-    </div>
-  );
-
   return (
     <div className={styles.skillsWrapper}>
       <Background />
       <div className={styles.skills}>
-        {skills.map((skill) => (
-          <div className={styles.skill} key={skill.title}>
-            <h1 className={styles.title}>{skill.title}</h1>
-            {skillContent(skill)}
-            {/* <p className={styles.description}>
-            {skill.descriptions.join("\n")}
-            </p> */}
-          </div>
+        {skills.map((skill, index) => (
+          <SkillCard skill={skill} key={index} />
         ))}
       </div>
     </div>
