@@ -2,6 +2,7 @@ import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { ISkill } from "../../shared/model/ISkill";
 import { Background } from "../background/Background";
+import { SkillCard } from "./skillCard/SkillCard";
 import styles from "./Skills.module.scss";
 
 export const Skills: React.FC = () => {
@@ -49,23 +50,12 @@ export const Skills: React.FC = () => {
     },
   ];
 
-  const skillContent = (skill: ISkill) => (
-    <ul className={styles.skillList}>
-      {skill.descriptions.map((description) => (
-        <li key={description}>{description}</li>
-      ))}
-    </ul>
-  );
-
   return (
     <div className={styles.skillsWrapper}>
       <Background />
       <div className={styles.skills}>
-        {skills.map((skill) => (
-          <div className={styles.skill} key={skill.title}>
-            <h1 className={styles.title}>{skill.title}</h1>
-            {skillContent(skill)}
-          </div>
+        {skills.map((skill, index) => (
+          <SkillCard skill={skill} key={index} />
         ))}
       </div>
     </div>

@@ -7,6 +7,7 @@ $gridSpacing: 2rem;
 
 .skillsWrapper {
     position: relative;
+    min-height: 60vh;
 }
 
 .skills {
@@ -20,28 +21,29 @@ $gridSpacing: 2rem;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 1fr;
         align-items: stretch;
-        padding: $padding-page;
+        padding: 0 $padding-page $padding-page $padding-page;
         column-gap: $gridSpacing;
-        row-gap: $gridSpacing;
     }
 
     @include large-screen {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-.skill {
-    padding: 1rem;
-    @include glassy;
+    &:hover {
+        grid-auto-rows: auto;
+    }
 }
 
 .title {
     margin: 0;
     @include cardTitle;
+    font-size: x-large;
 }
 
-.skillList {
-
+.skillContentList {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
 }
 
 .description {
