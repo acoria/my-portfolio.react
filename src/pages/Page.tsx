@@ -10,7 +10,7 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
-import { ProjectList } from "../features/projects/project/projectList/ProjectList";
+import { ProjectList } from "../features/projects/projectList/ProjectList";
 import { TechnologyType } from "../types/TechnologyTpe";
 import { Technology } from "../types/Technology";
 import { Skills } from "../features/skills/Skills";

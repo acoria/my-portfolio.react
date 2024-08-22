@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { ProjectAPI } from "../../../../api/ProjectRepository";
-import { request } from "../../../../core/utils/request";
-import { IProject } from "../../../../shared/model/IProject";
-import { Background } from "../../../background/Background";
-import { Project } from "../Project";
+import { ProjectAPI } from "../../../api/ProjectRepository";
+import { request } from "../../../core/utils/request";
+import { IProject } from "../../../shared/model/IProject";
+import { Background } from "../../background/Background";
+import { Project } from "../project/Project";
 import styles from "./ProjectList.module.scss";
 
 export const ProjectList: React.FC = () => {
