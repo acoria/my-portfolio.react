@@ -1,0 +1,84 @@
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/components.scss';
+
+.projectCard {
+    padding: 1rem;
+    @include glassy;
+}
+
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include medium-screen {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.roles {
+    margin-bottom: 0;
+    @include cardTitle;
+}
+
+.customer {
+    font-size: medium;
+    font-weight: 500;
+    color: $color-primary-light;
+    margin: 0;
+}
+
+.duration {
+    color: $color-primary;
+    font-size: medium;
+    font-weight: 500;
+    align-self: end;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    column-gap: 0.5rem;
+
+    @include medium-screen {
+        align-self: start;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.calendar {
+    width: 1.5rem;
+    fill: $color-primary;
+
+    @include medium-screen {
+        width: 3rem;
+    }
+}
+
+.goal {
+    @include medium-screen {
+        margin-top: -0.8rem;
+    }
+}
+
+.tasksAndRequirements {
+    display: grid;
+    grid-template-rows: 1fr;
+
+    @include medium-screen {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.subtitle {
+    font-family: "Antonio";
+}
+
+.list {
+    list-style-type: square;
+}
+
+.list>li {
+    color: $color-primary;
+}
