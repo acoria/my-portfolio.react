@@ -1,22 +1,22 @@
-@import '../../styles/colors.module.scss';
-@import '../../styles/mixins.scss';
+@use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 $animationTime: 1s;
 $animationMoveLeft: moveLeft $animationTime;
 $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
 
-.headline {
+.banner {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
     column-gap: 1rem;
-    background-color: $color-primary;
-    box-shadow: 5px 5px 50px $color-primary-light;
+    background-color: colors.$color-banner-background;
+    box-shadow: 5px 5px 50px colors.$color-banner-box-shadow;
     padding: 1rem;
     //stops page from jumping during animation
     overflow-x: hidden;
 
-    @include large-screen {
+    @include mixins.large-screen {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
@@ -32,30 +32,30 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     border-radius: 50%;
     animation: moveRightPortrait $animationTime;
 
-    @include large-screen {
+    @include mixins.large-screen {
         width: 18rem;
         animation: moveRightLargeScreenPortrait $animationTime forwards;
     }
 }
 
 .headlineText {
-    color: $color-secondary;
+    color: colors.$color-font-light;
     margin: 0;
     font-family: "Antonio";
     font-weight: 600;
     font-size: 1.2rem;
 
-    @include large-screen {
+    @include mixins.large-screen {
         font-size: 4rem;
     }
 }
 
 .firstHeadlineText {
     @extend .headlineText;
-    color: $color-accent;
+    color: colors.$color-banner-headline-accent;
     animation: $animationMoveLeft;
 
-    @include large-screen {
+    @include mixins.large-screen {
         animation: $animationMoveLeftLargeScreen;
     }
 
@@ -65,7 +65,7 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     @extend .headlineText;
     animation: moveRightHeadline $animationTime forwards;
 
-    @include large-screen {
+    @include mixins.large-screen {
         animation: moveRightLargeScreenHeadline $animationTime forwards;
     }
 }
@@ -74,7 +74,7 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     @extend .headlineText;
     animation: $animationMoveLeft;
 
-    @include large-screen {
+    @include mixins.large-screen {
         animation: $animationMoveLeftLargeScreen;
     }
 }
@@ -87,7 +87,7 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     row-gap: 1rem;
     margin-top: 1rem;
 
-    @include large-screen {
+    @include mixins.large-screen {
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
@@ -100,21 +100,21 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
 
 .contactMe {
     padding: 0.5rem 1rem;
-    color: $color-secondary;
-    background-color: $color-accent;
+    color: colors.$color-font-light;
+    background-color: colors.$color-button-primary-background;
     letter-spacing: 0.05rem;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
 
-    @include large-screen {
+    @include mixins.large-screen {
         font-size: 1.5rem;
         font-weight: 600;
     }
 }
 
 .aboutMe {
-    @include medium-screen {
+    @include mixins.medium-screen {
         width: 25rem;
     }
 }

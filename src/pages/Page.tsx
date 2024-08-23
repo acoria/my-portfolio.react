@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
-import { Headline } from "../features/headline/Headline";
+import { Banner } from "../features/banner/Banner";
 import { PageSection } from "../features/pageSection/PageSection";
 // import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
@@ -14,6 +14,7 @@ import { ProjectList } from "../features/projects/projectList/ProjectList";
 import { TechnologyType } from "../types/TechnologyTpe";
 import { Technology } from "../types/Technology";
 import { Skills } from "../features/skills/Skills";
+import { Project } from "../features/projects/project/Project";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -39,7 +40,8 @@ export const Page: React.FC = () => {
       caption: t(texts.projects),
       scrollToSignal: scrollToProjectsSignal,
       signalTrigger: triggerScrollToProjects,
-      component: <ProjectList />,
+      component: <Project />,
+      // component: <ProjectList />,
     },
     {
       caption: t(texts.technologies.title),
@@ -135,7 +137,7 @@ export const Page: React.FC = () => {
         className={styles.content}
       >
         <div ref={refHeadline} style={{ scrollMarginTop: headerHeightInPixel }}>
-          <Headline />
+          <Banner />
         </div>
         <div className={styles.pageSections}>{navContent}</div>
       </div>

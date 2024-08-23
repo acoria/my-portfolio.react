@@ -32,8 +32,7 @@ $transition-time: 500ms;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: colors.$color-primary-light;
-    @include mixins.glassy;
+    @include mixins.glassy();
     
     @include mixins.medium-screen {
         height: $card-height-medium-screen;

@@ -1,9 +1,9 @@
-@import '../../../styles/dimensions.scss';
+@use '../../../styles/dimensions.scss' as dimens;
 
 .projectsWrapper {
     position: relative;
 }
 
 .projects {
-    padding: 0 $padding-page;
+    padding: 0 dimens.$padding-page;
 }

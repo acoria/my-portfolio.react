@@ -1,4 +1,4 @@
-@import './colors.module.scss';
+@use './colors.module.scss';
 
 @mixin medium-screen {
   @media (min-width: 38rem) {
@@ -12,7 +12,7 @@
   }
 }
 
-@mixin glassy($color: $color-secondary-300) {
+@mixin glassy($color: colors.$color-glassy-background) {
   background-color: transparentize($color, 0.8);
   backdrop-filter: blur(4px);
 }

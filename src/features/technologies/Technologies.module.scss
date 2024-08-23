@@ -1,12 +1,12 @@
-@import '../../styles/colors.module.scss';
-@import '../../styles/mixins.scss';
+@use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 .technologies {
     height: 80vh;
     display: flex;
     flex-direction: column;
-    
-    @include large-screen {
+
+    @include mixins.large-screen {
         flex-direction: row;
         column-gap: 0.5rem;
         justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 .tech {
-    background-color: $color-primary-light;
-    color: $color-secondary;
+    background-color: colors.$color-technologies-card-background;
+    color: colors.$color-font-light;
     padding: 0.6rem;
 }

@@ -1,13 +1,13 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss';
 
 .language {
-    color: $color-secondary;
+    color: colors.$color-font-light;
 }
 
 .button {
     background-color: transparent;
     border: none;
-    color: $color-secondary;
+    color: colors.$color-font-light;
     font-size: 1.2rem;
     cursor: pointer;
 

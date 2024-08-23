@@ -1,7 +1,7 @@
-@import '../styles/colors.module.scss';
+@use '../styles/colors.module.scss';
 
 .content {
-    background-color: $color-secondary;
+    background-color: colors.$color-page-content-background;
 }
 
 .pageSections {
@@ -14,7 +14,6 @@
 
 .sectionTitle {
     font-family: "Antonio";
-    // position: relative;
     text-align: center;
 }
 

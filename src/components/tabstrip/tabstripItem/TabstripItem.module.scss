@@ -1,5 +1,5 @@
-@import '../../../styles/colors.module.scss';
-@import '../../../styles/components.scss';
+@use '../../../styles/colors.module.scss';
+@use '../../../styles/components.scss' as comp;
 
 $font-weight: 500;
 $font-weight-selected: 600;
@@ -13,7 +13,7 @@ $font-weight-selected: 600;
 }
 
 .caption {
-    color: $color-secondary;
+    color: colors.$color-font-light;
     font-size: large;
     font-weight: $font-weight;
     text-transform: uppercase;
@@ -28,6 +28,6 @@ $font-weight-selected: 600;
     cursor: auto;
 
     &::after {
-        @include tabstrip-underline;
+        @include comp.tabstrip-underline;
     }
 }

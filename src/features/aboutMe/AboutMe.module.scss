@@ -1,4 +1,4 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss';
 
 .quote {
     display: flex;
@@ -8,7 +8,7 @@
 
 .quotationMark {
     font-family: "Antonio";
-    color: $color-secondary;
+    color: colors.$color-font-light;
     font-style: italic;
 }
 
@@ -26,6 +26,6 @@
 
 .aboutMeQuote {
     margin: 0;
-    color: $color-secondary;
+    color: colors.$color-font-light;
     font-style: italic;
 }
