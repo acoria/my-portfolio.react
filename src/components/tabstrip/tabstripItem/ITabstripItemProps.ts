@@ -3,4 +3,5 @@ export interface ITabstripItemProps {
   onClick?: () => void;
   selected: boolean;
   classNameSelected?: string;
+  darkMode?: boolean;
 }

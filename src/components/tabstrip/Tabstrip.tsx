@@ -22,6 +22,7 @@ export const Tabstrip: React.FC<ITabstripProps> = (props) => {
         props.onTabSelect?.(index);
       }}
       selected={selectedIndex === index}
+      darkMode={props.darkMode}
     />
   ));
 

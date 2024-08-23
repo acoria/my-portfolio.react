@@ -23,11 +23,24 @@ $font-weight-selected: 600;
     }
 }
 
+.captionDarkMode {
+    @extend .caption;
+    color: colors.$color-tabstrip-font-dark-mode;
+}
+
 .selected {
     font-weight: $font-weight-selected;
     cursor: auto;
 
     &::after {
         @include comp.tabstrip-underline;
+    }
+}
+
+.selectedDarkMode {
+    @extend .selected;
+
+    &::after {
+        @include comp.tabstrip-underline(colors.$color-tabstrip-underline-dark-mode);
     }
 }

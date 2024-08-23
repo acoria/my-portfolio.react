@@ -13,7 +13,18 @@
         "de": "DE",
         "en": "EN"
     },
-    "projects": "Projects",
+    "projects": {
+        "title": "Projects",
+        "projectDetails": {
+            "tabs": {
+                "challenge": "Challenge",
+                "myRoles": "My roles",
+                "techStack": "Tech Stack",
+                "requirements": "Requirements",
+                "customer": "Customer"
+            }
+        }
+    },
     "skills": {
         "title": "Skills",
         "complexBusinessSoftware": {
@@ -50,9 +61,9 @@
                 "scrum": "An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down, clear for everyone and developers can be put to work according on their skills"
             }
         },
-        "meetings":{
+        "meetings": {
             "title": "Short, efficient meeting moderation",
-            "descriptions":{
+            "descriptions": {
                 "liveIsShort": "Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work",
                 "planning": "By providing and following an agenda & preparing and collecting all points to be discussed throughout the development process, I keep meeting times to a minimum"
             }

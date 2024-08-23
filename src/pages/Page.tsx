@@ -37,7 +37,7 @@ export const Page: React.FC = () => {
       // component: <Skills />,
     },
     {
-      caption: t(texts.projects),
+      caption: t(texts.projects.title),
       scrollToSignal: scrollToProjectsSignal,
       signalTrigger: triggerScrollToProjects,
       component: <Project />,
@@ -49,12 +49,14 @@ export const Page: React.FC = () => {
       signalTrigger: triggerScrollToTechnologies,
       component: (
         <Technologies
-          technologies={[
-            // {
-            //   type: TechnologyType.PROJECT_MANAGEMENT,
-            //   technologies: [Technology.SCRUM],
-            // },
-          ]}
+          technologies={
+            [
+              // {
+              //   type: TechnologyType.PROJECT_MANAGEMENT,
+              //   technologies: [Technology.SCRUM],
+              // },
+            ]
+          }
         />
       ),
     },
