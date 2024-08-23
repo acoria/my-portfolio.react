@@ -1,6 +1,13 @@
 @use '../../../styles/mixins.scss';
 
-.project{
+.project {
+    padding: 1rem;
     @include mixins.glassy;
     height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

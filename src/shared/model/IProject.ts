@@ -3,12 +3,14 @@ import { ITechnology } from "./ITechnology";
 
 export interface IProject {
   id: string;
-  myRoles: string[];
+  challenge: string;
   customer: ICustomer;
+  end: Date;
   goal: string;
+  myRoles: string[];
   requirements: string[];
+  start: Date;
   tasks: string[];
   techStack: ITechnology[];
-  start: Date;
-  end: Date;
+  title: string;
 }
