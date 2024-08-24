@@ -13,4 +13,5 @@ export interface IProject {
   tasks: string[];
   techStack: ITechnology[];
   title: string;
+  imageUrls: string[];
 }

@@ -5,6 +5,7 @@ import { useTranslation } from "../../../../hooks/useTranslation/useTranslation"
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
 import { Challenge } from "../challenge/Challenge";
+import { style } from "../../../../core/utils/style";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -29,12 +30,13 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   };
 
   return (
-    <div className={styles.projectDetails}>
+    <div className={style(styles.projectDetails, props.className)}>
       <Tabstrip
         captions={tabNames()}
         className={styles.tabstrip}
         darkMode
         onTabSelect={setSelectedTabIndex}
+        selectedTabIndex={0}
       ></Tabstrip>
       <div>{content()}</div>
     </div>

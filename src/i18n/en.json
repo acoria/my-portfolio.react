@@ -9,6 +9,34 @@
         "headline_3": "...a problem solver",
         "portraitImageDescription": "Portrait of me"
     },
+    "general": {
+        "months": {
+            "january": "January",
+            "januaryShort": "Jan.",
+            "february": "February",
+            "februaryShort": "Feb.",
+            "march": "March",
+            "marchShort": "Mar.",
+            "april": "April",
+            "aprilShort": "Apr.",
+            "may": "May",
+            "mayShort": "May",
+            "june": "June",
+            "juneShort": "June",
+            "july": "July",
+            "julyShort": "July",
+            "august": "August",
+            "augustShort": "Aug.",
+            "september": "September",
+            "septemberShort": "Sept.",
+            "october": "October",
+            "octoberShort": "Oct.",
+            "november": "November",
+            "novemberShort": "Nov.",
+            "december": "December",
+            "decemberShort": "Dec."
+        }
+    },
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"

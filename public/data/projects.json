@@ -1,19 +1,22 @@
 [
     {
         "id": "1",
-        "title": "Web Customer-Self-Service for SAP software download",
-        "myRoles": [
-            "Architect",
-            "UX Designer",
-            "Requirements engineer"
-        ],
+        "title": "Web Customer-Self-Service-Portal for SAP software downloads",
         "challenge": "Customized SAP software is not easily installed.  Conflicting software has to be found before the installation. Helping the user by making him aware and guiding him via the software through conflicts to find a solution instead of opening a  support ticket.",
         "customer": {
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
             "branch": "Internet and information technology",
             "employeeSize": "1000-5000"
         },
-        "goal": "Developing and publishing a self-service-web portal for project-specific software for end customers to simplify migration project setups",
+        "goal": "Developing and publishing an application for project-specific software for end customers to simplify migration project setups",
+        "imageUrls": [
+            "/assets/projects/SWPO.png"
+        ],
+        "myRoles": [
+            "Architect",
+            "UX Designer",
+            "Requirements engineer"
+        ],
         "requirements": [
             "REST interface to ERP system to provide software based on accounting projects followed by invoice triggering",
             "Automatic user creation and management with authentication and authorization",
