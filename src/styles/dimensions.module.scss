@@ -1,0 +1,10 @@
+$padding-page: 2rem;
+$medium-screen-width-number: 38;
+$large-screen-width-number: 60;
+$medium-screen-width: $medium-screen-width-number+rem;
+$large-screen-width: $large-screen-width-number+rem;
+
+:export {
+    mediumScreenWidth: $medium-screen-width-number;
+    largeScreenWidth: $large-screen-width-number;
+}

@@ -14,7 +14,6 @@ export const Header: React.FC<IHeaderProps> = (props) => {
   useEffect(() => {
     onHeightChange?.(ref.current?.offsetHeight ?? 0);
   }, [width, onHeightChange]);
-
   return (
     <div className={styles.header} ref={ref}>
       <Logo

@@ -1,6 +1,6 @@
 @use '../../styles/mixins.scss';
 @use '../../styles/components.scss' as comp;
-@use '../../styles/dimensions.scss' as dimens;
+@use '../../styles/dimensions.module.scss' as dimens;
 
 $gridSpacing: 2rem;
 

@@ -1,9 +1,12 @@
-@use '../../../styles/dimensions.scss' as dimens;
+@use '../../../styles/dimensions.module.scss' as dimens;
+@use '../../../styles/mixins.scss';
 
 .projectsWrapper {
     position: relative;
 }
 
 .projects {
-    padding: 0 dimens.$padding-page;
+    @include mixins.medium-screen {
+        padding: 0 dimens.$padding-page;
+    }
 }

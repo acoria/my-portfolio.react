@@ -1,6 +1,8 @@
 import { Carousel } from "../../../components/carousel/Carousel";
 import { DateTime } from "../../../core/services/date/DateTime";
 import { useRenderMonth } from "../../../hooks/useRenderMonth";
+import { useScreenSize } from "../../../hooks/useScreenSize";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails";
 import { IProjectProps } from "./IProjectProps";
 import styles from "./Project.module.scss";
@@ -13,6 +15,11 @@ export const Project: React.FC<IProjectProps> = (props) => {
   const endMonth = renderMonth(DateTime.toMonth(props.project.end), true);
   const endYear = DateTime.toYear(props.project.end);
 
+  const { isSmallScreen } = useScreenSize();
+  const { width } = useWindowDimensions();
+
+  const carouselWidth = !isSmallScreen ? 50 : (width / 16) * 0.6;
+
   return (
     <div className={styles.project}>
       <div className={styles.header}>
@@ -23,7 +30,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <p className={styles.goal}>{props.project.goal}</p>
       <div className={styles.images}>
-        <Carousel widthInRem={50}>
+        <Carousel widthInRem={carouselWidth}>
           <img
             src={props.project.imageUrls[0]}
             alt="Blurred screenshot of app main page"
@@ -41,10 +48,13 @@ export const Project: React.FC<IProjectProps> = (props) => {
           />
         </Carousel>
       </div>
-      <ProjectDetails
-        project={props.project}
-        className={styles.projectDetails}
-      />
+      {/* hide for now */}
+      {!isSmallScreen && (
+        <ProjectDetails
+          project={props.project}
+          className={styles.projectDetails}
+        />
+      )}
     </div>
   );
 };
