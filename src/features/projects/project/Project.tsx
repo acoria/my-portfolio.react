@@ -30,7 +30,12 @@ export const Project: React.FC<IProjectProps> = (props) => {
             className={styles.image}
           />
           <img
-            src={props.project.imageUrls[0]}
+            src={props.project.imageUrls[1]}
+            alt="Blurred screenshot of app main page"
+            className={styles.image}
+          />
+          <img
+            src={props.project.imageUrls[2]}
             alt="Blurred screenshot of app main page"
             className={styles.image}
           />

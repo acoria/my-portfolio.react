@@ -2,25 +2,25 @@
 
 .carousel {
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.carouselContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carouselItemsContainer {
+    display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    // gap: 1.5rem;
 }
 
-.carousel::-webkit-scrollbar {
-    height: 1rem;
-}
-
-.carousel::-webkit-scrollbar-track {
-    background: colors.$color-carousel-scrollbar-track;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-    background: colors.$color-carousel-scrollbar-thumb;
-}
-
-.carousel::-webkit-scrollbar-thumb:hover {
-    background: colors.$color-carousel-scrollbar-thumb-hover;
+.carouselItemsContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .carouselItem {
@@ -28,4 +28,37 @@
     box-sizing: border-box;
     flex-shrink: 0;
     // padding: 1.5rem 0;
+}
+
+.chevron {
+    width: 4rem;
+    height: auto;
+    fill: colors.$color-carousel-chevron;
+
+    &:hover {
+        fill: colors.$color-carousel-chevron-hover;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.navButton {
+    width: 1rem;
+    height: 1rem;
+    background-color: colors.$color-carousel-nav-button;
+    outline: 1px solid colors.$color-carousel-nav-button-outline;
+    border: none;
+
+    &:hover {
+        background-color: colors.$color-carousel-nav-button-hover;
+    }
+}
+
+.navButtonActive {
+    background-color: colors.$color-carousel-nav-button-hover;
 }
