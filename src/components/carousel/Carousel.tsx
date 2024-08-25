@@ -1,4 +1,10 @@
-import { CSSProperties, ReactElement, useRef, useState } from "react";
+import {
+  CSSProperties,
+  ReactElement,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
 import { ReactComponent as ChevronLeft } from "../../assets/chevron_left.svg";
 import { ReactComponent as ChevronRight } from "../../assets/chevron_right.svg";
 import styles from "./Carousel.module.scss";
@@ -9,6 +15,9 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   const widthStyle: CSSProperties = { width: `${props.widthInRem}rem` };
   const ref = useRef<HTMLDivElement>(null);
   const [visibleItemPosition, setVisibleItemPosition] = useState(0);
+  const numberOfItems = Array.isArray(props.children)
+    ? props.children.length
+    : 1;
 
   const carouselItems = (): ReactElement | ReactElement[] => {
     if (props.children === undefined) return <></>;
@@ -36,6 +45,11 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
             styles.navButton,
             index === visibleItemPosition ? styles.navButtonActive : ""
           )}
+          onClick={() =>
+            setVisibleItemPosition((previous) => {
+              return scrollToPosition(previous, index);
+            })
+          }
         />
       ));
     } else {
@@ -45,23 +59,52 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
     }
   };
 
-  const scrollToPosition = (position: number) => {
-    if (ref.current !== null) {
-      ref.current.scrollBy({ left: position, behavior: "smooth" });
-    }
-  };
+  const scrollToPosition = useCallback(
+    (fromPosition: number, toPosition: number): number => {
+      const widthOfItem = props.widthInRem * 16;
+      let newPosition = 0;
+      if (ref.current !== null) {
+        let positionExceedsLength = false;
 
-  //TODO: start from the other side again if it exceeds the outermost
+        //start from the other side again if it exceeds the outermost boundary
+        if (toPosition >= numberOfItems) {
+          positionExceedsLength = true;
+          newPosition = 0;
+        } else if (toPosition < 0) {
+          positionExceedsLength = true;
+          newPosition = numberOfItems - 1;
+        } else {
+          newPosition = toPosition;
+        }
+
+        let distance: number;
+        if (positionExceedsLength) {
+          distance = widthOfItem * numberOfItems;
+          if (fromPosition !== 0) {
+            distance = distance * -1;
+          }
+        } else {
+          distance = (newPosition - fromPosition) * widthOfItem;
+        }
+
+        ref.current.scrollBy({
+          left: distance,
+          behavior: "smooth",
+        });
+      }
+      return newPosition;
+    },
+    [numberOfItems, props.widthInRem]
+  );
+
   const triggerMoveRight = () =>
     setVisibleItemPosition((previous) => {
-      scrollToPosition(1);
-      return previous + 1;
+      return scrollToPosition(previous, previous + 1);
     });
 
   const triggerMoveLeft = () =>
     setVisibleItemPosition((previous) => {
-      scrollToPosition(-1);
-      return previous - 1;
+      return scrollToPosition(previous, previous - 1);
     });
 
   return (
