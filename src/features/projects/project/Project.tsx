@@ -1,3 +1,4 @@
+import { Carousel } from "../../../components/carousel/Carousel";
 import { DateTime } from "../../../core/services/date/DateTime";
 import { useRenderMonth } from "../../../hooks/useRenderMonth";
 import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails";
@@ -22,11 +23,18 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <p className={styles.goal}>{props.project.goal}</p>
       <div className={styles.images}>
-        <img
-          src={props.project.imageUrls[0]}
-          alt="Blurred screenshot of app main page"
-          className={styles.image}
-        />
+        <Carousel widthInRem={50}>
+          <img
+            src={props.project.imageUrls[0]}
+            alt="Blurred screenshot of app main page"
+            className={styles.image}
+          />
+          <img
+            src={props.project.imageUrls[0]}
+            alt="Blurred screenshot of app main page"
+            className={styles.image}
+          />
+        </Carousel>
       </div>
       <ProjectDetails
         project={props.project}

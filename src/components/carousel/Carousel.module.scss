@@ -1,0 +1,31 @@
+@use '../../styles/colors.module.scss';
+
+.carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 1rem;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: colors.$color-carousel-scrollbar-track;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: colors.$color-carousel-scrollbar-thumb;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: colors.$color-carousel-scrollbar-thumb-hover;
+}
+
+.carouselItem {
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    // padding: 1.5rem 0;
+}

@@ -6,7 +6,6 @@
     flex-direction: column;
     row-gap: 1rem;
     @include mixins.glassy;
-    height: 100vh;
 }
 
 .header {
@@ -33,6 +32,7 @@
 .images{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .image{
