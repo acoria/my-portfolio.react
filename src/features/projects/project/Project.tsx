@@ -18,7 +18,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
   const { isSmallScreen } = useScreenSize();
   const { width } = useWindowDimensions();
 
-  const carouselWidth = !isSmallScreen ? 50 : (width / 16) * 0.6;
+  const carouselWidth = !isSmallScreen ? 50 : (width / 16) * 0.85;
 
   return (
     <div className={styles.project}>
@@ -30,7 +30,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <p className={styles.goal}>{props.project.goal}</p>
       <div className={styles.images}>
-        <Carousel widthInRem={carouselWidth}>
+        <Carousel widthInRem={carouselWidth} hideCarets={isSmallScreen}>
           <img
             src={props.project.imageUrls[0]}
             alt="Blurred screenshot of app main page"

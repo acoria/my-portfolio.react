@@ -110,7 +110,9 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselContent}>
-        <ChevronLeft className={styles.chevron} onClick={triggerMoveLeft} />
+        {!props.hideCarets && (
+          <ChevronLeft className={styles.chevron} onClick={triggerMoveLeft} />
+        )}
         <div
           className={styles.carouselItemsContainer}
           style={widthStyle}
@@ -118,7 +120,9 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         >
           {carouselItems()}
         </div>
-        <ChevronRight className={styles.chevron} onClick={triggerMoveRight} />
+        {!props.hideCarets && (
+          <ChevronRight className={styles.chevron} onClick={triggerMoveRight} />
+        )}
       </div>
       <div className={styles.navigation}>{navButtons()}</div>
     </div>

@@ -40,12 +40,8 @@
 }
 
 .image {
-    width: 15rem;
+    width: 100%;
     height: auto;
-
-    @include mixins.medium-screen {
-        width: 50rem;
-    }
 }
 
 .projectDetails {
