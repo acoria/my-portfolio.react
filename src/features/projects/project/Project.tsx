@@ -27,7 +27,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <p className={styles.goal}>{props.project.goal}</p>
       <div className={styles.images}>
-        <Carousel widthInRem={50}>
+        <Carousel widthInRem={40}>
           <img
             src={props.project.imageUrls[0]}
             alt="Blurred screenshot of app main page"
