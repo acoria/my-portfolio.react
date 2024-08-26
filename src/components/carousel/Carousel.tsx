@@ -10,6 +10,7 @@ import { ReactComponent as ChevronRight } from "../../assets/chevron_right.svg";
 import styles from "./Carousel.module.scss";
 import { ICarouselProps } from "./ICarouselProps";
 import { style } from "../../core/utils/style";
+import { CarouselItem } from "./carouselItem/CarouselItem";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
   const widthStyle: CSSProperties = { width: `${props.widthInRem}rem` };
@@ -23,15 +24,18 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
     if (props.children === undefined) return <></>;
     if (Array.isArray(props.children)) {
       return props.children.map((child, index) => (
-        <div key={index} className={styles.carouselItem} style={widthStyle}>
+        <CarouselItem
+          widthStyle={widthStyle}
+          onMovedIntoView={() => {
+            setVisibleItemPosition(index);
+          }}
+        >
           {child}
-        </div>
+        </CarouselItem>
       ));
     } else {
       return (
-        <div className={styles.carouselItem} style={widthStyle}>
-          {props.children}
-        </div>
+        <CarouselItem widthStyle={widthStyle}>{props.children}</CarouselItem>
       );
     }
   };
