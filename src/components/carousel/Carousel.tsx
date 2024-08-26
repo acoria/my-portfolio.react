@@ -11,14 +11,19 @@ import styles from "./Carousel.module.scss";
 import { ICarouselProps } from "./ICarouselProps";
 import { style } from "../../core/utils/style";
 import { CarouselItem } from "./carouselItem/CarouselItem";
+import { useScreenSize } from "../../hooks/useScreenSize";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
-  const widthStyle: CSSProperties = { width: `${props.widthInRem}rem` };
   const ref = useRef<HTMLDivElement>(null);
   const [visibleItemPosition, setVisibleItemPosition] = useState(0);
   const numberOfItems = Array.isArray(props.children)
     ? props.children.length
     : 1;
+  const { isSmallScreen } = useScreenSize();
+  const { width } = useWindowDimensions();
+  const carouselWidth = !isSmallScreen ? props.widthInRem : (width / 16) * 0.85;
+  const widthStyle: CSSProperties = { width: `${carouselWidth}rem` };
 
   const carouselItems = (): ReactElement | ReactElement[] => {
     if (props.children === undefined) return <></>;
@@ -27,7 +32,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         <CarouselItem
           widthStyle={widthStyle}
           onMovedIntoView={() => {
-            setVisibleItemPosition(index);
+            isSmallScreen && setVisibleItemPosition(index);
           }}
         >
           {child}
@@ -114,7 +119,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselContent}>
-        {!props.hideCarets && (
+        {!isSmallScreen && (
           <ChevronLeft className={styles.chevron} onClick={triggerMoveLeft} />
         )}
         <div
@@ -124,7 +129,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         >
           {carouselItems()}
         </div>
-        {!props.hideCarets && (
+        {!isSmallScreen && (
           <ChevronRight className={styles.chevron} onClick={triggerMoveRight} />
         )}
       </div>
