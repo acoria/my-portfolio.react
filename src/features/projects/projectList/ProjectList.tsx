@@ -21,7 +21,10 @@ export const ProjectList: React.FC = () => {
       <Background />
       <div className={styles.projects}>
         {projects.map((project) => (
-          <Project project={project} key={project.id} />
+          <>
+            <Project project={project} key={project.id} />
+            <Project project={project} key={project.id} />
+          </>
         ))}
       </div>
     </div>
