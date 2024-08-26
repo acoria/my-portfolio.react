@@ -71,7 +71,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
 
   const scrollToPosition = useCallback(
     (fromPosition: number, toPosition: number): number => {
-      const widthOfItem = props.widthInRem * 16;
+      const widthOfItem = carouselWidth * 16;
       let newPosition = 0;
       if (ref.current !== null) {
         let positionExceedsLength = false;
@@ -104,7 +104,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
       }
       return newPosition;
     },
-    [numberOfItems, props.widthInRem]
+    [carouselWidth, numberOfItems]
   );
 
   const triggerMoveRight = () =>

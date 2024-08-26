@@ -10,9 +10,9 @@
         },
         "goal": "Developing and publishing an application for project-specific software for end customers to simplify migration project setups",
         "imageUrls": [
-            "/assets/projects/SWPO.png",
-            "/assets/projects/pic2.png",
-            "/assets/projects/pic3.png"
+            "./assets/projects/SWPO.png",
+            "./assets/projects/pic2.png",
+            "./assets/projects/pic3.png"
         ],
         "myRoles": [
             "Architect",

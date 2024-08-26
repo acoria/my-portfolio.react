@@ -17,6 +17,7 @@
     flex-direction: column-reverse;
     font-family: "Antonio";
     row-gap: 1rem;
+    align-items: flex-start;
 
     @include mixins.medium-screen {
         flex-direction: row;
@@ -30,6 +31,7 @@
 
     @include mixins.medium-screen {
         font-size: xx-large;
+        margin-top: 1rem;
     }
 }
 
