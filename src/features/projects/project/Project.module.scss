@@ -14,23 +14,44 @@
 
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     font-family: "Antonio";
+    row-gap: 1rem;
+
+    @include mixins.medium-screen {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .title {
     margin: 0;
+    font-size: large;
+
+    @include mixins.medium-screen {
+        font-size: xx-large;
+    }
 }
 
 .date {
-    font-size: x-large;
+    font-size: medium;
     font-weight: 600;
+    align-self: flex-end;
+    
+
+    @include mixins.medium-screen {
+        font-size: x-large;
+        align-self: auto;
+    }
 }
 
 .goal {
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
+    
+    @include mixins.medium-screen{
+        font-size: large;
+    }
 }
 
 .images {

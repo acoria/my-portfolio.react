@@ -20,9 +20,10 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   const numberOfItems = Array.isArray(props.children)
     ? props.children.length
     : 1;
-  const { isSmallScreen } = useScreenSize();
+  const { isSmallScreen, isMediumScreen } = useScreenSize();
+  const isMobileView = isSmallScreen || isMediumScreen;
   const { width } = useWindowDimensions();
-  const carouselWidth = !isSmallScreen ? props.widthInRem : (width / 16) * 0.85;
+  const carouselWidth = isMobileView ? (width / 16) * 0.85 : props.widthInRem;
   const widthStyle: CSSProperties = { width: `${carouselWidth}rem` };
 
   const carouselItems = (): ReactElement | ReactElement[] => {
@@ -32,7 +33,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         <CarouselItem
           widthStyle={widthStyle}
           onMovedIntoView={() => {
-            isSmallScreen && setVisibleItemPosition(index);
+            isMobileView && setVisibleItemPosition(index);
           }}
         >
           {child}
@@ -119,7 +120,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselContent}>
-        {!isSmallScreen && (
+        {!isMobileView && (
           <ChevronLeft className={styles.chevron} onClick={triggerMoveLeft} />
         )}
         <div
@@ -129,7 +130,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         >
           {carouselItems()}
         </div>
-        {!isSmallScreen && (
+        {!isMobileView && (
           <ChevronRight className={styles.chevron} onClick={triggerMoveRight} />
         )}
       </div>
