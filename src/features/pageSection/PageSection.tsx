@@ -1,23 +1,26 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useId } from "react";
+import { useInView } from "react-intersection-observer";
 import { IPageSectionProps } from "./IPageSectionProps";
-import { useElementMovedIntoViewportObserver } from "../../hooks/useElementMovedIntoViewportObserver";
 
 export const PageSection: React.FC<IPageSectionProps> = (props) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { isVisible } = useElementMovedIntoViewportObserver(ref, "50px", 0.2);
+  const { ref, inView } = useInView({ threshold: 0.2, rootMargin: "50px" });
   const { onChangeViewportVisibility } = { ...props };
+  const id = useId();
 
   useEffect(() => {
-    onChangeViewportVisibility?.(isVisible);
-  }, [isVisible, onChangeViewportVisibility]);
+    onChangeViewportVisibility?.(inView);
+  }, [inView, onChangeViewportVisibility]);
 
   useEffect(() => {
     props.scrollIntoViewSignal !== undefined &&
-      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [props.scrollIntoViewSignal]);
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [id, props.scrollIntoViewSignal]);
 
   return (
     <div
+      id={id}
       ref={ref}
       style={{ scrollMarginTop: props.topOffsetInPixel }}
       className={props.className}
