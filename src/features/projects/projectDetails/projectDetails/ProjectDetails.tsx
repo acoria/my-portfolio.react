@@ -31,14 +31,14 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
 
   return (
     <div className={style(styles.projectDetails, props.className)}>
-      <Tabstrip
-        captions={tabNames()}
-        className={styles.tabstrip}
-        darkMode
-        onTabSelect={setSelectedTabIndex}
-        selectedTabIndex={0}
-      ></Tabstrip>
-      <div>{content()}</div>
+        <Tabstrip
+          captions={tabNames()}
+          className={styles.tabstrip}
+          darkMode
+          onTabSelect={setSelectedTabIndex}
+          selectedTabIndex={0}
+        />
+      <div className={styles.tabstripContent}>{content()}</div>
     </div>
   );
 };

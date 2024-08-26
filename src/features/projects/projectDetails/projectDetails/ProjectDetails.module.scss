@@ -1,3 +1,17 @@
+.projectDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .tabstrip {
-    justify-content: flex-start;
+    width: 50rem;
+    justify-content: space-between;
+    // justify-content: flex-start;
+}
+
+.tabstripContent{
+    width: 50rem;
 }
