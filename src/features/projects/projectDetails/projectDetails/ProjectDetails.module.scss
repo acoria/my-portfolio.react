@@ -5,11 +5,16 @@
 }
 
 .tabstrip {
-    justify-content: center;
-    width: 100%;
+    // width: 100%;
+    // justify-content: center;
+    justify-content: space-between;
+    width: 40rem;
 }
 
 .tabstripContent {
-    align-self: flex-start;
-    padding: 1rem;
+    width: 40rem;
+    align-self: center;
+    // align-self: flex-start;
+    // padding: 2rem;
+    padding-top: 1rem;
 }

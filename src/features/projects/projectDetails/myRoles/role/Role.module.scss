@@ -1,0 +1,14 @@
+@use '../../../../../styles/colors.module.scss';
+@use '../../../../../styles/components.scss';
+
+.role {
+    display: flex;
+    flex-direction: column;
+    color: colors.$color-font;
+}
+
+.title {
+    @extend .projectDetailsTitle;
+    margin-top: 0;
+    // align-self: center;
+}

@@ -15,9 +15,50 @@
             "./assets/projects/pic3.png"
         ],
         "myRoles": [
-            "Architect",
-            "UX Designer",
-            "Requirements engineer"
+            {
+                "title": "Project",
+                "subRoles": [
+                    {
+                        "title": "Communication & Coordination"
+                    },
+                    {
+                        "title": "Planning and Estimation"
+                    }
+                ]
+            },
+            {
+                "title": "Development",
+                "subRoles": [
+                    {
+                        "title": "Software Architecture"
+                    },
+                    {
+                        "title": "Fullstack Development"
+                    }
+                ]
+            },
+            {
+                "title": "Usability",
+                "subRoles": [
+                    {
+                        "title": "UX Design"
+                    },
+                    {
+                        "title": "Usability Tests"
+                    }
+                ]
+            },
+            {
+                "title": "Organization",
+                "subRoles": [
+                    {
+                        "title": "Product Backlog"
+                    },
+                    {
+                        "title": "Review meeting moderation"
+                    }
+                ]
+            }
         ],
         "requirements": [
             "REST interface to ERP system to provide software based on accounting projects followed by invoice triggering",

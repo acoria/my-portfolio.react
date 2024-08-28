@@ -7,6 +7,8 @@ import styles from "./ProjectDetails.module.scss";
 import { Challenge } from "../challenge/Challenge";
 import { style } from "../../../../core/utils/style";
 import { Customer } from "../customer/Customer";
+import { MyRoles } from "../myRoles/MyRoles";
+import { IRole } from "../../../../shared/model/IRole";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -27,6 +29,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
         return <Challenge text={props.project.challenge} />;
       case 2:
         return <Customer customer={props.project.customer} />;
+      case 3:
+        return <MyRoles myRoles={props.project.myRoles as any as IRole[]} />;
       default:
         return <></>;
     }
