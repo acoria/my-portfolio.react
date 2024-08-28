@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "title": "Web Customer-Self-Service-Portal for SAP software downloads",
+        "title": "Web Customer-Self-Service-Portal for SAP software download",
         "challenge": "Customized SAP software is not easily installed.  Conflicting software has to be found before the installation. Helping the user by making him aware and guiding him via the software through conflicts to find a solution instead of opening a  support ticket.",
         "customer": {
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",

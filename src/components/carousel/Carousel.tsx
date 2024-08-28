@@ -31,6 +31,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
     if (Array.isArray(props.children)) {
       return props.children.map((child, index) => (
         <CarouselItem
+          key={index}
           widthStyle={widthStyle}
           onMovedIntoView={() => {
             isMobileView && setVisibleItemPosition(index);

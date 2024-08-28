@@ -2,7 +2,6 @@ import { Carousel } from "../../../components/carousel/Carousel";
 import { DateTime } from "../../../core/services/date/DateTime";
 import { useRenderMonth } from "../../../hooks/useRenderMonth";
 import { useScreenSize } from "../../../hooks/useScreenSize";
-import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails";
 import { IProjectProps } from "./IProjectProps";
 import styles from "./Project.module.scss";

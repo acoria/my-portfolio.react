@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { ProjectAPI } from "../../../api/ProjectRepository";
 import { request } from "../../../core/utils/request";
 import { IProject } from "../../../shared/model/IProject";
@@ -21,10 +21,10 @@ export const ProjectList: React.FC = () => {
       <Background />
       <div className={styles.projects}>
         {projects.map((project) => (
-          <>
+          <Fragment key={project.id}>
             <Project project={project} key={project.id} />
-            <Project project={project} key={project.id} />
-          </>
+            <Project project={project} key={2} />
+          </Fragment>
         ))}
       </div>
     </div>
