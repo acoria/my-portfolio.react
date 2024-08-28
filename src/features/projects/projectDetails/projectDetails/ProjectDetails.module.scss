@@ -4,18 +4,12 @@
     align-items: center;
 }
 
-
 .tabstrip {
-    // width: 100%;
-    width: 90%;
-    // width: 60rem;
-    // justify-content: space-around;
-    // justify-content: space-between;
     justify-content: center;
-    // justify-content: flex-start;
+    width: 100%;
 }
 
-.tabstripContent{
-    // width: 60rem;
-    width: 90%;
+.tabstripContent {
+    align-self: flex-start;
+    padding: 1rem;
 }

@@ -6,6 +6,7 @@ import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
 import { Challenge } from "../challenge/Challenge";
 import { style } from "../../../../core/utils/style";
+import { Customer } from "../customer/Customer";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -24,6 +25,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
     switch (selectedTabIndex) {
       case 0:
         return <Challenge text={props.project.challenge} />;
+      case 2:
+        return <Customer customer={props.project.customer} />;
       default:
         return <></>;
     }
@@ -31,13 +34,13 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
 
   return (
     <div className={style(styles.projectDetails, props.className)}>
-        <Tabstrip
-          captions={tabNames()}
-          className={styles.tabstrip}
-          darkMode
-          onTabSelect={setSelectedTabIndex}
-          selectedTabIndex={0}
-        />
+      <Tabstrip
+        captions={tabNames()}
+        className={styles.tabstrip}
+        darkMode
+        onTabSelect={setSelectedTabIndex}
+        selectedTabIndex={0}
+      />
       <div className={styles.tabstripContent}>{content()}</div>
     </div>
   );

@@ -1,0 +1,10 @@
+@use '../../../../styles/colors.module.scss';
+
+.customer {
+    color: colors.$color-font;
+}
+
+.name {
+    font-size: medium;
+    margin-bottom: 0.3rem;
+}
