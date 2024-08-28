@@ -108,5 +108,11 @@
             "tools": "Tools",
             "project_management": "Project management"
         }
+    },
+    "testimonials": {
+        "title": "Testimonials",
+        "texts": {
+            "sapSaschaStephan": "Frau T. hat uns als Developer und UX Designer in unserem Software Projekt über Jahre mit ihrem Fachwissen und ihren Fähigkeiten unterstützt."
+        }
     }
 }

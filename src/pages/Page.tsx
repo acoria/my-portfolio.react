@@ -15,6 +15,7 @@ import { Technology } from "../types/Technology";
 import { Skills } from "../features/skills/Skills";
 import { Project } from "../features/projects/project/Project";
 import { ProjectList } from "../features/projects/projectList/ProjectList";
+import { Testimonials } from "../features/testimonals/Testimonials";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -23,6 +24,7 @@ export const Page: React.FC = () => {
   const [scrollToProjectsSignal, triggerScrollToProjects] = useSignal();
   const [scrollToSkillsSignal, triggerScrollToSkills] = useSignal();
   const [scrollToTechnologiesSignal, triggerScrollToTechnologies] = useSignal();
+  const [scrollToTestimonialsSignal, triggerScrollToTestimonials] = useSignal();
   const [headerHeight, setHeaderHeight] = useState<number | undefined>(
     undefined
   );
@@ -64,6 +66,12 @@ export const Page: React.FC = () => {
       scrollToSignal: scrollToCVSignal,
       signalTrigger: triggerScrollToCV,
       component: <CV />,
+    },
+    {
+      caption: t(texts.testimonials.title),
+      scrollToSignal: scrollToTestimonialsSignal,
+      signalTrigger: triggerScrollToTestimonials,
+      component: <Testimonials />,
     },
   ];
 

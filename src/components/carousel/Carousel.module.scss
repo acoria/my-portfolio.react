@@ -1,4 +1,5 @@
 @use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 .carousel {
     display: flex;
@@ -16,7 +17,6 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    // gap: 1.5rem;
 }
 
 .carouselItemsContainer::-webkit-scrollbar {
@@ -51,8 +51,10 @@
     padding: 0;
 
     &:hover {
-        background-color: colors.$color-carousel-nav-button-hover;
-        outline: none;
+        @include mixins.medium-screen {
+            background-color: colors.$color-carousel-nav-button-hover;
+            outline: none;
+        }
     }
 }
 
