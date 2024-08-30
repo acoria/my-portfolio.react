@@ -2,7 +2,15 @@
 @use '../../../../styles/components.scss';
 
 .customer {
+    display: flex;
+    flex-direction: row;
     color: colors.$color-font;
+    column-gap: 1rem;
+}
+
+.logo {
+    width: 2rem;
+    margin-left: 1rem;
 }
 
 .name {
