@@ -18,6 +18,15 @@
     margin-bottom: 0.3rem;
 }
 
+.detailedEntityIconListTitle {
+    @extend .projectDetailsTitle
+}
+
+.detailedEntityIconListIcon {
+    width: 3rem;
+    height: auto;
+}
+
 @mixin tabstrip-underline($startingColor: colors.$color-tabstrip-underline) {
     content: "";
     position: absolute;
