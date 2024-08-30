@@ -1,5 +1,5 @@
 import { Technology } from "../../types/Technology";
-import { TechnologyType } from "../../types/TechnologyTpe";
+import { TechnologyType } from "../../types/TechnologyType";
 
 export interface ITechnology {
   type: TechnologyType;

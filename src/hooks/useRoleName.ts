@@ -17,9 +17,9 @@ export const useRoleName = (role: Role): string => {
       case Role.USABILITY:
         return t(texts.roles.usability);
       default:
-        error(`Missing role ${role}. This role is not mapped to a name.`);
+        error(`Missing role "${role}". This role is not mapped to a name.`);
     }
-    throw Error(`Missing role ${role}. This role is not mapped to a name.`);
+    throw Error(`Missing role "${role}". This role is not mapped to a name.`);
   };
 
   return roleName();

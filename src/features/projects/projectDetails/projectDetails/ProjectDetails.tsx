@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Tabstrip } from "../../../../components/tabstrip/Tabstrip";
+import { style } from "../../../../core/utils/style";
 import { texts } from "../../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../../hooks/useTranslation/useTranslation";
-import { IProjectDetailsProps } from "./IProjectDetailsProps";
-import styles from "./ProjectDetails.module.scss";
+import { IRole } from "../../../../shared/model/IRole";
 import { Challenge } from "../challenge/Challenge";
-import { style } from "../../../../core/utils/style";
 import { Customer } from "../customer/Customer";
 import { MyRoles } from "../myRoles/MyRoles";
-import { IRole } from "../../../../shared/model/IRole";
 import { Requirements } from "../requirements/Requirements";
+import { TechStack } from "../techStack/TechStack";
+import { IProjectDetailsProps } from "./IProjectDetailsProps";
+import styles from "./ProjectDetails.module.scss";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -34,6 +35,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
         return <Customer customer={props.project.customer} />;
       case 3:
         return <MyRoles myRoles={props.project.myRoles as any as IRole[]} />;
+      case 4:
+        return <TechStack technologies={props.project.techStack} />;
       default:
         return <></>;
     }

@@ -18,7 +18,7 @@ export const RoleIcon: React.FC<IRoleIconProps> = (props) => {
       case Role.USABILITY:
         return <Usability className={props.className} />;
       default:
-        error(`Missing icon for role ${props.role}.`);
+        error(`Missing icon for role "${props.role}".`);
     }
   };
 

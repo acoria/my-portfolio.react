@@ -62,7 +62,7 @@
         ],
         "techStack": [
             {
-                "type": "PROGRAMMING_LANGUAGE",
+                "type": "PROGRAMMING_LANGUAGES",
                 "technologies": [
                     "ABAP",
                     "JAVA",
