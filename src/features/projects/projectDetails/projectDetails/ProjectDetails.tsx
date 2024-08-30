@@ -9,6 +9,7 @@ import { style } from "../../../../core/utils/style";
 import { Customer } from "../customer/Customer";
 import { MyRoles } from "../myRoles/MyRoles";
 import { IRole } from "../../../../shared/model/IRole";
+import { Requirements } from "../requirements/Requirements";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -27,6 +28,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
     switch (selectedTabIndex) {
       case 0:
         return <Challenge text={props.project.challenge} />;
+      case 1:
+        return <Requirements requirements={props.project.requirements} />;
       case 2:
         return <Customer customer={props.project.customer} />;
       case 3:
