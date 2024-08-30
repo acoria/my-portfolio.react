@@ -6,7 +6,7 @@ export const Customer: React.FC<ICustomerProps> = (props) => {
     <div className={styles.customer}>
       {props.customer.logoUrl && (
         <img
-          alt="company logo"
+          alt={`Company logo from ${props.customer.name}`}
           src={props.customer.logoUrl}
           className={styles.logo}
         />

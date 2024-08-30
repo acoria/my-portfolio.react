@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Web Customer-Self-Service-Portal for SAP software download",
-        "challenge": "Customized SAP software is not easily installed.  Conflicting software has to be found before the installation. Helping the user by making him aware and guiding him via the software through conflicts to find a solution instead of opening a  support ticket.",
+        "challenge": "Installing tailored SAP software can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
         "customer": {
             "logoUrl": "./assets/projects/swpo/snp_logo.svg",
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
