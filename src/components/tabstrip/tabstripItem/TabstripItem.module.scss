@@ -18,6 +18,7 @@ $font-weight-selected: 600;
     font-size: large;
     font-weight: $font-weight;
     text-transform: uppercase;
+    letter-spacing: 0.05rem;
 
     &:hover {
         font-weight: $font-weight-selected;

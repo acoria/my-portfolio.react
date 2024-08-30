@@ -53,6 +53,12 @@
             }
         }
     },
+    "roles": {
+        "development": "Development",
+        "organization": "Organization",
+        "project": "Project",
+        "usability": "Usability"
+    },
     "skills": {
         "title": "Skills",
         "complexBusinessSoftware": {

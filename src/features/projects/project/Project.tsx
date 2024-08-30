@@ -45,12 +45,12 @@ export const Project: React.FC<IProjectProps> = (props) => {
         </Carousel>
       </div>
       {/* hide for now */}
-      {!isSmallScreen && (
+      {/* {!isSmallScreen && ( */}
         <ProjectDetails
           project={props.project}
           className={styles.projectDetails}
         />
-      )}
+      {/* )} */}
     </div>
   );
 };

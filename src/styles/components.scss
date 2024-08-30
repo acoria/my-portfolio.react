@@ -21,7 +21,8 @@
 @mixin tabstrip-underline($startingColor: colors.$color-tabstrip-underline) {
     content: "";
     position: absolute;
-    background-image: linear-gradient(to right, $startingColor 50%, colors.$color-full-transparent);
+    background-image: linear-gradient(to right, $startingColor 50%, $startingColor);
+    // background-image: linear-gradient(to right, $startingColor 50%, colors.$color-full-transparent);
     bottom: -3px;
     left: 0;
     width: 100%;

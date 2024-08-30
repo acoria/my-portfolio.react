@@ -1,0 +1,22 @@
+<svg width="350" height="240" viewBox="0 0 350 240" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_586_950)">
+        <rect x="108" y="56" width="22" height="86" rx="6" transform="rotate(-90 108 56)" stroke="currentColor" stroke-width="8"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M32 199L32 52C32 50.8954 32.8954 50 34 50L104 50L104 42L34 42C28.4771 42 24 46.4772 24 52L24 199C24 204.523 28.4771 209 34 209L268 209C273.523 209 278 204.523 278 199L278 52C278 46.4772 273.523 42 268 42L198 42L198 50L268 50C269.105 50 270 50.8954 270 52L270 199C270 200.105 269.105 201 268 201L34 201C32.8954 201 32 200.105 32 199Z" fill="currentColor"/>
+        <rect x="47" y="74" width="206" height="113" stroke="currentColor" stroke-width="8"/>
+        <rect x="68" y="94" width="22" height="22" rx="6" stroke="currentColor" stroke-width="8"/>
+        <rect x="68" y="142" width="22" height="22" rx="6" stroke="currentColor" stroke-width="8"/>
+        <path d="M115 95H234" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+        <path d="M115 116H234" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+        <path d="M114 144H233" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+        <path d="M114 164H202" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 53L315 53L315 172L315 182L323 182L323 174L323 53L323 45L315 45L300 45L292 45L292 53L292 174L292 182L300 182L300 174L300 172L300 53Z" fill="currentColor"/>
+        <rect x="302.75" y="33.75" width="9.5" height="7.5" stroke="currentColor" stroke-width="7.5"/>
+        <path d="M307.5 208.852L291.999 182.002L323.002 182.002L307.5 208.852Z" fill="currentColor"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_586_950">
+            <rect width="240" height="350" fill="white" transform="translate(0 240) rotate(-90)"/>
+        </clipPath>
+    </defs>
+</svg>

@@ -16,47 +16,31 @@
         ],
         "myRoles": [
             {
-                "title": "Project",
+                "roleType": "Project",
                 "subRoles": [
-                    {
-                        "title": "Communication & Coordination"
-                    },
-                    {
-                        "title": "Planning and Estimation"
-                    }
+                    "Communication & Coordination",
+                    "Planning and Estimation"
                 ]
             },
             {
-                "title": "Development",
+                "roleType": "Development",
                 "subRoles": [
-                    {
-                        "title": "Software Architecture"
-                    },
-                    {
-                        "title": "Fullstack Development"
-                    }
+                    "Software Architecture",
+                    "Fullstack Development"
                 ]
             },
             {
-                "title": "Usability",
+                "roleType": "Usability",
                 "subRoles": [
-                    {
-                        "title": "UX Design"
-                    },
-                    {
-                        "title": "Usability Tests"
-                    }
+                    "UX Design",
+                    "Usability Tests"
                 ]
             },
             {
-                "title": "Organization",
+                "roleType": "Organization",
                 "subRoles": [
-                    {
-                        "title": "Product Backlog"
-                    },
-                    {
-                        "title": "Review meeting moderation"
-                    }
+                    "Product Backlog",
+                    "Review meeting moderation"
                 ]
             }
         ],

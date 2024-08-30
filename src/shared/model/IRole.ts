@@ -1,4 +1,6 @@
+import { Role } from "../../types/Role";
+
 export interface IRole {
-  title: string;
-  subRoles?: IRole[];
+  roleType: Role;
+  subRoles?: string[];
 }
