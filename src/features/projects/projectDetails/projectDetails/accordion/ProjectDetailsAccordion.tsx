@@ -1,10 +1,8 @@
 import { useId, useState } from "react";
-import { IRole } from "../../../../../shared/model/IRole";
-import { MyRoles } from "../../myRoles/MyRoles";
+import { Requirements } from "../../requirements/Requirements";
 import { IProjectDetailsAccordionProps } from "./IProjectDetailsAccordionProps";
 import styles from "./ProjectDetailsAccordion.module.scss";
 import { ProjectDetailsAccordionItem } from "./item/ProjectDetailsAccordionItem";
-import { Requirements } from "../../requirements/Requirements";
 
 export const ProjectDetailsAccordion: React.FC<
   IProjectDetailsAccordionProps
@@ -16,6 +14,7 @@ export const ProjectDetailsAccordion: React.FC<
   const entries = () => {
     return props.titles.map((title, index) => (
       <ProjectDetailsAccordionItem
+        key={`${radioGroupName}_${index}`}
         title={title}
         radioGroupName={radioGroupName}
         onCheck={() => setCheckedItem(index)}

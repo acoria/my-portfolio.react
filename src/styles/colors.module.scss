@@ -39,7 +39,9 @@ $color-logo: $color-secondary;
 
 $color-role-icon-fill: $color-primary;
 
-$color-project-details-accordion-item-fill: $color-primary;
+$color-project-details-accordion-item-box-shadow: transparentize($color-primary, 0.5);
+$color-project-details-accordion-item-chevron-fill: $color-primary;
+$color-project-details-accordion-item-content-background: $color-primary-lighter;
 
 $color-tabstrip-underline: $color-font-light;
 $color-tabstrip-underline-dark-mode: $color-primary;

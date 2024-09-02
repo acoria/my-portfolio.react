@@ -1,7 +1,7 @@
 @use '../../../../../../styles/colors.module.scss';
 @use '../../../../../../styles/mixins.scss';
 
-.projectDetailsAccordionItem label {
+.title {
     position: relative;
     display: block;
     font-size: medium;
@@ -9,17 +9,17 @@
     @include mixins.glassy(colors.$color-primary)
 }
 
-.projectDetailsAccordionItem label:hover {
+.title:hover {
     background: none;
 }
 
-.projectDetailsAccordionItem input:checked+label:hover,
-.projectDetailsAccordionItem input:checked+div>label {
-    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+.input:checked+label:hover,
+.input:checked+div>label {
+    box-shadow: 0 1px 4px colors.$color-project-details-accordion-item-box-shadow;
     font-weight: 600;
 }
 
-.projectDetailsAccordionItem input {
+.input {
     display: none;
 }
 
@@ -31,26 +31,28 @@
     position: absolute;
     right: 0.5rem;
     top: 30%;
-    fill: colors.$color-project-details-accordion-item-fill;
+    fill: colors.$color-project-details-accordion-item-chevron-fill;
     pointer-events: none;
 }
 
 .chevronUp {
     @extend .chevron;
     transform: rotate(90deg);
+    transition: transform 0.3s;
 }
 
 .chevronDown {
     @extend .chevron;
     transform: rotate(-90deg);
+    transition: transform 0.3s;
 }
 
-.projectDetailsAccordionItem article {
+.content {
     overflow: hidden;
     transition: height 0.3s ease-in-out;
-    @include mixins.glassy(colors.$color-primary-lighter);
+    @include mixins.glassy(colors.$color-project-details-accordion-item-content-background);
 }
 
-.projectDetailsAccordionItem input:checked~article {
+.projectDetailsAccordionItem input:checked~.content {
     transition: height 0.5s ease-in-out;
 }
