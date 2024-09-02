@@ -1,0 +1,56 @@
+@use '../../../../../../styles/colors.module.scss';
+@use '../../../../../../styles/mixins.scss';
+
+.projectDetailsAccordionItem label {
+    position: relative;
+    display: block;
+    font-size: medium;
+    padding: 1rem;
+    @include mixins.glassy(colors.$color-primary)
+}
+
+.projectDetailsAccordionItem label:hover {
+    background: none;
+}
+
+.projectDetailsAccordionItem input:checked+label:hover,
+.projectDetailsAccordionItem input:checked+div>label {
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.projectDetailsAccordionItem input {
+    display: none;
+}
+
+.item {
+    position: relative;
+}
+
+.chevron {
+    position: absolute;
+    right: 0.5rem;
+    top: 30%;
+    fill: colors.$color-project-details-accordion-item-fill;
+    pointer-events: none;
+}
+
+.chevronUp {
+    @extend .chevron;
+    transform: rotate(90deg);
+}
+
+.chevronDown {
+    @extend .chevron;
+    transform: rotate(-90deg);
+}
+
+.projectDetailsAccordionItem article {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    @include mixins.glassy(colors.$color-primary-lighter);
+}
+
+.projectDetailsAccordionItem input:checked~article {
+    transition: height 0.5s ease-in-out;
+}
