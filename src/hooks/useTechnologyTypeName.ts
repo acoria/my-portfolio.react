@@ -3,12 +3,12 @@ import { TechnologyType } from "../types/TechnologyType";
 import { texts } from "./useTranslation/texts";
 import { useTranslation } from "./useTranslation/useTranslation";
 
-export const useTechnologyTypeName = (
+export const useTechnologyTypeName = (): ((
   technologyType: TechnologyType
-): string => {
+) => string) => {
   const { t } = useTranslation();
 
-  const technologyTypeName = (): string => {
+  const convertTechnologyTypeName = (technologyType: TechnologyType): string => {
     switch (technologyType) {
       case TechnologyType.COMMUNICATION_FRAMEWORKS:
         return t(texts.technologies.types.communication_frameworks);
@@ -34,5 +34,5 @@ export const useTechnologyTypeName = (
     );
   };
 
-  return technologyTypeName();
+  return convertTechnologyTypeName;
 };

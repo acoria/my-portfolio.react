@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Tabstrip } from "../../../../components/tabstrip/Tabstrip";
 import { style } from "../../../../core/utils/style";
+import { useScreenSize } from "../../../../hooks/useScreenSize";
 import { texts } from "../../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../../hooks/useTranslation/useTranslation";
 import { IRole } from "../../../../shared/model/IRole";
@@ -11,9 +12,11 @@ import { Requirements } from "../requirements/Requirements";
 import { TechStack } from "../techStack/TechStack";
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
+import { ProjectDetailsAccordion } from "./accordion/ProjectDetailsAccordion";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
+  const { isLargeScreen } = useScreenSize();
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
@@ -44,14 +47,21 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
 
   return (
     <div className={style(styles.projectDetails, props.className)}>
-      <Tabstrip
-        captions={tabNames()}
-        className={styles.tabstrip}
-        darkMode
-        onTabSelect={setSelectedTabIndex}
-        selectedTabIndex={0}
-      />
-      <div className={styles.tabstripContent}>{content()}</div>
+      {isLargeScreen && (
+        <Tabstrip
+          captions={tabNames()}
+          className={styles.tabstrip}
+          darkMode
+          onTabSelect={setSelectedTabIndex}
+          selectedTabIndex={0}
+        />
+      )}
+      {isLargeScreen && (
+        <div className={styles.tabstripContent}>{content()}</div>
+      )}
+      {!isLargeScreen && (
+        <ProjectDetailsAccordion project={props.project} titles={tabNames()} />
+      )}
     </div>
   );
 };

@@ -7,6 +7,8 @@ import styles from "./TechnologyCollection.module.scss";
 export const TechnologyCollection: React.FC<ITechnologyCollectionProps> = (
   props
 ) => {
+  const technologyTypeName = useTechnologyTypeName();
+
   return (
     <DetailedEntityIconList
       entity={props.technology}
@@ -17,7 +19,7 @@ export const TechnologyCollection: React.FC<ITechnologyCollectionProps> = (
         />
       }
       titleProperty="type"
-      titleHook={useTechnologyTypeName}
+      titleHook={technologyTypeName}
       className={styles.technologyCollection}
       entries={props.technology.technologies}
     />

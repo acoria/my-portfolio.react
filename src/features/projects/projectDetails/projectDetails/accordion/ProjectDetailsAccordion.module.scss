@@ -1,0 +1,87 @@
+@use '../../../../../styles/colors.module.scss';
+
+.projectDetailsAccordion {
+    // max-width: 400px;
+}
+
+.projectDetailsAccordion label {
+    position: relative;
+    display: block;
+    font-size: medium;
+    background: #fff;
+    // background: linear-gradient(top, #fff 1%, #eaeaea 100%);
+    // box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 1px 0 0 rgba(255, 255, 255, 0.9) inset, 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.projectDetailsAccordion {
+    // width: 100%;
+}
+
+.projectDetailsAccordion label:hover {
+    background: none;
+}
+
+// .projectDetailsAccordion input:checked+label:hover,
+.projectDetailsAccordion input:checked+label {
+    background: colors.$color-secondary;
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.projectDetailsAccordion label:hover:after,
+.projectDetailsAccordion input:checked+label:hover:after {
+    content: '^';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+}
+
+// .projectDetailsAccordion input:checked+label:hover:after {
+//     content: "V";
+//     position: absolute;
+//     width: 24px;
+//     height: 24px;
+//     right: 13px;
+//     top: 7px;
+// }
+
+.projectDetailsAccordion input {
+    display: none;
+}
+
+.projectDetailsAccordion article {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+// .projectDetailsAccordion article p {
+//     font-style: normal;
+//     color: #777;
+//     line-height: 23px;
+//     font-size: 10px;
+//     padding: 20px;
+//     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+// }
+
+.projectDetailsAccordion input:checked~article {
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
+}
+
+.projectDetailsAccordion input:checked~article.entryFirst {
+    padding: 2rem;
+    height: 23rem;
+}
+
+.projectDetailsAccordion input:checked~article.entryMiddle {
+    height: 23rem;
+}
+
+.projectDetailsAccordion input:checked~article.entryLast {
+    height: 23rem;
+}
