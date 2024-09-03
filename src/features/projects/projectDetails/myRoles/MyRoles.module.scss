@@ -1,8 +1,16 @@
+@use '../../../../styles/mixins.scss';
+
 .myRoles {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 1rem;
+    margin-left: 1rem;
     row-gap: 2rem;
-    flex-wrap: wrap;
+
+    @include mixins.medium-screen {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
 }

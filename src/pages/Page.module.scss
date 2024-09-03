@@ -24,14 +24,10 @@
     font-family: "Antonio";
     text-align: center;
     letter-spacing: 0.5rem;
-}
+    font-size: x-large;
+    margin-top: 1.4rem;
 
-// .sectionTitle::after {
-//     content: "";
-//     position: absolute;
-//     background-color: colors.$color-primary;
-//     bottom: -0.5rem;
-//     left: 0;
-//     width: 90%;
-//     height: 0.2rem;
-// }
+    @include mixins.medium-screen {
+        font-size: xx-large;
+    }
+}
