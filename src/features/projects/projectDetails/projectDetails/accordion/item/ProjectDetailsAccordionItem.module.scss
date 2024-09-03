@@ -9,10 +9,6 @@
     @include mixins.glassy(colors.$color-primary)
 }
 
-.title:hover {
-    background: none;
-}
-
 .input:checked+label:hover,
 .input:checked+div>label {
     box-shadow: 0 1px 4px colors.$color-project-details-accordion-item-box-shadow;
@@ -53,6 +49,10 @@
     @include mixins.glassy(colors.$color-project-details-accordion-item-content-background);
 }
 
-.projectDetailsAccordionItem input:checked~.content {
+.childWrapper {
+    padding: 0.5rem;
+}
+
+.input:checked~.content {
     transition: height 0.5s ease-in-out;
 }

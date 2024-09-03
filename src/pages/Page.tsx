@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { Banner } from "../features/banner/Banner";

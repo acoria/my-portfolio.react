@@ -23,7 +23,7 @@ export const ProjectList: React.FC = () => {
         {projects.map((project) => (
           <Fragment key={project.id}>
             <Project project={project} key={project.id} />
-            <Project project={project} key={2} />
+            {/* <Project project={project} key={2} /> */}
           </Fragment>
         ))}
       </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { ReactComponent as ChevronLeft } from "../../../../../../assets/chevron_left.svg";
 import { IProjectDetailsAccordionItemProps } from "./IProjectDetailsAccordionItemProps";
 import styles from "./ProjectDetailsAccordionItem.module.scss";
@@ -7,10 +7,12 @@ export const ProjectDetailsAccordionItem: React.FC<
   IProjectDetailsAccordionItemProps
 > = (props) => {
   const [childHeight, setChildHeight] = useState(0);
+  const id = useId();
+
   useEffect(() => {
-    const height = document.getElementById("child")?.scrollHeight ?? 0;
+    const height = document.getElementById(id)?.scrollHeight ?? 0;
     setChildHeight(height);
-  }, []);
+  }, [id]);
 
   return (
     <div className={styles.projectDetailsAccordionItem}>
@@ -31,9 +33,11 @@ export const ProjectDetailsAccordionItem: React.FC<
       </div>
       <article
         className={styles.content}
-        style={{ height: props.isChecked ? `${childHeight + 30}px` : "0px" }}
+        style={{ height: props.isChecked ? `${childHeight + 8}px` : "0px" }}
       >
-        <div id="child">{props.children}</div>
+        <div id={id} className={styles.childWrapper}>
+          {props.children}
+        </div>
       </article>
     </div>
   );

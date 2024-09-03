@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactElement, useMemo, useState } from "react";
 import { Tabstrip } from "../../../../components/tabstrip/Tabstrip";
 import { style } from "../../../../core/utils/style";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
@@ -20,36 +20,55 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
-  const tabNames = (): string[] => [
-    t(texts.projects.projectDetails.tabs.challenge),
-    t(texts.projects.projectDetails.tabs.requirements),
-    t(texts.projects.projectDetails.tabs.customer),
-    t(texts.projects.projectDetails.tabs.myRoles),
-    t(texts.projects.projectDetails.tabs.techStack),
-  ];
+  const tabNames: string[] = useMemo(
+    () => [
+      t(texts.projects.projectDetails.tabs.challenge),
+      t(texts.projects.projectDetails.tabs.requirements),
+      t(texts.projects.projectDetails.tabs.customer),
+      t(texts.projects.projectDetails.tabs.myRoles),
+      t(texts.projects.projectDetails.tabs.techStack),
+    ],
+    []
+  );
 
-  const content = () => {
-    switch (selectedTabIndex) {
-      case 0:
-        return <Challenge text={props.project.challenge} />;
-      case 1:
-        return <Requirements requirements={props.project.requirements} />;
-      case 2:
-        return <Customer customer={props.project.customer} />;
-      case 3:
-        return <MyRoles myRoles={props.project.myRoles as any as IRole[]} />;
-      case 4:
-        return <TechStack technologies={props.project.techStack} />;
-      default:
-        return <></>;
-    }
-  };
+  const content: ReactElement[] = useMemo(
+    () => [
+      <Challenge
+        key={`${props.project.id}_challenge`}
+        text={props.project.challenge}
+      />,
+      <Requirements
+        key={`${props.project.id}_key`}
+        requirements={props.project.requirements}
+      />,
+      <Customer
+        customer={props.project.customer}
+        key={`${props.project.id}_customer`}
+      />,
+      <MyRoles
+        myRoles={props.project.myRoles as any as IRole[]}
+        key={`${props.project.id}_myRoles`}
+      />,
+      <TechStack
+        technologies={props.project.techStack}
+        key={`${props.project.id}_techStack`}
+      />,
+    ],
+    [
+      props.project.challenge,
+      props.project.customer,
+      props.project.id,
+      props.project.myRoles,
+      props.project.requirements,
+      props.project.techStack,
+    ]
+  );
 
   return (
     <div className={style(styles.projectDetails, props.className)}>
       {isLargeScreen && (
         <Tabstrip
-          captions={tabNames()}
+          captions={tabNames}
           className={styles.tabstrip}
           darkMode
           onTabSelect={setSelectedTabIndex}
@@ -57,10 +76,14 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
         />
       )}
       {isLargeScreen && (
-        <div className={styles.tabstripContent}>{content()}</div>
+        <div className={styles.tabstripContent}>
+          {content[selectedTabIndex] ?? <></>}
+        </div>
       )}
       {!isLargeScreen && (
-        <ProjectDetailsAccordion project={props.project} titles={tabNames()} />
+        <ProjectDetailsAccordion project={props.project} titles={tabNames}>
+          {content}
+        </ProjectDetailsAccordion>
       )}
     </div>
   );
