@@ -53,10 +53,13 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
 .firstHeadlineText {
     @extend .headlineText;
     color: colors.$color-banner-headline-accent;
+    font-weight: 700;
     animation: $animationMoveLeft;
+    text-shadow: 1px 1px 1px colors.$color-primary-light;
 
     @include mixins.large-screen {
         animation: $animationMoveLeftLargeScreen;
+        text-shadow: none;
     }
 
 }
