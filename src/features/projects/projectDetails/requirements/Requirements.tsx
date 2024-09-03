@@ -8,7 +8,7 @@ export const Requirements: React.FC<IRequirementsProps> = (props) => {
 
   return (
     <div className={styles.requirements}>
-      <ul>{requirements}</ul>
+      <ul className={styles.list}>{requirements}</ul>
     </div>
   );
 };
