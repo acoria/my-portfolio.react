@@ -1,0 +1,9 @@
+@use '../../../../styles/mixins.scss';
+
+.challenge {
+    margin: 0.5rem;
+
+    @include mixins.medium-screen {
+        margin: 1rem 0;
+    }
+}

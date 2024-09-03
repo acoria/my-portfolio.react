@@ -35,7 +35,9 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
           styles.content,
           props.isOpen ? styles.contentIsOpen : ""
         )}
-        style={{ height: props.isOpen ? `${childHeight + 16}px` : "0px" }}
+        style={{
+          height: props.isOpen ? `${childHeight}px` : "0px",
+        }}
       >
         <div ref={ref} className={styles.childWrapper}>
           {props.children}

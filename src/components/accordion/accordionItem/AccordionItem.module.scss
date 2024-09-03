@@ -1,14 +1,13 @@
 @use '../../../styles/colors.module.scss';
 @use '../../../styles/mixins.scss';
 
-
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     @include mixins.glassy(colors.$color-primary);
-    
+
     &:hover {
         @extend .headerIsOpen;
     }
@@ -55,5 +54,6 @@
 }
 
 .childWrapper {
-    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
 }
