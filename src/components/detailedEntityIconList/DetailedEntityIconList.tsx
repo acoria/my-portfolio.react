@@ -19,7 +19,7 @@ export function DetailedEntityIconList<TEntity, TTitleEnum>(
         {props.icon}
         <h1 className={styles.title}>{title}</h1>
       </div>
-      {entries}
+      {props.separator ? props.entries?.join(` ${props.separator} `) : entries}
     </div>
   );
 }

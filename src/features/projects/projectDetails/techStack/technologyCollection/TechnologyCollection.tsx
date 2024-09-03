@@ -30,6 +30,7 @@ export const TechnologyCollection: React.FC<ITechnologyCollectionProps> = (
         );
         return technology?.[1] ?? "";
       })}
+      separator="|"
     />
   );
 };
