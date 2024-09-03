@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 
 export interface IAccordionItemProps {
-  title: string;
+  title: string | ReactElement;
   isOpen?: boolean;
   onClick?: () => void;
   children: ReactElement;

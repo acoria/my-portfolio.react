@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { ReactComponent as ChevronLeft } from "../../../assets/chevron_left.svg";
 import { style } from "../../../core/utils/style";
 import styles from "./AccordionItem.module.scss";
@@ -7,6 +7,7 @@ import { IAccordionItemProps } from "./IAccordionItemProps";
 export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
   const [childHeight, setChildHeight] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
+  const id = useId();
 
   useEffect(() => {
     const height = ref.current?.clientHeight ?? 0;
@@ -23,7 +24,7 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
         )}
         onClick={props.onClick}
       >
-        <label htmlFor={props.title} className={styles.title}>
+        <label htmlFor={id} className={styles.title}>
           {props.title}
         </label>
         <ChevronLeft
@@ -31,6 +32,7 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
         />
       </div>
       <article
+        id={id}
         className={style(
           styles.content,
           props.isOpen ? styles.contentIsOpen : ""
