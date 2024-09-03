@@ -72,9 +72,14 @@
                 ]
             },
             {
-                "type": "DATABASES",
+                "type": "TOOLS",
                 "technologies": [
-                    "OPEN_SQL"
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "SAP_GUI",
+                    "VS_CODE"
                 ]
             },
             {
@@ -87,12 +92,6 @@
                 ]
             },
             {
-                "type": "TESTING",
-                "technologies": [
-                    "JEST"
-                ]
-            },
-            {
                 "type": "COMMUNICATION_FRAMEWORKS",
                 "technologies": [
                     "REST",
@@ -100,14 +99,15 @@
                 ]
             },
             {
-                "type": "TOOLS",
+                "type": "DATABASES",
                 "technologies": [
-                    "BALSAMIQ",
-                    "ENTERPRISE_ARCHITECT",
-                    "FIGMA",
-                    "GIT",
-                    "SAP_GUI",
-                    "VS_CODE"
+                    "OPEN_SQL"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "JEST"
                 ]
             },
             {
