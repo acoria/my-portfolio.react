@@ -1,0 +1,59 @@
+@use '../../../styles/colors.module.scss';
+@use '../../../styles/mixins.scss';
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include mixins.glassy(colors.$color-primary);
+    
+    &:hover {
+        @extend .headerIsOpen;
+    }
+}
+
+.headerIsOpen {
+    box-shadow: 0 1px 4px colors.$color-project-details-accordion-item-box-shadow;
+    font-weight: 600;
+}
+
+.title {
+    position: relative;
+    display: block;
+    font-size: medium;
+    padding: 1rem;
+}
+
+.chevron {
+    fill: colors.$color-project-details-accordion-item-chevron-fill;
+    pointer-events: none;
+    margin-right: 0.5rem;
+}
+
+.chevronUp {
+    @extend .chevron;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.chevronDown {
+    @extend .chevron;
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.content {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    @include mixins.glassy(colors.$color-project-details-accordion-item-content-background);
+}
+
+.contentIsOpen {
+    transition: height 0.5s ease-in-out;
+}
+
+.childWrapper {
+    margin: 0.5rem;
+}

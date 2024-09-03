@@ -22,6 +22,7 @@ export const ProjectDetailsAccordionItem: React.FC<
         name={props.radioGroupName}
         type="radio"
         onChange={props.onCheck}
+        onClick={()=>{console.log(props.title)}}
       />
       <div className={styles.item}>
         <label htmlFor={props.title} className={styles.title}>

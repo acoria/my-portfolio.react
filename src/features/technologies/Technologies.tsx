@@ -1,10 +1,11 @@
+import { Accordion } from "../../components/accordion/Accordion";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { Technology } from "../../types/Technology";
 import { ITechnologiesProps } from "./ITechnologiesProps";
 import styles from "./Technologies.module.scss";
 
 export const Technologies: React.FC<ITechnologiesProps> = (props) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const mapTechnologyToText = (tech: Technology): string => {
     const techIndex = Object.keys(Technology).findIndex(
       (technology) => technology === tech
@@ -14,7 +15,33 @@ export const Technologies: React.FC<ITechnologiesProps> = (props) => {
 
   return (
     <div className={styles.technologies}>
-      {props.technologies.map((technology) => (
+      <Accordion titles={["Hello", "Second", "third"]}>
+        <div>Hello content</div>
+        <div>
+          Second content..much
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger6
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger7
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger8
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger9
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger10
+        </div>
+        <div>
+          Second content..much
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+          loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger
+        </div>
+      </Accordion>
+      {/* {props.technologies.map((technology) => (
         <div className={styles.type} key={technology.type}>
           <h5>{technology.type}</h5>
           <div className={styles.techStack}>
@@ -25,7 +52,7 @@ export const Technologies: React.FC<ITechnologiesProps> = (props) => {
             ))}
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

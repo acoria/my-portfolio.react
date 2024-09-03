@@ -28,7 +28,7 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
       t(texts.projects.projectDetails.tabs.myRoles),
       t(texts.projects.projectDetails.tabs.techStack),
     ],
-    []
+    [t]
   );
 
   const content: ReactElement[] = useMemo(
