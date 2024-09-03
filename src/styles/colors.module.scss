@@ -14,6 +14,10 @@ $color-accent-other: #048004;
 $color-full-transparent: rgba(0, 0, 0, 0);
 
 /* components */
+$color-accordion-item-box-shadow: transparentize($color-primary, 0.5);
+$color-accordion-item-chevron-fill: $color-primary;
+$color-accordion-item-content-background: $color-primary-lighter;
+
 $color-button-primary-background: $color-accent;
 $color-font: $color-primary;
 $color-font-light: $color-secondary;
@@ -38,10 +42,6 @@ $color-header-background: $color-primary;
 $color-logo: $color-secondary;
 
 $color-role-icon-fill: $color-primary;
-
-$color-project-details-accordion-item-box-shadow: transparentize($color-primary, 0.5);
-$color-project-details-accordion-item-chevron-fill: $color-primary;
-$color-project-details-accordion-item-content-background: $color-primary-lighter;
 
 $color-tabstrip-underline: $color-font-light;
 $color-tabstrip-underline-dark-mode: $color-primary;

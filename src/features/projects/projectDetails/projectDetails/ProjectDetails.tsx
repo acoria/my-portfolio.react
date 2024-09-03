@@ -1,4 +1,5 @@
 import { ReactElement, useMemo, useState } from "react";
+import { Accordion } from "../../../../components/accordion/Accordion";
 import { Tabstrip } from "../../../../components/tabstrip/Tabstrip";
 import { style } from "../../../../core/utils/style";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
@@ -12,7 +13,6 @@ import { Requirements } from "../requirements/Requirements";
 import { TechStack } from "../techStack/TechStack";
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
-import { ProjectDetailsAccordion } from "./accordion/ProjectDetailsAccordion";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -80,11 +80,7 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
           {content[selectedTabIndex] ?? <></>}
         </div>
       )}
-      {!isLargeScreen && (
-        <ProjectDetailsAccordion project={props.project} titles={tabNames}>
-          {content}
-        </ProjectDetailsAccordion>
-      )}
+      {!isLargeScreen && <Accordion titles={tabNames}>{content}</Accordion>}
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import { IAccordionItemProps } from "./IAccordionItemProps";
-import styles from "./AccordionItem.module.scss";
+import { useEffect, useRef, useState } from "react";
 import { ReactComponent as ChevronLeft } from "../../../assets/chevron_left.svg";
-import { useState, useId, useEffect, useRef } from "react";
 import { style } from "../../../core/utils/style";
+import styles from "./AccordionItem.module.scss";
+import { IAccordionItemProps } from "./IAccordionItemProps";
 
 export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
   const [childHeight, setChildHeight] = useState(0);

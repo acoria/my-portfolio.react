@@ -15,7 +15,7 @@
 }
 
 .headerIsOpen {
-    box-shadow: 0 1px 4px colors.$color-project-details-accordion-item-box-shadow;
+    box-shadow: 0 1px 4px colors.$color-accordion-item-box-shadow;
     font-weight: 600;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .chevron {
-    fill: colors.$color-project-details-accordion-item-chevron-fill;
+    fill: colors.$color-accordion-item-chevron-fill;
     pointer-events: none;
     margin-right: 0.5rem;
 }
@@ -47,7 +47,7 @@
 .content {
     overflow: hidden;
     transition: height 0.3s ease-in-out;
-    @include mixins.glassy(colors.$color-project-details-accordion-item-content-background);
+    @include mixins.glassy(colors.$color-accordion-item-content-background);
 }
 
 .contentIsOpen {
