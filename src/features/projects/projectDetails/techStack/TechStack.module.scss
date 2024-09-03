@@ -1,9 +1,18 @@
 @use '../../../../styles/colors.module.scss';
+@use '../../../../styles/mixins.scss';
 
 .techStack {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     row-gap: 1.5rem;
     margin-top: 1rem;
+    margin-left: 1rem;
     color: colors.$color-font;
+
+    @include mixins.medium-screen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+
 }
