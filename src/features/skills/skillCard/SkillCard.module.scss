@@ -3,9 +3,6 @@
 @use '../../../styles/components.scss';
 
 $card-height: 16rem;
-$card-height-medium-screen: 16rem;
-// $card-height-medium-screen: 11rem;
-
 $transition-time: 500ms;
 
 .skillCard {
@@ -15,6 +12,7 @@ $transition-time: 500ms;
 
     @include mixins.medium-screen {
         pointer-events: all;
+
         &:hover .topCard {
             transform: translateY(0);
         }
@@ -34,9 +32,9 @@ $transition-time: 500ms;
     flex-direction: column;
     justify-content: center;
     @include mixins.glassy();
-    
+
     @include mixins.medium-screen {
-        height: $card-height-medium-screen;
+        height: $card-height;
         transition: $transition-time;
         transform: translateY($card-height/2);
         z-index: 1;
@@ -56,10 +54,9 @@ $transition-time: 500ms;
     // border-bottom: 3px solid colors.$color-font;
 
     @include mixins.medium-screen {
-        height: $card-height-medium-screen;
-        transform: translateY($card-height-medium-screen/2*-1);
-        transition: $transition-time;
+        height: $card-height;
         transform: translateY($card-height/2*-1);
+        transition: $transition-time;
         opacity: 0;
     }
 }
@@ -70,8 +67,8 @@ $transition-time: 500ms;
     color: colors.$color-font;
     position: relative;
     align-items: flex-start;
-    
-    @include mixins.medium-screen{
+
+    @include mixins.medium-screen {
         padding: 0 1rem;
     }
 }
