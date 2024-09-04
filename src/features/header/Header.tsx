@@ -12,7 +12,9 @@ export const Header: React.FC<IHeaderProps> = (props) => {
   const { onHeightChange } = { ...props };
 
   useEffect(() => {
-    onHeightChange?.(ref.current?.scrollHeight ?? 0);
+    let height = ref.current?.scrollHeight ?? 0;
+    //fix white line in top by reducing it by 1px
+    onHeightChange?.(--height);
   }, [width, onHeightChange]);
   return (
     <div className={styles.header} ref={ref}>

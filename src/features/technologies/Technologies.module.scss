@@ -2,11 +2,17 @@
 @use '../../styles/mixins.scss';
 
 .technologies {
-    padding: dimens.$padding-page;
+    @include mixins.glassy;
+    padding: 1rem;
+
+    @include mixins.medium-screen {
+        margin: dimens.$padding-page;
+        padding: dimens.$padding-page;
+    }
 }
 
 .techStack {
-    @include mixins.medium-screen{
+    @include mixins.medium-screen {
         row-gap: 2.5rem;
     }
 }

@@ -1,20 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { Banner } from "../features/banner/Banner";
 import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
-import { Banner } from "../features/banner/Banner";
 import { PageSection } from "../features/pageSection/PageSection";
+import { ProjectList } from "../features/projects/projectList/ProjectList";
+import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
+import { Testimonials } from "../features/testimonials/Testimonials";
 import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
-import { TechnologyType } from "../types/TechnologyType";
-import { Technology } from "../types/Technology";
-import { Skills } from "../features/skills/Skills";
-import { Project } from "../features/projects/project/Project";
-import { ProjectList } from "../features/projects/projectList/ProjectList";
-import { Testimonials } from "../features/testimonals/Testimonials";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -46,18 +43,7 @@ export const Page: React.FC = () => {
       caption: t(texts.technologies.title),
       scrollToSignal: scrollToTechnologiesSignal,
       signalTrigger: triggerScrollToTechnologies,
-      component: (
-        <Technologies
-          technologies={
-            [
-              // {
-              //   type: TechnologyType.PROJECT_MANAGEMENT,
-              //   technologies: [Technology.SCRUM],
-              // },
-            ]
-          }
-        />
-      ),
+      component: <Technologies />,
     },
     {
       caption: t(texts.cv),
