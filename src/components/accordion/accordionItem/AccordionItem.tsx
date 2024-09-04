@@ -20,11 +20,15 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
       <div
         className={style(
           styles.header,
+          props.headerClassName,
           props.isOpen ? styles.headerIsOpen : ""
         )}
         onClick={props.onClick}
       >
-        <label htmlFor={id} className={styles.title}>
+        <label
+          htmlFor={id}
+          className={style(styles.title, props.titleClassName)}
+        >
           {props.title}
         </label>
         <ChevronLeft
@@ -35,13 +39,14 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
         id={id}
         className={style(
           styles.content,
+          props.contentClassName,
           props.isOpen ? styles.contentIsOpen : ""
         )}
         style={{
           height: props.isOpen ? `${childHeight}px` : "0px",
         }}
       >
-        <div ref={ref} className={styles.childWrapper}>
+        <div ref={ref} className={style(styles.childWrapper)}>
           {props.children}
         </div>
       </article>

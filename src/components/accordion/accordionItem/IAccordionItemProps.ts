@@ -5,4 +5,7 @@ export interface IAccordionItemProps {
   isOpen?: boolean;
   onClick?: () => void;
   children: ReactElement;
+  headerClassName?: string;
+  titleClassName?: string;
+  contentClassName?: string;
 }

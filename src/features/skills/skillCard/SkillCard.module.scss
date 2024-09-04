@@ -60,35 +60,3 @@ $transition-time: 500ms;
         opacity: 0;
     }
 }
-
-.descriptions {
-    display: flex;
-    flex-direction: column;
-    color: colors.$color-font;
-    position: relative;
-    align-items: flex-start;
-
-    @include mixins.medium-screen {
-        padding: 0 1rem;
-    }
-}
-
-.description {
-    position: relative;
-    padding: 1rem;
-    width: 100%;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 10%;
-        border-bottom: 2px solid colors.$color-font;
-    }
-
-    &:last-child::after {
-        border: none;
-    }
-}

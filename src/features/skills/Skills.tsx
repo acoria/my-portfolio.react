@@ -1,12 +1,15 @@
+import { useScreenSize } from "../../hooks/useScreenSize";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { ISkill } from "../../shared/model/ISkill";
 import { Background } from "../background/Background";
+import { SkillAccordion } from "./skillAccordion/SkillAccordion";
 import { SkillCard } from "./skillCard/SkillCard";
 import styles from "./Skills.module.scss";
 
 export const Skills: React.FC = () => {
   const { t } = useTranslation();
+  const { isSmallScreen } = useScreenSize();
 
   const skills: ISkill[] = [
     {
@@ -54,9 +57,13 @@ export const Skills: React.FC = () => {
     <div className={styles.skillsWrapper}>
       <Background />
       <div className={styles.skills}>
-        {skills.map((skill, index) => (
-          <SkillCard skill={skill} key={index} />
-        ))}
+        {skills.map((skill, index) => {
+          if (isSmallScreen) {
+            return <SkillAccordion skill={skill} />;
+          } else {
+            return <SkillCard skill={skill} key={index} />;
+          }
+        })}
       </div>
     </div>
   );

@@ -26,6 +26,9 @@ export const Accordion: React.FC<IAccordionProps> = (props) => {
             previous === index ? undefined : index
           );
         }}
+        headerClassName={props.headerClassName}
+        titleClassName={props.titleClassName}
+        contentClassName={props.contentClassName}
       >
         {findContent(index)}
       </AccordionItem>

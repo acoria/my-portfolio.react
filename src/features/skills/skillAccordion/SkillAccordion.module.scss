@@ -1,0 +1,15 @@
+@use '../../../styles/components.scss';
+@use '../../../styles/mixins.scss';
+
+.header {
+    @include mixins.glassy();
+}
+
+.title {
+    @include components.cardTitle;
+    font-weight: 600;
+}
+
+.content {
+    @include mixins.glassy();
+}
