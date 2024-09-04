@@ -60,10 +60,109 @@
             "Implementing frontend, backend & REST interface based on JSON",
             "Moderating, coordinating and leading through reviews"
         ],
-        "techStack": [],
+        "techStack": [
+            {
+                "type": "CI_CD",
+                "technologies": [
+                    "DOCKER",
+                    "JENKINS"
+                ]
+            },
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "COMMUNICATION_FRAMEWORKS",
+                "technologies": [
+                    "REST",
+                    "ICF_SERVICE"
+                ]
+            },
+            {
+                "type": "DATABASES",
+                "technologies": [
+                    "MARIA_DB",
+                    "OPEN_SQL"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "BLUEPRINT_JS",
+                    "REACT",
+                    "REACT_ROUTER_DOM",
+                    "REDUX",
+                    "SPRING_BOOT"
+                ]
+            },
+            {
+                "type": "OTHERS",
+                "technologies": [
+                    "CODE_REVIEWS",
+                    "ESLINT",
+                    "GENERICS",
+                    "MD",
+                    "MENTORING",
+                    "TEAMWORK",
+                    "WINDOWS"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "ABAP",
+                    "CSS",
+                    "HTML",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "PROJECT_MANAGEMENT",
+                "technologies": [
+                    "REQ_ENGINEERING",
+                    "SCRUM",
+                    "SCRUM_MASTER",
+                    "USER_STORIES"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "CHAI",
+                    "END_TO_END_TESTING",
+                    "JEST",
+                    "JUNIT",
+                    "MOCHA",
+                    "UNIT_TESTING"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "CONFLUENCE",
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "HEIDI_SQL",
+                    "JIRA",
+                    "SAP_GUI",
+                    "VS_CODE"
+                ]
+            }
+        ],
         "start": "2023-01-01T01:00:00.031Z",
         "end": "2024-08-05T23:00:00.031Z",
-        "archived": "false"
+        "archived": ""
     },
     {
         "id": "0",
@@ -78,10 +177,11 @@
                 ]
             },
             {
-                "type": "CLEAN_CODE",
+                "type": "CLEAN_CODE_DEV",
                 "technologies": [
                     "DESIGN_PATTERNS",
-                    "OOD"
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
                 ]
             },
             {

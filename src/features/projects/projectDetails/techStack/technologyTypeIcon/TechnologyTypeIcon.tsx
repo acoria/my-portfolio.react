@@ -14,20 +14,26 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
 ) => {
   const icon = () => {
     switch (props.technologyType) {
+      case TechnologyType.CI_CD:
+        return <Coding className={props.className} />;
+      case TechnologyType.CLEAN_CODE_DEV:
+        return <Coding className={props.className} />;
       case TechnologyType.COMMUNICATION_FRAMEWORKS:
         return <Protocol className={props.className} />;
-      case TechnologyType.PROGRAMMING_LANGUAGES:
-        return <Coding className={props.className} />;
       case TechnologyType.DATABASES:
         return <Database className={props.className} />;
       case TechnologyType.FRAMEWORKS_CONCEPTS:
         return <Framework className={props.className} />;
+      case TechnologyType.OTHERS:
+        return <Coding className={props.className} />;
+      case TechnologyType.PROGRAMMING_LANGUAGES:
+        return <Coding className={props.className} />;
+      case TechnologyType.PROJECT_MANAGEMENT:
+        return <Project className={props.className} />;
       case TechnologyType.TESTING:
         return <Testing className={props.className} />;
       case TechnologyType.TOOLS:
         return <Spanner2 className={props.className} />;
-      case TechnologyType.PROJECT_MANAGEMENT:
-        return <Project className={props.className} />;
       default:
         error(`Missing icon for technology type "${props.technologyType}".`);
     }

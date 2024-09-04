@@ -56,6 +56,7 @@ export enum Technology {
   SCSS = "SCSS",
   SAP_GUI = "SAP GUI",
   SEQUELIZE = "Sequelize",
+  SOFTWARE_ARCHITECTURE = "Software Architecture",
   SPRING_BOOT = "Spring Boot",
   SQL = "SQL",
   TRELLO = "Trello",
