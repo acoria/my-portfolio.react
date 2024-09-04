@@ -14,4 +14,5 @@ export interface IProject {
   techStack: ITechnology[];
   title: string;
   imageUrls: string[];
+  archived: boolean;
 }

@@ -3,7 +3,6 @@ import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { Banner } from "../features/banner/Banner";
 import { PageSection } from "../features/pageSection/PageSection";
-// import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
 import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
@@ -36,7 +35,6 @@ export const Page: React.FC = () => {
       scrollToSignal: scrollToSkillsSignal,
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
-      // component: <Skills />,
     },
     {
       caption: t(texts.projects.title),
