@@ -18,9 +18,13 @@ export const Technologies: React.FC = () => {
 
   const technologies = () => {
     if (projects.length === 0) return;
-    const technologies = new ProjectTechStackReader().collect(projects);
+    const project = projects.find((project) => project.id === "0");
+    // const technologies = new ProjectTechStackReader().collect(projects);
     return (
-      <TechStack technologies={technologies} className={styles.techStack} />
+      <TechStack
+        technologies={project?.techStack!}
+        className={styles.techStack}
+      />
     );
   };
 

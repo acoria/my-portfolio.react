@@ -65,7 +65,10 @@
                 "type": "CI_CD",
                 "technologies": [
                     "DOCKER",
-                    "JENKINS"
+                    "DOCKER_DESKTOP",
+                    "DOCKER_HUB",
+                    "JENKINS",
+                    "PORTAINER"
                 ]
             },
             {
@@ -153,6 +156,7 @@
                     "ENTERPRISE_ARCHITECT",
                     "FIGMA",
                     "GIT",
+                    "GITHUB",
                     "HEIDI_SQL",
                     "JIRA",
                     "SAP_GUI",
@@ -264,6 +268,7 @@
                     "JUNIT",
                     "MOCHA",
                     "MOCKK",
+                    "TDD",
                     "UNIT_TESTING"
                 ]
             },
@@ -277,6 +282,7 @@
                     "ENTERPRISE_ARCHITECT",
                     "FIGMA",
                     "GIT",
+                    "GITHUB",
                     "HEIDI_SQL",
                     "JIRA",
                     "MIRO",
