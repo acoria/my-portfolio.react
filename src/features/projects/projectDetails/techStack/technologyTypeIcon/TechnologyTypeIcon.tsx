@@ -1,6 +1,9 @@
+import { ReactComponent as CleanCode } from "../../../../../assets/roles/clean_code.svg";
+import { ReactComponent as CiCd } from "../../../../../assets/roles/ci_cd.svg";
 import { ReactComponent as Coding } from "../../../../../assets/roles/coding.svg";
 import { ReactComponent as Database } from "../../../../../assets/roles/database.svg";
 import { ReactComponent as Framework } from "../../../../../assets/roles/framework.svg";
+import { ReactComponent as Others } from "../../../../../assets/roles/others.svg";
 import { ReactComponent as Project } from "../../../../../assets/roles/project.svg";
 import { ReactComponent as Protocol } from "../../../../../assets/roles/protocol.svg";
 import { ReactComponent as Spanner2 } from "../../../../../assets/roles/spanner.svg";
@@ -15,9 +18,9 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
   const icon = () => {
     switch (props.technologyType) {
       case TechnologyType.CI_CD:
-        return <Coding className={props.className} />;
+        return <CiCd className={props.className} />;
       case TechnologyType.CLEAN_CODE_DEV:
-        return <Coding className={props.className} />;
+        return <CleanCode className={props.className} />;
       case TechnologyType.COMMUNICATION_FRAMEWORKS:
         return <Protocol className={props.className} />;
       case TechnologyType.DATABASES:
@@ -25,7 +28,7 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
       case TechnologyType.FRAMEWORKS_CONCEPTS:
         return <Framework className={props.className} />;
       case TechnologyType.OTHERS:
-        return <Coding className={props.className} />;
+        return <Others className={props.className} />;
       case TechnologyType.PROGRAMMING_LANGUAGES:
         return <Coding className={props.className} />;
       case TechnologyType.PROJECT_MANAGEMENT:
