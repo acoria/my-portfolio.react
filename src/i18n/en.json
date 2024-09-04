@@ -106,13 +106,14 @@
     "technologies": {
         "title": "Technologies",
         "types": {
-            "programming_languages": "Programming languages",
+            "communication_frameworks": "Communication Frameworks & Protocols",
             "databases": "Databases",
             "frameworks_concepts": "Frameworks & Concepts",
+            "others": "Others",
+            "programming_languages": "Programming Languages",
+            "project_management": "Project Management",
             "testing": "Testing Frameworks",
-            "communication_frameworks": "Communication Frameworks & Protocols",
-            "tools": "Tools",
-            "project_management": "Project management"
+            "tools": "Tools & Software"
         }
     },
     "testimonials": {
