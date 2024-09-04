@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": "100",
         "title": "Web Customer-Self-Service-Portal for SAP software download",
         "challenge": "Installing tailored SAP software can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
         "customer": {
@@ -60,65 +60,132 @@
             "Implementing frontend, backend & REST interface based on JSON",
             "Moderating, coordinating and leading through reviews"
         ],
+        "techStack": [],
+        "start": "2023-01-01T01:00:00.031Z",
+        "end": "2024-08-05T23:00:00.031Z",
+        "archived": "false"
+    },
+    {
+        "id": "0",
+        "title": "Dummy with all technologies",
         "techStack": [
             {
-                "type": "PROGRAMMING_LANGUAGES",
+                "type": "CI_CD",
                 "technologies": [
-                    "ABAP",
-                    "JAVA",
-                    "JAVASCRIPT",
-                    "SCSS",
-                    "TYPESCRIPT"
+                    "DOCKER",
+                    "JENKINS",
+                    "RASPBERRY_PI"
                 ]
             },
             {
-                "type": "TOOLS",
+                "type": "CLEAN_CODE",
                 "technologies": [
-                    "BALSAMIQ",
-                    "ENTERPRISE_ARCHITECT",
-                    "FIGMA",
-                    "GIT",
-                    "SAP_GUI",
-                    "VS_CODE"
-                ]
-            },
-            {
-                "type": "FRAMEWORKS_CONCEPTS",
-                "technologies": [
-                    "BLUEPRINT_JS",
-                    "REACT",
-                    "REACT_ROUTER_DOM",
-                    "SPRING_BOOT"
+                    "DESIGN_PATTERNS",
+                    "OOD"
                 ]
             },
             {
                 "type": "COMMUNICATION_FRAMEWORKS",
                 "technologies": [
                     "REST",
-                    "ICF_SERVICE"
+                    "ICF_SERVICE",
+                    "OAUTH2"
                 ]
             },
             {
                 "type": "DATABASES",
                 "technologies": [
-                    "OPEN_SQL"
+                    "MARIA_DB",
+                    "MYSQL",
+                    "OPEN_SQL",
+                    "POSTGRES"
                 ]
             },
             {
-                "type": "TESTING",
+                "type": "FRAMEWORKS_CONCEPTS",
                 "technologies": [
-                    "JEST"
+                    "ANDROID",
+                    "BLUEPRINT_JS",
+                    "EXPRESS",
+                    "IONIC",
+                    "KEYCLOAK",
+                    "MUI",
+                    "NEXTJS",
+                    "NODEJS",
+                    "REACT",
+                    "REACT_ROUTER_DOM",
+                    "REDUX",
+                    "SEQUELIZE",
+                    "SPRING_BOOT"
+                ]
+            },
+            {
+                "type": "OTHERS",
+                "technologies": [
+                    "CODE_REVIEWS",
+                    "ESLINT",
+                    "GENERICS",
+                    "LINUX",
+                    "MD",
+                    "MENTORING",
+                    "TEAMWORK",
+                    "WINDOWS"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "ABAP",
+                    "CSS",
+                    "HTML",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "KOTLIN",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
                 ]
             },
             {
                 "type": "PROJECT_MANAGEMENT",
                 "technologies": [
-                    "SCRUM"
+                    "REQ_ENGINEERING",
+                    "SCRUM",
+                    "SCRUM_MASTER",
+                    "USER_STORIES"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "ABAP_UNIT",
+                    "END_TO_END_TESTING",
+                    "JEST",
+                    "JUNIT",
+                    "MOCHA",
+                    "MOCKK",
+                    "UNIT_TESTING"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "ANDROID_STUDIO",
+                    "CHAI",
+                    "CONFLUENCE",
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "HEIDI_SQL",
+                    "JIRA",
+                    "MIRO",
+                    "SAP_GUI",
+                    "TRELLO",
+                    "VS_CODE"
                 ]
             }
         ],
-        "start": "2023-01-01T01:00:00.031Z",
-        "end": "2024-08-05T23:00:00.031Z",
-        "archived": "false"
+        "archived": "true"
     }
 ]

@@ -51,6 +51,9 @@
                 "requirements": "Requirements",
                 "customer": "Customer"
             }
+        },
+        "imageAlt": {
+            "swpo": "Blurred screenshot of app main page"
         }
     },
     "roles": {
@@ -106,6 +109,8 @@
     "technologies": {
         "title": "Technologies",
         "types": {
+            "ci_cd": "CI/CD",
+            "clean_code": "Clean Code Development",
             "communication_frameworks": "Communication Frameworks & Protocols",
             "databases": "Databases",
             "frameworks_concepts": "Frameworks & Concepts",
