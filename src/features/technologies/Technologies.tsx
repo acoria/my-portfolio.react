@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ProjectAPI } from "../../api/ProjectRepository";
 import { request } from "../../core/utils/request";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import { ProjectTechStackCondenser } from "../../services/ProjectTechStackCondenser";
+import { ProjectTechStackReader } from "../../services/ProjectTechStackCollector";
 import { IProject } from "../../shared/model/IProject";
 import { TechStack } from "../projects/projectDetails/techStack/TechStack";
 import { ITechnologiesProps } from "./ITechnologiesProps";
@@ -19,17 +19,12 @@ export const Technologies: React.FC<ITechnologiesProps> = (props) => {
     });
   }, []);
 
-  // const mapTechnologyToText = (tech: Technology): string => {
-  //   const techIndex = Object.keys(Technology).findIndex(
-  //     (technology) => technology === tech
-  //   );
-  //   return Object.values(Technology)[techIndex];
-  // };
-
   const technologies = () => {
     if (projects.length === 0) return;
-    const technologies = new ProjectTechStackCondenser().condense(projects);
-    return <TechStack technologies={technologies} />;
+    const technologies = new ProjectTechStackReader().collect(projects);
+    return (
+      <TechStack technologies={technologies} className={styles.techStack} />
+    );
   };
 
   return <div className={styles.technologies}>{technologies()}</div>;

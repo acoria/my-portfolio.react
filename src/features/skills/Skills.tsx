@@ -59,7 +59,7 @@ export const Skills: React.FC = () => {
       <div className={styles.skills}>
         {skills.map((skill, index) => {
           if (isSmallScreen) {
-            return <SkillAccordion skill={skill} />;
+            return <SkillAccordion skill={skill} key={index} />;
           } else {
             return <SkillCard skill={skill} key={index} />;
           }

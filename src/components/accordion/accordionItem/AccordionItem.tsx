@@ -10,9 +10,7 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
   const id = useId();
 
   useEffect(() => {
-    const height = ref.current?.clientHeight ?? 0;
-    console.log(height);
-    setChildHeight(height);
+    setChildHeight(ref.current?.clientHeight ?? 0);
   }, [props.isOpen]);
 
   return (

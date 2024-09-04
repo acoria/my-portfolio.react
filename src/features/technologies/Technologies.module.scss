@@ -1,2 +1,12 @@
-// @use '../../styles/colors.module.scss';
-// @use '../../styles/mixins.scss';
+@use '../../styles/dimensions.module.scss' as dimens;
+@use '../../styles/mixins.scss';
+
+.technologies {
+    padding: dimens.$padding-page;
+}
+
+.techStack {
+    @include mixins.medium-screen{
+        row-gap: 2.5rem;
+    }
+}
