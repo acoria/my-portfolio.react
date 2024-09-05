@@ -38,6 +38,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
           <Carousel widthInRem={40}>
             {props.project.images.map((image) => (
               <img
+                key={image.imageUrl}
                 src={image.imageUrl}
                 alt={image.altText}
                 className={styles.image}

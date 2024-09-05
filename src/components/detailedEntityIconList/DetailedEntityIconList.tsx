@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { Fragment, ReactElement } from "react";
 import { style } from "../../core/utils/style";
 import styles from "./DetailedEntityIconList.module.scss";
 import { IDetailedEntityIconListProps } from "./IDetailedEntityIconListProps";
@@ -21,12 +21,10 @@ export function DetailedEntityIconList<TEntity, TTitleEnum>(
     const length = props.entries?.length;
     if (length === undefined) return <></>;
     return (
-      <>
-        <span key={index} className={getClassName(entry)}>
-          {entry}
-        </span>
+      <Fragment key={index}>
+        <span className={getClassName(entry)}>{entry}</span>
         {props.separator && index < length - 1 && <> {props.separator} </>}
-      </>
+      </Fragment>
     );
   });
   return (
