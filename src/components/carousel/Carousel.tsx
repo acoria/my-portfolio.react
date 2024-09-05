@@ -6,6 +6,7 @@ import styles from "./Carousel.module.scss";
 import { CarouselItem } from "./carouselItem/CarouselItem";
 import { ICarouselProps } from "./ICarouselProps";
 import { useCarouselViewModel } from "./useCarouselViewModel";
+import { ReactComponent as CloseButton } from "../../assets/close.svg";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
   const viewModel = useCarouselViewModel(props);
@@ -22,13 +23,15 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
             viewModel.isMobileView && viewModel.setVisibleItemPosition(index);
           }}
           isZoomable={!viewModel.isMobileView}
+          positionInCarousel={index}
+          onClick={viewModel.setShowZoomedInImagePosition}
         >
           {child}
         </CarouselItem>
       ));
     } else {
       return (
-        <CarouselItem widthStyle={widthStyle}>
+        <CarouselItem widthStyle={widthStyle} positionInCarousel={0}>
           {viewModel.children}
         </CarouselItem>
       );
@@ -62,6 +65,20 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
 
   return (
     <div className={styles.carousel}>
+      <div
+        className={style(
+          styles.zoomedInChild,
+          viewModel.showZoomedInImagePosition !== undefined
+            ? styles.displayZoomedInChild
+            : ""
+        )}
+      >
+        <CloseButton
+          className={styles.closeButton}
+          onClick={() => viewModel.setShowZoomedInImagePosition(undefined)}
+        />
+        {viewModel.getChildAsPosition(viewModel.showZoomedInImagePosition)}
+      </div>
       <div className={styles.carouselContent}>
         {!viewModel.isMobileView && (
           <ChevronLeft

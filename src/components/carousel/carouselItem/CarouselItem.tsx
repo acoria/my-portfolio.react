@@ -1,14 +1,12 @@
-import { ICarouselItemProps } from "./ICarouselItemProps";
-import styles from "./CarouselItem.module.scss";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
 import { style } from "../../../core/utils/style";
-import { ReactComponent as CloseButton } from "../../../assets/close.svg";
+import styles from "./CarouselItem.module.scss";
+import { ICarouselItemProps } from "./ICarouselItemProps";
 
 export const CarouselItem: React.FC<ICarouselItemProps> = (props) => {
   const { ref, inView } = useInView({ threshold: 0.51 });
   const { onMovedIntoView } = { ...props };
-  const [showZoomedIn, setShowZoomedIn] = useState(false);
 
   useEffect(() => {
     inView && onMovedIntoView?.();
@@ -19,18 +17,11 @@ export const CarouselItem: React.FC<ICarouselItemProps> = (props) => {
       ref={ref}
       className={style(
         styles.carouselItem,
-        showZoomedIn ? styles.zoomedIn : "",
         props.isZoomable ? styles.zoomable : ""
       )}
-      style={!showZoomedIn ? props.widthStyle : {}}
-      onClick={() => props.isZoomable && !showZoomedIn && setShowZoomedIn(true)}
+      style={props.widthStyle}
+      onClick={() => props.onClick?.(props.positionInCarousel)}
     >
-      {showZoomedIn && (
-        <CloseButton
-          className={styles.closeButton}
-          onClick={() => setShowZoomedIn(false)}
-        />
-      )}
       {props.children}
     </div>
   );

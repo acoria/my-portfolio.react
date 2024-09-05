@@ -8,32 +8,8 @@
     flex-shrink: 0;
 }
 
-.closeButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    fill: colors.$color-carousel-item-close-button-fill;
-    @include mixins.glassy(colors.$color-carousel-item-close-button-background)
-}
-
 .zoomable {
     @include mixins.medium-screen() {
         cursor: pointer;
-    }
-}
-
-.zoomedIn {
-    @include mixins.medium-screen() {
-        position: fixed;
-        z-index: 100;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 80vw;
-        height: 80vh;
-        transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 }

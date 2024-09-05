@@ -1,7 +1,8 @@
-import { useCallback, useRef, useState } from "react";
+import { ReactElement, useCallback, useRef, useState } from "react";
 import { useScreenSize } from "../../hooks/useScreenSize";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { ICarouselProps } from "./ICarouselProps";
+import { error } from "../../core/utils/error";
 
 export const useCarouselViewModel = (props: ICarouselProps) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -13,8 +14,27 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
     ? props.children.length
     : 1;
   const [visibleItemPosition, setVisibleItemPosition] = useState(0);
+  const [showZoomedInImagePosition, setShowZoomedInImagePosition] = useState<
+    number | undefined
+  >(undefined);
 
   const hasSingleItem = numberOfItems === 1;
+
+  const getChildAsPosition = (
+    position: number | undefined
+  ): ReactElement | undefined => {
+    if (props.children === undefined || position === undefined) {
+      return;
+    }
+    if (Array.isArray(props.children)) {
+      return props.children[position];
+    } else {
+      if (position !== 0) {
+        error(`Carousel does not have a child at position "${position}"`);
+      }
+      return props.children;
+    }
+  };
 
   const scrollToPosition = useCallback(
     (fromPosition: number, toPosition: number): number => {
@@ -67,11 +87,14 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
   return {
     carouselWidth,
     children: props.children,
+    getChildAsPosition,
     hasSingleItem,
     isMobileView,
     ref,
     scrollToPosition,
+    setShowZoomedInImagePosition,
     setVisibleItemPosition,
+    showZoomedInImagePosition,
     triggerMoveLeft,
     triggerMoveRight,
     visibleItemPosition,
