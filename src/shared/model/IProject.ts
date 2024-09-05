@@ -1,4 +1,5 @@
 import { ICustomer } from "./ICustomer";
+import { IImage } from "./IImage";
 import { ITechnology } from "./ITechnology";
 
 export interface IProject {
@@ -13,6 +14,6 @@ export interface IProject {
   tasks?: string[];
   techStack: ITechnology[];
   title: string;
-  imageUrls?: string[];
+  images?: IImage[];
   archived: boolean;
 }

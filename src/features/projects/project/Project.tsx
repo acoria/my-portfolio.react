@@ -37,13 +37,15 @@ export const Project: React.FC<IProjectProps> = (props) => {
       </div>
       <p className={styles.goal}>{props.project.goal}</p>
       <div className={styles.images}>
-        {props.project.imageUrls && (
+        {props.project.images && (
           <Carousel widthInRem={40}>
-            <img
-              src={props.project.imageUrls[0]}
-              alt={t(texts.projects.imageAlt.swpo)}
-              className={styles.image}
-            />
+            {props.project.images.map((image) => (
+              <img
+                src={image.imageUrl}
+                alt={image.altText}
+                className={styles.image}
+              />
+            ))}
           </Carousel>
         )}
       </div>

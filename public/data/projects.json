@@ -2,7 +2,7 @@
     {
         "id": "100",
         "title": "Web Customer-Self-Service-Portal for SAP software download",
-        "challenge": "Installing tailored SAP software can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
+        "challenge": "Installing tailored software on an SAP system can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
         "customer": {
             "logoUrl": "./assets/projects/swpo/snp_logo.svg",
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
@@ -10,10 +10,11 @@
             "employeeSize": "1400+ employees"
         },
         "goal": "Developing and publishing an application for project-specific software for end customers to simplify migration project setups",
-        "imageUrls": [
-            "./assets/projects/swpo/SWPO.png",
-            "./assets/projects/swpo/pic2.png",
-            "./assets/projects/swpo/pic3.png"
+        "images": [
+            {
+                "imageUrl": "./assets/projects/swpo/SWPO.png",
+                "altText": "Blurred screenshot of app main page"
+            }
         ],
         "myRoles": [
             {
@@ -172,7 +173,22 @@
         ],
         "start": "2023-01-01T01:00:00.031Z",
         "end": "2024-08-05T23:00:00.031Z",
-        "archived": ""
+        "archived": false
+    },
+    {
+        "id": "50",
+        "title": "Color Palette Generator",
+        "challenge": "",
+        "goal": "",
+        "imageUrls": [
+            "./assets/projects/swpo/SWPO.png"
+        ],
+        "requirements": [],
+        "tasks": [],
+        "techStack": [],
+        "start": "2024-01-01T01:00:00.031Z",
+        "end": "2024-03-01T23:00:00.031Z",
+        "archived": false
     },
     {
         "id": "0",
@@ -313,6 +329,6 @@
                 ]
             }
         ],
-        "archived": "true"
+        "archived": true
     }
 ]

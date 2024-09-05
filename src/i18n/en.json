@@ -51,9 +51,6 @@
                 "requirements": "Requirements",
                 "customer": "Customer"
             }
-        },
-        "imageAlt": {
-            "swpo": "Blurred screenshot of app main page"
         }
     },
     "roles": {
