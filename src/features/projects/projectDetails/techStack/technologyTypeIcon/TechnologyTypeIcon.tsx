@@ -1,5 +1,5 @@
 import { ReactComponent as CleanCode } from "../../../../../assets/roles/clean_code.svg";
-import { ReactComponent as CiCd } from "../../../../../assets/roles/ci_cd.svg";
+import { ReactComponent as DevOps } from "../../../../../assets/roles/dev_ops.svg";
 import { ReactComponent as Coding } from "../../../../../assets/roles/coding.svg";
 import { ReactComponent as Database } from "../../../../../assets/roles/database.svg";
 import { ReactComponent as Framework } from "../../../../../assets/roles/framework.svg";
@@ -18,7 +18,7 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
   const icon = () => {
     switch (props.technologyType) {
       case TechnologyType.CI_CD:
-        return <CiCd className={props.className} />;
+        return <DevOps className={props.className} />;
       case TechnologyType.CLEAN_CODE_DEV:
         return <CleanCode className={props.className} />;
       case TechnologyType.COMMUNICATION_FRAMEWORKS:
