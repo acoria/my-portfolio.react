@@ -1,7 +1,7 @@
-import { IDetailedEntityIconListProps } from "./IDetailedEntityIconListProps";
-import styles from "./DetailedEntityIconList.module.scss";
 import { ReactElement } from "react";
 import { style } from "../../core/utils/style";
+import styles from "./DetailedEntityIconList.module.scss";
+import { IDetailedEntityIconListProps } from "./IDetailedEntityIconListProps";
 
 export function DetailedEntityIconList<TEntity, TTitleEnum>(
   props: IDetailedEntityIconListProps<TEntity, TTitleEnum>
@@ -10,16 +10,32 @@ export function DetailedEntityIconList<TEntity, TTitleEnum>(
     props.entity[props.titleProperty] as TTitleEnum
   );
 
-  const entries = props.entries?.map((entry, index) => (
-    <div key={index}>{entry}</div>
-  ));
+  const getClassName = (entry: string): string => {
+    const index = props.highlightedEntries?.findIndex((item) => item === entry);
+    if (index !== -1) {
+      return styles.highlightedEntry;
+    } else return "";
+  };
+
+  const entries = props.entries?.map((entry, index) => {
+    const length = props.entries?.length;
+    if (length === undefined) return <></>;
+    return (
+      <>
+        <span key={index} className={getClassName(entry)}>
+          {entry}
+        </span>
+        {props.separator && index < length - 1 && <> {props.separator} </>}
+      </>
+    );
+  });
   return (
     <div className={style(styles.detailedEntityIconList, props.className)}>
       <div className={styles.header}>
         {props.icon}
         <h1 className={styles.title}>{title}</h1>
       </div>
-      {props.separator ? props.entries?.join(` ${props.separator} `) : entries}
+      {entries}
     </div>
   );
 }

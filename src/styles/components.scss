@@ -19,7 +19,8 @@
 }
 
 .detailedEntityIconListTitle {
-    @extend .projectDetailsTitle
+    @extend .projectDetailsTitle;
+    letter-spacing: 0.04rem;
 }
 
 .detailedEntityIconListIcon {
@@ -32,7 +33,6 @@
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, $startingColor 50%, $startingColor);
-    // background-image: linear-gradient(to right, $startingColor 50%, colors.$color-full-transparent);
     bottom: -3px;
     left: 0;
     width: 100%;

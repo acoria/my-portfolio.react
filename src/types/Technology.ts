@@ -54,7 +54,6 @@ export enum Technology {
   PORTAINER = "Portainer",
   RASPBERRY_PI = "Raspberry Pi",
   REACT = "React",
-  REACT_ROUTER_DOM = "react-router-dom",
   REDUX = "Redux",
   REQ_ENGINEERING = "Requirements Engineering",
   REST = "REST",

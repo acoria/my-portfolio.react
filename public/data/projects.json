@@ -96,7 +96,6 @@
                 "technologies": [
                     "BLUEPRINT_JS",
                     "REACT",
-                    "REACT_ROUTER_DOM",
                     "REDUX",
                     "SPRING_BOOT"
                 ]
@@ -222,7 +221,6 @@
                     "NEXTJS",
                     "NODEJS",
                     "REACT",
-                    "REACT_ROUTER_DOM",
                     "REDUX",
                     "SEQUELIZE",
                     "SPRING_BOOT"
