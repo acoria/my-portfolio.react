@@ -36,6 +36,13 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
     }
   };
 
+  const onCarouselItemClick = (position: number) => {
+    !isMobileView && setShowZoomedInImagePosition(position);
+  };
+
+  const onZoomedInCloseButtonClick = () =>
+    setShowZoomedInImagePosition(undefined);
+
   const scrollToPosition = useCallback(
     (fromPosition: number, toPosition: number): number => {
       const widthOfItem = carouselWidth * 16;
@@ -90,9 +97,10 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
     getChildAsPosition,
     hasSingleItem,
     isMobileView,
+    onCarouselItemClick,
+    onZoomedInCloseButtonClick,
     ref,
     scrollToPosition,
-    setShowZoomedInImagePosition,
     setVisibleItemPosition,
     showZoomedInImagePosition,
     triggerMoveLeft,

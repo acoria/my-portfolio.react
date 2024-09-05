@@ -24,7 +24,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
           }}
           isZoomable={!viewModel.isMobileView}
           positionInCarousel={index}
-          onClick={viewModel.setShowZoomedInImagePosition}
+          onClick={viewModel.onCarouselItemClick}
         >
           {child}
         </CarouselItem>
@@ -75,7 +75,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
       >
         <CloseButton
           className={styles.closeButton}
-          onClick={() => viewModel.setShowZoomedInImagePosition(undefined)}
+          onClick={viewModel.onZoomedInCloseButtonClick}
         />
         {viewModel.getChildAsPosition(viewModel.showZoomedInImagePosition)}
       </div>
