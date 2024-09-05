@@ -178,10 +178,29 @@
     {
         "id": "50",
         "title": "Color Palette Generator",
-        "challenge": "",
-        "goal": "",
-        "imageUrls": [
-            "./assets/projects/swpo/SWPO.png"
+        "challenge": "Every application needs a color palette. Companies often have corporate identity colors but these do not have enough variation to highlight elements for an entire application. Developers are confronted with finding the right colors for a neat design. This tool helps with this process.",
+        "goal": "Web app to simplify the color choice for development projects by creating a color palette and generating its corresponding code",
+        "images": [
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/01_color_palette_generator_empty.png",
+                "altText": "Empty color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/02_color_palette_generator_half_filled_out.png",
+                "altText": "Half filled out color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/03_color_palette_generator_filled_out.png",
+                "altText": "Filled out color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/04_color_palette_generator_design_examples.png",
+                "altText": "Design examples"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/05_color_palette_generator_palette.png",
+                "altText": "Color palette"
+            }
         ],
         "requirements": [],
         "tasks": [],
