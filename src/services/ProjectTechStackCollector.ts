@@ -3,7 +3,7 @@ import { ITechnology } from "../shared/model/ITechnology";
 import { Technology } from "../types/Technology";
 import { TechnologyType } from "../types/TechnologyType";
 
-export class ProjectTechStackReader {
+export class ProjectTechStackCollector {
   collect(projects: IProject[]): ITechnology[] {
     const collectedTechStack = new Map<TechnologyType, Set<Technology>>();
     projects.forEach((project) => {
@@ -42,6 +42,7 @@ export class ProjectTechStackReader {
         technologies.push(technology);
       }
     }
+    this.sortAlphabetically(technologies);
     return technologies;
   }
 
@@ -49,5 +50,13 @@ export class ProjectTechStackReader {
     const technologies: Technology[] = [];
     technologySet.forEach((technology) => technologies.push(technology));
     return technologies;
+  }
+
+  private sortAlphabetically(technologies: ITechnology[]) {
+    technologies.forEach((technology) => {
+      technology.technologies.sort((first, second) =>
+        first.localeCompare(second)
+      );
+    });
   }
 }

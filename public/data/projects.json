@@ -205,7 +205,7 @@
                     "GRADLE",
                     "JENKINS",
                     "MAVEN",
-                    "BUILD_SCRIPTS_PACKAGE_JSON",
+                    "PACKAGE_JSON_BUILD_SCRIPTS",
                     "PORTAINER",
                     "RASPBERRY_PI"
                 ]

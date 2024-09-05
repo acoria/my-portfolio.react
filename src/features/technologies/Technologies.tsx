@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ProjectAPI } from "../../api/ProjectRepository";
 import { request } from "../../core/utils/request";
-import { ProjectTechStackReader } from "../../services/ProjectTechStackCollector";
+import { ProjectTechStackCollector } from "../../services/ProjectTechStackCollector";
 import { IProject } from "../../shared/model/IProject";
 import { TechStack } from "../projects/projectDetails/techStack/TechStack";
 import styles from "./Technologies.module.scss";
@@ -18,11 +18,12 @@ export const Technologies: React.FC = () => {
 
   const technologies = () => {
     if (projects.length === 0) return;
-    const project = projects.find((project) => project.id === "0");
-    // const technologies = new ProjectTechStackReader().collect(projects);
+    // const project = projects.find((project) => project.id === "0");
+    const technologies = new ProjectTechStackCollector().collect(projects);
     return (
       <TechStack
-        technologies={project?.techStack!}
+        technologies={technologies}
+        // technologies={project?.techStack!}
         className={styles.techStack}
       />
     );
