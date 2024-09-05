@@ -65,7 +65,10 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
       <div className={styles.carouselContent}>
         {!viewModel.isMobileView && (
           <ChevronLeft
-            className={styles.chevron}
+            className={style(
+              styles.chevron,
+              viewModel.hasSingleItem ? styles.navButtonInactive : ""
+            )}
             onClick={viewModel.triggerMoveLeft}
           />
         )}
@@ -78,7 +81,10 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
         </div>
         {!viewModel.isMobileView && (
           <ChevronRight
-            className={styles.chevron}
+            className={style(
+              styles.chevron,
+              viewModel.hasSingleItem ? styles.navButtonInactive : ""
+            )}
             onClick={viewModel.triggerMoveRight}
           />
         )}

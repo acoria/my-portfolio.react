@@ -63,6 +63,14 @@
     outline: none;
 }
 
+.navButtonInactive {
+    fill: colors.$color-carousel-nav-button-inactive;
+
+    &:hover {
+        fill: colors.$color-carousel-nav-button-inactive;
+    }
+}
+
 .zoomable {
     @include mixins.medium-screen() {
         cursor: pointer;

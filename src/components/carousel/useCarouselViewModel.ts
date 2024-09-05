@@ -14,6 +14,8 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
     : 1;
   const [visibleItemPosition, setVisibleItemPosition] = useState(0);
 
+  const hasSingleItem = numberOfItems === 1;
+
   const scrollToPosition = useCallback(
     (fromPosition: number, toPosition: number): number => {
       const widthOfItem = carouselWidth * 16;
@@ -65,6 +67,7 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
   return {
     carouselWidth,
     children: props.children,
+    hasSingleItem,
     isMobileView,
     ref,
     scrollToPosition,
