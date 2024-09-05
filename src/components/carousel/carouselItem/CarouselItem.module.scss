@@ -1,9 +1,22 @@
 @use '../../../styles/mixins.scss';
+@use '../../../styles/colors.module.scss';
 
 .carouselItem {
+    position: relative;
     scroll-snap-align: center;
     box-sizing: border-box;
     flex-shrink: 0;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    fill: colors.$color-carousel-item-close-button-fill;
+    @include mixins.glassy(colors.$color-carousel-item-close-button-background)
 }
 
 .zoomable {
