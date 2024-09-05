@@ -12,8 +12,8 @@ export const useTechnologyTypeName = (): ((
     technologyType: TechnologyType
   ): string => {
     switch (technologyType) {
-      case TechnologyType.CI_CD:
-        return t(texts.technologies.types.ci_cd);
+      case TechnologyType.DEV_OPS:
+        return t(texts.technologies.types.devOps);
       case TechnologyType.CLEAN_CODE_DEV:
         return t(texts.technologies.types.clean_code);
       case TechnologyType.COMMUNICATION_FRAMEWORKS:

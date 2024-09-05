@@ -17,7 +17,7 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
 ) => {
   const icon = () => {
     switch (props.technologyType) {
-      case TechnologyType.CI_CD:
+      case TechnologyType.DEV_OPS:
         return <DevOps className={props.className} />;
       case TechnologyType.CLEAN_CODE_DEV:
         return <CleanCode className={props.className} />;

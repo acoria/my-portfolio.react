@@ -62,16 +62,6 @@
         ],
         "techStack": [
             {
-                "type": "CI_CD",
-                "technologies": [
-                    "DOCKER",
-                    "DOCKER_DESKTOP",
-                    "DOCKER_HUB",
-                    "JENKINS",
-                    "PORTAINER"
-                ]
-            },
-            {
                 "type": "CLEAN_CODE_DEV",
                 "technologies": [
                     "DESIGN_PATTERNS",
@@ -94,6 +84,14 @@
                 ]
             },
             {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "JENKINS"
+                ]
+            },
+            {
                 "type": "FRAMEWORKS_CONCEPTS",
                 "technologies": [
                     "BLUEPRINT_JS",
@@ -111,6 +109,7 @@
                     "GENERICS",
                     "MD",
                     "MENTORING",
+                    "SAP_DYNPRO",
                     "TEAMWORK",
                     "WINDOWS"
                 ]
@@ -173,14 +172,6 @@
         "title": "Dummy with all technologies",
         "techStack": [
             {
-                "type": "CI_CD",
-                "technologies": [
-                    "DOCKER",
-                    "JENKINS",
-                    "RASPBERRY_PI"
-                ]
-            },
-            {
                 "type": "CLEAN_CODE_DEV",
                 "technologies": [
                     "DESIGN_PATTERNS",
@@ -203,6 +194,20 @@
                     "MYSQL",
                     "OPEN_SQL",
                     "POSTGRES"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "DOCKER_HUB",
+                    "GRADLE",
+                    "JENKINS",
+                    "MAVEN",
+                    "BUILD_SCRIPTS_PACKAGE_JSON",
+                    "PORTAINER",
+                    "RASPBERRY_PI"
                 ]
             },
             {
@@ -263,6 +268,7 @@
                 "type": "TESTING",
                 "technologies": [
                     "ABAP_UNIT",
+                    "CHAI",
                     "END_TO_END_TESTING",
                     "JEST",
                     "JUNIT",

@@ -109,10 +109,10 @@
     "technologies": {
         "title": "Technologies",
         "types": {
-            "ci_cd": "CI/CD",
             "clean_code": "Clean Code Development",
             "communication_frameworks": "Communication Frameworks & Protocols",
             "databases": "Databases",
+            "devOps": "CI/CD & DevOps",
             "frameworks_concepts": "Frameworks & Concepts",
             "others": "Others",
             "programming_languages": "Programming Languages",
