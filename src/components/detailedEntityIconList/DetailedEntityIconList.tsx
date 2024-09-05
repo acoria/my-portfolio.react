@@ -12,7 +12,7 @@ export function DetailedEntityIconList<TEntity, TTitleEnum>(
 
   const getClassName = (entry: string): string => {
     const index = props.highlightedEntries?.findIndex((item) => item === entry);
-    if (index !== -1) {
+    if (index !== -1 && index !== undefined) {
       return styles.highlightedEntry;
     } else return "";
   };
