@@ -4,4 +4,5 @@ export interface ICarouselItemProps {
   children?: ReactElement | ReactElement[];
   onMovedIntoView?: () => void;
   widthStyle: CSSProperties;
+  isZoomable?: boolean;
 }

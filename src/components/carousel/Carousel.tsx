@@ -36,6 +36,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
           onMovedIntoView={() => {
             isMobileView && setVisibleItemPosition(index);
           }}
+          isZoomable={!isMobileView}
         >
           {child}
         </CarouselItem>

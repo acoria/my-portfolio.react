@@ -1,15 +1,12 @@
 import { Carousel } from "../../../components/carousel/Carousel";
 import { DateTime } from "../../../core/services/date/DateTime";
 import { useRenderMonth } from "../../../hooks/useRenderMonth";
-import { texts } from "../../../hooks/useTranslation/texts";
-import { useTranslation } from "../../../hooks/useTranslation/useTranslation";
 import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails";
 import { IProjectProps } from "./IProjectProps";
 import styles from "./Project.module.scss";
 
 export const Project: React.FC<IProjectProps> = (props) => {
   const renderMonth = useRenderMonth();
-  const { t } = useTranslation();
 
   let startMonth: string = "";
   let startYear: number = 0;
