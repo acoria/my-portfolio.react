@@ -8,6 +8,7 @@ import { ReactComponent as Project } from "../../../../../assets/roles/project.s
 import { ReactComponent as Protocol } from "../../../../../assets/roles/protocol.svg";
 import { ReactComponent as Spanner2 } from "../../../../../assets/roles/spanner.svg";
 import { ReactComponent as Testing } from "../../../../../assets/roles/testing.svg";
+import { ReactComponent as Usability } from "../../../../../assets/roles/usability.svg";
 import { error } from "../../../../../core/utils/error";
 import { TechnologyType } from "../../../../../types/TechnologyType";
 import { ITechnologyTypeIconProps } from "./ITechnologyTypeIconProps";
@@ -37,6 +38,8 @@ export const TechnologyTypeIcon: React.FC<ITechnologyTypeIconProps> = (
         return <Testing className={props.className} />;
       case TechnologyType.TOOLS:
         return <Spanner2 className={props.className} />;
+      case TechnologyType.UI_UX_DESIGN:
+        return <Usability className={props.className} />;
       default:
         error(`Missing icon for technology type "${props.technologyType}".`);
     }

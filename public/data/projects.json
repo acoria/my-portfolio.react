@@ -160,6 +160,14 @@
                     "SAP_GUI",
                     "VS_CODE"
                 ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "LEAN_UX",
+                    "UI_UX_DESIGN",
+                    "USABILITY_TESTING"
+                ]
             }
         ],
         "start": "2023-01-01T01:00:00.031Z",
@@ -293,6 +301,15 @@
                     "SAP_GUI",
                     "TRELLO",
                     "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "LEAN_UX",
+                    "UI_UX_DESIGN",
+                    "UX_AUDITING",
+                    "USABILITY_TESTING"
                 ]
             }
         ],

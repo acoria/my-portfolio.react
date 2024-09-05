@@ -3,16 +3,22 @@ import { Technology } from "../types/Technology";
 export class KeyTechnologyInfo {
   private technologyEntries = Object.entries(Technology);
   private keySkills = new Set<Technology>([
+    Technology.CSS,
     Technology.EXPRESS,
+    Technology.HTML,
     Technology.JAVASCRIPT,
     Technology.JEST,
+    Technology.LEAN_UX,
     Technology.NODEJS,
     Technology.REACT,
+    Technology.REST,
+    Technology.REQ_ENGINEERING,
     Technology.SOFTWARE_ARCHITECTURE,
     Technology.SCRUM,
     Technology.SCSS,
     Technology.TYPESCRIPT,
     Technology.UNIT_TESTING,
+    Technology.UI_UX_DESIGN,
     Technology.VS_CODE,
   ]);
 

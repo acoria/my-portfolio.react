@@ -9,4 +9,5 @@ export enum TechnologyType {
   PROJECT_MANAGEMENT = "PROJECT_MANAGEMENT",
   TESTING = "TESTING",
   TOOLS = "TOOLS",
+  UI_UX_DESIGN = "UI_UX_DESIGN",
 }

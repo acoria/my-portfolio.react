@@ -32,6 +32,8 @@ export const useTechnologyTypeName = (): ((
         return t(texts.technologies.types.testing);
       case TechnologyType.TOOLS:
         return t(texts.technologies.types.tools);
+      case TechnologyType.UI_UX_DESIGN:
+        return t(texts.technologies.types.uiUxDesign);
       default:
         error(
           `Missing technology type "${technologyType}". This type is not mapped to a name.`
