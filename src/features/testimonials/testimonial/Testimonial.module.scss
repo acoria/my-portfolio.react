@@ -3,7 +3,7 @@
 
 .testimonial {
     width: fit-content;
-    padding: 2rem;
+    padding: 2rem 2rem 1.8rem 2rem;
     @include mixins.glassy()
 }
 
