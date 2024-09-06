@@ -67,41 +67,41 @@
             "title": "Complex Business Software",
             "descriptions": {
                 "usableByAnyone": "Usable by anyone",
-                "complexToEasy": "No matter how complex the process, together we will find a way to display it in an easy way - and so keep the training effort to a minimum"
+                "complexToEasy": "No matter how complex the process, together we will find a way to display it in an easy way - and so keep the training effort to a minimum."
             }
         },
         "easyToUse": {
             "title": "Appealing and easy-to-use interfaces",
             "descriptions": {
-                "users": "Users are integrated into the development process to find their actual problem",
-                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development"
+                "users": "Users are integrated into the development process to find their actual problem.",
+                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development."
             }
         },
         "futureSave": {
             "title": "Future save software",
             "descriptions": {
-                "architecture": "Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development"
+                "architecture": "Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development."
             }
         },
         "highQualitySoftware": {
             "title": "High Quality Software",
             "descriptions": {
-                "years": "With over 12years of programming experience(expertise) in various languages, you get the best from all worlds",
-                "tests": "Tests ensure that bugs are found by the developers, not the users"
+                "years": "With over 12 years of programming experience in various languages, you get the best from all worlds.",
+                "tests": "Tests ensure that bugs are found by the developers, not the users."
             }
         },
         "projectManagement": {
             "title": "Reliable project planning and estimation",
             "descriptions": {
-                "management": "Project & development management with Scrum",
-                "scrum": "An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down, clear for everyone and developers can be put to work according on their skills"
+                "management": "Project & Development management with Scrum",
+                "scrum": "An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down & clear for everyone in the development team."
             }
         },
         "meetings": {
             "title": "Short, efficient meeting moderation",
             "descriptions": {
-                "liveIsShort": "Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work",
-                "planning": "By providing and following an agenda & preparing and collecting all points to be discussed throughout the development process, I keep meeting times to a minimum"
+                "liveIsShort": "Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work.",
+                "planning": "With an agenda and proper meeting preparation, I keep meeting times to a minimum."
             }
         }
     },
