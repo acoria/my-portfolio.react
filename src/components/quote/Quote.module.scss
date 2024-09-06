@@ -9,19 +9,20 @@
 .quotationMark {
     font-family: "Antonio";
     color: colors.$color-font-light;
+    // font-size: 1.8rem;
     font-style: italic;
 }
 
 .quotationMarkLeft {
     @extend .quotationMark;
     align-self: start;
-    transform: translateY(-1.8rem);
+    transform: translateY(-1.4rem);
 }
 
 .quotationMarkRight {
     @extend .quotationMark;
     align-self: end;
-    transform: translateY(2rem);
+    transform: translateY(2rem) translateX(-0.5rem);
 }
 
 .quoteText {

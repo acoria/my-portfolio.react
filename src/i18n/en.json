@@ -1,10 +1,10 @@
 {
-    "myMotivation": {
+    "myMotivationQuote": {
         "introductionText": "My motivation comes from seeing the faces of my users light up with understanding or even happiness when they use my software. Whether it’s a user application or an API, usability is a key component of my designs, alongside a solid software architecture. Due to my independent and highly structured approach to work, I am able to complete my projects with high quality in the most pragmatic way."
     },
     "cv": "CV",
     "banner": {
-        "headline_1": "More than a senior fullstack developer",
+        "headline_1": "More than a Senior Fullstack Developer",
         "headline_2": "...a solution finder",
         "headline_3": "...a problem solver",
         "portraitImageDescription": "Portrait of me"

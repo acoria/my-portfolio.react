@@ -1,8 +1,8 @@
-import { ReactElement, useEffect, useId } from "react";
+import { useEffect, useId } from "react";
 import { useInView } from "react-intersection-observer";
+import { style } from "../../core/utils/style";
 import { IPageSectionProps } from "./IPageSectionProps";
 import styles from "./PageSection.module.scss";
-import { style } from "../../core/utils/style";
 
 export const PageSection: React.FC<IPageSectionProps> = (props) => {
   const { ref, inView } = useInView({ threshold: 0.2, rootMargin: "50px" });
@@ -35,7 +35,9 @@ export const PageSection: React.FC<IPageSectionProps> = (props) => {
       >
         {props.title}
       </h1>
-      {props.subTitle && <p className={styles.subTitle}>{props.subTitle}</p>}
+      {props.subTitle && (
+        <span className={styles.subTitle}>{props.subTitle}</span>
+      )}
       {props.children}
     </div>
   );
