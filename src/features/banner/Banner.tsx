@@ -1,7 +1,7 @@
 import { AppConfig } from "../../AppConfig";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import { AboutMe } from "../aboutMe/AboutMe";
+import { MyMotivation } from "../aboutMe/MyMotivation";
 import styles from "./Banner.module.scss";
 
 export const Banner: React.FC = () => {
@@ -25,11 +25,11 @@ export const Banner: React.FC = () => {
           {t(texts.banner.headline_3)}
         </h1>
       </div>
-      <div className={styles.contactAndAboutMe}>
+      <div className={styles.contactAndMyMotivation}>
         <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
           Contact me
         </a>
-        <AboutMe className={styles.aboutMe} />
+        <MyMotivation className={styles.myMotivation} />
       </div>
     </div>
   );

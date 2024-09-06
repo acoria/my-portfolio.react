@@ -94,7 +94,7 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
     }
 }
 
-.contactAndAboutMe {
+.contactAndMyMotivation {
     grid-column: 1/3;
     grid-row-start: 2;
     display: flex;
@@ -128,7 +128,7 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
     }
 }
 
-.aboutMe {
+.myMotivation {
     @include mixins.medium-screen {
         width: 25rem;
     }
