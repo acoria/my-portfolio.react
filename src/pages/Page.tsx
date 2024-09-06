@@ -12,6 +12,7 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
+import { Background } from "../features/background/Background";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -141,7 +142,10 @@ export const Page: React.FC = () => {
         <div ref={refHeadline} style={{ scrollMarginTop: headerHeightInPixel }}>
           <Banner />
         </div>
-        <div className={styles.pageSections}>{navContent}</div>
+        <div className={styles.backgroundWrapper}>
+          <Background />
+          <div className={styles.pageSections}>{navContent}</div>
+        </div>
       </div>
     </>
   );

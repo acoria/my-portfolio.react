@@ -54,17 +54,14 @@ export const Skills: React.FC = () => {
   ];
 
   return (
-    <div className={styles.skillsWrapper}>
-      <Background />
-      <div className={styles.skills}>
-        {skills.map((skill, index) => {
-          if (isSmallScreen) {
-            return <SkillAccordion skill={skill} key={index} />;
-          } else {
-            return <SkillCard skill={skill} key={index} />;
-          }
-        })}
-      </div>
+    <div className={styles.skills}>
+      {skills.map((skill, index) => {
+        if (isSmallScreen) {
+          return <SkillAccordion skill={skill} key={index} />;
+        } else {
+          return <SkillCard skill={skill} key={index} />;
+        }
+      })}
     </div>
   );
 };

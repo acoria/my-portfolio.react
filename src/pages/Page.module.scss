@@ -1,6 +1,10 @@
 @use '../styles/colors.module.scss';
 @use '../styles/mixins.scss';
 
+.backgroundWrapper {
+    position: relative;
+}
+
 .content {
     background-color: colors.$color-page-content-background;
 }
@@ -13,6 +17,7 @@
 }
 
 .pageSection {
+    z-index: 1;
     padding-top: 0.5rem;
 
     @include mixins.medium-screen {
