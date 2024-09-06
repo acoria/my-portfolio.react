@@ -11,7 +11,6 @@ export interface IProject {
   myRoles: string[];
   requirements?: string[];
   start?: Date;
-  tasks?: string[];
   techStack: ITechnology[];
   title: string;
   images?: IImage[];

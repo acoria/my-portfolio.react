@@ -53,14 +53,6 @@
             "Generation of installation guides based on Markdown",
             "Automatic guidance of the user to solve problems to avoid installation errors and reduce support costs"
         ],
-        "tasks": [
-            "Coordination between different stakeholders such as customers, delivery, sales and support",
-            "Creating UX designs and running usability tests",
-            "Collecting and clarifying requirements & adding them to backlog",
-            "Creating data model and software architecture",
-            "Implementing frontend, backend & REST interface based on JSON",
-            "Moderating, coordinating and leading through reviews"
-        ],
         "techStack": [
             {
                 "type": "CLEAN_CODE_DEV",
@@ -178,7 +170,11 @@
     {
         "id": "50",
         "title": "Color Palette Generator",
-        "challenge": "Every application needs a color palette. Companies often have corporate identity colors but these do not have enough variation to highlight elements for an entire application. Developers are confronted with finding the right colors for a neat design. This tool helps with this process.",
+        "challenge": "Every application requires a color palette. While companies often have corporate identity colors, these usually lack enough variation to highlight different elements throughout the entire application. Developers face the challenge of finding the right colors for a cohesive design. This tool simplifies that process.",
+        "customer": {
+            "logoUrl": "./assets/Logo.svg",
+            "name": "OWN PROJECT"
+        },
         "goal": "Web app to simplify the color choice for development projects by creating a color palette and generating its corresponding code",
         "images": [
             {
@@ -202,9 +198,64 @@
                 "altText": "Color palette"
             }
         ],
-        "requirements": [],
-        "tasks": [],
-        "techStack": [],
+        "requirements": [
+            "Designing a generator that is easy to use for developers without design experience",
+            "Simple adding of color variations by basing the next color on the previous one",
+            "A quick overview of if and how the colors will harmonize with each other by showing app examples",
+            "Generating CSS/SCSS coding for color palette to be copied with one click"
+        ],
+        "techStack": [
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "DOCKER_HUB",
+                    "PACKAGE_JSON_BUILD_SCRIPTS",
+                    "PORTAINER",
+                    "RASPBERRY_PI"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "REACT"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "CSS",
+                    "HTML",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "FIGMA",
+                    "GIT",
+                    "GITHUB",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "UI_UX_DESIGN"
+                ]
+            }
+        ],
         "start": "2024-01-01T01:00:00.031Z",
         "end": "2024-03-01T23:00:00.031Z",
         "archived": false
@@ -323,7 +374,6 @@
                 "type": "TOOLS",
                 "technologies": [
                     "ANDROID_STUDIO",
-                    "CHAI",
                     "CONFLUENCE",
                     "BALSAMIQ",
                     "ENTERPRISE_ARCHITECT",
