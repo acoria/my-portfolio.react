@@ -31,6 +31,8 @@ export const Banner: React.FC = () => {
         </a>
         <Quote
           className={styles.myMotivationQuote}
+          classNameQuotationMarks={styles.myMotivationQuotationMarks}
+          classNameQuoteText={styles.myMotivationQuoteText}
           text={t(texts.myMotivationQuote.introductionText)}
         />
       </div>

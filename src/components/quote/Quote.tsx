@@ -17,14 +17,14 @@ export const Quote: React.FC<IQuoteProps> = (props) => {
         <p className={style(styles.quoteText, props.classNameQuoteText)}>
           {props.text}
         </p>
-        <span
+        <h2
           className={style(
             styles.quotationMarkRight,
             props.classNameQuotationMarks
           )}
         >
           "
-        </span>
+        </h2>
       </div>
     </div>
   );

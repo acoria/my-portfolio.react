@@ -132,6 +132,14 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
     }
 }
 
+.myMotivationQuoteText {
+    color: colors.$color-banner-quote;
+}
+
+.myMotivationQuotationMarks {
+    @extend .myMotivationQuoteText;
+}
+
 @keyframes moveRightPortrait {
     0% {
         transform: translateX(-0.8rem);
