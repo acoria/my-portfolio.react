@@ -1,9 +1,9 @@
 @use '../../styles/colors.module.scss';
 @use '../../styles/mixins.scss';
 
-$animationTime: 1s;
-$animationMoveLeft: moveLeft $animationTime;
-$animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
+$animation-time: 1s;
+$animation-move-left: moveLeft $animation-time;
+$animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
 
 .banner {
     display: grid;
@@ -30,11 +30,11 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
     width: 8rem;
     height: auto;
     border-radius: 50%;
-    animation: moveRightPortrait $animationTime;
+    animation: moveRightPortrait $animation-time;
 
     @include mixins.large-screen {
         width: 18rem;
-        animation: moveRightLargeScreenPortrait $animationTime forwards;
+        animation: moveRightLargeScreenPortrait $animation-time forwards;
     }
 }
 
@@ -52,33 +52,45 @@ $animationMoveLeftLargeScreen: moveLeftLargeScreen $animationTime;
 
 .firstHeadlineText {
     @extend .headlineText;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: colors.$color-banner-headline-accent;
-    text-shadow: 2px 2px 1px colors.$color-banner-text-shadow;
-    animation: $animationMoveLeft;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    animation: $animation-move-left;
+
+    &:first-letter {
+        font-size: 1.6rem;
+        color: colors.$color-banner-headline-first-letter-accent;
+    }
 
     @include mixins.large-screen {
-        animation: $animationMoveLeftLargeScreen;
-        text-shadow: none;
+        font-size: 4rem;
+        color: colors.$color-banner-headline-accent;
+        animation: $animation-move-left-large-screen;
+
+        &:first-letter {
+            font-size: 4.8rem;
+            color: colors.$color-banner-headline-accent;
+        }
     }
 
 }
 
 .secondHeadlineText {
     @extend .headlineText;
-    animation: moveRightHeadline $animationTime forwards;
+    animation: moveRightHeadline $animation-time forwards;
 
     @include mixins.large-screen {
-        animation: moveRightLargeScreenHeadline $animationTime forwards;
+        animation: moveRightLargeScreenHeadline $animation-time forwards;
     }
 }
 
 .thirdHeadlineText {
     @extend .headlineText;
-    animation: $animationMoveLeft;
+    animation: $animation-move-left;
 
     @include mixins.large-screen {
-        animation: $animationMoveLeftLargeScreen;
+        animation: $animation-move-left-large-screen;
     }
 }
 

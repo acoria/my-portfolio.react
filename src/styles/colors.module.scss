@@ -9,8 +9,9 @@ $color-secondary-400: #d2d2b6;
 $color-secondary-300: #e1e1cb;
 $color-secondary-200: #f1f1df;
 $color-accent: #73216B;
-// $color-accent-other: #48863b;
-$color-accent-other: #048004;
+$color-accent-light: #ca8cc4;
+// $color-accent-light: #cea5ca;
+// $color-accent-other: #048004;
 $color-full-transparent: rgba(0, 0, 0, 0);
 
 /* components */
@@ -31,6 +32,7 @@ $color-banner-background: $color-primary;
 $color-banner-box-shadow: $color-primary-light;
 $color-banner-headline-accent: $color-accent;
 $color-banner-text-shadow: $color-primary-light;
+$color-banner-headline-first-letter-accent: $color-accent-light;
 
 $color-carousel-chevron: $color-primary;
 $color-carousel-chevron-hover: $color-primary-light;
