@@ -107,7 +107,8 @@
     },
     "technologies": {
         "title": "Technologies",
-        "subTitle": "Technologies I work with",
+        "subTitle": "Technologies I {{preferably}} work with",
+        "subTitleMiddlePart": "preferably",
         "types": {
             "clean_code": "Clean Code Development",
             "communication_frameworks": "Communication Frameworks & Protocols",

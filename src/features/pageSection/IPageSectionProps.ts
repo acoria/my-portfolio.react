@@ -4,7 +4,7 @@ import { IHaveClassName } from "../../types/IHaveClassName";
 
 export interface IPageSectionProps extends IHaveClassName {
   title: string;
-  subTitle?: string;
+  subTitle?: string | ReactElement;
   topOffsetInPixel?: string;
   children?: ReactElement | ReactElement[];
   onChangeViewportVisibility?: (visible: boolean) => void;

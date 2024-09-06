@@ -1,4 +1,4 @@
-import { useEffect, useId } from "react";
+import { ReactElement, useEffect, useId } from "react";
 import { useInView } from "react-intersection-observer";
 import { IPageSectionProps } from "./IPageSectionProps";
 import styles from "./PageSection.module.scss";

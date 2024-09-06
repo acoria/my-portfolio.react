@@ -43,7 +43,13 @@ export const Page: React.FC = () => {
     },
     {
       caption: t(texts.technologies.title),
-      subCaption: t(texts.technologies.subTitle),
+      subCaption: t(texts.technologies.subTitle, {
+        preferably: (
+          <span className={styles.highlightedText}>
+            {t(texts.technologies.subTitleMiddlePart)}
+          </span>
+        ),
+      }),
       scrollToSignal: scrollToTechnologiesSignal,
       signalTrigger: triggerScrollToTechnologies,
       component: <Technologies />,
