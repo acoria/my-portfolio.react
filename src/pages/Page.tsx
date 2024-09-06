@@ -29,18 +29,21 @@ export const Page: React.FC = () => {
   const navItems: INavItem[] = [
     {
       caption: t(texts.skills.title),
+      subCaption: t(texts.skills.subTitle),
       scrollToSignal: scrollToSkillsSignal,
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
     },
     {
       caption: t(texts.projects.title),
+      subCaption: t(texts.projects.subTitle),
       scrollToSignal: scrollToProjectsSignal,
       signalTrigger: triggerScrollToProjects,
       component: <ProjectList />,
     },
     {
       caption: t(texts.technologies.title),
+      subCaption: t(texts.technologies.subTitle),
       scrollToSignal: scrollToTechnologiesSignal,
       signalTrigger: triggerScrollToTechnologies,
       component: <Technologies />,
@@ -83,6 +86,7 @@ export const Page: React.FC = () => {
         <PageSection
           key={`${navItem.caption}_${index}`}
           title={navItem.caption}
+          subTitle={navItem.subCaption}
           onChangeViewportVisibility={(visible: boolean) => {
             if (visible) {
               addTabToVisibleTabs(index);
@@ -103,7 +107,6 @@ export const Page: React.FC = () => {
           scrollIntoViewSignal={navItems[index].scrollToSignal}
           className={styles.pageSection}
         >
-          <h1 className={styles.sectionTitle}>{navItem.caption}</h1>
           {navItem.component}
         </PageSection>
       ))}

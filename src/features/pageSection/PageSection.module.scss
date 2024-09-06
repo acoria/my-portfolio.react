@@ -1,0 +1,25 @@
+@use '../../styles/mixins.scss';
+
+.title {
+    font-family: "Antonio";
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: x-large;
+    margin-top: 1.4rem;
+
+    @include mixins.medium-screen {
+        font-size: xx-large;
+    }
+}
+
+.titleWithSubtitle {
+    margin-bottom: 0;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    margin: 1rem 0;
+    letter-spacing: 0.2rem;
+}

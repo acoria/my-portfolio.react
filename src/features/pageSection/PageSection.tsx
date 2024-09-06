@@ -1,6 +1,8 @@
 import { useEffect, useId } from "react";
 import { useInView } from "react-intersection-observer";
 import { IPageSectionProps } from "./IPageSectionProps";
+import styles from "./PageSection.module.scss";
+import { style } from "../../core/utils/style";
 
 export const PageSection: React.FC<IPageSectionProps> = (props) => {
   const { ref, inView } = useInView({ threshold: 0.2, rootMargin: "50px" });
@@ -25,6 +27,15 @@ export const PageSection: React.FC<IPageSectionProps> = (props) => {
       style={{ scrollMarginTop: props.topOffsetInPixel }}
       className={props.className}
     >
+      <h1
+        className={style(
+          styles.title,
+          props.subTitle ? styles.titleWithSubtitle : ""
+        )}
+      >
+        {props.title}
+      </h1>
+      {props.subTitle && <p className={styles.subTitle}>{props.subTitle}</p>}
       {props.children}
     </div>
   );
