@@ -1,5 +1,5 @@
-import { IHaveClassName } from "../../../types/IHaveClassName";
+import { ITestimonial } from "../../../shared/model/ITestimonial";
 
-export interface ITestimonialProps{
-  testimonial: string;
+export interface ITestimonialProps {
+  testimonial: ITestimonial;
 }

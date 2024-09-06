@@ -1,17 +1,26 @@
-import { texts } from "../../hooks/useTranslation/texts";
-import { useTranslation } from "../../hooks/useTranslation/useTranslation";
+import { useEffect, useState } from "react";
+import { TestimonialRepository } from "../../api/TestimonialRepository";
+import { request } from "../../core/utils/request";
+import { ITestimonial } from "../../shared/model/ITestimonial";
 import { ITestimonialsProps } from "./ITestimonialsProps";
 import { Testimonial } from "./testimonial/Testimonial";
 import styles from "./Testimonials.module.scss";
 
 export const Testimonials: React.FC<ITestimonialsProps> = (props) => {
-  const { t } = useTranslation();
+  const [testimonials, setTestimonials] = useState<ITestimonial[]>([]);
+
+  useEffect(() => {
+    request(async () => {
+      const testimonials = await TestimonialRepository.findAll();
+      setTestimonials(testimonials);
+    });
+  }, []);
 
   return (
     <div className={styles.testimonials}>
-      {/* <p>{`"${t(texts.testimonials.texts.sapSaschaStephan)}"`}</p> */}
-      {/* <span>Sascha Stephan (SAP)</span> */}
-      <Testimonial testimonial={t(texts.testimonials.texts.sapSaschaStephan)} />
+      {testimonials.map((testimonial) => (
+        <Testimonial testimonial={testimonial} />
+      ))}
     </div>
   );
 };

@@ -1,8 +1,9 @@
+import { ReactElement } from "react";
 import { IHaveClassName } from "../../types/IHaveClassName";
 
 export interface IQuoteProps extends IHaveClassName {
-  classNameQuotationMarks?: string,
-  classNameQuoteText?: string,
-  author?: string;
+  author?: string | ReactElement;
+  classNameQuotationMarks?: string;
+  classNameQuoteText?: string;
   text: string;
 }

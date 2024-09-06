@@ -54,12 +54,12 @@ export const Page: React.FC = () => {
       signalTrigger: triggerScrollToTechnologies,
       component: <Technologies />,
     },
-    {
-      caption: t(texts.cv),
-      scrollToSignal: scrollToCVSignal,
-      signalTrigger: triggerScrollToCV,
-      component: <CV />,
-    },
+    // {
+    //   caption: t(texts.cv),
+    //   scrollToSignal: scrollToCVSignal,
+    //   signalTrigger: triggerScrollToCV,
+    //   component: <CV />,
+    // },
     {
       caption: t(texts.testimonials.title),
       scrollToSignal: scrollToTestimonialsSignal,

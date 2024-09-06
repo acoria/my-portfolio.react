@@ -1,5 +1,10 @@
 @use '../../styles/colors.module.scss';
 
+.quoteAndAuthor {
+    display: flex;
+    flex-direction: column;
+}
+
 .quote {
     display: flex;
     flex-direction: row;
@@ -26,4 +31,8 @@
 .quoteText {
     margin: 0;
     font-style: italic;
+}
+
+.author {
+    align-self: end;
 }
