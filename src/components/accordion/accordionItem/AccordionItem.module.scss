@@ -35,12 +35,14 @@
     @extend .chevron;
     transform: rotate(90deg);
     transition: transform 0.3s;
+    flex-shrink: 0;
 }
 
 .chevronDown {
     @extend .chevron;
     transform: rotate(-90deg);
     transition: transform 0.3s;
+    flex-shrink: 0;
 }
 
 .content {
