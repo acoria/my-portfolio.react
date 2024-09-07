@@ -25,8 +25,10 @@ $color-font-light: $color-secondary;
 $color-glassy-background: $color-secondary-300;
 
 /* features */
-$color-background-shape-from: $color-primary;
-$color-background-shape-to: $color-primary-lighter;
+// $color-background-shape-from: $color-primary;
+// $color-background-shape-to: $color-primary-lighter;
+$color-background-shape-from: transparentize($color-primary, 0.5);
+$color-background-shape-to: transparentize($color-primary-lighter, 0.5);
 
 $color-banner-background: $color-primary;
 $color-banner-box-shadow: $color-primary-light;

@@ -1,10 +1,6 @@
 @use '../../../styles/dimensions.module.scss' as dimens;
 @use '../../../styles/mixins.scss';
 
-.projectsWrapper {
-    position: relative;
-}
-
 .projects {
     display: flex;
     flex-direction: column;

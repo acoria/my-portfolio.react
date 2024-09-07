@@ -2,7 +2,6 @@ import { useScreenSize } from "../../hooks/useScreenSize";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { ISkill } from "../../shared/model/ISkill";
-import { Background } from "../background/Background";
 import { SkillAccordion } from "./skillAccordion/SkillAccordion";
 import { SkillCard } from "./skillCard/SkillCard";
 import styles from "./Skills.module.scss";
