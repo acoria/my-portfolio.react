@@ -3,12 +3,18 @@
 
 .testimonial {
     width: fit-content;
-    padding: 2rem 2rem 1.8rem 2rem;
-    @include mixins.glassy()
+    padding: 2.5rem 2rem 2rem 2rem;
+    @include mixins.glassy();
+
+    @include mixins.medium-screen {
+        padding: 2.3rem 2rem 1.8rem 2rem;
+    }
 }
 
 .testimonialText {
-    width: 15rem;
+    @include mixins.medium-screen {
+        width: 15rem;
+    }
 }
 
 .quoteFrom {

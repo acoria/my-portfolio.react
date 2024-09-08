@@ -1,8 +1,15 @@
 @use '../../styles/dimensions.module.scss' as dimens;
+@use '../../styles/mixins.scss';
 
 .testimonials {
-    padding: dimens.$padding-page;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-bottom: dimens.$padding-page;
+
+    @include mixins.medium-screen {
+        flex-direction: row;
+        padding: dimens.$padding-page;
+        justify-content: space-between;
+    }
 }
