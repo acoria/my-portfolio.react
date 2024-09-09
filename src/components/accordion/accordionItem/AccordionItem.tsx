@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from "react";
-import { ReactComponent as ChevronLeft } from "../../../assets/chevron_left.svg";
+import { ReactComponent as ChevronLeft } from "../../../assets/icons/chevron_left.svg";
 import { style } from "../../../core/utils/style";
 import styles from "./AccordionItem.module.scss";
 import { IAccordionItemProps } from "./IAccordionItemProps";

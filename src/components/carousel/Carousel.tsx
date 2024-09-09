@@ -1,12 +1,12 @@
 import { CSSProperties, ReactElement } from "react";
-import { ReactComponent as ChevronLeft } from "../../assets/chevron_left.svg";
-import { ReactComponent as ChevronRight } from "../../assets/chevron_right.svg";
+import { ReactComponent as ChevronLeft } from "../../assets/icons/chevron_left.svg";
+import { ReactComponent as ChevronRight } from "../../assets/icons/chevron_right.svg";
+import { ReactComponent as CloseButton } from "../../assets/icons/close.svg";
 import { style } from "../../core/utils/style";
 import styles from "./Carousel.module.scss";
 import { CarouselItem } from "./carouselItem/CarouselItem";
 import { ICarouselProps } from "./ICarouselProps";
 import { useCarouselViewModel } from "./useCarouselViewModel";
-import { ReactComponent as CloseButton } from "../../assets/close.svg";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
   const viewModel = useCarouselViewModel(props);

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 375 667"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="spikeShapes">
+            <polygon points="0,220 316,240 0,260"/>
+            <polygon points="375,354 0,380 375,375 "/>
+            <polygon points="375,494 51,526 375,525 "/>
+            <polygon points="0,802 250,833 0,830"/>
+            <polygon points="375,926 62,970 375,965"/>
+            <polygon points="375,1234 195,1259 375,1255"/>
+            <polygon points="0,1334 300,1347 0,1295"/>
+            <polygon points="0,1544 199,1570 0,1576"/>
+            <polygon points="375,1700 38,1710 375,1730"/>
+            <polygon points="375,1963 117,2016 375,2003"/>
+            <polygon points="375,2306 58,2331 375,2342"/>
+            <polygon points="0,2410 300,2451 0,2450"/>
+            <polygon points="375,2788 58,2811 375,2820"/>
+            <polygon points="0,3200 316,3220 0,3250"/>
+            <polygon points="375,3500 51,3530 375,3540 "/>
+            <polygon points="0,4044 350,4070 0,4080"/>
+            <polygon points="375,4534 10,4540 375,4555"/>
+            <polygon points="0,5034 330,5045 0,5060"/>
+        </clipPath>
+    </defs>
+</svg>
