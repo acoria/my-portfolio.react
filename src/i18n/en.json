@@ -2,7 +2,14 @@
     "myMotivationQuote": {
         "introductionText": "My motivation comes from seeing the faces of my users light up with understanding or even happiness when they use my software. Whether it’s a user application or an API, usability is a key component of my designs, alongside a solid software architecture. Due to my independent and highly structured approach to work, I am able to complete my projects with high quality in the most pragmatic way."
     },
-    "aboutMe": "About Me",
+    "aboutMe": {
+        "title": "About Me",
+        "languages": {
+            "title": "Languages",
+            "german": "German (native)",
+            "english": "English (fluent)"
+        }
+    },
     "banner": {
         "contactMe": "Contact me",
         "headline_1": "More than a Senior Fullstack Developer",

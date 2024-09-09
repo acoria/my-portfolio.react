@@ -1,0 +1,26 @@
+@use '../../../styles/mixins.scss';
+@use '../../../styles/colors.module.scss';
+
+.aboutMeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixins.glassy;
+    padding: 1rem;
+    color: colors.$color-about-me-text;
+}
+
+.iconAndTitle {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.content {
+    font-weight: 600;
+}

@@ -56,7 +56,7 @@ export const Page: React.FC = () => {
       component: <Technologies />,
     },
     {
-      caption: t(texts.aboutMe),
+      caption: t(texts.aboutMe.title),
       scrollToSignal: scrollToAboutMeSignal,
       signalTrigger: triggerScrollToAboutMe,
       component: <AboutMe />,
