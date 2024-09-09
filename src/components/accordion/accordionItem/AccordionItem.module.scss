@@ -1,16 +1,19 @@
 @use '../../../styles/colors.module.scss';
 @use '../../../styles/mixins.scss';
 
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: colors.$color-accordion-item-header-background;
-    // @include mixins.glassy(colors.$color-accordion-item-header-background);
 
-    &:hover {
-        @extend .headerIsOpen;
+    @include mixins.large-screen {
+        &:hover {
+            box-shadow: 0 1px 4px colors.$color-accordion-item-box-shadow;
+            font-weight: 600;
+        }
     }
 }
 
