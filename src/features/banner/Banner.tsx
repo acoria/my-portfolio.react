@@ -3,6 +3,7 @@ import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { Quote } from "../../components/quote/Quote";
 import styles from "./Banner.module.scss";
+import { text } from "stream/consumers";
 
 export const Banner: React.FC = () => {
   const { t } = useTranslation();
@@ -27,7 +28,7 @@ export const Banner: React.FC = () => {
       </div>
       <div className={styles.contactAndMyMotivationQuote}>
         <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
-          Contact me
+          {t(texts.banner.contactMe)}
         </a>
         <Quote
           className={styles.myMotivationQuote}

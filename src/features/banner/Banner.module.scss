@@ -128,6 +128,7 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
 
 .myMotivationQuote {
     @include mixins.medium-screen {
+        align-self: end;
         width: 25rem;
     }
 }
