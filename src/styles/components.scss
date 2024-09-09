@@ -1,6 +1,11 @@
 @use './mixins.scss';
 @use './colors.module.scss';
 
+.aboutMeIcon {
+    width: 5rem;
+    height: auto;
+}
+
 @mixin cardTitle {
     text-transform: uppercase;
     font-size: medium;

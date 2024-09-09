@@ -4,6 +4,10 @@
     },
     "aboutMe": {
         "title": "About Me",
+        "education": {
+            "title": "Education",
+            "degree": "B.A. Translation Studies for IT with distinction"
+        },
         "languages": {
             "title": "Languages",
             "german": "German (native)",
