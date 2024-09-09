@@ -29,5 +29,9 @@ export const Technologies: React.FC = () => {
     );
   };
 
-  return <div className={styles.technologies}>{technologies()}</div>;
+  return (
+    <div className={styles.technologies}>
+      <div className={styles.techStackList}>{technologies()}</div>
+    </div>
+  );
 };

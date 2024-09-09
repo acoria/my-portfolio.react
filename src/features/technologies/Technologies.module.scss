@@ -2,13 +2,15 @@
 @use '../../styles/mixins.scss';
 
 .technologies {
-    @include mixins.glassy;
-    padding: 1rem;
-
-    @include mixins.medium-screen {
-        margin: dimens.$padding-page;
-        padding: dimens.$padding-page;
+    @include mixins.large-screen(70rem) {
+        padding: 0 dimens.$padding-page;
+        width: 70rem;
     }
+}
+
+.techStackList {
+    @include mixins.glassy;
+    padding: 0.7rem dimens.$padding-page dimens.$padding-page dimens.$padding-page;
 }
 
 .techStack {
