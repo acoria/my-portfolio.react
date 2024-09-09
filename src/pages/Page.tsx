@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
+import { AboutMe } from "../features/aboutMe/AboutMe";
+import { Background } from "../features/background/Background";
 import { Banner } from "../features/banner/Banner";
-import { CV } from "../features/cv/CV";
 import { Header } from "../features/header/Header";
 import { PageSection } from "../features/pageSection/PageSection";
 import { ProjectList } from "../features/projects/projectList/ProjectList";
@@ -12,12 +13,11 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
-import { Background } from "../features/background/Background";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
   const refHeadline = useRef<HTMLDivElement>(null);
-  const [scrollToCVSignal, triggerScrollToCV] = useSignal();
+  const [scrollToAboutMeSignal, triggerScrollToAboutMe] = useSignal();
   const [scrollToProjectsSignal, triggerScrollToProjects] = useSignal();
   const [scrollToSkillsSignal, triggerScrollToSkills] = useSignal();
   const [scrollToTechnologiesSignal, triggerScrollToTechnologies] = useSignal();
@@ -55,12 +55,12 @@ export const Page: React.FC = () => {
       signalTrigger: triggerScrollToTechnologies,
       component: <Technologies />,
     },
-    // {
-    //   caption: t(texts.cv),
-    //   scrollToSignal: scrollToCVSignal,
-    //   signalTrigger: triggerScrollToCV,
-    //   component: <CV />,
-    // },
+    {
+      caption: t(texts.aboutMe),
+      scrollToSignal: scrollToAboutMeSignal,
+      signalTrigger: triggerScrollToAboutMe,
+      component: <AboutMe />,
+    },
     {
       caption: t(texts.testimonials.title),
       scrollToSignal: scrollToTestimonialsSignal,
