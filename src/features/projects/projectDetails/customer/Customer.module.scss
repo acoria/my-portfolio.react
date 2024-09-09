@@ -1,5 +1,6 @@
 @use '../../../../styles/colors.module.scss';
 @use '../../../../styles/components.scss';
+@use '../../../../styles/mixins.scss';
 
 .customer {
     display: flex;
@@ -10,9 +11,12 @@
 }
 
 .logo {
-    // width: 6.4rem;
-    width: 3.4rem;
+    height: 2.5rem;
     margin-left: 1rem;
+
+    @include mixins.medium-screen {
+        height: 3.4rem;
+    }
 }
 
 .name {
