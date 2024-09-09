@@ -2,9 +2,8 @@
 @use '../../styles/mixins.scss';
 
 .technologies {
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         padding: 0 dimens.$padding-page;
-        width: 70rem;
     }
 }
 

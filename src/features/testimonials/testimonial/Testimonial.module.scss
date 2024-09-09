@@ -6,13 +6,13 @@
     padding: 2.5rem 2rem 2rem 2rem;
     @include mixins.glassy();
 
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         padding: 2.3rem 2rem 1.8rem 2rem;
     }
 }
 
 .testimonialText {
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         width: 15rem;
     }
 }

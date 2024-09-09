@@ -9,7 +9,7 @@ $gridSpacing: 2rem;
     flex-direction: column;
     row-gap: 1rem;
 
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         display: grid;
         grid-auto-rows: 1fr;
         align-items: stretch;

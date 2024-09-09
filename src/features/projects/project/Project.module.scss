@@ -6,7 +6,7 @@
     flex-direction: column;
     @include mixins.glassy;
 
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         padding: 2rem;
         margin-bottom: 2rem;
     }
@@ -33,7 +33,7 @@
         font-size: x-large;
     }
 
-    @include mixins.large-screen(70rem) {
+    @include mixins.large-screen {
         font-size: xx-large;
         margin-top: 1rem;
     }
