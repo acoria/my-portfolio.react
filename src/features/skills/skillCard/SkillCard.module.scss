@@ -10,7 +10,7 @@ $transition-time: 500ms;
     cursor: pointer;
     pointer-events: none;
 
-    @include mixins.medium-screen {
+    @include mixins.large-screen {
         pointer-events: all;
 
         &:hover .topCard {
@@ -33,7 +33,7 @@ $transition-time: 500ms;
     justify-content: center;
     @include mixins.glassy();
 
-    @include mixins.medium-screen {
+    @include mixins.large-screen {
         height: $card-height;
         transition: $transition-time;
         transform: translateY($card-height/2);
@@ -53,7 +53,7 @@ $transition-time: 500ms;
     @include mixins.glassy;
     // border-bottom: 3px solid colors.$color-font;
 
-    @include mixins.medium-screen {
+    @include mixins.large-screen {
         height: $card-height;
         transform: translateY($card-height/2*-1);
         transition: $transition-time;

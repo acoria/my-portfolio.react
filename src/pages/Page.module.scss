@@ -19,10 +19,6 @@
 .pageSection {
     z-index: 1;
     padding-top: 0.5rem;
-
-    @include mixins.medium-screen {
-        width: 70rem;
-    }
 }
 
 .highlightedText {

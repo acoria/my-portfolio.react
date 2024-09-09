@@ -8,7 +8,7 @@ import styles from "./Skills.module.scss";
 
 export const Skills: React.FC = () => {
   const { t } = useTranslation();
-  const { isSmallScreen } = useScreenSize();
+  const { isSmallScreen, isMediumScreen } = useScreenSize(undefined, 70);
 
   const skills: ISkill[] = [
     {
@@ -55,7 +55,7 @@ export const Skills: React.FC = () => {
   return (
     <div className={styles.skills}>
       {skills.map((skill, index) => {
-        if (isSmallScreen) {
+        if (isSmallScreen || isMediumScreen) {
           return <SkillAccordion skill={skill} key={index} />;
         } else {
           return <SkillCard skill={skill} key={index} />;

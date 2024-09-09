@@ -18,8 +18,8 @@ export const Testimonials: React.FC<ITestimonialsProps> = (props) => {
 
   return (
     <div className={styles.testimonials}>
-      {testimonials.map((testimonial) => (
-        <Testimonial testimonial={testimonial} />
+      {testimonials.map((testimonial, index) => (
+        <Testimonial key={index} testimonial={testimonial} />
       ))}
     </div>
   );

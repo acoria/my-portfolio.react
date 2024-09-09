@@ -1,14 +1,14 @@
 @use './colors.module.scss';
 @use './dimensions.module.scss' as dimens;
 
-@mixin medium-screen {
-  @media (min-width: dimens.$medium-screen-width) {
+@mixin medium-screen($mediumScreenWidth: dimens.$medium-screen-width) {
+  @media (min-width: $mediumScreenWidth) {
     @content;
   }
 }
 
-@mixin large-screen {
-  @media (min-width: dimens.$large-screen-width) {
+@mixin large-screen($largeScreenWidth: dimens.$large-screen-width) {
+  @media (min-width: $largeScreenWidth) {
     @content;
   }
 }

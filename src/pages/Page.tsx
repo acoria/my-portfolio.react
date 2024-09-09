@@ -35,38 +35,38 @@ export const Page: React.FC = () => {
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
     },
-    {
-      caption: t(texts.projects.title),
-      subCaption: t(texts.projects.subTitle),
-      scrollToSignal: scrollToProjectsSignal,
-      signalTrigger: triggerScrollToProjects,
-      component: <ProjectList />,
-    },
-    {
-      caption: t(texts.technologies.title),
-      subCaption: t(texts.technologies.subTitle, {
-        preferably: (
-          <span className={styles.highlightedText}>
-            {t(texts.technologies.subTitleMiddlePart)}
-          </span>
-        ),
-      }),
-      scrollToSignal: scrollToTechnologiesSignal,
-      signalTrigger: triggerScrollToTechnologies,
-      component: <Technologies />,
-    },
     // {
-    //   caption: t(texts.cv),
-    //   scrollToSignal: scrollToCVSignal,
-    //   signalTrigger: triggerScrollToCV,
-    //   component: <CV />,
+    //   caption: t(texts.projects.title),
+    //   subCaption: t(texts.projects.subTitle),
+    //   scrollToSignal: scrollToProjectsSignal,
+    //   signalTrigger: triggerScrollToProjects,
+    //   component: <ProjectList />,
     // },
-    {
-      caption: t(texts.testimonials.title),
-      scrollToSignal: scrollToTestimonialsSignal,
-      signalTrigger: triggerScrollToTestimonials,
-      component: <Testimonials />,
-    },
+    // {
+    //   caption: t(texts.technologies.title),
+    //   subCaption: t(texts.technologies.subTitle, {
+    //     preferably: (
+    //       <span className={styles.highlightedText}>
+    //         {t(texts.technologies.subTitleMiddlePart)}
+    //       </span>
+    //     ),
+    //   }),
+    //   scrollToSignal: scrollToTechnologiesSignal,
+    //   signalTrigger: triggerScrollToTechnologies,
+    //   component: <Technologies />,
+    // },
+    // // {
+    // //   caption: t(texts.cv),
+    // //   scrollToSignal: scrollToCVSignal,
+    // //   signalTrigger: triggerScrollToCV,
+    // //   component: <CV />,
+    // // },
+    // {
+    //   caption: t(texts.testimonials.title),
+    //   scrollToSignal: scrollToTestimonialsSignal,
+    //   signalTrigger: triggerScrollToTestimonials,
+    //   component: <Testimonials />,
+    // },
   ];
 
   const scrollToHeadline = () => {

@@ -8,7 +8,7 @@
     position: relative;
     align-items: flex-start;
 
-    @include mixins.medium-screen {
+    @include mixins.large-screen() {
         padding: 0 1rem;
     }
 }
