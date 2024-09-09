@@ -17,7 +17,8 @@ $color-full-transparent: rgba(0, 0, 0, 0);
 /* components */
 $color-accordion-item-box-shadow: transparentize($color-primary, 0.5);
 $color-accordion-item-chevron-fill: $color-primary;
-$color-accordion-item-content-background: $color-primary-lighter;
+$color-accordion-item-header-background: transparentize($color-secondary-200, 0.4);
+$color-accordion-item-content-background: $color-secondary;
 
 $color-button-primary-background: $color-accent;
 $color-font: $color-primary;

@@ -6,7 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @include mixins.glassy(colors.$color-primary);
+    background-color: colors.$color-accordion-item-header-background;
+    // @include mixins.glassy(colors.$color-accordion-item-header-background);
 
     &:hover {
         @extend .headerIsOpen;

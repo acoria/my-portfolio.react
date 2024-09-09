@@ -35,5 +35,5 @@ export const Accordion: React.FC<IAccordionProps> = (props) => {
     ));
   };
 
-  return <>{entries()}</>;
+  return <div>{entries()}</div>;
 };

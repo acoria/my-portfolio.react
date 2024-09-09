@@ -14,7 +14,7 @@ export const AccordionItem: React.FC<IAccordionItemProps> = (props) => {
   }, [props.isOpen]);
 
   return (
-    <div className={styles.accordionItem}>
+    <div>
       <div
         className={style(
           styles.header,
