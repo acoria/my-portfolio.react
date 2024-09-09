@@ -20,9 +20,13 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
         column-gap: 3rem;
+        row-gap: 1rem;
+        padding: 3rem;
+    }
+
+    @include mixins.large-screen {
         row-gap: 3rem;
         padding: 6rem 6rem 3rem 6rem;
-
     }
 }
 
@@ -99,6 +103,10 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
     flex-direction: column-reverse;
     row-gap: 1rem;
     margin-top: 1rem;
+
+    @include mixins.medium-screen {
+        row-gap: 2rem;
+    }
 
     @include mixins.large-screen {
         flex-direction: row;
