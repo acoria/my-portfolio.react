@@ -4,7 +4,7 @@
 .projects {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
 
     @include mixins.large-screen {
         padding: 0 dimens.$padding-page;

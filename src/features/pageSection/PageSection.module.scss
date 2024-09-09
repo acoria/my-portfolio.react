@@ -5,7 +5,8 @@
     text-align: center;
     letter-spacing: 0.5rem;
     font-size: x-large;
-    margin-top: 1.4rem;
+    // margin-top: 1.4rem;
+    margin-top: 2.5rem;
 
     @include mixins.medium-screen {
         font-size: xx-large;
