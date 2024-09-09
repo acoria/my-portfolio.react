@@ -1,5 +1,12 @@
-.aboutMe{
+@use '../../styles/mixins.scss';
+
+.aboutMe {
     display: flex;
-    flex-direction: row;
-    column-gap: 1rem;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    @include mixins.medium-screen {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
 }
