@@ -21,6 +21,7 @@ $color-accordion-item-header-background: transparentize($color-secondary-200, 0.
 $color-accordion-item-content-background: $color-secondary;
 
 $color-button-primary-background: $color-accent;
+
 $color-font: $color-primary;
 $color-font-light: $color-secondary;
 $color-glassy-background: $color-secondary-300;
@@ -35,6 +36,10 @@ $color-banner-headline: $color-primary-lighter;
 $color-banner-headline-accent: $color-font-light;
 $color-banner-text-shadow: $color-primary-light;
 $color-banner-quote: $color-font-light;
+
+$color-burger-menu-background: $color-secondary;
+$color-burger-menu-icon-fill: $color-secondary;
+$color-burger-menu-item-caption: $color-accent;
 
 $color-carousel-chevron: $color-primary;
 $color-carousel-chevron-hover: $color-primary-light;

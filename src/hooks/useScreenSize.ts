@@ -16,10 +16,6 @@ export const useScreenSize = (
   const isMediumScreen = width >= mediumScreenWidth && width < largeScreenWidth;
   const isLargeScreen = width >= largeScreenWidth;
 
-  isSmallScreen && console.log(`isSmallScreen`);
-  isMediumScreen && console.log(`isMediumScreen`);
-  isLargeScreen && console.log(`isLargeScreen`);
-
   return {
     isSmallScreen,
     isMediumScreen,

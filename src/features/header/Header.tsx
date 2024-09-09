@@ -5,10 +5,13 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { Language } from "../language/Language";
 import styles from "./Header.module.scss";
 import { IHeaderProps } from "./IHeaderProps";
+import { useScreenSize } from "../../hooks/useScreenSize";
+import { BurgerMenu } from "../burgerMenu/BurgerMenu";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
   const { width } = useWindowDimensions();
+  const { isSmallScreen } = useScreenSize();
   const { onHeightChange } = { ...props };
 
   useEffect(() => {
@@ -18,6 +21,15 @@ export const Header: React.FC<IHeaderProps> = (props) => {
   }, [width, onHeightChange]);
   return (
     <div className={styles.header} ref={ref}>
+      {isSmallScreen && (
+        <BurgerMenu
+          captions={props.navItems}
+          onTabSelect={(index) => {
+            props.onNavItemClick?.(index);
+          }}
+          topPosition={ref.current?.scrollHeight}
+        />
+      )}
       <Logo
         className={styles.logo}
         onClick={() => {
@@ -25,15 +37,17 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           props.onNavItemClick?.(undefined);
         }}
       />
-      <div className={styles.navigation}>
-        <Tabstrip
-          captions={props.navItems}
-          onTabSelect={(index) => {
-            props.onNavItemClick?.(index);
-          }}
-          selectedTabIndex={props.selectedTabIndex}
-        />
-      </div>
+      {!isSmallScreen && (
+        <div className={styles.navigation}>
+          <Tabstrip
+            captions={props.navItems}
+            onTabSelect={(index) => {
+              props.onNavItemClick?.(index);
+            }}
+            selectedTabIndex={props.selectedTabIndex}
+          />
+        </div>
+      )}
       <Language className={styles.language} />
     </div>
   );
