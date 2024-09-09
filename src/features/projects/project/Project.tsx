@@ -1,12 +1,14 @@
 import { Carousel } from "../../../components/carousel/Carousel";
 import { DateTime } from "../../../core/services/date/DateTime";
 import { useRenderMonth } from "../../../hooks/useRenderMonth";
+import { useScreenSize } from "../../../hooks/useScreenSize";
 import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails";
 import { IProjectProps } from "./IProjectProps";
 import styles from "./Project.module.scss";
 
 export const Project: React.FC<IProjectProps> = (props) => {
   const renderMonth = useRenderMonth();
+  const { isSmallScreen, isMediumScreen, isLargeScreen } = useScreenSize();
 
   let startMonth: string = "";
   let startYear: number = 0;
@@ -47,10 +49,10 @@ export const Project: React.FC<IProjectProps> = (props) => {
           </Carousel>
         )}
       </div>
-      <ProjectDetails
+      {/* <ProjectDetails
         project={props.project}
         className={styles.projectDetails}
-      />
+      /> */}
     </div>
   );
 };

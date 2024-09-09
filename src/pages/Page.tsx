@@ -35,13 +35,13 @@ export const Page: React.FC = () => {
       signalTrigger: triggerScrollToSkills,
       component: <Skills />,
     },
-    // {
-    //   caption: t(texts.projects.title),
-    //   subCaption: t(texts.projects.subTitle),
-    //   scrollToSignal: scrollToProjectsSignal,
-    //   signalTrigger: triggerScrollToProjects,
-    //   component: <ProjectList />,
-    // },
+    {
+      caption: t(texts.projects.title),
+      subCaption: t(texts.projects.subTitle),
+      scrollToSignal: scrollToProjectsSignal,
+      signalTrigger: triggerScrollToProjects,
+      component: <ProjectList />,
+    },
     // {
     //   caption: t(texts.technologies.title),
     //   subCaption: t(texts.technologies.subTitle, {
