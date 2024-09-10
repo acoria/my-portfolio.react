@@ -27,14 +27,14 @@
             "title": "Professional Experience",
             "years": "{{programmingYears}}+ years",
             "description": "professional experience in",
-            "fullStackDevelopment": "Fullstack Development",
+            "fullStackDevelopment": "Full Stack Development",
             "uxDesign": "UX Design"
         },
         "title": "About Me"
     },
     "banner": {
         "contactMe": "Contact me",
-        "headline_1": "More than a Senior Fullstack Developer",
+        "headline_1": "More than a Senior Full Stack Developer",
         "headline_2": "...a solution finder",
         "headline_3": "...a problem solver",
         "portraitImageDescription": "Portrait of me"

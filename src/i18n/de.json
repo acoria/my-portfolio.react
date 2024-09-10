@@ -1,30 +1,159 @@
 {
-    "aboutMe": {
-        "introductionText": "\"Meine Motivation sind die Gesichter meiner Anwender, wenn sich beim Verwenden meiner Software Verständnis oder sogar Freude darauf abzeichnet. Egal, ob es sich dabei um eine Endanwendung oder eine APISchnittstelle handelt, Usability ist neben einer soliden Softwarearchitektur ein wesentlicher Bestandteil meiner Entwürfe. Mein selbstständiges, strukturiertes Arbeiten ermöglicht es mir, Projekte mit hoher Qualität auf möglichst pragmatische Weise abzuschließen.\""
+    "myMotivationQuote": {
+        "introductionText": "\"Meine Motivation sind die Gesichter meiner Anwender, wenn sich beim Verwenden meiner Software Verständnis oder sogar Freude darauf abzeichnet. Egal, ob es sich dabei um eine Endanwendung oder eine API-Schnittstelle handelt, Usability ist neben einer soliden Softwarearchitektur ein wesentlicher Bestandteil meiner Entwürfe. Mein selbstständiges, strukturiertes Arbeiten ermöglicht es mir, Projekte mit hoher Qualität auf möglichst pragmatische Weise abzuschließen.\""
     },
-    "cv": "CV",
-    "headline": {
-        "headline_1": "Mehr als eine Fullstack Entwicklerin",
+    "aboutMe": {
+        "certificates": {
+            "title": "Zertifikate",
+            "scrumMasterCourseId": "PSM 1",
+            "scrumMasterTitle": "Professional Scrum Master I",
+            "scrumWithUxCourseId": "PSU I",
+            "scrumWithUxTitle": "Professional Scrum with UX"
+        },
+        "education": {
+            "title": "Ausbildung",
+            "degree": "B.A. Translation Studies for IT mit Auszeichnung",
+            "degreeLabel": "Abschluss in",
+            "university": "Universität Heidelberg & Hochschule Mannheim"
+        },
+        "languages": {
+            "title": "Sprachen",
+            "german": "Deutsch",
+            "english": "Englisch",
+            "native": "Muttersprache",
+            "fluent": "fließend"
+        },
+        "professionalExperience": {
+            "title": "Berufserfahrung",
+            "years": "{{programmingYears}}+ Jahre",
+            "description": "professionelle Berufserfahrung in",
+            "fullStackDevelopment": "Full Stack Entwicklung",
+            "uxDesign": "UX Design"
+        },
+        "title": "Über mich"
+    },
+    "banner": {
+        "contactMe": "Kontakt",
+        "headline_1": "Mehr als eine Senior Full Stack Entwicklerin",
         "headline_2": "...eine Lösungsfinderin",
         "headline_3": "...eine Problemlöserin",
         "portraitImageDescription": "Portrait von mir"
+    },
+    "general": {
+        "months": {
+            "january": "Januar",
+            "januaryShort": "Jan.",
+            "february": "Februar",
+            "februaryShort": "Feb.",
+            "march": "März",
+            "marchShort": "März",
+            "april": "April",
+            "aprilShort": "Apr.",
+            "may": "Mai",
+            "mayShort": "Mai",
+            "june": "Juni",
+            "juneShort": "Juni",
+            "july": "Juli",
+            "julyShort": "Juli",
+            "august": "August",
+            "augustShort": "Aug.",
+            "september": "September",
+            "septemberShort": "Sept.",
+            "october": "Oktober",
+            "octoberShort": "Okt.",
+            "november": "November",
+            "novemberShort": "Nov.",
+            "december": "Dezember",
+            "decemberShort": "Dez."
+        }
     },
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"
     },
-    "projects": "Projekte",
-    "skills": "Skills",
+    "projects": {
+        "title": "Projekte",
+        "subTitle": "Eine Auswahl aus meinen letzten Projekten",
+        "projectDetails": {
+            "tabs": {
+                "challenge": "Herausforderung",
+                "myRoles": "Meine Rollen",
+                "techStack": "Tech Stack",
+                "requirements": "Anforderungen",
+                "customer": "Kunde"
+            }
+        }
+    },
+    "roles": {
+        "development": "Entwicklung",
+        "organization": "Organisation",
+        "project": "Projekt",
+        "usability": "Usability"
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "subTitle": "##What to expect from my software and the process to develop it",
+        "complexBusinessSoftware": {
+            "title": "Komplexe Business Software",
+            "descriptions": {
+                "usableByAnyone": "Von jedem nutzbar",
+                "complexToEasy": "##No matter how complex the process, together we will find a way to display it in an easy way - and so keep the training effort to a minimum."
+            }
+        },
+        "easyToUse": {
+            "title": "Ansprechende und einfach verwendbare Oberflächen",
+            "descriptions": {
+                "users": "##Users are integrated into the development process to find their actual problem.",
+                "leanUX": "##Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development."
+            }
+        },
+        "futureSave": {
+            "title": "Zukunftssichere software",
+            "descriptions": {
+                "architecture": "##Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development."
+            }
+        },
+        "highQualitySoftware": {
+            "title": "Qualitativ hochwertige Software",
+            "descriptions": {
+                "years": "##With over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
+                "tests": "##Tests ensure that bugs are found by the developers, not the users."
+            }
+        },
+        "projectManagement": {
+            "title": "Zuverlässige Projektplanung und -schätzung",
+            "descriptions": {
+                "management": "Projekt- & Entwicklungsmanagement mit Scrum",
+                "scrum": "##An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down & clear for everyone in the development team."
+            }
+        },
+        "meetings": {
+            "title": "Kurze, effiziente Meetingleitung",
+            "descriptions": {
+                "liveIsShort": "##Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work.",
+                "planning": "##With an agenda and proper meeting preparation, I keep meeting times to a minimum."
+            }
+        }
+    },
     "technologies": {
         "title": "Technologien",
+        "subTitle": "Technologien mit denen ich {{preferably}} arbeite",
+        "subTitleMiddlePart": "bevorzugt",
         "types": {
-            "programming_languages": "Programmiersprachen",
-            "databases": "Datenbanken",
-            "frameworks_concepts": "Frameworks & Konzepte",
-            "testing": "Test-Frameworks",
+            "clean_code": "Clean Code Development",
             "communication_frameworks": "Kommunikationsframeworks & Protokolle",
-            "tools": "Tools",
-            "project_management": "Projektmanagement"
+            "databases": "Datenbanken",
+            "devOps": "CI/CD & DevOps",
+            "frameworks_concepts": "Frameworks & Konzepte",
+            "others": "Anderes",
+            "programming_languages": "Programmiersprachen",
+            "project_management": "Projektmanagement",
+            "testing": "Test-Frameworks",
+            "tools": "Tools & Software",
+            "uiUxDesign": "UI/UX Design"
         }
+    },
+    "testimonials": {
+        "title": "Referenzen"
     }
 }
