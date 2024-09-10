@@ -15,6 +15,31 @@ export const ProfessionalExperience: React.FC = () => {
     >
       <div className={styles.content}>
         <div className={styles.description}>
+
+          <span className={styles.years}>
+            {t(texts.aboutMe.professionalExperience.years, {
+              programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
+            })}
+          </span>
+          {` ${t(texts.aboutMe.professionalExperience.description)} ${t(
+            texts.aboutMe.professionalExperience.fullStackDevelopment
+          )} & ${t(texts.aboutMe.professionalExperience.uxDesign)}`}
+        </div>
+          
+          {/* <span className={styles.years}>
+            {t(texts.aboutMe.professionalExperience.years, {
+              programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
+            })}
+          </span>
+          {` ${t(texts.aboutMe.professionalExperience.description)}`}
+        </div>
+        <div style={{ fontWeight: 400 }}>
+          {`${t(
+            texts.aboutMe.professionalExperience.fullStackDevelopment
+          )} & ${t(texts.aboutMe.professionalExperience.uxDesign)}`}
+        </div> */}
+
+        {/* <div className={styles.description}>
           <span className={styles.years}>
             {t(texts.aboutMe.professionalExperience.years, {
               programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
@@ -28,7 +53,7 @@ export const ProfessionalExperience: React.FC = () => {
           </div>
           <div className={styles.and}>&</div>
           <div>{t(texts.aboutMe.professionalExperience.uxDesign)}</div>
-        </div>
+        </div> */}
       </div>
     </AboutMeItem>
   );
