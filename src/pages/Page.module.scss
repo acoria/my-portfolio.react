@@ -1,5 +1,6 @@
 @use '../styles/colors.module.scss';
 @use '../styles/mixins.scss';
+@use '../styles/dimensions.module.scss' as dimens;
 
 .backgroundWrapper {
     position: relative;
@@ -21,7 +22,7 @@
     padding-top: 0.5rem;
 
     @include mixins.medium-screen {
-        max-width: 70rem;
+        max-width: dimens.$page-width;
     }
 }
 

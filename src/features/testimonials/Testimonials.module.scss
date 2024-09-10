@@ -15,6 +15,6 @@
     }
 
     @include mixins.large-screen {
-        width: 70rem;
+        width: dimens.$page-width;
     }
 }

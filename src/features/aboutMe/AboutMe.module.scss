@@ -12,6 +12,6 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
         padding: 0.5rem dimens.$padding-page dimens.$padding-page dimens.$padding-page;
-        min-width: 70rem;
+        min-width: dimens.$page-width;
     }
 }
