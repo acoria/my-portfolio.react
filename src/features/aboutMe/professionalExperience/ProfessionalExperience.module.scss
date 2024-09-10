@@ -1,0 +1,36 @@
+@use '../../../styles/components.scss';
+
+.icon {
+    @extend .aboutMeIcon;
+}
+
+
+.description {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.years {
+    font-weight: 700;
+}
+
+.skills {
+    font-weight: 500;
+}
+
+.dev {
+    margin-left: 1rem;
+}
+
+.and {
+    margin-left: 2rem;
+}
+
+.ux {
+    margin-left: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}

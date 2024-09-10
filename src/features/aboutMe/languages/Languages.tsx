@@ -11,8 +11,12 @@ export const Languages: React.FC = () => {
       title={t(texts.aboutMe.languages.title)}
       icon={<LanguagesIcon className={styles.icon} />}
     >
-      <div>{t(texts.aboutMe.languages.german)}</div>
-      <div>{t(texts.aboutMe.languages.english)}</div>
+      <div className={styles.content}>
+        <div>{t(texts.aboutMe.languages.german)}</div>
+        <div>{`| ${t(texts.aboutMe.languages.native)}`}</div>
+        <div>{t(texts.aboutMe.languages.english)}</div>
+        <div>{`| ${t(texts.aboutMe.languages.fluent)}`}</div>
+      </div>
     </AboutMeItem>
   );
 };

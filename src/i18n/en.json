@@ -3,7 +3,13 @@
         "introductionText": "My motivation comes from seeing the faces of my users light up with understanding or even happiness when they use my software. Whether it’s a user application or an API, usability is a key component of my designs, alongside a solid software architecture. Due to my independent and highly structured approach to work, I am able to complete my projects with high quality in the most pragmatic way."
     },
     "aboutMe": {
-        "title": "About Me",
+        "certificates": {
+            "title": "Certificates",
+            "scrumMasterCourseId": "PSM 1",
+            "scrumMasterTitle": "Professional Scrum Master I",
+            "scrumWithUxCourseId": "PSU I",
+            "scrumWithUxTitle": "Professional Scrum with UX"
+        },
         "education": {
             "title": "Education",
             "degree": "B.A. Translation Studies for IT with distinction",
@@ -12,9 +18,19 @@
         },
         "languages": {
             "title": "Languages",
-            "german": "German (native)",
-            "english": "English (fluent)"
-        }
+            "german": "German",
+            "english": "English",
+            "native": "native",
+            "fluent": "fluent"
+        },
+        "professionalExperience": {
+            "title": "Professional Experience",
+            "years": "{{programmingYears}}+ years",
+            "description": "professional experience in",
+            "fullStackDevelopment": "Fullstack Development",
+            "uxDesign": "UX Design"
+        },
+        "title": "About Me"
     },
     "banner": {
         "contactMe": "Contact me",
@@ -100,7 +116,7 @@
         "highQualitySoftware": {
             "title": "High Quality Software",
             "descriptions": {
-                "years": "With over 12 years of programming experience in various languages, you get the best from all worlds.",
+                "years": "With over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
                 "tests": "Tests ensure that bugs are found by the developers, not the users."
             }
         },

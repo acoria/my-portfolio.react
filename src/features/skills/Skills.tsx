@@ -1,6 +1,7 @@
 import { useScreenSize } from "../../hooks/useScreenSize";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
+import { ProgrammingExperienceCalculator } from "../../services/ProgrammingExperienceCalculator";
 import { ISkill } from "../../shared/model/ISkill";
 import { SkillAccordion } from "./skillAccordion/SkillAccordion";
 import { SkillCard } from "./skillCard/SkillCard";
@@ -14,7 +15,9 @@ export const Skills: React.FC = () => {
     {
       title: t(texts.skills.highQualitySoftware.title),
       descriptions: [
-        t(texts.skills.highQualitySoftware.descriptions.years),
+        t(texts.skills.highQualitySoftware.descriptions.years, {
+          programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
+        }),
         t(texts.skills.highQualitySoftware.descriptions.tests),
       ],
     },
