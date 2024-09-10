@@ -1,21 +1,11 @@
-import { IBurgerMenuProps } from "./IBurgerMenuProps";
 import { ReactComponent as BurgerMenuIcon } from "../../assets/icons/burger_menu.svg";
-import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
+import { style } from "../../core/utils/style";
 import { useToggle } from "../../hooks/useToggle";
 import styles from "./BurgerMenu.module.scss";
-import { style } from "../../core/utils/style";
+import { IBurgerMenuProps } from "./IBurgerMenuProps";
 
 export const BurgerMenu: React.FC<IBurgerMenuProps> = (props) => {
   const [isOpen, toggleIsOpen] = useToggle();
-
-  const icon = isOpen ? (
-    <CloseIcon className={styles.buttonIcon} onClick={() => toggleIsOpen()} />
-  ) : (
-    <BurgerMenuIcon
-      className={styles.buttonIcon}
-      onClick={() => toggleIsOpen()}
-    />
-  );
 
   const menuEntries = (
     <div
@@ -24,7 +14,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = (props) => {
     >
       {props.captions.map((caption, index) => (
         <div
-        className={styles.menuEntry}
+          className={styles.menuEntry}
           key={index}
           onClick={() => {
             props.onTabSelect?.(index);
@@ -38,7 +28,13 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = (props) => {
   );
   return (
     <div className={styles.burgerMenu}>
-      {icon}
+      <BurgerMenuIcon
+        className={styles.buttonIcon}
+        onClick={() => toggleIsOpen()}
+      />
+      {isOpen && (
+        <div className={styles.backdrop} onClick={() => toggleIsOpen(false)} />
+      )}
       {menuEntries}
     </div>
   );
