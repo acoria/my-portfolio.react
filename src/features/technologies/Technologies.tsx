@@ -20,7 +20,11 @@ export const Technologies: React.FC = () => {
     if (projects.length === 0) return;
     const technologies = new ProjectTechStackCollector().collect(projects);
     return (
-      <TechStack technologies={technologies} className={styles.techStack} />
+      <TechStack
+        technologies={technologies}
+        className={styles.techStack}
+        highlightKeyTechnologies
+      />
     );
   };
 

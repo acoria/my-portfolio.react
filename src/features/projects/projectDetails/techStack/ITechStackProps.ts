@@ -3,4 +3,5 @@ import { IHaveClassName } from "../../../../types/IHaveClassName";
 
 export interface ITechStackProps extends IHaveClassName {
   technologies: ITechnology[];
+  highlightKeyTechnologies?: boolean;
 }

@@ -7,7 +7,11 @@ export const TechStack: React.FC<ITechStackProps> = (props) => {
   return (
     <div className={style(styles.techStack, props.className)}>
       {props.technologies.map((technology, index) => (
-        <TechnologyCollection key={index} technology={technology} />
+        <TechnologyCollection
+          key={index}
+          technology={technology}
+          highlightKeyTechnologies={props.highlightKeyTechnologies}
+        />
       ))}
     </div>
   );
