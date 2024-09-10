@@ -3,3 +3,24 @@
 .icon {
     @extend .aboutMeIcon;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.university {
+    font-weight: 500;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.degreeLabel {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 1rem;
+}

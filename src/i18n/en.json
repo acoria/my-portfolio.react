@@ -6,7 +6,9 @@
         "title": "About Me",
         "education": {
             "title": "Education",
-            "degree": "B.A. Translation Studies for IT with distinction"
+            "degree": "B.A. Translation Studies for IT with distinction",
+            "degreeLabel": "Degree in",
+            "university": "University of Heidelberg & University of Applied Science Mannheim"
         },
         "languages": {
             "title": "Languages",
