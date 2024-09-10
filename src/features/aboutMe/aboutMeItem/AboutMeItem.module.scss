@@ -9,13 +9,13 @@
     padding: 0.5rem 1rem 1rem 1rem;
     color: colors.$color-about-me-text;
     row-gap: 0.5rem;
+    align-items: start;
 }
 
 .iconAndTitle {
     display: flex;
     flex-direction: row;
     column-gap: 0.5rem;
-    align-self: start;
 }
 
 .title {
@@ -24,6 +24,5 @@
 }
 
 .content {
-    align-self: start;
     font-weight: 600;
 }

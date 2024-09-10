@@ -9,8 +9,8 @@ export const AboutMe: React.FC<IAboutMeProps> = (props) => {
   return (
     <div className={styles.aboutMe}>
       <ProfessionalExperience />
-      <Languages />
       <Education />
+      <Languages />
       <Certificates />
     </div>
   );

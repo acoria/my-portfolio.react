@@ -13,21 +13,21 @@ export const ProfessionalExperience: React.FC = () => {
       icon={<CodingIcon className={styles.icon} />}
       title={t(texts.aboutMe.professionalExperience.title)}
     >
-      <div className={styles.description}>
-        <span className={styles.years}>
-          {t(texts.aboutMe.professionalExperience.years, {
-            programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
-          })}
-        </span>
-        {` ${t(texts.aboutMe.professionalExperience.description)}`}
-      </div>
-      <div className={styles.skills}>
-        <div className={styles.dev}>
-          {t(texts.aboutMe.professionalExperience.fullStackDevelopment)}
+      <div className={styles.content}>
+        <div className={styles.description}>
+          <span className={styles.years}>
+            {t(texts.aboutMe.professionalExperience.years, {
+              programmingYears: `${ProgrammingExperienceCalculator.calculateYears()}`,
+            })}
+          </span>
+          {` ${t(texts.aboutMe.professionalExperience.description)}`}
         </div>
-        <div className={styles.and}>&</div>
-        <div className={styles.ux}>
-          {t(texts.aboutMe.professionalExperience.uxDesign)}
+        <div className={styles.skills}>
+          <div>
+            {t(texts.aboutMe.professionalExperience.fullStackDevelopment)}
+          </div>
+          <div className={styles.and}>&</div>
+          <div>{t(texts.aboutMe.professionalExperience.uxDesign)}</div>
         </div>
       </div>
     </AboutMeItem>
