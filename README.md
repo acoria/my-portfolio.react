@@ -1,2 +1,1 @@
-Verwendete icons:
-https://thenounproject.com/icon/calendar-7081540/
+A records: https://dns.he.net/
