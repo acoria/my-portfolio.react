@@ -66,6 +66,7 @@
 
 .navButtonInactive {
     fill: colors.$color-carousel-nav-button-inactive;
+    cursor: default;
 
     &:hover {
         fill: colors.$color-carousel-nav-button-inactive;

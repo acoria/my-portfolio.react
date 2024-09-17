@@ -7,6 +7,7 @@ import styles from "./Carousel.module.scss";
 import { CarouselItem } from "./carouselItem/CarouselItem";
 import { ICarouselProps } from "./ICarouselProps";
 import { useCarouselViewModel } from "./useCarouselViewModel";
+import { IconButton } from "../button/iconButton/IconButton";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
   const viewModel = useCarouselViewModel(props);
@@ -81,13 +82,14 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
       </div>
       <div className={styles.carouselContent}>
         {!viewModel.isMobileView && (
-          <ChevronLeft
-            className={style(
-              styles.chevron,
-              viewModel.hasSingleItem ? styles.navButtonInactive : ""
-            )}
-            onClick={viewModel.triggerMoveLeft}
-          />
+          <IconButton onClick={viewModel.triggerMoveLeft}>
+            <ChevronLeft
+              className={style(
+                styles.chevron,
+                viewModel.hasSingleItem ? styles.navButtonInactive : ""
+              )}
+            />
+          </IconButton>
         )}
         <div
           className={styles.carouselItemsContainer}
@@ -97,13 +99,14 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
           {carouselItems()}
         </div>
         {!viewModel.isMobileView && (
-          <ChevronRight
-            className={style(
-              styles.chevron,
-              viewModel.hasSingleItem ? styles.navButtonInactive : ""
-            )}
-            onClick={viewModel.triggerMoveRight}
-          />
+          <IconButton onClick={viewModel.triggerMoveRight}>
+            <ChevronRight
+              className={style(
+                styles.chevron,
+                viewModel.hasSingleItem ? styles.navButtonInactive : ""
+              )}
+            />
+          </IconButton>
         )}
       </div>
       <div className={styles.navigation}>{navButtons()}</div>
