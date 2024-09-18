@@ -1,10 +1,10 @@
-import { ReactElement, useCallback, useRef, useState } from "react";
-import { useScreenSize } from "../../hooks/useScreenSize";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { ICarouselProps } from "./ICarouselProps";
-import { error } from "../../core/utils/error";
+import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
+import { error } from "../../../core/utils/error";
+import { useScreenSize } from "../../../hooks/useScreenSize";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
+import { ICarouselContentProps } from "./ICarouselContentProps";
 
-export const useCarouselViewModel = (props: ICarouselProps) => {
+export const useCarouselContentViewModel = (props: ICarouselContentProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { isSmallScreen, isMediumScreen } = useScreenSize();
   const isMobileView = isSmallScreen || isMediumScreen;
@@ -13,10 +13,18 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
   const numberOfItems = Array.isArray(props.children)
     ? props.children.length
     : 1;
-  const [visibleItemPosition, setVisibleItemPosition] = useState(0);
+  const [visibleItemPosition, setVisibleItemPosition] = useState(
+    props.initialItemPosition ?? 0
+  );
   const [showZoomedInImagePosition, setShowZoomedInImagePosition] = useState<
     number | undefined
   >(undefined);
+
+  const { onItemChange, initialItemPosition } = props;
+
+  useEffect(() => {
+    onItemChange?.(visibleItemPosition);
+  }, [visibleItemPosition, onItemChange]);
 
   const hasSingleItem = numberOfItems === 1;
 
@@ -44,7 +52,11 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
     setShowZoomedInImagePosition(undefined);
 
   const scrollToPosition = useCallback(
-    (fromPosition: number, toPosition: number): number => {
+    (
+      fromPosition: number,
+      toPosition: number,
+      behavior?: ScrollBehavior
+    ): number => {
       const widthOfItem = carouselWidth * 16;
       let newPosition = 0;
       if (ref.current !== null) {
@@ -73,13 +85,17 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
 
         ref.current.scrollBy({
           left: distance,
-          behavior: "smooth",
+          behavior: behavior ?? "smooth",
         });
       }
       return newPosition;
     },
     [carouselWidth, numberOfItems]
   );
+
+  useEffect(() => {
+    initialItemPosition && scrollToPosition(0, initialItemPosition, "auto");
+  }, [initialItemPosition, scrollToPosition]);
 
   const triggerMoveRight = () =>
     setVisibleItemPosition((previous) => {
