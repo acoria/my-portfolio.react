@@ -20,7 +20,7 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
 
   const hasSingleItem = numberOfItems === 1;
 
-  const getChildAsPosition = (
+  const getChildAtPosition = (
     position: number | undefined
   ): ReactElement | undefined => {
     if (props.children === undefined || position === undefined) {
@@ -94,7 +94,7 @@ export const useCarouselViewModel = (props: ICarouselProps) => {
   return {
     carouselWidth,
     children: props.children,
-    getChildAsPosition,
+    getChildAtPosition,
     hasSingleItem,
     isMobileView,
     onCarouselItemClick,

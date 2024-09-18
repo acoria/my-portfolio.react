@@ -8,10 +8,12 @@ import { CarouselItem } from "./carouselItem/CarouselItem";
 import { ICarouselProps } from "./ICarouselProps";
 import { useCarouselViewModel } from "./useCarouselViewModel";
 import { IconButton } from "../button/iconButton/IconButton";
+import { useModal } from "../modal/useModal";
 
 export const Carousel: React.FC<ICarouselProps> = (props) => {
   const viewModel = useCarouselViewModel(props);
   const widthStyle: CSSProperties = { width: `${viewModel.carouselWidth}rem` };
+  const modal = useModal();
 
   const carouselItems = (): ReactElement | ReactElement[] => {
     if (viewModel.children === undefined) return <></>;
@@ -66,6 +68,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
 
   return (
     <div className={styles.carousel}>
+      {modal.content}
       <div
         className={style(
           styles.zoomedInChild,
@@ -78,7 +81,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
           className={styles.closeButton}
           onClick={viewModel.onZoomedInCloseButtonClick}
         />
-        {viewModel.getChildAsPosition(viewModel.showZoomedInImagePosition)}
+        {viewModel.getChildAtPosition(viewModel.showZoomedInImagePosition)}
       </div>
       <div className={styles.carouselContent}>
         {!viewModel.isMobileView && (
@@ -95,6 +98,7 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
           className={styles.carouselItemsContainer}
           style={widthStyle}
           ref={viewModel.ref}
+          onClick={() => modal.show(<div>Test</div>)}
         >
           {carouselItems()}
         </div>
