@@ -168,7 +168,8 @@
                 "taskType": "Project",
                 "subTasks": [
                     "Communication & Coordination",
-                    "Planning and Estimation"
+                    "Planning and Estimation",
+                    "Requirements Engineering"
                 ]
             },
             {
