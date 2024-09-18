@@ -1,5 +1,6 @@
 import { ICustomer } from "./ICustomer";
 import { IImage } from "./IImage";
+import { ITask } from "./ITask";
 import { ITechnology } from "./ITechnology";
 
 export interface IProject {
@@ -8,7 +9,8 @@ export interface IProject {
   customer?: ICustomer;
   end?: Date;
   goal?: string;
-  myRoles: string[];
+  myTasks: ITask[];
+  // myTasks: string[];
   requirements?: string[];
   start?: Date;
   techStack: ITechnology[];

@@ -1,7 +1,7 @@
 @use '../../../../../styles/colors.module.scss';
 @use '../../../../../styles/components.scss';
 
-.role {
+.task {
     display: flex;
     flex-direction: column;
     color: colors.$color-font;

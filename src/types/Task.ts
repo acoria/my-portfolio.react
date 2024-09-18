@@ -1,4 +1,4 @@
-export enum Role {
+export enum Task {
   DEVELOPMENT = "Development",
   ORGANIZATION = "Organization",
   PROJECT = "Project",

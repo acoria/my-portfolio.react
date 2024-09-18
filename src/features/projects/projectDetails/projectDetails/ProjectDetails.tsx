@@ -5,10 +5,10 @@ import { style } from "../../../../core/utils/style";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
 import { texts } from "../../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../../hooks/useTranslation/useTranslation";
-import { IRole } from "../../../../shared/model/IRole";
+import { ITask } from "../../../../shared/model/ITask";
 import { Challenge } from "../challenge/Challenge";
 import { Customer } from "../customer/Customer";
-import { MyRoles } from "../myRoles/MyRoles";
+import { MyTasks } from "../myTasks/MyTasks";
 import { Requirements } from "../requirements/Requirements";
 import { TechStack } from "../techStack/TechStack";
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
@@ -28,8 +28,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
       tabNames.push(t(texts.projects.projectDetails.tabs.requirements));
     props.project.customer &&
       tabNames.push(t(texts.projects.projectDetails.tabs.customer));
-    props.project.myRoles &&
-      tabNames.push(t(texts.projects.projectDetails.tabs.myRoles));
+    props.project.myTasks &&
+      tabNames.push(t(texts.projects.projectDetails.tabs.myTasks));
     props.project.techStack &&
       tabNames.push(t(texts.projects.projectDetails.tabs.techStack));
     return tabNames;
@@ -58,11 +58,11 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
           customer={props.project.customer}
         />
       );
-    props.project.myRoles &&
+    props.project.myTasks &&
       content.push(
-        <MyRoles
-          myRoles={props.project.myRoles as any as IRole[]}
-          key={`${props.project.id}_myRoles`}
+        <MyTasks
+          myTasks={props.project.myTasks as any as ITask[]}
+          key={`${props.project.id}_myTasks`}
         />
       );
     props.project.techStack &&
@@ -77,7 +77,7 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
     props.project.challenge,
     props.project.customer,
     props.project.id,
-    props.project.myRoles,
+    props.project.myTasks,
     props.project.requirements,
     props.project.techStack,
   ]);

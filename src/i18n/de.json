@@ -77,14 +77,14 @@
         "projectDetails": {
             "tabs": {
                 "challenge": "Herausforderung",
-                "myRoles": "Meine Rollen",
+                "myTasks": "Meine Aufgaben",
                 "techStack": "Tech Stack",
                 "requirements": "Anforderungen",
                 "customer": "Kunde"
             }
         }
     },
-    "roles": {
+    "tasks": {
         "development": "Entwicklung",
         "organization": "Organisation",
         "project": "Projekt",

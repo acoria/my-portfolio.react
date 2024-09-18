@@ -77,14 +77,14 @@
         "projectDetails": {
             "tabs": {
                 "challenge": "Challenge",
-                "myRoles": "My roles",
+                "myTasks": "My tasks",
                 "techStack": "Tech Stack",
                 "requirements": "Requirements",
                 "customer": "Customer"
             }
         }
     },
-    "roles": {
+    "tasks": {
         "development": "Development",
         "organization": "Organization",
         "project": "Project",

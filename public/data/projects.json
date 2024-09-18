@@ -21,35 +21,35 @@
             {
                 "imageUrl": "./assets/projects/yeoljeong/03_add_training.png",
                 "altText": "Screenshot of training administration page"
-            }
-            , {
+            },
+            {
                 "imageUrl": "./assets/projects/yeoljeong/04_mobile_screenshots.png",
                 "altText": "Screenshots of mobile pages"
             }
         ],
-        "myRoles": [
+        "myTasks": [
             {
-                "roleType": "Project",
-                "subRoles": [
+                "taskType": "Project",
+                "subTasks": [
                     "Communication & Coordination"
                 ]
             },
             {
-                "roleType": "Development",
-                "subRoles": [
+                "taskType": "Development",
+                "subTasks": [
                     "Fullstack Development"
                 ]
             },
             {
-                "roleType": "Usability",
-                "subRoles": [
+                "taskType": "Usability",
+                "subTasks": [
                     "UI Design",
                     "UX Design"
                 ]
             },
             {
-                "roleType": "Organization",
-                "subRoles": [
+                "taskType": "Organization",
+                "subTasks": [
                     "Product Backlog"
                 ]
             }
@@ -163,31 +163,31 @@
                 "altText": "Blurred screenshot of app main page"
             }
         ],
-        "myRoles": [
+        "myTasks": [
             {
-                "roleType": "Project",
-                "subRoles": [
+                "taskType": "Project",
+                "subTasks": [
                     "Communication & Coordination",
                     "Planning and Estimation"
                 ]
             },
             {
-                "roleType": "Development",
-                "subRoles": [
+                "taskType": "Development",
+                "subTasks": [
                     "Software Architecture",
                     "Fullstack Development"
                 ]
             },
             {
-                "roleType": "Usability",
-                "subRoles": [
+                "taskType": "Usability",
+                "subTasks": [
                     "UX Design",
                     "Usability Tests"
                 ]
             },
             {
-                "roleType": "Organization",
-                "subRoles": [
+                "taskType": "Organization",
+                "subTasks": [
                     "Product Backlog",
                     "Review meeting moderation"
                 ]

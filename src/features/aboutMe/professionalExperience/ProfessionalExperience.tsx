@@ -2,7 +2,7 @@ import { texts } from "../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../hooks/useTranslation/useTranslation";
 import { AboutMeItem } from "../aboutMeItem/AboutMeItem";
 import styles from "./ProfessionalExperience.module.scss";
-import { ReactComponent as CodingIcon } from "../../../assets/roles/coding.svg";
+import { ReactComponent as CodingIcon } from "../../../assets/tasks/coding.svg";
 import { ProgrammingExperienceCalculator } from "../../../services/ProgrammingExperienceCalculator";
 
 export const ProfessionalExperience: React.FC = () => {
