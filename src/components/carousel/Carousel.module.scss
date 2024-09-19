@@ -7,19 +7,3 @@
     row-gap: 1rem;
     position: relative;
 }
-
-.closeButton {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3.5rem;
-    height: auto;
-    padding: 0.5rem;
-    fill: colors.$color-carousel-item-close-button-fill;
-    @include mixins.glassy(colors.$color-carousel-item-close-button-background);
-
-    &:hover {
-        fill: colors.$color-carousel-item-close-button-hover
-    }
-}

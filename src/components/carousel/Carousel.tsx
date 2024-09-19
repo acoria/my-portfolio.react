@@ -1,4 +1,3 @@
-import { ReactComponent as CloseButton } from "../../assets/icons/close.svg";
 import styles from "./Carousel.module.scss";
 import { ICarouselProps } from "./ICarouselProps";
 
@@ -12,12 +11,14 @@ export const Carousel: React.FC<ICarouselProps> = (props) => {
   const modal = useModal();
 
   const onZoomClick = () => {
+    //todo: is mobile view
     modal.show(
       <CarouselContent
         {...props}
         initialItemPosition={visibleItemPosition}
         widthInRem={80}
-      />
+      />,
+      true
     );
   };
 

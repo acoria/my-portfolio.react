@@ -3,6 +3,7 @@ import { Modal } from "./Modal";
 
 export const useModal = () => {
   const [displayModal, setDisplayModal] = useState(false);
+  const [displayCloseButton, setDisplayCloseButton] = useState(false);
   const [children, setChildren] = useState<ReactElement | undefined>(undefined);
 
   const close = () => {
@@ -11,10 +12,17 @@ export const useModal = () => {
   };
 
   const content = displayModal && (
-    <Modal onBackdropClick={() => setDisplayModal(false)}>{children}</Modal>
+    <Modal
+      onBackdropClick={() => setDisplayModal(false)}
+      displayCloseButton={displayCloseButton}
+    >
+      {children}
+    </Modal>
   );
-  const show = (content: ReactElement) => {
+  const show = (content: ReactElement, displayCloseButton?: boolean) => {
     setChildren(content);
+    displayCloseButton !== undefined &&
+      setDisplayCloseButton(displayCloseButton);
     setDisplayModal(true);
   };
 

@@ -1,6 +1,8 @@
 import { createPortal } from "react-dom";
 import { IModalProps } from "./IModalProps";
 import styles from "./Modal.module.scss";
+import { ReactComponent as CloseIcon } from "../../assets/icons/close.svg";
+import { Button } from "../button/Button";
 
 export const Modal: React.FC<IModalProps> = (props) => {
   const content = (
@@ -14,6 +16,11 @@ export const Modal: React.FC<IModalProps> = (props) => {
               event.stopPropagation();
             }}
           />
+          {props.displayCloseButton && (
+            <Button className={styles.closeButton}>
+              <CloseIcon className={styles.closeIcon} />
+            </Button>
+          )}
           {props.children}
         </div>
       )}

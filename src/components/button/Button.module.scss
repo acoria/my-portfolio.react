@@ -1,13 +1,17 @@
-.iconButton {
+@use '../../styles/colors.module.scss';
+
+.button {
     outline: none;
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
+    color: colors.$color-button-text;
 
     &:hover {
         outline: none;
         border: none;
         background: none;
+        color: colors.$color-button-text-hover;
     }
 }

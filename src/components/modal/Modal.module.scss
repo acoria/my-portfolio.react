@@ -1,4 +1,5 @@
 @use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 .modal {
     position: fixed;
@@ -7,6 +8,8 @@
     width: 100vw;
     height: 100vh;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .backdrop {
@@ -17,6 +20,18 @@
     height: 100%;
     background-color: colors.$color-backdrop;
     z-index: -1;
+}
+
+.closeButton {
+    cursor: pointer;
+    align-self: end;
+    margin-top: 0.4rem;
+    margin-right: 1.5rem;
+}
+
+.closeIcon {
+    width: 2.5rem;
+    height: auto;
 }
 
 .children {
