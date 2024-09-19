@@ -1,15 +1,15 @@
 import { ReactElement, useCallback, useEffect, useRef, useState } from "react";
 import { error } from "../../../core/utils/error";
-import { useScreenSize } from "../../../hooks/useScreenSize";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { ICarouselContentProps } from "./ICarouselContentProps";
 
 export const useCarouselContentViewModel = (props: ICarouselContentProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { isSmallScreen, isMediumScreen } = useScreenSize();
-  const isMobileView = isSmallScreen || isMediumScreen;
   const { width } = useWindowDimensions();
-  const carouselWidth = isMobileView ? (width / 16) * 0.85 : props.widthInRem;
+  const carouselWidth =
+    props.isMobileView || props.widthInRem === undefined
+      ? (width / 16) * 0.85
+      : props.widthInRem;
   const numberOfItems = Array.isArray(props.children)
     ? props.children.length
     : 1;
@@ -45,7 +45,7 @@ export const useCarouselContentViewModel = (props: ICarouselContentProps) => {
   };
 
   const onCarouselItemClick = (position: number) => {
-    !isMobileView && setShowZoomedInImagePosition(position);
+    !props.isMobileView && setShowZoomedInImagePosition(position);
   };
 
   const onZoomedInCloseButtonClick = () =>
@@ -112,7 +112,7 @@ export const useCarouselContentViewModel = (props: ICarouselContentProps) => {
     children: props.children,
     getChildAtPosition,
     hasSingleItem,
-    isMobileView,
+    isMobileView: props.isMobileView,
     onCarouselItemClick,
     onZoomedInCloseButtonClick,
     ref,

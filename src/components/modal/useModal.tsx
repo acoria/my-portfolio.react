@@ -13,7 +13,8 @@ export const useModal = () => {
 
   const content = displayModal && (
     <Modal
-      onBackdropClick={() => setDisplayModal(false)}
+      onBackdropClick={close}
+      onCloseButtonClick={close}
       displayCloseButton={displayCloseButton}
     >
       {children}

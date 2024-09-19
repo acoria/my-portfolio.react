@@ -18,10 +18,13 @@ export const Modal: React.FC<IModalProps> = (props) => {
           />
           {props.displayCloseButton && (
             <Button className={styles.closeButton}>
-              <CloseIcon className={styles.closeIcon} />
+              <CloseIcon
+                className={styles.closeIcon}
+                onClick={props.onCloseButtonClick}
+              />
             </Button>
           )}
-          {props.children}
+          <div className={styles.children}>{props.children}</div>
         </div>
       )}
     </>

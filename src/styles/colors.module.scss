@@ -20,7 +20,7 @@ $color-accordion-item-chevron-fill: $color-primary;
 $color-accordion-item-header-background: transparentize($color-secondary-200, 0.4);
 $color-accordion-item-content-background: $color-secondary;
 
-$color-backdrop: transparentize($color-secondary-200, 0.1);
+$color-backdrop: transparentize($color-secondary, 0.1);
 
 $color-button-text: $color-primary;
 $color-button-text-hover: $color-primary-light;
@@ -31,7 +31,6 @@ $color-font-light: $color-secondary;
 $color-glassy-background: $color-secondary-300;
 
 /* features */
-
 $color-about-me-text: $color-primary;
 
 $color-background-shape-from: transparentize($color-primary, 0.5);
