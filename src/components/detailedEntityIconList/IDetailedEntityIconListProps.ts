@@ -8,6 +8,6 @@ export interface IDetailedEntityIconListProps<TEntity, TTitleEnum>
   highlightedEntries?: string[];
   icon: ReactElement;
   separator?: string;
-  titleHook: (titleEnum: TTitleEnum) => string;
+  titleNameHook: (titleEnum: TTitleEnum) => string;
   titleProperty: keyof TEntity;
 }

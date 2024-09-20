@@ -38,7 +38,7 @@ export const TechnologyCollection: React.FC<ITechnologyCollectionProps> = (
         />
       }
       titleProperty="type"
-      titleHook={technologyTypeName}
+      titleNameHook={technologyTypeName}
       className={styles.technologyCollection}
       entries={props.technology.technologies.map(mapTechnologyToText)}
       highlightedEntries={props.highlightKeyTechnologies ? keyTechnologies : []}

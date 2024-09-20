@@ -135,6 +135,18 @@
             }
         }
     },
+    "subtasks": {
+        "communicationAndCoordination": "Communication and Coordination",
+        "fullStackDevelopment": "Full Stack Development",
+        "planningAndEstimation": "Planning & Estimation",
+        "productBacklog": "Product Backlog",
+        "requirementsEngineer": "Requirements Engineering",
+        "reviewMeetingModeration": "Review meeting moderation",
+        "softwareArchitecture": "Software Architecture",
+        "uiDesign": "UI Design",
+        "usabilityTests": "Usability Tests",
+        "uxDesign": "UX Design"
+    },
     "technologies": {
         "title": "Technologies",
         "subTitle": "Technologies I {{preferably}} work with",

@@ -6,7 +6,7 @@ import { IDetailedEntityIconListProps } from "./IDetailedEntityIconListProps";
 export function DetailedEntityIconList<TEntity, TTitleEnum>(
   props: IDetailedEntityIconListProps<TEntity, TTitleEnum>
 ): ReactElement {
-  const title: string = props.titleHook(
+  const title: string = props.titleNameHook(
     props.entity[props.titleProperty] as TTitleEnum
   );
 

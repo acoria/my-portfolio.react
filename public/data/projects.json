@@ -31,26 +31,26 @@
             {
                 "taskType": "Project",
                 "subTasks": [
-                    "Communication & Coordination"
+                    "COMMUNICATION_AND_COORDINATION"
                 ]
             },
             {
                 "taskType": "Development",
                 "subTasks": [
-                    "Fullstack Development"
+                    "FULLSTACK_DEVELOPMENT"
                 ]
             },
             {
                 "taskType": "Usability",
                 "subTasks": [
-                    "UI Design",
-                    "UX Design"
+                    "UI_DESIGN",
+                    "UX_DESIGN"
                 ]
             },
             {
                 "taskType": "Organization",
                 "subTasks": [
-                    "Product Backlog"
+                    "PRODUCT_BACKLOG"
                 ]
             }
         ],
@@ -167,30 +167,30 @@
             {
                 "taskType": "Project",
                 "subTasks": [
-                    "Communication & Coordination",
-                    "Planning and Estimation",
-                    "Requirements Engineering"
+                    "COMMUNICATION_AND_COORDINATION",
+                    "PLANNING_AND_ESTIMATION",
+                    "REQUIREMENTS_ENGINEER"
                 ]
             },
             {
                 "taskType": "Development",
                 "subTasks": [
-                    "Software Architecture",
-                    "Fullstack Development"
+                    "SOFTWARE_ARCHITECTURE",
+                    "FULLSTACK_DEVELOPMENT"
                 ]
             },
             {
                 "taskType": "Usability",
                 "subTasks": [
-                    "UX Design",
-                    "Usability Tests"
+                    "USABILITY_TESTS",
+                    "UX_DESIGN"
                 ]
             },
             {
                 "taskType": "Organization",
                 "subTasks": [
-                    "Product Backlog",
-                    "Review meeting moderation"
+                    "PRODUCT_BACKLOG",
+                    "REVIEW_MEETING_MODERATION"
                 ]
             }
         ],
