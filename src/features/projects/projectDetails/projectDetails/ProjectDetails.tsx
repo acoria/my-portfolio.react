@@ -5,15 +5,14 @@ import { style } from "../../../../core/utils/style";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
 import { texts } from "../../../../hooks/useTranslation/texts";
 import { useTranslation } from "../../../../hooks/useTranslation/useTranslation";
-import { ITask } from "../../../../shared/model/ITask";
 import { Challenge } from "../challenge/Challenge";
 import { Customer } from "../customer/Customer";
 import { MyTasks } from "../myTasks/MyTasks";
 import { Requirements } from "../requirements/Requirements";
 import { TechStack } from "../techStack/TechStack";
+import { Usage } from "../usage/Usage";
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
-import { Usage } from "../usage/Usage";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -55,10 +54,7 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
       );
     myTasks &&
       content.push(
-        <MyTasks
-          myTasks={myTasks as any as ITask[]}
-          key={`${props.project.id}_myTasks`}
-        />
+        <MyTasks myTasks={myTasks} key={`${props.project.id}_myTasks`} />
       );
     techStack &&
       content.push(

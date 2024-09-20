@@ -144,9 +144,9 @@
         "requirementsEngineer": "Requirements engineering",
         "reviewMeetingModeration": "Review-Meeting-Moderation",
         "softwareArchitecture": "Softwarearchitektur",
-        "uiDesign": "UI-Design",
+        "uiDesign": "UI Design",
         "usabilityTests": "Usability-Tests",
-        "uxDesign": "UX-Design"
+        "uxDesign": "UX Design"
     },
     "technologies": {
         "title": "Technologien",
@@ -163,7 +163,7 @@
             "project_management": "Projektmanagement",
             "testing": "Testen",
             "tools": "Tools & Software",
-            "uiUxDesign": "UI/UX-Design"
+            "uiUxDesign": "UI/UX Design"
         }
     },
     "testimonials": {
