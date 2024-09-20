@@ -1,14 +1,14 @@
 [
     {
         "id": "30",
-        "title": "Web Taekwon-Do school administration app",
-        "challenge": "A multi-user application for information keeping & sharing: Who is joining the training today? When does the training start today? When did I get my grading to red belt?",
+        "title": "CRM app for a Taekwon-Do school",
+        "challenge": "A multi-user application for information keeping & sharing: Who is joining the training today? When did I get my grading to red belt? All information needs to be kept securely and must be available as responsive design so users can access it via mobile phone.",
         "customer": {
             "logoUrl": "./assets/projects/yeoljeong/yeoljeong_logo.svg",
             "name": "Yeoljeong Taekwon-Do",
             "branch": "Fighting sport school"
         },
-        "goal": "Tool to administrate training sessions & school members (contact information, belt colors etc. | CRM)",
+        "goal": "Tool to administrate training sessions & school members (single & recurring appointments, contact information, belt colors etc.)",
         "images": [
             {
                 "imageUrl": "./assets/projects/yeoljeong/01_welcome.png",
@@ -55,11 +55,11 @@
             }
         ],
         "requirements": [
-            "Multi-user application with different authorizations as trainers and school members",
-            "Calendar with training sessions",
-            "Registration to training sessions for members",
-            "Administration of training sessions and participating members",
-            "CRM for members"
+            "Authorize with different roles such as trainer or school member",
+            "Plan single & recurring training sessions",
+            "Members can see their training progress & belt color",
+            "Trainers can see which and how many members registered for a training",
+            "Trainers can limit participation or cancel training sessions with no participants"
         ],
         "techStack": [
             {
@@ -68,6 +68,12 @@
                     "DESIGN_PATTERNS",
                     "OOD",
                     "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER"
                 ]
             },
             {
@@ -88,7 +94,8 @@
                 "technologies": [
                     "EXPRESS",
                     "NODEJS",
-                    "REACT"
+                    "REACT",
+                    "SEQUELIZE"
                 ]
             },
             {
@@ -143,7 +150,7 @@
             }
         ],
         "start": "2024-08-01T01:00:00.031Z",
-        "end": "2024-09-30T23:00:00.031Z",
+        "end": "2024-09-29T23:00:00.031Z",
         "archived": false
     },
     {
