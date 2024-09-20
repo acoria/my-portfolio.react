@@ -2,6 +2,9 @@
 @use '../../styles/mixins.scss';
 
 .technologies {
+    display: flex;
+    flex-direction: column;
+
     @include mixins.large-screen {
         padding: 0 dimens.$padding-page;
     }
@@ -16,4 +19,8 @@
     @include mixins.medium-screen {
         row-gap: 2.5rem;
     }
+}
+
+.loadingSpinner {
+    align-self: center;
 }

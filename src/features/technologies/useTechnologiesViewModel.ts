@@ -8,12 +8,15 @@ import { useTechnologyTypeName } from "../../hooks/useTechnologyTypeName";
 
 export const useTechnologiesViewModel = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
   const technologyTypeName = useTechnologyTypeName();
 
   useEffect(() => {
+    setIsLoading(true);
     request(async () => {
       const projects = await ProjectAPI.findAll();
       setProjects(projects);
+      setIsLoading(false);
     });
   }, []);
 
@@ -30,5 +33,5 @@ export const useTechnologiesViewModel = () => {
   const technologies: ITechnology[] =
     projects.length === 0 ? [] : getTechnologiesByProjects();
 
-  return { technologies };
+  return { technologies, isLoading };
 };
