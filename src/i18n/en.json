@@ -104,21 +104,21 @@
         "easyToUse": {
             "title": "Appealing and easy-to-use interfaces",
             "descriptions": {
-                "users": "Users are integrated into the development process to find their actual problem.",
-                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development."
+                "users": "I integrate users into the development process to find their actual problem.",
+                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum since I use small, iterative usability tests throughout the development."
             }
         },
         "futureSave": {
             "title": "Future save software",
             "descriptions": {
-                "architecture": "Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development."
+                "architecture": "Later changes or new features are easily and low-costly implemented because of my thought-through architecture and component-based development."
             }
         },
         "highQualitySoftware": {
             "title": "High Quality Software",
             "descriptions": {
-                "years": "With over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
-                "tests": "Tests ensure that bugs are found by the developers, not the users."
+                "years": "With my over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
+                "tests": "Tests ensure that bugs are found by me as a developer, not the user."
             }
         },
         "projectManagement": {
