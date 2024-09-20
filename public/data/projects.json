@@ -356,8 +356,8 @@
         "requirements": [
             "Designing a generator that is easy to use for developers without design experience",
             "Simple adding of color variations by basing the next color on the previous one",
-            "A quick overview of if and how the colors will harmonize with each other by showing app examples",
-            "Generating CSS/SCSS coding for color palette to be copied with one click"
+            "A quick overview of and how the colors will harmonize with each other by showing app examples",
+            "Generating CSS/SCSS coding for color palette to be copied with one click into a development project"
         ],
         "techStack": [
             {

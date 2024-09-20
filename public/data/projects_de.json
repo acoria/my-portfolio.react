@@ -155,19 +155,19 @@
     },
     {
         "id": "20",
-        "title": "Web Customer-Self-Service-Portal for SAP software download",
-        "challenge": "Installing tailored software on an SAP system can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
+        "title": "Web-Kunden-Self-Service-Portal für SAP-Software-Downloads",
+        "challenge": "Angepasste Software auf einem SAP system zu installieren kann eine Herausforderung sein, da Überschneidungen mit bestehender Software vorher ermittelt werden müssen. Hauptziel dieses Projektes war es, den Benutzer proaktiv dabei zu unterstützen, potenzielle Konflikte während der Installation angepasster SAP Software zu identifizieren und zu lösen. Anstatt direkt ein Supportticket zu öffnen, leitet die Software den Benutzer durch den Installationsprozess, weist ihn auf Konflikte hin und bietet basierend darauf mögliche Lösungen an.",
         "customer": {
             "logoUrl": "./assets/projects/swpo/snp_logo.svg",
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
-            "branch": "Internet and information technology",
-            "employeeSize": "1400+ employees"
+            "branch": "Internet und Informationstechnologie",
+            "employeeSize": "1400+ Mitarbeiter"
         },
-        "goal": "Developing and publishing an application for project-specific software for end customers to simplify migration project setups",
+        "goal": "Entwicklung und Veröffentlichung einer Anwendung für Endkunden zum Setup projektspezifischer Software bei Migrationsprojekten",
         "images": [
             {
                 "imageUrl": "./assets/projects/swpo/SWPO.png",
-                "altText": "Blurred screenshot of app main page"
+                "altText": "Unscharfer Screenshot der App-Hauptseite"
             }
         ],
         "myTasks": [
@@ -202,11 +202,11 @@
             }
         ],
         "requirements": [
-            "REST interface to ERP system to provide software based on accounting projects followed by invoice triggering",
-            "Automatic user creation and management with authentication and authorization",
-            "Generation of software licenses",
-            "Generation of installation guides based on Markdown",
-            "Automatic guidance of the user to solve problems to avoid installation errors and reduce support costs"
+            "REST-Schnittstelle zu ERP-System, um basierend auf buchhalterischer Projektanlage Software zur Verfügung zu stellen & Rechnungsstellung anzustoßen",
+            "Automatische Benutzeranlage und -verwaltung mit Authentifizierung und Autorisierung",
+            "Generierung von Software-Lizenzen",
+            "Generierung von Installationsanleitungen auf Basis von Markdown",
+            "Geführte Problembehebung des Benutzers bei Installationsfehlern zur Reduzierung des Supportaufwands"
         ],
         "techStack": [
             {
@@ -325,39 +325,39 @@
     {
         "id": "10",
         "title": "Color Palette Generator",
-        "challenge": "Every application requires a color palette. While companies often have corporate identity colors, these usually lack enough variation to highlight different elements throughout the entire application. Developers face the challenge of finding the right colors for a cohesive design. This tool simplifies that process.",
+        "challenge": "Jede Anwendung benötigt eine Farbpalette. Obwohl Firmen oft bereits Corporate-Identity-Farben mitbringen, reichen diese oft bei Weitem nicht aus, um damit zwischen unterschiedlichen Elementen über die gesamte Anwendung hinweg zu variieren. Entwickler sehen sich oft dem Problem gegenüber die richtigen Farben für ein einheitliches Design zu wählen. Diese Anwendung vereinfacht diesen Prozess.",
         "customer": {
             "logoUrl": "./assets/Logo.svg",
             "name": "OWN PROJECT"
         },
-        "goal": "Web app to simplify the color choice for development projects by creating a color palette and generating its corresponding code",
+        "goal": "Webanwendung zur Vereinfachung der Farbwahl in Entwicklungsprojekten durch das Generieren von Farbpaletten, Design-Beispielen und dem zugehörigen Code",
         "images": [
             {
                 "imageUrl": "./assets/projects/color_palette_generator/01_color_palette_generator_empty.png",
-                "altText": "Empty color palette generator"
+                "altText": "Leerer Farbpaletten-Generator"
             },
             {
                 "imageUrl": "./assets/projects/color_palette_generator/02_color_palette_generator_half_filled_out.png",
-                "altText": "Half filled out color palette generator"
+                "altText": "Halb ausgefüllter Farbpaletten-Generator"
             },
             {
                 "imageUrl": "./assets/projects/color_palette_generator/03_color_palette_generator_filled_out.png",
-                "altText": "Filled out color palette generator"
+                "altText": "Ausgefüllter Farbpaletten-Generator"
             },
             {
                 "imageUrl": "./assets/projects/color_palette_generator/04_color_palette_generator_design_examples.png",
-                "altText": "Design examples"
+                "altText": "Design-Beispiele"
             },
             {
                 "imageUrl": "./assets/projects/color_palette_generator/05_color_palette_generator_palette.png",
-                "altText": "Color palette"
+                "altText": "Farbpaletten"
             }
         ],
         "requirements": [
-            "Designing a generator that is easy to use for developers without design experience",
-            "Simple adding of color variations by basing the next color on the previous one",
-            "A quick overview of if and how the colors will harmonize with each other by showing app examples",
-            "Generating CSS/SCSS coding for color palette to be copied with one click"
+            "Entwurf eines Generators, der für Entwickler ohne Design-Erfahrung einfach zu verwenden ist",
+            "Einfaches Hinzufügen von Farbvariationen durch das Übernehmen der vorherigen Farbe für die nächste Farbe",
+            "Ein schneller Überblick wie und ob die Farben miteinander harmonisieren durch Designbeispiele von Anwendungen",
+            "Generierung von CSS/SCSS-Coding für die gesamte Farbpalette, welches mit einem Klick kopiert und in ein Entwicklungsprojekt eingefügt werden kann"
         ],
         "techStack": [
             {
