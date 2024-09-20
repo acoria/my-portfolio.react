@@ -93,46 +93,46 @@
     },
     "skills": {
         "title": "Fähigkeiten",
-        "subTitle": "##What to expect from my software and the process to develop it",
+        "subTitle": "Was Sie von meiner Software erwarten können und wie sie entwickelt wird",
         "complexBusinessSoftware": {
             "title": "Komplexe Business Software",
             "descriptions": {
-                "usableByAnyone": "Von jedem nutzbar",
-                "complexToEasy": "##No matter how complex the process, together we will find a way to display it in an easy way - and so keep the training effort to a minimum."
+                "usableByAnyone": "Für jeden einfach nutzbar",
+                "complexToEasy": "Egal wie komplex der Prozess, wir vereinfachen ihn gemeinsam - und halten so den Schulungsaufwand so gering wie möglich."
             }
         },
         "easyToUse": {
             "title": "Ansprechende und einfach verwendbare Oberflächen",
             "descriptions": {
-                "users": "##Users are integrated into the development process to find their actual problem.",
-                "leanUX": "##Lean UX: Changes after the actual release are kept to a minimum by using small, iterative Usability Tests throughout the development."
+                "users": "Kontinuierliches Einbinden der Nutzer in den Entwicklungsprozess deckt ihre tatsächlichen Probleme und Bedürfnisse auf.",
+                "leanUX": "Dank Lean UX und somit fortlaufenden, iterativen Usability-Tests sind Änderungen nach Go-Live minimal."
             }
         },
         "futureSave": {
-            "title": "Zukunftssichere software",
+            "title": "Zukunfts- sichere software",
             "descriptions": {
-                "architecture": "##Later changes or new features are easily and low-costly implemented because of a thought-through architecture and component-based development."
+                "architecture": "Zukünftige Änderungen oder neue Funktionen können dank meiner gut durchdachten Architektur und komponentenbasierten Entwicklung einfach und kosteneffektiv umgesetzt werden."
             }
         },
         "highQualitySoftware": {
             "title": "Qualitativ hochwertige Software",
             "descriptions": {
-                "years": "##With over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
-                "tests": "##Tests ensure that bugs are found by the developers, not the users."
+                "years": "Mit über {{programmingYears}} Jahren Erfahrung in verschiedenen Programmiersprachen biete ich Ihnen die besten Lösungen aus allen Bereichen.",
+                "tests": "Gründliche Tests stellen sicher, dass Fehler von mir entdeckt werden und nicht von Ihren Nutzern."
             }
         },
         "projectManagement": {
             "title": "Zuverlässige Projektplanung und -schätzung",
             "descriptions": {
                 "management": "Projekt- & Entwicklungsmanagement mit Scrum",
-                "scrum": "##An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down & clear for everyone in the development team."
+                "scrum": "In den letzten 9+ Jahren habe ich meinen agilen Prozess verfeinert, um alle für einen erfolgreichen Projektabschluss nötigen Aufgaben für das gesamte Entwicklungteam klar zu dokumentieren."
             }
         },
         "meetings": {
-            "title": "Kurze, effiziente Meetingleitung",
+            "title": "Kurze, effiziente Meeting- leitung",
             "descriptions": {
-                "liveIsShort": "##Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work.",
-                "planning": "##With an agenda and proper meeting preparation, I keep meeting times to a minimum."
+                "expensive": "Meetings sind kostspielig und produktivitätsmindernd. Lassen Sie mich diese übernehmen.",
+                "planning": "Mit einer klaren Agenda und gründlicher Vorbereitung stelle ich sicher, dass Meetings kurz und fokussiert sind."
             }
         }
     },

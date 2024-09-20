@@ -49,7 +49,7 @@ export const Skills: React.FC = () => {
     {
       title: t(texts.skills.meetings.title),
       descriptions: [
-        t(texts.skills.meetings.descriptions.liveIsShort),
+        t(texts.skills.meetings.descriptions.expensive),
         t(texts.skills.meetings.descriptions.planning),
       ],
     },

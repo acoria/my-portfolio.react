@@ -1,6 +1,6 @@
 {
     "myMotivationQuote": {
-        "introductionText": "My motivation comes from seeing the faces of my users light up with understanding or even happiness when they use my software. Whether it’s a user application or an API, usability is a key component of my designs, alongside a solid software architecture. Due to my independent and highly structured approach to work, I am able to complete my projects with high quality in the most pragmatic way."
+        "introductionText": "My motivation comes from seeing the faces of my users light up with understanding or even happiness when they use my software. Whether it's a user application or an API, usability is a key component of my designs, alongside a solid software architecture. Due to my independent and highly structured approach to work, I am able to complete my projects with high quality in the most pragmatic way."
     },
     "aboutMe": {
         "certificates": {
@@ -93,46 +93,46 @@
     },
     "skills": {
         "title": "Skills",
-        "subTitle": "What to expect from my software and the process to develop it",
+        "subTitle": "What you can expect from my software and how it's built",
         "complexBusinessSoftware": {
             "title": "Complex Business Software",
             "descriptions": {
-                "usableByAnyone": "Usable by anyone",
-                "complexToEasy": "No matter how complex the process, together we will find a way to display it in an easy way - and so keep the training effort to a minimum."
+                "usableByAnyone": "Designed to be used by anyone",
+                "complexToEasy": "No matter how complex the process, we'll simplify it together - keeping training efforts to a minimum."
             }
         },
         "easyToUse": {
             "title": "Appealing and easy-to-use interfaces",
             "descriptions": {
-                "users": "I integrate users into the development process to find their actual problem.",
-                "leanUX": "Lean UX: Changes after the actual release are kept to a minimum since I use small, iterative usability tests throughout the development."
+                "users": "I involve users early and permanently into the development process to find their real problems and needs.",
+                "leanUX": "With Lean UX, post-launch changes are minimal thanks to ongoing, iterative usability tests during development."
             }
         },
         "futureSave": {
             "title": "Future save software",
             "descriptions": {
-                "architecture": "Later changes or new features are easily and low-costly implemented because of my thought-through architecture and component-based development."
+                "architecture": "Future changes or new features can be easily and cost-effectively implemented, thanks to my well-planned architecture and component-based development."
             }
         },
         "highQualitySoftware": {
             "title": "High Quality Software",
             "descriptions": {
-                "years": "With my over {{programmingYears}} years of programming experience in various languages, you get the best from all worlds.",
-                "tests": "Tests ensure that bugs are found by me as a developer, not the user."
+                "years": "With over {{programmingYears}} years of experience across multiple programming languages, I bring you the best solutions from every field.",
+                "tests": "Thorough testing ensures that bugs are caught by me, not by your users."
             }
         },
         "projectManagement": {
             "title": "Reliable project planning and estimation",
             "descriptions": {
-                "management": "Project & Development management with Scrum",
-                "scrum": "An agile process perfectionized in the last 9+ years to ensure that all tasks for completing the project are written down & clear for everyone in the development team."
+                "management": "Project & Development management using Scrum",
+                "scrum": "Over the last 9+ years, I've refined my agile process to ensure all tasks for completing a project are clearly documented and understood by the entire development team."
             }
         },
         "meetings": {
             "title": "Short, efficient meeting moderation",
             "descriptions": {
-                "liveIsShort": "Live is too short to spend it in long meetings! Let me take care of the meetings and win more time for your actual work.",
-                "planning": "With an agenda and proper meeting preparation, I keep meeting times to a minimum."
+                "expensive": "Meetings are expensive and hurt productivity. Let me handle them, so you can focus on what really matters.",
+                "planning": "With clear agendas and thorough preparation, I ensure meetings are brief and focused."
             }
         }
     },
