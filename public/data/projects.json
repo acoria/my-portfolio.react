@@ -29,26 +29,26 @@
         ],
         "myTasks": [
             {
-                "taskType": "Project",
+                "taskType": "PROJECT",
                 "subTasks": [
                     "COMMUNICATION_AND_COORDINATION"
                 ]
             },
             {
-                "taskType": "Development",
+                "taskType": "DEVELOPMENT",
                 "subTasks": [
                     "FULLSTACK_DEVELOPMENT"
                 ]
             },
             {
-                "taskType": "Usability",
+                "taskType": "USABILITY",
                 "subTasks": [
                     "UI_DESIGN",
                     "UX_DESIGN"
                 ]
             },
             {
-                "taskType": "Organization",
+                "taskType": "ORGANIZATION",
                 "subTasks": [
                     "PRODUCT_BACKLOG"
                 ]
@@ -165,7 +165,7 @@
         ],
         "myTasks": [
             {
-                "taskType": "Project",
+                "taskType": "PROJECT",
                 "subTasks": [
                     "COMMUNICATION_AND_COORDINATION",
                     "PLANNING_AND_ESTIMATION",
@@ -173,21 +173,21 @@
                 ]
             },
             {
-                "taskType": "Development",
+                "taskType": "DEVELOPMENT",
                 "subTasks": [
-                    "SOFTWARE_ARCHITECTURE",
-                    "FULLSTACK_DEVELOPMENT"
+                    "FULLSTACK_DEVELOPMENT",
+                    "SOFTWARE_ARCHITECTURE"
                 ]
             },
             {
-                "taskType": "Usability",
+                "taskType": "USABILITY",
                 "subTasks": [
                     "USABILITY_TESTS",
                     "UX_DESIGN"
                 ]
             },
             {
-                "taskType": "Organization",
+                "taskType": "ORGANIZATION",
                 "subTasks": [
                     "PRODUCT_BACKLOG",
                     "REVIEW_MEETING_MODERATION"
@@ -410,7 +410,39 @@
     },
     {
         "id": "0",
-        "title": "Dummy with all technologies",
+        "title": "Dummy with all technologies and my tasks",
+        "myTasks": [
+            {
+                "taskType": "PROJECT",
+                "subTasks": [
+                    "COMMUNICATION_AND_COORDINATION",
+                    "PLANNING_AND_ESTIMATION",
+                    "REQUIREMENTS_ENGINEER"
+                ]
+            },
+            {
+                "taskType": "DEVELOPMENT",
+                "subTasks": [
+                    "FULLSTACK_DEVELOPMENT",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "taskType": "USABILITY",
+                "subTasks": [
+                    "UI_DESIGN",
+                    "USABILITY_TESTS",
+                    "UX_DESIGN"
+                ]
+            },
+            {
+                "taskType": "ORGANIZATION",
+                "subTasks": [
+                    "PRODUCT_BACKLOG",
+                    "REVIEW_MEETING_MODERATION"
+                ]
+            }
+        ],
         "techStack": [
             {
                 "type": "CLEAN_CODE_DEV",

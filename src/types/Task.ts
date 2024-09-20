@@ -1,6 +1,6 @@
 export enum Task {
-  DEVELOPMENT = "Development",
-  ORGANIZATION = "Organization",
-  PROJECT = "Project",
-  USABILITY = "Usability",
+  DEVELOPMENT = "DEVELOPMENT",
+  ORGANIZATION = "ORGANIZATION",
+  PROJECT = "PROJECT",
+  USABILITY = "USABILITY",
 }
