@@ -1,0 +1,594 @@
+[
+    {
+        "id": "30",
+        "title": "CRM-Anwendung für eine Taekwon-Do Schule",
+        "challenge": "Eine Multi-User-Anwendung, um Informationen zu verwalten und zu teilen: Wer nimmt heute am Training teil? Wann habe ich meine Prüfung zum roten Gürtel bestanden? Alle Informationen müssen sicher gespeichert und den Nutzern responsive zur Verfügung gestellt werden, damit diese über ihr Smartphone darauf zugreifen können.",
+        "customer": {
+            "logoUrl": "./assets/projects/yeoljeong/yeoljeong_logo.svg",
+            "name": "Yeoljeong Taekwon-Do",
+            "branch": "Kampfsportschule"
+        },
+        "goal": "Verwaltungssoftware für Unterrichtsstunden und Mitglieder (einmalige und sich wiederholende Termine, Kontaktinfos, Gürtelfarben etc.)",
+        "images": [
+            {
+                "imageUrl": "./assets/projects/yeoljeong/01_welcome.png",
+                "altText": "Screenshot der Begrüssungsseite"
+            },
+            {
+                "imageUrl": "./assets/projects/yeoljeong/02_trainings_register.png",
+                "altText": "Screenshot der Training-Registrierungsseite"
+            },
+            {
+                "imageUrl": "./assets/projects/yeoljeong/03_add_training.png",
+                "altText": "Screenshot der Training-Administrationsseite"
+            },
+            {
+                "imageUrl": "./assets/projects/yeoljeong/04_mobile_screenshots.png",
+                "altText": "Screenshots der mobilen Anwendung"
+            }
+        ],
+        "myTasks": [
+            {
+                "taskType": "PROJECT",
+                "subTasks": [
+                    "COMMUNICATION_AND_COORDINATION"
+                ]
+            },
+            {
+                "taskType": "DEVELOPMENT",
+                "subTasks": [
+                    "FULLSTACK_DEVELOPMENT"
+                ]
+            },
+            {
+                "taskType": "USABILITY",
+                "subTasks": [
+                    "UI_DESIGN",
+                    "UX_DESIGN"
+                ]
+            },
+            {
+                "taskType": "ORGANIZATION",
+                "subTasks": [
+                    "PRODUCT_BACKLOG"
+                ]
+            }
+        ],
+        "requirements": [
+            "Authorisierung mit unterschiedlichen Rollen, wie z.B. Trainer oder Mitglied",
+            "Plane einzelne oder wiederkehrende Trainingsstunden",
+            "Mitglieder können ihren Trainingsfortschritt und ihre Gürtelfarbe einsehen",
+            "Trainer haben eine Übersicht über alle für ein Training eingetragenen Schüler",
+            "Trainer können die Anzahl an Registrierungen limitieren und Trainings ohne Schüler absagen"
+        ],
+        "techStack": [
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER"
+                ]
+            },
+            {
+                "type": "COMMUNICATION_FRAMEWORKS",
+                "technologies": [
+                    "REST"
+                ]
+            },
+            {
+                "type": "DATABASES",
+                "technologies": [
+                    "MARIA_DB",
+                    "POSTGRES"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "EXPRESS",
+                    "NODEJS",
+                    "REACT",
+                    "SEQUELIZE"
+                ]
+            },
+            {
+                "type": "OTHERS",
+                "technologies": [
+                    "CODE_REVIEWS",
+                    "TEAMWORK"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "CSS",
+                    "HTML",
+                    "JAVASCRIPT",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "PROJECT_MANAGEMENT",
+                "technologies": [
+                    "REQ_ENGINEERING"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "END_TO_END_TESTING",
+                    "JEST",
+                    "MOCHA",
+                    "UNIT_TESTING"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "FIGMA",
+                    "GIT",
+                    "GITHUB",
+                    "HEIDI_SQL",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "UI_UX_DESIGN",
+                    "USABILITY_TESTING"
+                ]
+            }
+        ],
+        "start": "2024-08-01T01:00:00.031Z",
+        "end": "2024-09-29T23:00:00.031Z",
+        "archived": false
+    },
+    {
+        "id": "20",
+        "title": "Web Customer-Self-Service-Portal for SAP software download",
+        "challenge": "Installing tailored software on an SAP system can be challenging, as conflicting software must be detected beforehand. The primary objective of this project was to assist users by proactively identifying and resolving potential conflicts during the installation of customized SAP software. Rather than immediately opening a support ticket, the software guides users through the installation process, highlighting any conflicts and providing solutions.",
+        "customer": {
+            "logoUrl": "./assets/projects/swpo/snp_logo.svg",
+            "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
+            "branch": "Internet and information technology",
+            "employeeSize": "1400+ employees"
+        },
+        "goal": "Developing and publishing an application for project-specific software for end customers to simplify migration project setups",
+        "images": [
+            {
+                "imageUrl": "./assets/projects/swpo/SWPO.png",
+                "altText": "Blurred screenshot of app main page"
+            }
+        ],
+        "myTasks": [
+            {
+                "taskType": "PROJECT",
+                "subTasks": [
+                    "COMMUNICATION_AND_COORDINATION",
+                    "PLANNING_AND_ESTIMATION",
+                    "REQUIREMENTS_ENGINEER"
+                ]
+            },
+            {
+                "taskType": "DEVELOPMENT",
+                "subTasks": [
+                    "FULLSTACK_DEVELOPMENT",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "taskType": "USABILITY",
+                "subTasks": [
+                    "USABILITY_TESTS",
+                    "UX_DESIGN"
+                ]
+            },
+            {
+                "taskType": "ORGANIZATION",
+                "subTasks": [
+                    "PRODUCT_BACKLOG",
+                    "REVIEW_MEETING_MODERATION"
+                ]
+            }
+        ],
+        "requirements": [
+            "REST interface to ERP system to provide software based on accounting projects followed by invoice triggering",
+            "Automatic user creation and management with authentication and authorization",
+            "Generation of software licenses",
+            "Generation of installation guides based on Markdown",
+            "Automatic guidance of the user to solve problems to avoid installation errors and reduce support costs"
+        ],
+        "techStack": [
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "COMMUNICATION_FRAMEWORKS",
+                "technologies": [
+                    "REST",
+                    "ICF_SERVICE"
+                ]
+            },
+            {
+                "type": "DATABASES",
+                "technologies": [
+                    "MARIA_DB",
+                    "OPEN_SQL"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "JENKINS"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "BLUEPRINT_JS",
+                    "REACT",
+                    "REDUX",
+                    "SPRING_BOOT"
+                ]
+            },
+            {
+                "type": "OTHERS",
+                "technologies": [
+                    "CODE_REVIEWS",
+                    "ESLINT",
+                    "GENERICS",
+                    "MD",
+                    "MENTORING",
+                    "SAP_DYNPRO",
+                    "TEAMWORK",
+                    "WINDOWS"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "ABAP",
+                    "CSS",
+                    "HTML",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "PROJECT_MANAGEMENT",
+                "technologies": [
+                    "REQ_ENGINEERING",
+                    "SCRUM",
+                    "SCRUM_MASTER",
+                    "USER_STORIES"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "CHAI",
+                    "END_TO_END_TESTING",
+                    "JEST",
+                    "JUNIT",
+                    "MOCHA",
+                    "UNIT_TESTING"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "CONFLUENCE",
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "GITHUB",
+                    "HEIDI_SQL",
+                    "JIRA",
+                    "SAP_GUI",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "LEAN_UX",
+                    "UI_UX_DESIGN",
+                    "USABILITY_TESTING"
+                ]
+            }
+        ],
+        "start": "2023-01-01T01:00:00.031Z",
+        "end": "2024-08-05T23:00:00.031Z",
+        "archived": false
+    },
+    {
+        "id": "10",
+        "title": "Color Palette Generator",
+        "challenge": "Every application requires a color palette. While companies often have corporate identity colors, these usually lack enough variation to highlight different elements throughout the entire application. Developers face the challenge of finding the right colors for a cohesive design. This tool simplifies that process.",
+        "customer": {
+            "logoUrl": "./assets/Logo.svg",
+            "name": "OWN PROJECT"
+        },
+        "goal": "Web app to simplify the color choice for development projects by creating a color palette and generating its corresponding code",
+        "images": [
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/01_color_palette_generator_empty.png",
+                "altText": "Empty color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/02_color_palette_generator_half_filled_out.png",
+                "altText": "Half filled out color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/03_color_palette_generator_filled_out.png",
+                "altText": "Filled out color palette generator"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/04_color_palette_generator_design_examples.png",
+                "altText": "Design examples"
+            },
+            {
+                "imageUrl": "./assets/projects/color_palette_generator/05_color_palette_generator_palette.png",
+                "altText": "Color palette"
+            }
+        ],
+        "requirements": [
+            "Designing a generator that is easy to use for developers without design experience",
+            "Simple adding of color variations by basing the next color on the previous one",
+            "A quick overview of if and how the colors will harmonize with each other by showing app examples",
+            "Generating CSS/SCSS coding for color palette to be copied with one click"
+        ],
+        "techStack": [
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "DOCKER_HUB",
+                    "PACKAGE_JSON_BUILD_SCRIPTS",
+                    "PORTAINER",
+                    "RASPBERRY_PI"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "REACT"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "CSS",
+                    "HTML",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "FIGMA",
+                    "GIT",
+                    "GITHUB",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "UI_UX_DESIGN"
+                ]
+            }
+        ],
+        "usage": [
+            "Yeoljeong Taekwon-Do CRM app",
+            "Portfolio website"
+        ],
+        "start": "2024-01-01T01:00:00.031Z",
+        "end": "2024-03-01T23:00:00.031Z",
+        "archived": false
+    },
+    {
+        "id": "0",
+        "title": "Dummy with all technologies and my tasks",
+        "myTasks": [
+            {
+                "taskType": "PROJECT",
+                "subTasks": [
+                    "COMMUNICATION_AND_COORDINATION",
+                    "PLANNING_AND_ESTIMATION",
+                    "REQUIREMENTS_ENGINEER"
+                ]
+            },
+            {
+                "taskType": "DEVELOPMENT",
+                "subTasks": [
+                    "FULLSTACK_DEVELOPMENT",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "taskType": "USABILITY",
+                "subTasks": [
+                    "UI_DESIGN",
+                    "USABILITY_TESTS",
+                    "UX_DESIGN"
+                ]
+            },
+            {
+                "taskType": "ORGANIZATION",
+                "subTasks": [
+                    "PRODUCT_BACKLOG",
+                    "REVIEW_MEETING_MODERATION"
+                ]
+            }
+        ],
+        "techStack": [
+            {
+                "type": "CLEAN_CODE_DEV",
+                "technologies": [
+                    "DESIGN_PATTERNS",
+                    "OOD",
+                    "SOFTWARE_ARCHITECTURE"
+                ]
+            },
+            {
+                "type": "COMMUNICATION_FRAMEWORKS",
+                "technologies": [
+                    "REST",
+                    "ICF_SERVICE",
+                    "OAUTH2"
+                ]
+            },
+            {
+                "type": "DATABASES",
+                "technologies": [
+                    "MARIA_DB",
+                    "MYSQL",
+                    "OPEN_SQL",
+                    "POSTGRES"
+                ]
+            },
+            {
+                "type": "DEV_OPS",
+                "technologies": [
+                    "DOCKER",
+                    "DOCKER_DESKTOP",
+                    "DOCKER_HUB",
+                    "GRADLE",
+                    "JENKINS",
+                    "MAVEN",
+                    "PACKAGE_JSON_BUILD_SCRIPTS",
+                    "PORTAINER",
+                    "RASPBERRY_PI"
+                ]
+            },
+            {
+                "type": "FRAMEWORKS_CONCEPTS",
+                "technologies": [
+                    "ANDROID",
+                    "BLUEPRINT_JS",
+                    "EXPRESS",
+                    "IONIC",
+                    "KEYCLOAK",
+                    "MUI",
+                    "NEXTJS",
+                    "NODEJS",
+                    "REACT",
+                    "REDUX",
+                    "SEQUELIZE",
+                    "SPRING_BOOT"
+                ]
+            },
+            {
+                "type": "OTHERS",
+                "technologies": [
+                    "CODE_REVIEWS",
+                    "ESLINT",
+                    "GENERICS",
+                    "LINUX",
+                    "MD",
+                    "MENTORING",
+                    "TEAMWORK",
+                    "WINDOWS"
+                ]
+            },
+            {
+                "type": "PROGRAMMING_LANGUAGES",
+                "technologies": [
+                    "ABAP",
+                    "CSS",
+                    "HTML",
+                    "JAVA",
+                    "JAVASCRIPT",
+                    "KOTLIN",
+                    "SCSS",
+                    "TYPESCRIPT",
+                    "XML"
+                ]
+            },
+            {
+                "type": "PROJECT_MANAGEMENT",
+                "technologies": [
+                    "REQ_ENGINEERING",
+                    "SCRUM",
+                    "SCRUM_MASTER",
+                    "USER_STORIES"
+                ]
+            },
+            {
+                "type": "TESTING",
+                "technologies": [
+                    "ABAP_UNIT",
+                    "CHAI",
+                    "END_TO_END_TESTING",
+                    "JEST",
+                    "JUNIT",
+                    "MOCHA",
+                    "MOCKK",
+                    "TDD",
+                    "UNIT_TESTING"
+                ]
+            },
+            {
+                "type": "TOOLS",
+                "technologies": [
+                    "ANDROID_STUDIO",
+                    "CONFLUENCE",
+                    "BALSAMIQ",
+                    "ENTERPRISE_ARCHITECT",
+                    "FIGMA",
+                    "GIT",
+                    "GITHUB",
+                    "HEIDI_SQL",
+                    "JIRA",
+                    "MIRO",
+                    "SAP_GUI",
+                    "TRELLO",
+                    "VS_CODE"
+                ]
+            },
+            {
+                "type": "UI_UX_DESIGN",
+                "technologies": [
+                    "LEAN_UX",
+                    "UI_UX_DESIGN",
+                    "UX_AUDITING",
+                    "USABILITY_TESTING"
+                ]
+            }
+        ],
+        "archived": true
+    }
+]
