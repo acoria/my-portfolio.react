@@ -1,3 +1,4 @@
+// components
 $padding-page: 2rem;
 $medium-screen-width-number: 38;
 $large-screen-width-number: 70;
@@ -5,7 +6,12 @@ $medium-screen-width: $medium-screen-width-number+rem;
 $large-screen-width: $large-screen-width-number+rem;
 $page-width: $large-screen-width;
 
+// features
+$project-details-width-number: 46;
+$project-details-width: $project-details-width-number+rem;
+
 :export {
-    mediumScreenWidth: $medium-screen-width-number;
     largeScreenWidth: $large-screen-width-number;
+    mediumScreenWidth: $medium-screen-width-number;
+    projectDetailsWidth: $project-details-width-number;
 }

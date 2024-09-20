@@ -1,3 +1,5 @@
+@use '../../../../styles/dimensions.module.scss' as dimens;
+
 .projectDetails {
     display: flex;
     flex-direction: column;
@@ -6,11 +8,11 @@
 
 .tabstrip {
     justify-content: space-between;
-    width: 40rem;
+    width: dimens.$project-details-width;
 }
 
 .tabstripContent {
-    width: 40rem;
     align-self: center;
+    width: dimens.$project-details-width;
     padding-top: 1rem;
 }
