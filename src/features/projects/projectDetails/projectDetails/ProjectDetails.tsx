@@ -13,6 +13,7 @@ import { Requirements } from "../requirements/Requirements";
 import { TechStack } from "../techStack/TechStack";
 import { IProjectDetailsProps } from "./IProjectDetailsProps";
 import styles from "./ProjectDetails.module.scss";
+import { Usage } from "../usage/Usage";
 
 export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
   const { t } = useTranslation();
@@ -20,66 +21,62 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
+  const { challenge, requirements, customer, myTasks, techStack, usage } =
+    props.project;
+
   const tabNames: () => string[] = useCallback(() => {
     const tabNames = [];
-    props.project.challenge &&
-      tabNames.push(t(texts.projects.projectDetails.tabs.challenge));
-    props.project.requirements &&
+    challenge && tabNames.push(t(texts.projects.projectDetails.tabs.challenge));
+    requirements &&
       tabNames.push(t(texts.projects.projectDetails.tabs.requirements));
-    props.project.customer &&
-      tabNames.push(t(texts.projects.projectDetails.tabs.customer));
-    props.project.myTasks &&
-      tabNames.push(t(texts.projects.projectDetails.tabs.myTasks));
-    props.project.techStack &&
-      tabNames.push(t(texts.projects.projectDetails.tabs.techStack));
+    customer && tabNames.push(t(texts.projects.projectDetails.tabs.customer));
+    myTasks && tabNames.push(t(texts.projects.projectDetails.tabs.myTasks));
+    techStack && tabNames.push(t(texts.projects.projectDetails.tabs.techStack));
+    usage && tabNames.push(t(texts.projects.projectDetails.tabs.usages));
     return tabNames;
-  }, [t]);
+  }, [challenge, customer, myTasks, requirements, t, techStack, usage]);
 
   const content: () => ReactElement[] = useCallback(() => {
     const content = [];
-    props.project.challenge &&
+    challenge &&
       content.push(
-        <Challenge
-          key={`${props.project.id}_challenge`}
-          text={props.project.challenge}
-        />
+        <Challenge key={`${props.project.id}_challenge`} text={challenge} />
       );
-    props.project.requirements &&
+    requirements &&
       content.push(
         <Requirements
           key={`${props.project.id}_key`}
-          requirements={props.project.requirements}
+          requirements={requirements}
         />
       );
-    props.project.customer &&
+    customer &&
       content.push(
-        <Customer
-          key={`${props.project.id}_customer`}
-          customer={props.project.customer}
-        />
+        <Customer key={`${props.project.id}_customer`} customer={customer} />
       );
-    props.project.myTasks &&
+    myTasks &&
       content.push(
         <MyTasks
-          myTasks={props.project.myTasks as any as ITask[]}
+          myTasks={myTasks as any as ITask[]}
           key={`${props.project.id}_myTasks`}
         />
       );
-    props.project.techStack &&
+    techStack &&
       content.push(
         <TechStack
-          technologies={props.project.techStack}
+          technologies={techStack}
           key={`${props.project.id}_techStack`}
         />
       );
+    usage && content.push(<Usage usages={usage} />);
     return content;
   }, [
-    props.project.challenge,
-    props.project.customer,
+    challenge,
+    customer,
+    myTasks,
     props.project.id,
-    props.project.myTasks,
-    props.project.requirements,
-    props.project.techStack,
+    requirements,
+    techStack,
+    usage,
   ]);
 
   return (

@@ -77,10 +77,11 @@
         "projectDetails": {
             "tabs": {
                 "challenge": "Challenge",
+                "customer": "Customer",
                 "myTasks": "My tasks",
-                "techStack": "Tech Stack",
                 "requirements": "Requirements",
-                "customer": "Customer"
+                "techStack": "Tech Stack",
+                "usages": "Usage"
             }
         }
     },

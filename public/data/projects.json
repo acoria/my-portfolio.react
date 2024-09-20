@@ -411,6 +411,10 @@
                 ]
             }
         ],
+        "usage": [
+            "Yeoljeong Taekwon-Do CRM app",
+            "Portfolio website"
+        ],
         "start": "2024-01-01T01:00:00.031Z",
         "end": "2024-03-01T23:00:00.031Z",
         "archived": false
