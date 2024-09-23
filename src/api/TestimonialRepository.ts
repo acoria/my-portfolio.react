@@ -1,8 +1,12 @@
 import { AppConfig } from "../AppConfig";
+import { LanguageConfig } from "../i18n/LanguageConfig";
 import { ITestimonial } from "../shared/model/ITestimonial";
 import { Repository } from "./Repository";
 
-class TestimonialRepositoryDefault extends Repository<ITestimonial> {}
-export const TestimonialRepository = new TestimonialRepositoryDefault(
-  `${AppConfig.HOST}/data/testimonials.json`
-);
+export class TestimonialRepository extends Repository<ITestimonial> {
+  constructor() {
+    super(
+      `${AppConfig.HOST}/data/${LanguageConfig.language}/testimonials.json`
+    );
+  }
+}
