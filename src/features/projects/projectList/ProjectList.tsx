@@ -13,7 +13,7 @@ export const ProjectList: React.FC = () => {
   useEffect(() => {
     setIsLoading(true);
     request(async () => {
-      const projects = await ProjectAPI.findAll();
+      const projects = await new ProjectAPI().findAll();
       setProjects(projects.filter((project) => !project.archived));
       setIsLoading(false);
     });

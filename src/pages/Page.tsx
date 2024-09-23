@@ -87,7 +87,7 @@ export const Page: React.FC = () => {
     });
 
   const headerHeightInPixel = headerHeight ? `${headerHeight}px` : `0px`;
-  const navContent = (
+  const content = (
     <>
       {navItems.map((navItem, index) => (
         <PageSection
@@ -144,7 +144,7 @@ export const Page: React.FC = () => {
         </div>
         <div className={styles.backgroundWrapper}>
           <Background />
-          <div className={styles.pageSections}>{navContent}</div>
+          <div className={styles.pageSections}>{content}</div>
         </div>
       </div>
     </>

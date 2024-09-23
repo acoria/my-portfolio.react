@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { ProjectAPI } from "../../api/ProjectRepository";
 import { request } from "../../core/utils/request";
+import { useTechnologyTypeName } from "../../hooks/useTechnologyTypeName";
 import { ProjectTechStackCollector } from "../../services/ProjectTechStackCollector";
 import { IProject } from "../../shared/model/IProject";
 import { ITechnology } from "../../shared/model/ITechnology";
-import { useTechnologyTypeName } from "../../hooks/useTechnologyTypeName";
 
 export const useTechnologiesViewModel = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
@@ -14,7 +14,7 @@ export const useTechnologiesViewModel = () => {
   useEffect(() => {
     setIsLoading(true);
     request(async () => {
-      const projects = await ProjectAPI.findAll();
+      const projects = await new ProjectAPI().findAll();
       setProjects(projects);
       setIsLoading(false);
     });
