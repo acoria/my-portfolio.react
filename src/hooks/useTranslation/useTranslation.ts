@@ -1,6 +1,5 @@
 import * as translations from "../../i18n";
 import { useLanguage } from "../useLanguage/useLanguage";
-import { useLanguageStorage } from "../useLanguage/useLanguageStorage";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { texts } from "./texts";
 import { ITranslation } from "./types/ITranslation";

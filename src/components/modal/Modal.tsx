@@ -24,7 +24,7 @@ export const Modal: React.FC<IModalProps> = (props) => {
               />
             </Button>
           )}
-          <div className={styles.children}>{props.children}</div>
+          {props.children}
         </div>
       )}
     </>
