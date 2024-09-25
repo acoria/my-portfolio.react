@@ -1,0 +1,17 @@
+@use '../../styles/colors.module.scss';
+
+.imprint {
+    color: colors.$color-font;
+}
+
+.title {
+    font-family: "Antonio";
+    text-align: center;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    margin-bottom: 2rem;
+}

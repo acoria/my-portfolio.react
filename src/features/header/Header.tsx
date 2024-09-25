@@ -7,6 +7,7 @@ import styles from "./Header.module.scss";
 import { IHeaderProps } from "./IHeaderProps";
 import { useScreenSize } from "../../hooks/useScreenSize";
 import { BurgerMenu } from "../burgerMenu/BurgerMenu";
+import { style } from "../../core/utils/style";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -19,10 +20,10 @@ export const Header: React.FC<IHeaderProps> = (props) => {
     //fix white line in top by reducing it by 1px
     onHeightChange?.(--height);
   }, [width, onHeightChange]);
-  
+
   return (
-    <div className={styles.header} ref={ref}>
-      {isSmallScreen && (
+    <div className={style(styles.header, props.className)} ref={ref}>
+      {isSmallScreen && props.navItems && (
         <BurgerMenu
           captions={props.navItems}
           onTabSelect={(index) => {
@@ -38,7 +39,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           props.onNavItemClick?.(undefined);
         }}
       />
-      {!isSmallScreen && (
+      {!isSmallScreen && props.navItems && (
         <div className={styles.navigation}>
           <Tabstrip
             captions={props.navItems}

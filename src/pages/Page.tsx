@@ -74,6 +74,10 @@ export const Page: React.FC = () => {
     refHeadline.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  /**
+   * This function is necessary since sections can be so small that more than one section is displayed.
+   * This ensures that only the last section that came into view is selected.
+   */
   const addTabToVisibleTabs = (tabIndex: number) =>
     setVisibleTabs((previous) => {
       const index = previous.findIndex((item) => item === tabIndex);
