@@ -39,7 +39,7 @@
         "headline_3": "...a problem solver",
         "portraitImageDescription": "Portrait of me"
     },
-    "footer":{
+    "footer": {
         "imprint": "Imprint",
         "privacyPolicy": "Privacy Policy"
     },
@@ -89,12 +89,6 @@
             }
         }
     },
-    "tasks": {
-        "development": "Development",
-        "organization": "Organization",
-        "project": "Project",
-        "usability": "Usability"
-    },
     "skills": {
         "title": "Skills",
         "subTitle": "What you can expect from my software and how it's built",
@@ -139,6 +133,15 @@
                 "planning": "With clear agendas and thorough preparation, I ensure meetings are brief and focused."
             }
         }
+    },
+    "socialMedia": {
+        "linkedInIconDescription": "LinkedIn icon"
+    },
+    "tasks": {
+        "development": "Development",
+        "organization": "Organization",
+        "project": "Project",
+        "usability": "Usability"
     },
     "subtasks": {
         "communicationAndCoordination": "Communication and Coordination",

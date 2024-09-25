@@ -89,12 +89,6 @@
             }
         }
     },
-    "tasks": {
-        "development": "Entwicklung",
-        "organization": "Organisation",
-        "project": "Projekt",
-        "usability": "Usability"
-    },
     "skills": {
         "title": "Fähigkeiten",
         "subTitle": "Was Sie von meiner Software erwarten können und wie sie entwickelt wird",
@@ -139,6 +133,15 @@
                 "planning": "Mit einer klaren Agenda und gründlicher Vorbereitung stelle ich sicher, dass Meetings kurz und fokussiert sind."
             }
         }
+    },
+    "socialMedia": {
+        "linkedInIconDescription": "LinkedIn-Icon"
+    },
+    "tasks": {
+        "development": "Entwicklung",
+        "organization": "Organisation",
+        "project": "Projekt",
+        "usability": "Usability"
     },
     "subtasks": {
         "communicationAndCoordination": "Kommunikation and Koordination",

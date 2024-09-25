@@ -4,14 +4,29 @@
 $animation-time: 1s;
 $animation-move-left: moveLeft $animation-time;
 $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
+$margin-bottom: 3rem;
 
 .banner {
+    background-color: colors.$color-banner-background;
+    box-shadow: 5px 5px 50px colors.$color-banner-box-shadow;
+
+    @include mixins.medium-screen {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.socialMedia {
+    align-self: end;
+    margin-left: 1rem;
+    margin-bottom: $margin-bottom;
+}
+
+.mainContent {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
     column-gap: 1rem;
-    background-color: colors.$color-banner-background;
-    box-shadow: 5px 5px 50px colors.$color-banner-box-shadow;
     padding: 1rem;
     //stops page from jumping during animation
     overflow-x: hidden;
@@ -26,7 +41,7 @@ $animation-move-left-large-screen: moveLeftLargeScreen $animation-time;
 
     @include mixins.large-screen {
         row-gap: 3rem;
-        padding: 6rem 6rem 3rem 6rem;
+        padding: 6rem 6rem $margin-bottom 0;
     }
 }
 

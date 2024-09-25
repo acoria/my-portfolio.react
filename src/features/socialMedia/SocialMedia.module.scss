@@ -1,0 +1,22 @@
+@use '../../styles/mixins.scss';
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+
+    @include mixins.medium-screen {
+        column-gap: 1rem;
+    }
+
+    @include mixins.large-screen {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+}
+
+.linkedInIcon {
+    width: 2rem;
+}
+
+.xingIcon {}
