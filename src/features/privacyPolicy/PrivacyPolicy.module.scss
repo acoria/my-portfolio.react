@@ -1,0 +1,11 @@
+@use '../../styles/colors.module.scss';
+
+.privacyPolicy {
+    color: colors.$color-font;
+}
+
+.title {
+    font-family: "Antonio";
+    text-align: center;
+    margin-bottom: 2rem;
+}

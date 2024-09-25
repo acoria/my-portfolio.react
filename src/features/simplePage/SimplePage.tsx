@@ -1,13 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import { Background } from "../background/Background";
+import { AppRoutes } from "../../routes/AppRoutes";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import { ISimplePageProps } from "./ISimplePageProps";
 import styles from "./SimplePage.module.scss";
-import { AppRoutes } from "../../routes/AppRoutes";
+import { useEffect } from "react";
 
 export const SimplePage: React.FC<ISimplePageProps> = (props) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.simplePage}>
       <Header

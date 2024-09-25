@@ -3,6 +3,6 @@ import { route } from "./core/route";
 
 export const AppRoutes = configureRoutes({
   home: route("/"),
-  imprint: route("/imprint"),
-  privacyPolicy: route("/privacyPolicy"),
+  imprint: route("/impressum"),
+  privacyPolicy: route("/datenschutzerklaerung"),
 });
