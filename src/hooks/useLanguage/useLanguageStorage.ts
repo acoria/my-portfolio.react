@@ -4,7 +4,7 @@ import { LanguageConfig } from "../../i18n/LanguageConfig";
 import { Language } from "./types/Language";
 
 export const useLanguageStorage = (): Value<Language> => {
-  const [language, setLanguageInternal] = useState(Language.EN);
+  const [language, setLanguageInternal] = useState(Language.DE);
 
   const setLanguage = (
     value:
