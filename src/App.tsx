@@ -1,11 +1,12 @@
 import { AppContext } from "./context/AppContext";
 import { useLanguageStorage } from "./hooks/useLanguage/useLanguageStorage";
-import { Page } from "./pages/Page";
+import { RouterProvider } from "react-router-dom";
+import { AppRouter } from "./routes/AppRouter";
 
 function App() {
   return (
     <AppContext.Provider value={{ language: useLanguageStorage() }}>
-      <Page />
+      <RouterProvider router={AppRouter} />
     </AppContext.Provider>
   );
 }
