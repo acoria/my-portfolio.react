@@ -39,6 +39,10 @@
         "headline_3": "...eine Problemlöserin",
         "portraitImageDescription": "Portrait von mir"
     },
+    "footer": {
+        "imprint": "Impressum",
+        "privacyPolicy": "Datenschutzerklärung"
+    },
     "general": {
         "months": {
             "january": "Januar",

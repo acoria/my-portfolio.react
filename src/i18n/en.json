@@ -39,6 +39,10 @@
         "headline_3": "...a problem solver",
         "portraitImageDescription": "Portrait of me"
     },
+    "footer":{
+        "imprint": "Imprint",
+        "privacyPolicy": "Privacy Policy"
+    },
     "general": {
         "months": {
             "january": "January",

@@ -13,6 +13,7 @@ import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
 import { INavItem } from "../navItems/INavItems";
 import styles from "./Page.module.scss";
+import { Footer } from "../features/footer/Footer";
 
 export const Page: React.FC = () => {
   const [visibleTabs, setVisibleTabs] = useState<number[]>([]);
@@ -147,6 +148,7 @@ export const Page: React.FC = () => {
           <div className={styles.pageSections}>{content}</div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
