@@ -1,4 +1,5 @@
 @use '../../styles/dimensions.module.scss' as dimens;
+@use '../../styles/mixins.scss';
 
 .header {
     position: static;
@@ -6,7 +7,10 @@
 
 .content {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: dimens.$page-width;
+    margin: 1rem;
+
+    @include mixins.large-screen {
+        margin: 1rem auto;
+        width: dimens.$page-width;
+    }
 }

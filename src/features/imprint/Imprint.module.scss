@@ -12,6 +12,7 @@
 .attribution {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 0.3rem;
     margin-bottom: 2rem;
 }

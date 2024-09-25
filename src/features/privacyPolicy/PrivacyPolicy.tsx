@@ -18,7 +18,7 @@ export const PrivacyPolicy: React.FC = () => {
       </p>
       <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
       <p>Stand: 25. September 2024</p>
-      <h3>Inhaltsübersicht</h3>{" "}
+      <h3>Inhaltsübersicht</h3>
       <ul>
         <li>
           <a href="#m716">Präambel</a>
@@ -53,7 +53,7 @@ export const PrivacyPolicy: React.FC = () => {
       <div>Jakob-Ruppert-Str. 9</div>
       <div>69214 Eppelheim</div>
       <p>
-        E-Mail-Adresse:{" "}
+        E-Mail-Adresse:
         <a href="mailto:vtewes@outlook.com">vtewes@outlook.com</a>
       </p>
       <p>Impressum: verena-tewes.de/impressum</p>
@@ -104,7 +104,7 @@ export const PrivacyPolicy: React.FC = () => {
           <strong>
             Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1
             lit. b) DSGVO)
-          </strong>{" "}
+          </strong>
           - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen
           Vertragspartei die betroffene Person ist, oder zur Durchführung
           vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der
@@ -113,7 +113,7 @@ export const PrivacyPolicy: React.FC = () => {
         <li>
           <strong>
             Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)
-          </strong>{" "}
+          </strong>
           - die Verarbeitung ist zur Wahrung der berechtigten Interessen des
           Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die
           Interessen, Grundrechte und Grundfreiheiten der betroffenen Person,
@@ -249,12 +249,12 @@ export const PrivacyPolicy: React.FC = () => {
       <ul>
         <li>
           <strong>
-            Bereitstellung Onlineangebot auf gemietetem Speicherplatz:{" "}
+            Bereitstellung Onlineangebot auf gemietetem Speicherplatz:
           </strong>
           Für die Bereitstellung unseres Onlineangebotes nutzen wir
           Speicherplatz, Rechenkapazität und Software, die wir von einem
           entsprechenden Serveranbieter (auch "Webhoster" genannt) mieten oder
-          anderweitig beziehen;{" "}
+          anderweitig beziehen;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
             Abs. 1 S. 1 lit. f) DSGVO).
@@ -272,10 +272,10 @@ export const PrivacyPolicy: React.FC = () => {
           Sicherheitszwecken eingesetzt werden, z. B. um eine Überlastung der
           Server zu vermeiden (insbesondere im Fall von missbräuchlichen
           Angriffen, sogenannten DDoS-Attacken), und zum anderen, um die
-          Auslastung der Server und ihre Stabilität sicherzustellen;{" "}
+          Auslastung der Server und ihre Stabilität sicherzustellen;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO).{" "}
+            Abs. 1 S. 1 lit. f) DSGVO).
           </span>
           <strong>Löschung von Daten:</strong> Logfile-Informationen werden für
           die Dauer von maximal 30 Tagen gespeichert und danach gelöscht oder
@@ -298,7 +298,7 @@ export const PrivacyPolicy: React.FC = () => {
           eingesetzt wird) nicht auf den Servern, von denen sie abgesendet und
           empfangen werden. Wir können daher für den Übertragungsweg der E-Mails
           zwischen dem Absender und dem Empfang auf unserem Server keine
-          Verantwortung übernehmen;{" "}
+          Verantwortung übernehmen;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
             Abs. 1 S. 1 lit. f) DSGVO).
@@ -307,18 +307,21 @@ export const PrivacyPolicy: React.FC = () => {
         <li>
           <strong>STRATO: </strong>Leistungen auf dem Gebiet der Bereitstellung
           von informationstechnischer Infrastruktur und verbundenen
-          Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten);{" "}
+          Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten);
           <strong>Dienstanbieter:</strong> STRATO AG, Pascalstraße 10,10587
-          Berlin, Deutschland;{" "}
+          Berlin, Deutschland;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO);{" "}
+            Abs. 1 S. 1 lit. f) DSGVO);
           </span>
-          <strong>Website:</strong>{" "}
+          <strong>Website:</strong>
           <a href="https://www.strato.de" target="_blank">
             https://www.strato.de
           </a>
-          ; <strong>Datenschutzerklärung:</strong>{" "}
+          ;{" "}
+          <div>
+            <strong>Datenschutzerklärung:</strong>
+          </div>
           <a href="https://www.strato.de/datenschutz/" target="_blank">
             https://www.strato.de/datenschutz/
           </a>
@@ -382,7 +385,7 @@ export const PrivacyPolicy: React.FC = () => {
           der Regel Angaben wie Name, Kontaktinformationen und gegebenenfalls
           weitere Informationen, die uns mitgeteilt werden und zur angemessenen
           Bearbeitung erforderlich sind. Wir nutzen diese Daten ausschließlich
-          für den angegebenen Zweck der Kontaktaufnahme und Kommunikation;{" "}
+          für den angegebenen Zweck der Kontaktaufnahme und Kommunikation;
           <span>
             <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
             vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO),
@@ -467,29 +470,34 @@ export const PrivacyPolicy: React.FC = () => {
       </p>
       <ul>
         <li>
-          <strong>LinkedIn: </strong>Soziales Netzwerk - Wir sind gemeinsam mit
-          LinkedIn Irland Unlimited Company für die Erhebung (jedoch nicht die
-          weitere Verarbeitung) von Daten der Besucher, die zu Zwecken der
-          Erstellung der „Page-Insights" (Statistiken) unserer LinkedIn-Profile
-          erstellt werden, verantwortlich. Zu diesen Daten gehören Informationen
-          zu den Arten von Inhalten, die Nutzer sich ansehen oder mit denen sie
-          interagieren, oder die von ihnen vorgenommenen Handlungen sowie
-          Informationen über die von den Nutzern genutzten Geräte (z. B.
-          IP-Adressen, Betriebssystem, Browsertyp, Spracheinstellungen,
-          Cookie-Daten) und Angaben aus dem Profil der Nutzer, wie
-          Berufsfunktion, Land, Branche, Hierarchieebene, Unternehmensgröße und
-          Beschäftigungsstatus. Datenschutzinformationen zur Verarbeitung von
-          Daten der Nutzer durch LinkedIn können den Datenschutzhinweisen von
-          LinkedIn entnommen werden:{" "}
+          <div>
+            <strong>LinkedIn: </strong>Soziales Netzwerk - Wir sind gemeinsam
+            mit LinkedIn Irland Unlimited Company für die Erhebung (jedoch nicht
+            die weitere Verarbeitung) von Daten der Besucher, die zu Zwecken der
+            Erstellung der „Page-Insights" (Statistiken) unserer
+            LinkedIn-Profile erstellt werden, verantwortlich. Zu diesen Daten
+            gehören Informationen zu den Arten von Inhalten, die Nutzer sich
+            ansehen oder mit denen sie interagieren, oder die von ihnen
+            vorgenommenen Handlungen sowie Informationen über die von den
+            Nutzern genutzten Geräte (z. B. IP-Adressen, Betriebssystem,
+            Browsertyp, Spracheinstellungen, Cookie-Daten) und Angaben aus dem
+            Profil der Nutzer, wie Berufsfunktion, Land, Branche,
+            Hierarchieebene, Unternehmensgröße und Beschäftigungsstatus.
+            Datenschutzinformationen zur Verarbeitung von Daten der Nutzer durch
+            LinkedIn können den Datenschutzhinweisen von LinkedIn entnommen
+            werden:
+          </div>
           <a
             href="https://www.linkedin.com/legal/privacy-policy"
             target="_blank"
           >
             https://www.linkedin.com/legal/privacy-policy
           </a>
-          Wir haben mit LinkedIn Irland eine spezielle Vereinbarung
-          abgeschlossen ("Page Insights Joint Controller Addendum (the
-          ‚Addendum‘)",{" "}
+          <div>
+            Wir haben mit LinkedIn Irland eine spezielle Vereinbarung
+            abgeschlossen ("Page Insights Joint Controller Addendum (the
+            ‚Addendum‘)",
+          </div>
           <a
             href="https://legal.linkedin.com/pages-joint-controller-addendum"
             target="_blank"
@@ -509,24 +517,30 @@ export const PrivacyPolicy: React.FC = () => {
           ausschließlich der Ireland Unlimited Company, was insbesondere die
           Übermittlung der Daten an die Muttergesellschaft LinkedIn Corporation
           in den USA betrifft; <strong>Dienstanbieter:</strong> LinkedIn Ireland
-          Unlimited Company, Wilton Place, Dublin 2, Irland;{" "}
+          Unlimited Company, Wilton Place, Dublin 2, Irland;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO);{" "}
+            Abs. 1 S. 1 lit. f) DSGVO);
           </span>
-          <strong>Website:</strong>{" "}
+          <strong>Website:</strong>
           <a href="https://www.linkedin.com" target="_blank">
             https://www.linkedin.com
           </a>
-          ; <strong>Datenschutzerklärung:</strong>{" "}
+          ;{" "}
+          <div>
+            <strong>Datenschutzerklärung:</strong>
+          </div>
           <a
             href="https://www.linkedin.com/legal/privacy-policy"
             target="_blank"
           >
             https://www.linkedin.com/legal/privacy-policy
           </a>
-          ; <strong>Grundlage Drittlandtransfers:</strong> Data Privacy
-          Framework (DPF). <strong>Widerspruchsmöglichkeit (Opt-Out):</strong>{" "}
+          ;{" "}
+          <div>
+            <strong>Grundlage Drittlandtransfers:</strong> Data Privacy
+            Framework (DPF). <strong>Widerspruchsmöglichkeit (Opt-Out):</strong>
+          </div>
           <a
             href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out"
             target="_blank"
@@ -536,25 +550,24 @@ export const PrivacyPolicy: React.FC = () => {
           .
         </li>
         <li>
-          <strong>Xing: </strong>Soziales Netzwerk;{" "}
+          <strong>Xing: </strong>Soziales Netzwerk;
           <strong>Dienstanbieter:</strong> New Work SE, Am Strandkai 1, 20457
-          Hamburg, Deutschland;{" "}
+          Hamburg, Deutschland;
           <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO);{" "}
+            Abs. 1 S. 1 lit. f) DSGVO);
           </span>
-          <strong>Website:</strong>{" "}
+          <strong>Website:</strong>
           <a href="https://www.xing.com/" target="_blank">
             https://www.xing.com/
           </a>
-          . <strong>Datenschutzerklärung:</strong>{" "}
+          . <strong>Datenschutzerklärung:</strong>
           <a
             href="https://privacy.xing.com/de/datenschutzerklaerung"
             target="_blank"
           >
-            https://privacy.xing.com/de/datenschutzerklaerung
+            <div>https://privacy.xing.com/de/ datenschutzerklaerung.</div>
           </a>
-          .
         </li>
       </ul>
       <p>
