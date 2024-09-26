@@ -8,7 +8,9 @@ export const Testimonial: React.FC<ITestimonialProps> = (props) => {
     return (
       <div className={styles.quoteFrom}>
         <h4 className={styles.author}>{props.testimonial.author}</h4>
-        <h5 className={styles.company}>{props.testimonial.company}</h5>
+        <h5
+          className={styles.job}
+        >{`${props.testimonial.jobTitle} | ${props.testimonial.company}`}</h5>
       </div>
     );
   };
