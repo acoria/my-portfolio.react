@@ -10,11 +10,15 @@ export const Banner: React.FC = () => {
   const { t } = useTranslation();
   const { isMediumScreen, isLargeScreen } = useScreenSize();
 
+  const contactLink = (
+    <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
+      {t(texts.banner.contactMe)}
+    </a>
+  );
+
   return (
     <div className={styles.banner}>
-      {(isLargeScreen) && (
-        <SocialMedia className={styles.socialMedia} />
-      )}
+      {isLargeScreen && <SocialMedia className={styles.socialMedia} />}
       <div className={styles.mainContent}>
         <img
           src="./assets/Portrait_Verena_Tewes.jpg"
@@ -33,9 +37,13 @@ export const Banner: React.FC = () => {
           </h1>
         </div>
         <div className={styles.contactAndMyMotivationQuote}>
-          <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
-            {t(texts.banner.contactMe)}
-          </a>
+          {isLargeScreen && contactLink}
+          {!isLargeScreen && (
+            <div className={styles.contactLinks}>
+              <SocialMedia />
+              {contactLink}
+            </div>
+          )}
           <Quote
             className={styles.myMotivationQuote}
             classNameQuotationMarks={styles.myMotivationQuotationMarks}

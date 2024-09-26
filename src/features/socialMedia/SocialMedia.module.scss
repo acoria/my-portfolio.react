@@ -3,6 +3,8 @@
 .socialMedia {
     display: flex;
     flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
 
     @include mixins.medium-screen {
         column-gap: 1rem;
@@ -12,7 +14,15 @@
         flex-direction: column;
         row-gap: 1rem;
     }
+}
 
+//needed since <a> adds a padding in the bottom
+.link {
+    padding-top: 0.188rem;
+
+    @include mixins.large-screen {
+        padding-top: 0;
+    }
 }
 
 .linkedInIcon {
