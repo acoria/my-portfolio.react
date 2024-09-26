@@ -63,7 +63,8 @@ export const ProjectDetails: React.FC<IProjectDetailsProps> = (props) => {
           key={`${props.project.id}_techStack`}
         />
       );
-    usage && content.push(<Usage usages={usage} />);
+    usage &&
+      content.push(<Usage usages={usage} key={`${props.project.id}_usage`} />);
     return content;
   }, [
     challenge,
