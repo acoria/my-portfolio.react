@@ -23,6 +23,7 @@ $margin-bottom: 3rem;
 }
 
 .mainContent {
+    width: 100%;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
@@ -42,6 +43,8 @@ $margin-bottom: 3rem;
     @include mixins.large-screen {
         row-gap: 3rem;
         padding: 6rem 6rem $margin-bottom 0;
+        //needed for image to appear on the left
+        overflow-x: visible;
     }
 }
 
