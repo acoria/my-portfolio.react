@@ -1,6 +1,11 @@
 import { error } from "./core/utils/error";
 
 export const AppConfig = {
+  COLOR_PALETTE_GENERATOR_LINK:
+    process.env.REACT_APP_COLOR_PALETTE_GENERATOR_LINK ??
+    error(
+      `Error while getting Color palette generator link from environment variables`
+    ),
   HOST:
     process.env.REACT_APP_BACKEND_HOST ??
     error(`Error while getting host information from environment variables`),

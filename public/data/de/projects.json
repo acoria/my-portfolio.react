@@ -353,6 +353,7 @@
                 "altText": "Farbpaletten"
             }
         ],
+        "link": "https://www.color-palette-generator.verena-tewes.de",
         "requirements": [
             "Entwurf eines Generators, der für Entwickler ohne Design-Erfahrung einfach zu verwenden ist",
             "Einfaches Hinzufügen von Farbvariationen durch das Übernehmen der vorherigen Farbe für die nächste Farbe",

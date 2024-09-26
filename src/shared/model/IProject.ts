@@ -11,6 +11,7 @@ export interface IProject {
   end?: Date;
   goal?: string;
   images?: IImage[];
+  link?: string;
   myTasks: ITask[];
   requirements?: string[];
   start?: Date;

@@ -1,6 +1,5 @@
 import { AppConfig } from "../../AppConfig";
-import { ReactComponent as XingIcon } from "../../assets/icons/xingIcon.svg";
-import { Button } from "../../components/button/Button";
+import { ReactComponent as XingIcon } from "../../assets/icons/xing_icon.svg";
 import { style } from "../../core/utils/style";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";

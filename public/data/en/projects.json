@@ -353,6 +353,7 @@
                 "altText": "Color palette"
             }
         ],
+        "link": "https://www.color-palette-generator.verena-tewes.de",
         "requirements": [
             "Designing a generator that is easy to use for developers without design experience",
             "Simple adding of color variations by basing the next color on the previous one",

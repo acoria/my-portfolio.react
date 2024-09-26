@@ -5,6 +5,8 @@ import { ProjectDetails } from "../projectDetails/projectDetails/ProjectDetails"
 import { IProjectProps } from "./IProjectProps";
 import styles from "./Project.module.scss";
 import dimensions from "../../../styles/dimensions.module.scss";
+import { ReactComponent as OpenInNew } from "../../../assets/icons/open_in_new.svg";
+import { AppConfig } from "../../../AppConfig";
 
 export const Project: React.FC<IProjectProps> = (props) => {
   const renderMonth = useRenderMonth();
@@ -26,7 +28,18 @@ export const Project: React.FC<IProjectProps> = (props) => {
   return (
     <div className={styles.project}>
       <div className={styles.header}>
-        <h1 className={styles.title}>{props.project.title}</h1>
+        <div className={styles.titleAndLink}>
+          <h1 className={styles.title}>{props.project.title}</h1>
+          {props.project.link && (
+            <a
+              href={AppConfig.COLOR_PALETTE_GENERATOR_LINK}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNew className={styles.openInNewIcon} />
+            </a>
+          )}
+        </div>
         {showDate && (
           <span
             className={styles.date}
