@@ -7,9 +7,11 @@ import styles from "./Project.module.scss";
 import dimensions from "../../../styles/dimensions.module.scss";
 import { ReactComponent as OpenInNew } from "../../../assets/icons/open_in_new.svg";
 import { AppConfig } from "../../../AppConfig";
+import { useScreenSize } from "../../../hooks/useScreenSize";
 
 export const Project: React.FC<IProjectProps> = (props) => {
   const renderMonth = useRenderMonth();
+  const { isLargeScreen } = useScreenSize();
 
   let startMonth: string = "";
   let startYear: number = 0;
@@ -30,7 +32,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
       <div className={styles.header}>
         <div className={styles.titleAndLink}>
           <h1 className={styles.title}>{props.project.title}</h1>
-          {props.project.link && (
+          {props.project.link && isLargeScreen && (
             <a
               href={AppConfig.COLOR_PALETTE_GENERATOR_LINK}
               target="_blank"
