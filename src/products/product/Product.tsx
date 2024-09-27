@@ -1,3 +1,4 @@
+import { Link } from "../../components/link/Link";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { IProductProps } from "./IProductProps";
@@ -19,14 +20,13 @@ export const Product: React.FC<IProductProps> = (props) => {
       <span>{t(texts.product.coProducedBy)}</span>
       {props.product.coProducers?.map((coProducer) => {
         return coProducer.profileLink ? (
-          <a
-            href={coProducer.profileLink}
+          <Link
+            to={coProducer.profileLink}
             className={styles.coProducerLink}
-            target="_blank"
-            rel="noreferrer"
+            showInNewTab
           >
             {coProducer.name}
-          </a>
+          </Link>
         ) : (
           <span>{coProducer.name}</span>
         );
@@ -36,26 +36,25 @@ export const Product: React.FC<IProductProps> = (props) => {
 
   return (
     <div className={styles.product}>
-      <a href={props.product.linkToProduct} target="_blank" rel="noreferrer">
+      <Link to={props.product.linkToProduct} showInNewTab>
         <img
           src={props.product.imageLink}
           className={styles.image}
           alt={t(texts.product.productImageDescription)}
         />
-      </a>
+      </Link>
       <div className={styles.productInfo}>
         <h2 className={styles.title}>{props.product.title}</h2>
         {props.product.coProducers && coProducers}
         {description}
         {props.product.linkToGooglePlayStore && (
-          <a
-            href={props.product.linkToGooglePlayStore}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to={props.product.linkToGooglePlayStore}
             className={styles.googlePlayStoreLink}
+            showInNewTab
           >
             {t(texts.product.getTheApp)}
-          </a>
+          </Link>
         )}
       </div>
     </div>

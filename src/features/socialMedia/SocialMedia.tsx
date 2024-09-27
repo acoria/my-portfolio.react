@@ -1,5 +1,6 @@
 import { AppConfig } from "../../AppConfig";
 import { ReactComponent as XingIcon } from "../../assets/icons/xing_icon.svg";
+import { Link } from "../../components/link/Link";
 import { style } from "../../core/utils/style";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
@@ -11,26 +12,24 @@ export const SocialMedia: React.FC<ISocialMediaProps> = (props) => {
 
   return (
     <div className={style(styles.socialMedia, props.className)}>
-      <a
-        href={AppConfig.PROFILE_LINK_LINKEDIN}
-        target="_blank"
-        rel="noreferrer"
+      <Link
+        to={AppConfig.PROFILE_LINK_LINKEDIN}
         className={styles.link}
+        showInNewTab
       >
         <img
           src="./assets/icons/linkedIn.png"
           alt={t(texts.socialMedia.linkedInIconDescription)}
           className={styles.linkedInIcon}
         />
-      </a>
-      <a
-        href={AppConfig.PROFILE_LINK_XING}
-        target="_blank"
-        rel="noreferrer"
+      </Link>
+      <Link
+        to={AppConfig.PROFILE_LINK_XING}
         className={styles.link}
+        showInNewTab
       >
         <XingIcon />
-      </a>
+      </Link>
     </div>
   );
 };

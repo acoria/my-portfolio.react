@@ -8,6 +8,7 @@ import dimensions from "../../../styles/dimensions.module.scss";
 import { ReactComponent as OpenInNew } from "../../../assets/icons/open_in_new.svg";
 import { AppConfig } from "../../../AppConfig";
 import { useScreenSize } from "../../../hooks/useScreenSize";
+import { Link } from "../../../components/link/Link";
 
 export const Project: React.FC<IProjectProps> = (props) => {
   const renderMonth = useRenderMonth();
@@ -33,13 +34,9 @@ export const Project: React.FC<IProjectProps> = (props) => {
         <div className={styles.titleAndLink}>
           <h1 className={styles.title}>{props.project.title}</h1>
           {props.project.link && isLargeScreen && (
-            <a
-              href={AppConfig.COLOR_PALETTE_GENERATOR_LINK}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to={AppConfig.COLOR_PALETTE_GENERATOR_LINK} showInNewTab>
               <OpenInNew className={styles.openInNewIcon} />
-            </a>
+            </Link>
           )}
         </div>
         {showDate && (
