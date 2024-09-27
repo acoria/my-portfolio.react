@@ -6,9 +6,33 @@ import styles from "./Product.module.scss";
 export const Product: React.FC<IProductProps> = (props) => {
   const { t } = useTranslation();
 
-  const description = props.product.description?.map((description) => (
-    <div>{description}</div>
-  ));
+  const description = (
+    <div className={styles.description}>
+      {props.product.description?.map((description) => (
+        <div>{description}</div>
+      ))}
+    </div>
+  );
+
+  const coProducers = (
+    <div className={styles.coProducers}>
+      <span>{t(texts.product.coProducedBy)}</span>
+      {props.product.coProducers?.map((coProducer) => {
+        return coProducer.profileLink ? (
+          <a
+            href={coProducer.profileLink}
+            className={styles.coProducerLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {coProducer.name}
+          </a>
+        ) : (
+          <span>{coProducer.name}</span>
+        );
+      })}
+    </div>
+  );
 
   return (
     <div className={styles.product}>
@@ -21,6 +45,7 @@ export const Product: React.FC<IProductProps> = (props) => {
       </a>
       <div className={styles.productInfo}>
         <h2 className={styles.title}>{props.product.title}</h2>
+        {props.product.coProducers && coProducers}
         {description}
         {props.product.linkToGooglePlayStore && (
           <a

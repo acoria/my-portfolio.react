@@ -75,8 +75,9 @@
         "de": "DE",
         "en": "EN"
     },
-    "product":{
-        "getTheApp": "Get the app",
+    "product": {
+        "coProducedBy": "Co-produced by ",
+        "getTheApp": "Get the Android app",
         "productImageDescription": "Image of product"
     },
     "productList": {

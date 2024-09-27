@@ -76,7 +76,8 @@
         "en": "EN"
     },
     "product": {
-        "getTheApp": "Hol dir die App",
+        "coProducedBy": "Co-produziert mit ",
+        "getTheApp": "Hol dir die Android App",
         "productImageDescription": "Produktbild"
     },
     "productList": {

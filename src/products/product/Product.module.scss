@@ -26,11 +26,27 @@
     letter-spacing: 0.2rem;
     font-family: "Antonio";
     // font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.googlePlayStoreLink {
+.coProducers {
+    font-weight: 600;
+}
+
+.link {
     color: colors.$color-product-google-play-store-link;
     text-decoration: none;
     font-weight: 600;
-    // align-self: flex-end;
+}
+
+.coProducerLink {
+    @extend .link;
+}
+
+.description {
+    margin-top: 1rem;
+}
+
+.googlePlayStoreLink {
+    @extend .link;
 }

@@ -16,6 +16,9 @@ export const ProductSection: React.FC = () => {
     },
     {
       title: "Letter to Number",
+      coProducers: [
+        { name: "Peter Hoffmann", profileLink: "http://yobunet.de/profile/" },
+      ],
       description: [
         "Hast du dich bei einem Buchstaben schon mal gefragt, an welcher Position im Alphabet er ist oder ob ein Buchstabe vor einem anderen kommt?",
         "Ob für deinen eigenen Passwortalgorithmus, Wörter alphabetisch sortieren oder den Escape Room, unser (Entwickler-) Meinung nach ist dies eine sehr nützlicher Fähigkeit.",
