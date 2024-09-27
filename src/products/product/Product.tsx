@@ -7,14 +7,6 @@ import styles from "./Product.module.scss";
 export const Product: React.FC<IProductProps> = (props) => {
   const { t } = useTranslation();
 
-  const description = (
-    <div className={styles.description}>
-      {props.product.description?.map((description) => (
-        <div>{description}</div>
-      ))}
-    </div>
-  );
-
   const coProducers = (
     <div className={styles.coProducers}>
       <span>{t(texts.product.coProducedBy)}</span>
@@ -34,15 +26,31 @@ export const Product: React.FC<IProductProps> = (props) => {
     </div>
   );
 
+  const description = (
+    <div className={styles.description}>
+      {props.product.description?.map((description) => (
+        <div>{description}</div>
+      ))}
+    </div>
+  );
+
+  const image = (
+    <img
+      src={props.product.imageLink}
+      className={styles.image}
+      alt={t(texts.product.productImageDescription)}
+    />
+  );
+
   return (
     <div className={styles.product}>
-      <Link to={props.product.linkToProduct} showInNewTab>
-        <img
-          src={props.product.imageLink}
-          className={styles.image}
-          alt={t(texts.product.productImageDescription)}
-        />
-      </Link>
+      {props.product.linkToProduct ? (
+        <Link to={props.product.linkToProduct} showInNewTab>
+          {image}
+        </Link>
+      ) : (
+        image
+      )}
       <div className={styles.productInfo}>
         <h2 className={styles.title}>{props.product.title}</h2>
         {props.product.coProducers && coProducers}

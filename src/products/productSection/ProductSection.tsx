@@ -3,7 +3,22 @@ import { IProduct } from "../model/IProduct";
 import { ProductList } from "../productList/ProductList";
 
 export const ProductSection: React.FC = () => {
+  const peter = {
+    name: "Peter Hoffmann",
+    profileLink: "http://yobunet.de/profile/",
+  };
+
   const products: IProduct[] = [
+    {
+      title: "CRM für Kampfsportschulen",
+      coProducers: [peter],
+      description: [
+        "Verwaltet alle Schüler mit Adressen, Graduierung und Trainingsfortschritt.",
+        "Übersicht über alle an einzelnen Trainings teilnehmenden Schüler durch deren Registrierung.",
+        "Vereinbarung von Probetrainings mit automatisiertem E-Mail-Versand.",
+      ],
+      imageLink: "./assets/products/Yeoljeong.png",
+    },
     {
       title: "Color Palette Generator",
       description: [
@@ -16,9 +31,7 @@ export const ProductSection: React.FC = () => {
     },
     {
       title: "Letter to Number",
-      coProducers: [
-        { name: "Peter Hoffmann", profileLink: "http://yobunet.de/profile/" },
-      ],
+      coProducers: [peter],
       description: [
         "Hast du dich bei einem Buchstaben schon mal gefragt, an welcher Position im Alphabet er ist oder ob ein Buchstabe vor einem anderen kommt?",
         "Ob für deinen eigenen Passwortalgorithmus, Wörter alphabetisch sortieren oder den Escape Room, unser (Entwickler-) Meinung nach ist dies eine sehr nützlicher Fähigkeit.",

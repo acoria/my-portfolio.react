@@ -5,6 +5,6 @@ export interface IProduct {
   description?: string[];
   imageLink?: string;
   linkToGooglePlayStore?: string;
-  linkToProduct: string;
+  linkToProduct?: string;
   coProducers?: IProducer[];
 }
