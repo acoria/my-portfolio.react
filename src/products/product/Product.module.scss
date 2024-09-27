@@ -1,19 +1,36 @@
 @use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 .product {
     display: flex;
     flex-direction: row;
     align-items: start;
     column-gap: 3rem;
-    color: colors.$color-primary;
+    color: colors.$color-font;
+    padding: 2rem;
+    @include mixins.glassy;
 }
 
 .image {
     width: 25rem;
     height: auto;
-    cursor: pointer;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     margin-top: 0;
+    letter-spacing: 0.2rem;
+    font-family: "Antonio";
+    // font-weight: 600;
+}
+
+.googlePlayStoreLink {
+    color: colors.$color-product-google-play-store-link;
+    text-decoration: none;
+    font-weight: 600;
+    // align-self: flex-end;
 }

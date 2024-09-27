@@ -1,4 +1,3 @@
-import { Button } from "../../components/button/Button";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { IProductProps } from "./IProductProps";
@@ -13,16 +12,26 @@ export const Product: React.FC<IProductProps> = (props) => {
 
   return (
     <div className={styles.product}>
-      <img
-        src={props.product.imageLink}
-        className={styles.image}
-        alt={t(texts.product.productImageDescription)}
-        onClick={() => window.open(props.product.linkToProduct, "_blank")}
-      />
-      <div>
+      <a href={props.product.linkToProduct} target="_blank" rel="noreferrer">
+        <img
+          src={props.product.imageLink}
+          className={styles.image}
+          alt={t(texts.product.productImageDescription)}
+        />
+      </a>
+      <div className={styles.productInfo}>
         <h2 className={styles.title}>{props.product.title}</h2>
         {description}
-        {props.product.linkToGooglePlayStore && <a href={props.product.linkToGooglePlayStore}>Get the app</a>}
+        {props.product.linkToGooglePlayStore && (
+          <a
+            href={props.product.linkToGooglePlayStore}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.googlePlayStoreLink}
+          >
+            {t(texts.product.getTheApp)}
+          </a>
+        )}
       </div>
     </div>
   );

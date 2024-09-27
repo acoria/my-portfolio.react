@@ -76,6 +76,7 @@
         "en": "EN"
     },
     "product":{
+        "getTheApp": "Get the app",
         "productImageDescription": "Image of product"
     },
     "productList": {
