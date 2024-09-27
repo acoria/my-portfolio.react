@@ -3,12 +3,16 @@
 
 .product {
     display: flex;
-    flex-direction: row;
-    align-items: start;
+    flex-direction: column;
     column-gap: 3rem;
     color: colors.$color-font;
     padding: 2rem;
     @include mixins.glassy;
+
+    @include mixins.large-screen {
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
 .image {
@@ -19,14 +23,21 @@
 .productInfo {
     display: flex;
     flex-direction: column;
+    width: 25rem;
+
+    @include mixins.medium-screen {
+        width: auto;
+    }
 }
 
 .title {
-    margin-top: 0;
     letter-spacing: 0.2rem;
     font-family: "Antonio";
-    // font-weight: 600;
     margin-bottom: 0.5rem;
+
+    @include mixins.large-screen {
+        margin-top: 0;
+    }
 }
 
 .coProducers {
@@ -49,4 +60,5 @@
 
 .googlePlayStoreLink {
     @extend .link;
+    margin-top: 0.5rem;
 }
