@@ -158,7 +158,6 @@
         "title": "Web-Kunden-Self-Service-Portal für SAP-Software-Downloads",
         "challenge": "Angepasste Software auf einem SAP system zu installieren kann eine Herausforderung sein, da Überschneidungen mit bestehender Software vorher ermittelt werden müssen. Hauptziel dieses Projektes war es, den Benutzer proaktiv dabei zu unterstützen, potenzielle Konflikte während der Installation angepasster SAP Software zu identifizieren und zu lösen. Anstatt direkt ein Supportticket zu öffnen, leitet die Software den Benutzer durch den Installationsprozess, weist ihn auf Konflikte hin und bietet basierend darauf mögliche Lösungen an.",
         "customer": {
-            "logoUrl": "./assets/projects/swpo/snp_logo.svg",
             "name": "SNP SCHNEIDER-NEUREITHER & PARTNER SE",
             "branch": "Internet und Informationstechnologie",
             "employeeSize": "1400+ Mitarbeiter"
