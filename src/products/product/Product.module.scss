@@ -1,0 +1,19 @@
+@use '../../styles/colors.module.scss';
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    column-gap: 3rem;
+    color: colors.$color-primary;
+}
+
+.image {
+    width: 25rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.title {
+    margin-top: 0;
+}

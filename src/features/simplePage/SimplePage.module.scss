@@ -1,6 +1,12 @@
 @use '../../styles/dimensions.module.scss' as dimens;
 @use '../../styles/mixins.scss';
 
+.simplePage {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
 .header {
     position: static;
 }

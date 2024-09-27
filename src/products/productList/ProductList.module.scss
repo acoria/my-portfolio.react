@@ -1,0 +1,13 @@
+.productList {}
+
+.title {
+    text-align: center;
+    font-family: "Antonio";
+    margin-bottom: 5rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}

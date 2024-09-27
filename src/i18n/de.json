@@ -75,6 +75,12 @@
         "de": "DE",
         "en": "EN"
     },
+    "product": {
+        "productImageDescription": "Produktbild"
+    },
+    "productList": {
+        "title": "Produkte"
+    },
     "projects": {
         "title": "Projekte",
         "subTitle": "Eine Auswahl aus meinen letzten Projekten",
