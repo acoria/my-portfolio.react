@@ -163,12 +163,6 @@
             "employeeSize": "1400+ Mitarbeiter"
         },
         "goal": "Entwicklung und Veröffentlichung einer Anwendung für Endkunden zum Setup projektspezifischer Software bei Migrationsprojekten",
-        "images": [
-            {
-                "imageUrl": "./assets/projects/swpo/SWPO.png",
-                "altText": "Unscharfer Screenshot der App-Hauptseite"
-            }
-        ],
         "myTasks": [
             {
                 "taskType": "PROJECT",
