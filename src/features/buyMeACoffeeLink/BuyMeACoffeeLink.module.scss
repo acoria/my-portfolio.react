@@ -1,0 +1,29 @@
+@use '../../styles/colors.module.scss';
+
+.buyMeACoffeeLink {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    width: fit-content;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: colors.$color-primary;
+    border: 2px solid colors.$color-primary;
+    border-radius: 3px;
+    // background-color: colors.$color-primary;
+    // color: colors.$color-font-light;
+}
+
+.icon {
+    width: 2rem;
+    height: auto;
+    flex-shrink: 0;
+    color: colors.$color-secondary-600;
+    // color: colors.$color-primary;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}

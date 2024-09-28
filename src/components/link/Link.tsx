@@ -1,7 +1,7 @@
 import { ILinkProps } from "./ILinkProps";
 
 export const Link: React.FC<ILinkProps> = (props) => {
-  return props.showInNewTab ? (
+  return props.openInNewTab ? (
     <a
       href={props.to}
       target="_blank"
@@ -11,6 +11,8 @@ export const Link: React.FC<ILinkProps> = (props) => {
       {props.children}
     </a>
   ) : (
-    <a href={props.to}>{props.children}</a>
+    <a href={props.to} className={props.className}>
+      {props.children}
+    </a>
   );
 };

@@ -34,7 +34,7 @@ export const Project: React.FC<IProjectProps> = (props) => {
         <div className={styles.titleAndLink}>
           <h1 className={styles.title}>{props.project.title}</h1>
           {props.project.link && isLargeScreen && (
-            <Link to={AppConfig.COLOR_PALETTE_GENERATOR_LINK} showInNewTab>
+            <Link to={AppConfig.COLOR_PALETTE_GENERATOR_LINK} openInNewTab>
               <OpenInNew className={styles.openInNewIcon} />
             </Link>
           )}

@@ -22,7 +22,11 @@ export const AppConfig = {
   MY_EMAIL:
     process.env.REACT_APP_MY_EMAIL ??
     error("Error while getting e-mail from environment variables"),
-  PROFILE_LINK_XING:
+  MY_PAYPAL_ME_LINK:
+    process.env.REACT_APP_MY_PAYPAL_ME_LINK ??
+    error("Error while getting PayPalMe from environment variables"),
+  
+    PROFILE_LINK_XING:
     process.env.REACT_APP_PROFILE_LINK_XING ??
     error("Error while getting Xing profile link from environment variables"),
   PROFILE_LINK_LINKEDIN:

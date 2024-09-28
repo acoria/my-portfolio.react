@@ -28,6 +28,7 @@ export const ProductSection: React.FC = () => {
       ],
       imageLink: "./assets/products/ColorPaletteGenerator.png",
       linkToProduct: AppConfig.COLOR_PALETTE_GENERATOR_LINK,
+      receiveDonations: true,
     },
     {
       title: "Letter to Number",
@@ -40,6 +41,7 @@ export const ProductSection: React.FC = () => {
       imageLink: "./assets/products/LetterToNumber.png",
       linkToGooglePlayStore: AppConfig.LETTER_TO_NUMBER_PLAY_STORE_LINK,
       linkToProduct: AppConfig.LETTER_TO_NUMBER_LINK,
+      receiveDonations: true,
     },
   ];
 

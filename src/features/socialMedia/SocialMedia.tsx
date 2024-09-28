@@ -15,7 +15,7 @@ export const SocialMedia: React.FC<ISocialMediaProps> = (props) => {
       <Link
         to={AppConfig.PROFILE_LINK_LINKEDIN}
         className={styles.link}
-        showInNewTab
+        openInNewTab
       >
         <img
           src="./assets/icons/linkedIn.png"
@@ -26,7 +26,7 @@ export const SocialMedia: React.FC<ISocialMediaProps> = (props) => {
       <Link
         to={AppConfig.PROFILE_LINK_XING}
         className={styles.link}
-        showInNewTab
+        openInNewTab
       >
         <XingIcon />
       </Link>

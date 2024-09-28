@@ -1,7 +1,4 @@
 {
-    "myMotivationQuote": {
-        "introductionText": "Meine Motivation sind die Gesichter meiner Anwender, wenn sich beim Verwenden meiner Software Verständnis oder sogar Freude darauf abzeichnet. Egal, ob es sich dabei um eine Endanwendung oder eine API-Schnittstelle handelt, Usability ist neben einer soliden Softwarearchitektur ein wesentlicher Bestandteil meiner Entwürfe. Mein selbstständiges, strukturiertes Arbeiten ermöglicht es mir, Projekte mit hoher Qualität auf möglichst pragmatische Weise abzuschließen."
-    },
     "aboutMe": {
         "certificates": {
             "title": "Zertifikate",
@@ -39,6 +36,10 @@
         "headline_3": "...eine Problemlöserin",
         "portraitImageDescription": "Portrait von mir"
     },
+    "buyMeACoffee": {
+        "youLikeIt": "Gefällt dir die Software?",
+        "buyMeACoffee": "Spendiere mir einen Kaffee!"
+    },
     "footer": {
         "imprint": "Impressum",
         "privacyPolicy": "Datenschutzerklärung"
@@ -74,6 +75,9 @@
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"
+    },
+    "myMotivationQuote": {
+        "introductionText": "Meine Motivation sind die Gesichter meiner Anwender, wenn sich beim Verwenden meiner Software Verständnis oder sogar Freude darauf abzeichnet. Egal, ob es sich dabei um eine Endanwendung oder eine API-Schnittstelle handelt, Usability ist neben einer soliden Softwarearchitektur ein wesentlicher Bestandteil meiner Entwürfe. Mein selbstständiges, strukturiertes Arbeiten ermöglicht es mir, Projekte mit hoher Qualität auf möglichst pragmatische Weise abzuschließen."
     },
     "product": {
         "coProducedBy": "Co-produziert mit ",

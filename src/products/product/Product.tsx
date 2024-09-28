@@ -1,4 +1,5 @@
 import { Link } from "../../components/link/Link";
+import { BuyMeACoffeeLink } from "../../features/buyMeACoffeeLink/BuyMeACoffeeLink";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { IProductProps } from "./IProductProps";
@@ -15,7 +16,7 @@ export const Product: React.FC<IProductProps> = (props) => {
           <Link
             to={coProducer.profileLink}
             className={styles.coProducerLink}
-            showInNewTab
+            openInNewTab
           >
             {coProducer.name}
           </Link>
@@ -45,7 +46,7 @@ export const Product: React.FC<IProductProps> = (props) => {
   return (
     <div className={styles.product}>
       {props.product.linkToProduct ? (
-        <Link to={props.product.linkToProduct} showInNewTab>
+        <Link to={props.product.linkToProduct} openInNewTab>
           {image}
         </Link>
       ) : (
@@ -59,10 +60,13 @@ export const Product: React.FC<IProductProps> = (props) => {
           <Link
             to={props.product.linkToGooglePlayStore}
             className={styles.googlePlayStoreLink}
-            showInNewTab
+            openInNewTab
           >
             {t(texts.product.getTheApp)}
           </Link>
+        )}
+        {props.product.receiveDonations && (
+          <BuyMeACoffeeLink className={styles.buyMeACoffeeLink} />
         )}
       </div>
     </div>
