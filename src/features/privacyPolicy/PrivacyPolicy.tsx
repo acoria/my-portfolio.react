@@ -39,6 +39,9 @@ export const PrivacyPolicy: React.FC = () => {
           <a href="#m25">Übermittlung von personenbezogenen Daten</a>
         </li>
         <li>
+          <a href="#m326">Zahlungsverfahren</a>
+        </li>
+        <li>
           <a href="#m225">Bereitstellung des Onlineangebots und Webhosting</a>
         </li>
         <li>
@@ -200,6 +203,99 @@ export const PrivacyPolicy: React.FC = () => {
         insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz
         Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab.
       </p>
+      <h3 id="m326">Zahlungsverfahren</h3>
+      <p>
+        Im Rahmen von Vertrags- und sonstigen Rechtsbeziehungen, aufgrund
+        gesetzlicher Pflichten oder sonst auf Grundlage unserer berechtigten
+        Interessen bieten wir den betroffenen Personen effiziente und sichere
+        Zahlungsmöglichkeiten an und setzen hierzu neben Banken und
+        Kreditinstituten weitere Dienstleister ein (zusammenfassend
+        "Zahlungsdienstleister").
+      </p>
+      <p>
+        Zu den durch die Zahlungsdienstleister verarbeiteten Daten gehören
+        Bestandsdaten, wie z.B. der Name und die Adresse, Bankdaten, wie z. B.
+        Kontonummern oder Kreditkartennummern, Passwörter, TANs und Prüfsummen
+        sowie die Vertrags-, Summen- und empfängerbezogenen Angaben. Die Angaben
+        sind erforderlich, um die Transaktionen durchzuführen. Die eingegebenen
+        Daten werden jedoch nur durch die Zahlungsdienstleister verarbeitet und
+        bei diesen gespeichert. D.h., wir erhalten keine konto- oder
+        kreditkartenbezogenen Informationen, sondern lediglich Informationen mit
+        Bestätigung oder Negativbeauskunftung der Zahlung. Unter Umständen
+        werden die Daten seitens der Zahlungsdienstleister an
+        Wirtschaftsauskunfteien übermittelt. Diese Übermittlung bezweckt die
+        Identitäts- und Bonitätsprüfung. Hierzu verweisen wir auf die AGB und
+        die Datenschutzhinweise der Zahlungsdienstleister.
+      </p>
+      <p>
+        Für die Zahlungsgeschäfte gelten die Geschäftsbedingungen und die
+        Datenschutzhinweise der jeweiligen Zahlungsdienstleister, welche
+        innerhalb der jeweiligen Webseiten bzw. Transaktionsapplikationen
+        abrufbar sind. Wir verweisen auf diese ebenfalls zwecks weiterer
+        Informationen und Geltendmachung von Widerrufs-, Auskunfts- und anderen
+        Betroffenenrechten.
+      </p>
+      <ul>
+        <li>
+          <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. der
+          vollständige Name, Wohnadresse, Kontaktinformationen, Kundennummer,
+          etc.); Zahlungsdaten (z. B. Bankverbindungen, Rechnungen,
+          Zahlungshistorie); Vertragsdaten (z. B. Vertragsgegenstand, Laufzeit,
+          Kundenkategorie); Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer,
+          Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen
+          und Betriebssysteme, Interaktionen mit Inhalten und Funktionen).
+          Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen,
+          Zeitangaben, Identifikationsnummern, beteiligte Personen).
+        </li>
+        <li>
+          <strong>Betroffene Personen:</strong> Leistungsempfänger und
+          Auftraggeber; Geschäfts- und Vertragspartner. Interessenten.
+        </li>
+        <li>
+          <strong>Zwecke der Verarbeitung:</strong> Erbringung vertraglicher
+          Leistungen und Erfüllung vertraglicher Pflichten. Geschäftsprozesse
+          und betriebswirtschaftliche Verfahren.
+        </li>
+        <li>
+          <strong>Aufbewahrung und Löschung:</strong> Löschung entsprechend
+          Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung
+          und Löschung".
+        </li>
+        <li>
+          <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
+          vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).
+          Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <strong>PayPal: </strong>Zahlungsdienstleistungen (technische
+          Anbindung von Online-Bezahlmethoden) (z. B. PayPal, PayPal Plus,
+          Braintree); <strong>Dienstanbieter:</strong> PayPal (Europe) S.à r.l.
+          et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxemburg;{" "}
+          <span>
+            <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
+            vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO);{" "}
+          </span>
+          <strong>Website:</strong>{" "}
+          <a href="https://www.paypal.com/de" target="_blank">
+            https://www.paypal.com/de
+          </a>
+          . <strong>Datenschutzerklärung:</strong>{" "}
+          <a
+            href="https://www.paypal.com/de/webapps/mpp/ua/privacy-full"
+            target="_blank"
+          >
+            <div>https://www.paypal.com/de/webapps/mpp/ua/privacy-full</div>
+          </a>
+          .
+        </li>
+      </ul>
       <h3 id="m225">Bereitstellung des Onlineangebots und Webhosting</h3>
       <p>
         Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur
