@@ -37,7 +37,7 @@
         "portraitImageDescription": "Portrait of me"
     },
     "buyMeACoffee": {
-        "youLikeIt": "You like it?",
+        "youLikeIt": "Like it?",
         "buyMeACoffee": "Buy me a coffee!"
     },
     "footer": {
@@ -72,6 +72,9 @@
             "decemberShort": "Dec."
         }
     },
+    "googlePlay": {
+        "getItOnGooglePlay": "Get it on Google Play"
+    },
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"
@@ -81,7 +84,6 @@
     },
     "product": {
         "coProducedBy": "Co-produced by ",
-        "getTheApp": "Get the Android app",
         "productImageDescription": "Image of product"
     },
     "productList": {

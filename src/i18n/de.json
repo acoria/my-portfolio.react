@@ -72,6 +72,9 @@
             "decemberShort": "Dez."
         }
     },
+    "googlePlay": {
+        "getItOnGooglePlay": "Jetzt bei Google Play"
+    },
     "languageAbbreviations": {
         "de": "DE",
         "en": "EN"
@@ -81,7 +84,6 @@
     },
     "product": {
         "coProducedBy": "Co-produziert mit ",
-        "getTheApp": "Hol dir die Android App",
         "productImageDescription": "Produktbild"
     },
     "productList": {

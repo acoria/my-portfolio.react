@@ -1,5 +1,7 @@
 import { Link } from "../../components/link/Link";
 import { BuyMeACoffeeLink } from "../../features/buyMeACoffeeLink/BuyMeACoffeeLink";
+import { GooglePlay } from "../../features/googlePlay/GooglePlay";
+import { Language } from "../../hooks/useLanguage/types/Language";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { IProductProps } from "./IProductProps";
@@ -56,18 +58,19 @@ export const Product: React.FC<IProductProps> = (props) => {
         <h2 className={styles.title}>{props.product.title}</h2>
         {props.product.coProducers && coProducers}
         {description}
-        {props.product.linkToGooglePlayStore && (
-          <Link
-            to={props.product.linkToGooglePlayStore}
-            className={styles.googlePlayStoreLink}
-            openInNewTab
-          >
-            {t(texts.product.getTheApp)}
-          </Link>
-        )}
-        {props.product.receiveDonations && (
-          <BuyMeACoffeeLink className={styles.buyMeACoffeeLink} />
-        )}
+        <div className={styles.buttons}>
+          {props.product.linkToGooglePlayStore && (
+            <GooglePlay
+              className={styles.googlePlayStoreLink}
+              onClick={() =>
+                window.open(props.product.linkToGooglePlayStore, "_blank")
+              }
+            />
+          )}
+          {props.product.receiveDonations && (
+            <BuyMeACoffeeLink className={styles.buyMeACoffeeLink} />
+          )}
+        </div>
       </div>
     </div>
   );
