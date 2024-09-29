@@ -1,3 +1,4 @@
+//needed since <a> adds a padding in the bottom
 .googlePlay {
-    cursor: pointer;
+    display: block;
 }

@@ -17,14 +17,11 @@
 }
 
 //needed since <a> adds a padding in the bottom
-.link {
-    padding-top: 0.188rem;
-
-    @include mixins.large-screen {
-        padding-top: 0;
-    }
+.linkImage {
+    display: block;
 }
 
 .linkedInIcon {
+    @extend .linkImage;
     width: 2rem;
 }

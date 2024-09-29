@@ -23,12 +23,8 @@ export const SocialMedia: React.FC<ISocialMediaProps> = (props) => {
           className={styles.linkedInIcon}
         />
       </Link>
-      <Link
-        to={AppConfig.PROFILE_LINK_XING}
-        className={styles.link}
-        openInNewTab
-      >
-        <XingIcon />
+      <Link to={AppConfig.PROFILE_LINK_XING} openInNewTab>
+        <XingIcon className={styles.linkImage} />
       </Link>
     </div>
   );

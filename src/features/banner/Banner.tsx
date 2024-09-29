@@ -1,14 +1,14 @@
 import { AppConfig } from "../../AppConfig";
 import { Quote } from "../../components/quote/Quote";
+import { useScreenSize } from "../../hooks/useScreenSize";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import styles from "./Banner.module.scss";
-import { useScreenSize } from "../../hooks/useScreenSize";
 import { SocialMedia } from "../socialMedia/SocialMedia";
+import styles from "./Banner.module.scss";
 
 export const Banner: React.FC = () => {
   const { t } = useTranslation();
-  const { isMediumScreen, isLargeScreen } = useScreenSize();
+  const { isLargeScreen } = useScreenSize();
 
   const contactLink = (
     <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
