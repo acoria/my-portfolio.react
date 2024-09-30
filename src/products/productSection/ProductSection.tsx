@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ProductAPI } from "../../api/ProductRepository";
 import { LoadingSpinner } from "../../components/loadingSpinner/LoadingSpinner";
 import { request } from "../../core/utils/request";
-import { IProduct } from "../model/IProduct";
+import { IProduct } from "../../shared/model/IProduct";
 import { ProductList } from "../productList/ProductList";
 import styles from "./ProductSection.module.scss";
 

@@ -1,6 +1,6 @@
 import { AppConfig } from "../AppConfig";
 import { LanguageConfig } from "../i18n/LanguageConfig";
-import { IProduct } from "../products/model/IProduct";
+import { IProduct } from "../shared/model/IProduct";
 import { Repository } from "./Repository";
 
 export class ProductAPI extends Repository<IProduct> {
