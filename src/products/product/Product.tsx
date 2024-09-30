@@ -14,17 +14,18 @@ export const Product: React.FC<IProductProps> = (props) => {
   const coProducers = (
     <div className={styles.coProducers}>
       <span>{t(texts.product.coProducedBy)}</span>
-      {props.product.coProducers?.map((coProducer) => {
+      {props.product.coProducers?.map((coProducer, index) => {
         return coProducer.profileLink ? (
           <Link
             to={coProducer.profileLink}
             className={styles.coProducerLink}
             openInNewTab
+            key={index}
           >
             {coProducer.name}
           </Link>
         ) : (
-          <span>{coProducer.name}</span>
+          <span key={index}>{coProducer.name}</span>
         );
       })}
     </div>
@@ -32,8 +33,8 @@ export const Product: React.FC<IProductProps> = (props) => {
 
   const description = (
     <div className={styles.description}>
-      {props.product.description?.map((description) => (
-        <div>{description}</div>
+      {props.product.description?.map((description, index) => (
+        <div key={index}>{description}</div>
       ))}
     </div>
   );

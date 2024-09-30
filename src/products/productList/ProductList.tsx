@@ -11,8 +11,8 @@ export const ProductList: React.FC<IProductListProps> = (props) => {
     <div className={styles.productList}>
       <h1 className={styles.title}>{t(texts.productList.title)}</h1>
       <div className={styles.products}>
-        {props.products.map((product) => (
-          <Product product={product} />
+        {props.products.map((product, index) => (
+          <Product product={product} key={index} />
         ))}
       </div>
     </div>

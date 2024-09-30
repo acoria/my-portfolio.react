@@ -12,7 +12,7 @@ export const GooglePlay: React.FC<IGooglePlayProps> = (props) => {
   const [language] = useLanguage();
 
   return (
-    <Link to={props.link} className={styles.link}>
+    <Link to={props.link} className={styles.link} openInNewTab>
       <img
         src={
           language === Language.DE
