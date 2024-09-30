@@ -5,13 +5,8 @@
     flex-direction: row;
     column-gap: 0.5rem;
     width: fit-content;
-    padding: 0.4rem;
+    padding: 0.5rem;
     text-decoration: none;
-
-    // color: colors.$color-primary;
-    // border: 2px solid colors.$color-primary;
-    // border-radius: 3px;
-
     background-color: colors.$color-buy-me-a-coffee-background;
     color: colors.$color-buy-me-a-coffee-font;
     border-radius: 7px;
@@ -22,13 +17,15 @@
     height: auto;
     flex-shrink: 0;
     color: colors.$color-buy-me-a-coffee-icon;
-
-    // color: colors.$color-primary;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    font-size: 0.9rem;
-    letter-spacing: 0.08rem;
+    justify-content: center;
+    font-family: 'Epilogue';
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    row-gap: 0.25rem;
 }

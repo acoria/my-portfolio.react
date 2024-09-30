@@ -5,7 +5,7 @@ import { ProductList } from "../productList/ProductList";
 export const ProductSection: React.FC = () => {
   const peter = {
     name: "Peter Hoffmann",
-    profileLink: "http://yobunet.de/profile/",
+    profileLink: AppConfig.PROFILE_LINK_PETER,
   };
 
   const products: IProduct[] = [
