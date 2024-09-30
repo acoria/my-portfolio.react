@@ -1,7 +1,7 @@
 @use '../../styles/dimensions.module.scss' as dimens;
 @use '../../styles/mixins.scss';
 
-.testimonials {
+.testimonialList {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;

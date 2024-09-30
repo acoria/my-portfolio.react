@@ -7,7 +7,7 @@ import { PageSection } from "../features/pageSection/PageSection";
 import { ProjectList } from "../features/projects/projectList/ProjectList";
 import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
-import { Testimonials } from "../features/testimonials/Testimonials";
+import { TestimonialList } from "../features/testimonials/TestimonialList";
 import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
@@ -66,7 +66,7 @@ export const Page: React.FC = () => {
       caption: t(texts.testimonials.title),
       scrollToSignal: scrollToTestimonialsSignal,
       signalTrigger: triggerScrollToTestimonials,
-      component: <Testimonials />,
+      component: <TestimonialList />,
     },
   ];
 

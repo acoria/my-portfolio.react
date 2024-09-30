@@ -3,10 +3,10 @@ import { TestimonialRepository } from "../../api/TestimonialRepository";
 import { request } from "../../core/utils/request";
 import { ITestimonial } from "../../shared/model/ITestimonial";
 import { Testimonial } from "./testimonial/Testimonial";
-import styles from "./Testimonials.module.scss";
+import styles from "./TestimonialList.module.scss";
 import { LoadingSpinner } from "../../components/loadingSpinner/LoadingSpinner";
 
-export const Testimonials: React.FC = () => {
+export const TestimonialList: React.FC = () => {
   const [testimonials, setTestimonials] = useState<ITestimonial[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -20,7 +20,7 @@ export const Testimonials: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles.testimonials}>
+    <div className={styles.testimonialList}>
       {isLoading && <LoadingSpinner />}
       {!isLoading &&
         testimonials.map((testimonial, index) => (

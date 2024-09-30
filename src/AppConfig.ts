@@ -9,16 +9,6 @@ export const AppConfig = {
   HOST:
     process.env.REACT_APP_BACKEND_HOST ??
     error(`Error while getting host information from environment variables`),
-  LETTER_TO_NUMBER_LINK:
-    process.env.REACT_APP_LETTER_TO_NUMBER_LINK ??
-    error(
-      `Error while getting letter to number link from environment variables`
-    ),
-  LETTER_TO_NUMBER_PLAY_STORE_LINK:
-    process.env.REACT_APP_LETTER_TO_NUMBER_PLAY_STORE_LINK ??
-    error(
-      `Error while getting letter to number link from environment variables`
-    ),
   MY_EMAIL:
     process.env.REACT_APP_MY_EMAIL ??
     error("Error while getting e-mail from environment variables"),
@@ -29,11 +19,6 @@ export const AppConfig = {
     process.env.REACT_APP_PROFILE_LINK_LINKEDIN ??
     error(
       "Error while getting LinkedIn profile link from environment variables"
-    ),
-  PROFILE_LINK_PETER:
-    process.env.REACT_APP_PROFILE_LINK_PETER ??
-    error(
-      "Error while getting profile link for Peter from environment variables"
     ),
   PROFILE_LINK_XING:
     process.env.REACT_APP_PROFILE_LINK_XING ??
