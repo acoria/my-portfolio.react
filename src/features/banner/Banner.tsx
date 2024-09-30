@@ -5,15 +5,26 @@ import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { SocialMedia } from "../socialMedia/SocialMedia";
 import styles from "./Banner.module.scss";
+import { AppRoutes } from "../../routes/AppRoutes";
+import { Link } from "../../components/link/Link";
 
 export const Banner: React.FC = () => {
   const { t } = useTranslation();
   const { isLargeScreen } = useScreenSize();
 
-  const contactLink = (
-    <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
-      {t(texts.banner.contactMe)}
-    </a>
+  const contactAndProducts = (
+    <div className={styles.contactAndProducts}>
+      <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
+        {t(texts.banner.contactMe)}
+      </a>
+      <Link
+        to={AppRoutes.products.toPath()}
+        openInNewTab
+        className={styles.products}
+      >
+        {t(texts.banner.products)}
+      </Link>
+    </div>
   );
 
   return (
@@ -37,11 +48,11 @@ export const Banner: React.FC = () => {
           </h1>
         </div>
         <div className={styles.contactAndMyMotivationQuote}>
-          {isLargeScreen && contactLink}
+          {isLargeScreen && contactAndProducts}
           {!isLargeScreen && (
             <div className={styles.contactLinks}>
               <SocialMedia />
-              {contactLink}
+              {contactAndProducts}
             </div>
           )}
           <Quote
