@@ -1,6 +1,8 @@
+import { AppConfig } from "../../AppConfig";
 import { Link } from "../../components/link/Link";
 import { BuyMeACoffeeLink } from "../../features/buyMeACoffeeLink/BuyMeACoffeeLink";
 import { GooglePlay } from "../../features/googlePlay/GooglePlay";
+import { ProductButton } from "../../features/productButton/ProductButton";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { IProductProps } from "./IProductProps";
@@ -58,6 +60,12 @@ export const Product: React.FC<IProductProps> = (props) => {
         {props.product.coProducers && coProducers}
         {description}
         <div className={styles.buttons}>
+          {props.product.showContactForDemo && (
+            <ProductButton linkTo={`mailto:${AppConfig.MY_EMAIL}`}>
+              <div>{t(texts.product.interestedInADemo)}</div>
+              <div>{t(texts.product.contactForDemo)}</div>
+            </ProductButton>
+          )}
           {props.product.linkToGooglePlayStore && (
             <GooglePlay
               className={styles.googlePlayStoreLink}

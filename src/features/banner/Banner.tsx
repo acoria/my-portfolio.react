@@ -7,6 +7,7 @@ import { SocialMedia } from "../socialMedia/SocialMedia";
 import styles from "./Banner.module.scss";
 import { AppRoutes } from "../../routes/AppRoutes";
 import { Link } from "../../components/link/Link";
+import { LanguageConfig } from "../../i18n/LanguageConfig";
 
 export const Banner: React.FC = () => {
   const { t } = useTranslation();
@@ -14,12 +15,11 @@ export const Banner: React.FC = () => {
 
   const contactAndProducts = (
     <div className={styles.contactAndProducts}>
-      <a href={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
+      <Link to={`mailto:${AppConfig.MY_EMAIL}`} className={styles.contactMe}>
         {t(texts.banner.contactMe)}
-      </a>
+      </Link>
       <Link
-        to={AppRoutes.products.toPath()}
-        openInNewTab
+        to={`${AppRoutes.products.toPath()}/${LanguageConfig.language}`}
         className={styles.products}
       >
         {t(texts.banner.products)}

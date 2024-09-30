@@ -8,4 +8,5 @@ export interface IProduct {
   linkToGooglePlayStore?: string;
   linkToProduct?: string;
   receiveDonations?: boolean;
+  showContactForDemo?: boolean;
 }

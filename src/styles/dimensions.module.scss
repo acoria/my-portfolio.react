@@ -10,6 +10,8 @@ $page-width: $large-screen-width;
 $project-details-width-number: 46;
 $project-details-width: $project-details-width-number+rem;
 
+$product-buttons-border-radius: 7px;
+
 :export {
     largeScreenWidth: $large-screen-width-number;
     mediumScreenWidth: $medium-screen-width-number;

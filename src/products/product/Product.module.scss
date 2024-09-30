@@ -1,5 +1,7 @@
 @use '../../styles/colors.module.scss';
+@use '../../styles/components.scss';
 @use '../../styles/mixins.scss';
+@use '../../styles/dimensions.module.scss' as dimens;
 
 .product {
     display: flex;
@@ -59,8 +61,8 @@
     flex-direction: column;
     row-gap: 1rem;
     margin-top: 2rem;
-    
-    @include mixins.medium-screen{
+
+    @include mixins.medium-screen {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;

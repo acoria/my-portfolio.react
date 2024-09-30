@@ -16,8 +16,8 @@ export const GooglePlay: React.FC<IGooglePlayProps> = (props) => {
       <img
         src={
           language === Language.DE
-            ? "./assets/icons/googlePlay_de.png"
-            : "./assets/icons/googlePlay_en.png"
+            ? "../assets/icons/googlePlay_de.png"
+            : "../assets/icons/googlePlay_en.png"
         }
         alt={t(texts.googlePlay.getItOnGooglePlay)}
         className={style(styles.googlePlay, props.className)}
