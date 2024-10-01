@@ -4,6 +4,7 @@ import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
 import { AppRoutes } from "../../routes/AppRoutes";
 import styles from "./Footer.module.scss";
+import { LanguageConfig } from "../../i18n/LanguageConfig";
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -13,11 +14,13 @@ export const Footer: React.FC = () => {
   const onFooterItemClick = (index: number) => {
     switch (index) {
       case 0: {
-        navigate(AppRoutes.imprint.toPath());
+        navigate(`${LanguageConfig.language}/${AppRoutes.imprint.toPath()}`);
         break;
       }
       case 1: {
-        navigate(AppRoutes.privacyPolicy.toPath());
+        navigate(
+          `${LanguageConfig.language}/${AppRoutes.privacyPolicy.toPath()}`
+        );
         break;
       }
       default:

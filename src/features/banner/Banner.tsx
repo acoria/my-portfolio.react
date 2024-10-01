@@ -19,7 +19,7 @@ export const Banner: React.FC = () => {
         {t(texts.banner.contactMe)}
       </Link>
       <Link
-        to={`${AppRoutes.products.toPath()}/${LanguageConfig.language}`}
+        to={`/${LanguageConfig.language}/${AppRoutes.products.toPath()}`}
         className={styles.products}
       >
         {t(texts.banner.products)}

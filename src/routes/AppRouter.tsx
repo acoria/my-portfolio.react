@@ -7,7 +7,7 @@ import { ProductsPage } from "../products/ProductsPage";
 
 export const AppRouter = createBrowserRouter([
   { path: AppRoutes.home.origin, element: <Page /> },
-  // { path: AppRoutes.imprint.origin, element: <ImprintPage /> },
-  // { path: AppRoutes.privacyPolicy.origin, element: <PrivacyPolicyPage /> },
-  // { path: "/products/*", element: <ProductsPage /> },
+  { path: AppRoutes.imprint.origin, element: <ImprintPage /> },
+  { path: AppRoutes.privacyPolicy.origin, element: <PrivacyPolicyPage /> },
+  { path: "/products/*", element: <ProductsPage /> },
 ]);
