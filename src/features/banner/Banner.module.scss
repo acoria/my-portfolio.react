@@ -157,6 +157,13 @@ $margin-bottom: 3rem;
     margin-top: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+
+    @include mixins.medium-screen {
+        flex-wrap: nowrap;
+    }
+
 }
 
 .contactAndProducts {
