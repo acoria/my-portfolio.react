@@ -283,13 +283,14 @@ export const PrivacyPolicy: React.FC = () => {
             vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO);{" "}
           </span>
           <strong>Website:</strong>{" "}
-          <a href="https://www.paypal.com/de" target="_blank">
+          <a href="https://www.paypal.com/de" target="_blank" rel="noreferrer">
             https://www.paypal.com/de
           </a>
           . <strong>Datenschutzerklärung:</strong>{" "}
           <a
             href="https://www.paypal.com/de/webapps/mpp/ua/privacy-full"
             target="_blank"
+            rel="noreferrer"
           >
             <div>https://www.paypal.com/de/webapps/mpp/ua/privacy-full</div>
           </a>
@@ -411,14 +412,18 @@ export const PrivacyPolicy: React.FC = () => {
             Abs. 1 S. 1 lit. f) DSGVO);
           </span>
           <strong>Website:</strong>
-          <a href="https://www.strato.de" target="_blank">
+          <a href="https://www.strato.de" target="_blank" rel="noreferrer">
             https://www.strato.de
           </a>
           ;{" "}
           <div>
             <strong>Datenschutzerklärung:</strong>
           </div>
-          <a href="https://www.strato.de/datenschutz/" target="_blank">
+          <a
+            href="https://www.strato.de/datenschutz/"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://www.strato.de/datenschutz/
           </a>
           . <strong>Auftragsverarbeitungsvertrag:</strong> Wird vom
@@ -586,6 +591,7 @@ export const PrivacyPolicy: React.FC = () => {
           <a
             href="https://www.linkedin.com/legal/privacy-policy"
             target="_blank"
+            rel="noreferrer"
           >
             https://www.linkedin.com/legal/privacy-policy
           </a>
@@ -597,6 +603,7 @@ export const PrivacyPolicy: React.FC = () => {
           <a
             href="https://legal.linkedin.com/pages-joint-controller-addendum"
             target="_blank"
+            rel="noreferrer"
           >
             https://legal.linkedin.com/pages-joint-controller-addendum
           </a>
@@ -619,7 +626,7 @@ export const PrivacyPolicy: React.FC = () => {
             Abs. 1 S. 1 lit. f) DSGVO);
           </span>
           <strong>Website:</strong>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
             https://www.linkedin.com
           </a>
           ;{" "}
@@ -629,6 +636,7 @@ export const PrivacyPolicy: React.FC = () => {
           <a
             href="https://www.linkedin.com/legal/privacy-policy"
             target="_blank"
+            rel="noreferrer"
           >
             https://www.linkedin.com/legal/privacy-policy
           </a>
@@ -639,7 +647,7 @@ export const PrivacyPolicy: React.FC = () => {
           </div>
           <a
             href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out
           </a>
@@ -654,13 +662,14 @@ export const PrivacyPolicy: React.FC = () => {
             Abs. 1 S. 1 lit. f) DSGVO);
           </span>
           <strong>Website:</strong>
-          <a href="https://www.xing.com/" target="_blank">
+          <a href="https://www.xing.com/" target="_blank" rel="noreferrer">
             https://www.xing.com/
           </a>
           . <strong>Datenschutzerklärung:</strong>
           <a
             href="https://privacy.xing.com/de/datenschutzerklaerung"
             target="_blank"
+            rel="noreferrer"
           >
             <div>https://privacy.xing.com/de/ datenschutzerklaerung.</div>
           </a>
