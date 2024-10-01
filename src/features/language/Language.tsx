@@ -11,9 +11,6 @@ import styles from "./Language.module.scss";
 export const Language: React.FC<ILanguageProps> = (props) => {
   const { t } = useTranslation();
   const [language, setLanguage] = useLanguage();
-  const absoluteLanguagePath = `${AppRoutes.products.toPath()}/${
-    LanguageConfig.language
-  }`;
 
   return (
     <div className={style(styles.language, props.className)}>
@@ -22,11 +19,7 @@ export const Language: React.FC<ILanguageProps> = (props) => {
           styles.button,
           language === Languages.DE ? styles.selected : ""
         )}
-        onClick={() => {
-          process.env.NODE_ENV === "production"
-            ? setLanguage(Languages.DE)
-            : (window.location.href = absoluteLanguagePath);
-        }}
+        onClick={() => setLanguage(Languages.DE)}
       >
         {t(texts.languageAbbreviations.de)}
       </button>
@@ -36,11 +29,7 @@ export const Language: React.FC<ILanguageProps> = (props) => {
           styles.button,
           language === Languages.EN ? styles.selected : ""
         )}
-        onClick={() => {
-          process.env.NODE_ENV === "production"
-            ? setLanguage(Languages.EN)
-            : (window.location.href = absoluteLanguagePath);
-        }}
+        onClick={() => setLanguage(Languages.EN)}
       >
         {t(texts.languageAbbreviations.en)}
       </button>
