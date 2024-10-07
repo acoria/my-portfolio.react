@@ -3,8 +3,6 @@ import { Language as Languages } from "../../hooks/useLanguage/types/Language";
 import { useLanguage } from "../../hooks/useLanguage/useLanguage";
 import { texts } from "../../hooks/useTranslation/texts";
 import { useTranslation } from "../../hooks/useTranslation/useTranslation";
-import { LanguageConfig } from "../../i18n/LanguageConfig";
-import { AppRoutes } from "../../routes/AppRoutes";
 import { ILanguageProps } from "./ILanguageProps";
 import styles from "./Language.module.scss";
 

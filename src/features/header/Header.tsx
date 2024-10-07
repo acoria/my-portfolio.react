@@ -2,11 +2,11 @@ import { useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 import { Tabstrip } from "../../components/tabstrip/Tabstrip";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { Language } from "../language/Language";
+import { Language } from "../../components/language/Language";
 import styles from "./Header.module.scss";
 import { IHeaderProps } from "./IHeaderProps";
 import { useScreenSize } from "../../hooks/useScreenSize";
-import { BurgerMenu } from "../burgerMenu/BurgerMenu";
+import { BurgerMenu } from "../../components/burgerMenu/BurgerMenu";
 import { style } from "../../core/utils/style";
 
 export const Header: React.FC<IHeaderProps> = (props) => {
@@ -26,7 +26,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
       {isSmallScreen && props.navItems && (
         <BurgerMenu
           captions={props.navItems}
-          onTabSelect={(index) => {
+          onEntrySelect={(index) => {
             props.onNavItemClick?.(index);
           }}
           topPosition={ref.current?.scrollHeight}

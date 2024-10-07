@@ -17,7 +17,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = (props) => {
           className={styles.menuEntry}
           key={index}
           onClick={() => {
-            props.onTabSelect?.(index);
+            props.onEntrySelect?.(index);
             toggleIsOpen();
           }}
         >
