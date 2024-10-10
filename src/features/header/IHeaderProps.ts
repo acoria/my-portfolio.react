@@ -5,4 +5,5 @@ export interface IHeaderProps {
   onLogoClicked?: () => void;
   onHeightChange?: (height: number) => void;
   selectedTabIndex?: number;
+  hideLanguage?: boolean;
 }

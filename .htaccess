@@ -1,0 +1,9 @@
+#Tells Apache server to send all requests to non-specified files to main page (index.html), so the React app can handle the request and show #error page in case of a non-existing route 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>

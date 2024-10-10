@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: colors.$footer-background-color;
-    color: colors.$footer-font-color;
+    background-color: colors.$color-footer-background;
+    color: colors.$color-footer-font;
     padding: 0.5rem 0;
     z-index: 1;
 }

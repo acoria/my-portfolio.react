@@ -1,0 +1,38 @@
+@use '../styles/colors.module.scss';
+
+.header {
+    position: static;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.smiley {
+    color: colors.$color-error-page-icon;
+    width: 10rem;
+    // width: 5rem;
+    height: auto;
+}
+
+.error_404 {
+    margin-top: 0.5rem;
+}
+
+.tryAgain {
+    margin-top: 0;
+}
+
+.homeButton {
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    background-color: colors.$color-error-page-button-background;
+    color: colors.$color-error-page-button-font;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

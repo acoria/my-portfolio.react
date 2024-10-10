@@ -50,7 +50,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
           />
         </div>
       )}
-      <Language className={styles.language} />
+      {!props.hideLanguage && <Language className={styles.language} />}
     </div>
   );
 };
