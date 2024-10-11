@@ -7,7 +7,7 @@ import { PageSection } from "../features/pageSection/PageSection";
 import { ProjectList } from "../features/projects/projectList/ProjectList";
 import { Skills } from "../features/skills/Skills";
 import { Technologies } from "../features/technologies/Technologies";
-import { TestimonialList } from "../features/testimonials/TestimonialList";
+import { TestimonialList } from "../features/testimonials/testimonialList/TestimonialList";
 import { useSignal } from "../hooks/useSignal";
 import { texts } from "../hooks/useTranslation/texts";
 import { useTranslation } from "../hooks/useTranslation/useTranslation";
