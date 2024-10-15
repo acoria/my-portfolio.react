@@ -12,8 +12,11 @@
     @include mixins.glassy;
 
     @include mixins.large-screen {
-        flex-direction: row;
-        align-items: start;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        // flex-direction: row;
+        // align-items: start;
+        // align-items: space-between;
     }
 }
 
