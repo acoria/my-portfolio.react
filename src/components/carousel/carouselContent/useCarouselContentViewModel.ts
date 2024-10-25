@@ -113,6 +113,8 @@ export const useCarouselContentViewModel = (props: ICarouselContentProps) => {
     getChildAtPosition,
     hasSingleItem,
     isMobileView: props.isMobileView,
+    isShowingFirstItem: visibleItemPosition === 0,
+    isShowingLastItem: visibleItemPosition === numberOfItems - 1,
     onCarouselItemClick,
     onZoomedInCloseButtonClick,
     ref,
