@@ -11,20 +11,20 @@
         "goal": "Tool to administrate training sessions & school members (single & recurring appointments, contact information, belt colors etc.)",
         "images": [
             {
-                "imageUrl": "./assets/projects/yeoljeong/01_welcome.png",
-                "altText": "Screenshot of welcome page"
+                "imageUrl": "./assets/projects/yeoljeong/01_mobile_screenshots.png",
+                "altText": "Screenshots of mobile pages"
             },
             {
-                "imageUrl": "./assets/projects/yeoljeong/02_trainings_register.png",
-                "altText": "Screenshot of training registration page"
+                "imageUrl": "./assets/projects/yeoljeong/02_welcome.png",
+                "altText": "Screenshot of welcome page"
             },
             {
                 "imageUrl": "./assets/projects/yeoljeong/03_add_training.png",
                 "altText": "Screenshot of training administration page"
             },
             {
-                "imageUrl": "./assets/projects/yeoljeong/04_mobile_screenshots.png",
-                "altText": "Screenshots of mobile pages"
+                "imageUrl": "./assets/projects/yeoljeong/04_trainings_register.png",
+                "altText": "Screenshot of training registration page"
             }
         ],
         "myTasks": [

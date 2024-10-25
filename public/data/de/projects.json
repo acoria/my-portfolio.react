@@ -11,20 +11,20 @@
         "goal": "Verwaltungssoftware für Unterrichtsstunden und Mitglieder (einmalige und sich wiederholende Termine, Kontaktinfos, Gürtelfarben etc.)",
         "images": [
             {
-                "imageUrl": "./assets/projects/yeoljeong/01_welcome.png",
-                "altText": "Screenshot der Begrüssungsseite"
+                "imageUrl": "./assets/projects/yeoljeong/01_mobile_screenshots.png",
+                "altText": "Screenshots der mobilen Anwendung"
             },
             {
-                "imageUrl": "./assets/projects/yeoljeong/02_trainings_register.png",
-                "altText": "Screenshot der Training-Registrierungsseite"
+                "imageUrl": "./assets/projects/yeoljeong/02_welcome.png",
+                "altText": "Screenshot der Begrüssungsseite"
             },
             {
                 "imageUrl": "./assets/projects/yeoljeong/03_add_training.png",
                 "altText": "Screenshot der Training-Administrationsseite"
             },
             {
-                "imageUrl": "./assets/projects/yeoljeong/04_mobile_screenshots.png",
-                "altText": "Screenshots der mobilen Anwendung"
+                "imageUrl": "./assets/projects/yeoljeong/04_trainings_register.png",
+                "altText": "Screenshot der Training-Registrierungsseite"
             }
         ],
         "myTasks": [
