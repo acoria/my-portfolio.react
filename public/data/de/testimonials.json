@@ -3,18 +3,35 @@
         "quote": "Frau Tewes hat uns als Developer und UX Designer in unserem Software Projekt über Jahre mit ihrem Fachwissen und ihren Fähigkeiten unterstützt.",
         "author": "Sascha Stephan",
         "jobTitle": "Product Owner",
-        "company": "SAP SE"
+        "company": "SAP SE",
+        "link": "https://www.freelance.de/Freelancer/295309-Senior-Full-Stack-Entwicklerin-UX-Designerin"
+    },
+    {
+        "quote": "Verena Tewes hat mit ihrer Expertise und ihrem Einsatz entscheidend zur Entwicklung eines modernen Self-Service-Portals beigetragen.",
+        "author": "Dominik Wittenbeck",
+        "jobTitle": "CTO",
+        "company": "SNP AG",
+        "link": "https://www.freelance.de/Freelancer/295309-Senior-Full-Stack-Entwicklerin-UX-Designerin"
+    },
+    {
+        "quote": "Verena hat bei SNP ein Coaching zu TypeScript, React.js, CSS, Node.js, Express, UI & UX geleitet. Praxisnah, kompetent und passgenau aufs Team abgestimmt.",
+        "author": "Roman Zubkov",
+        "jobTitle": "Development Owner",
+        "company": "SNP AG",
+        "link": "https://www.freelance.de/Freelancer/295309-Senior-Full-Stack-Entwicklerin-UX-Designerin"
+    },
+    {
+        "quote": "Verena hat mit ihrem technischen Know-how und ihrer Kreativität maßgeblich zur Entwicklung einer ABAP-API für dynamische React-Anwendungen beigetragen.",
+        "author": "Dominik Wittenbeck",
+        "jobTitle": "CTO",
+        "company": "SNP AG",
+        "link": "https://www.freelance.de/Freelancer/295309-Senior-Full-Stack-Entwicklerin-UX-Designerin"
     },
     {
         "quote": "Frau Tewes' Einsatz verlief sehr zuverlässig und gewissenhaft. Änderungswünsche wurden von ihr stets professionell und in kürzester Zeit umgesetzt.",
         "author": "Frank Burkart",
         "jobTitle": "Schulleiter",
-        "company": "Yeoljeong Taekwon-Do"
-    },
-    {
-        "quote": "Ich habe mich direkt für die Webentwicklungsschulung angemeldet, denn Verena war beim Lernen und Teilen von Wissen immer eine der Aktivsten unserer Entwicklungsabteilung bei SNP.",
-        "author": "Michaela Böll",
-        "jobTitle": "Senior-Entwicklerin",
-        "company": "SNP AG"
+        "company": "Yeoljeong Taekwon-Do",
+        "link": "https://www.freelance.de/Freelancer/295309-Senior-Full-Stack-Entwicklerin-UX-Designerin"
     }
 ]

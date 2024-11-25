@@ -6,15 +6,27 @@
         "company": "SAP SE"
     },
     {
+        "quote": "With her expertise and commitment, she made a decisive contribution to the development of a modern self-service portal.",
+        "author": "Dominik Wittenbeck",
+        "jobTitle": "CTO",
+        "company": "SNP AG"
+    },
+    {
+        "quote": "Verena conducted a coaching session on TypeScript, React.js, CSS, Node.js, Express, UI and UX at SNP. It was practical, professional and perfectly tailored to the team.",
+        "author": "Roman Zubkov",
+        "jobTitle": "Development Owner",
+        "company": "SNP AG"
+    },
+    {
+        "quote": "With her technical expertise and creativity, Verena played a key role in developing an ABAP API for dynamic React applications.",
+        "author": "Dominik Wittenbeck",
+        "jobTitle": "CTO",
+        "company": "SNP AG"
+    },
+    {
         "quote": "Ms. Tewes' work was always reliable and diligent. Change requests were handled professionally and implemented in the shortest possible time.",
         "author": "Frank Burkart",
         "jobTitle": "Principal",
         "company": "Yeoljeong Taekwon-Do"
-    },
-    {
-        "quote": "I immediately signed up for the web development training because Verena was always one of the most active members of our development department at SNP when it came to learning and sharing knowledge.",
-        "author": "Michaela Böll",
-        "jobTitle": "Senior developer",
-        "company": "SNP AG"
     }
 ]

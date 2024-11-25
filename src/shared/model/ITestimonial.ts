@@ -3,4 +3,5 @@ export interface ITestimonial {
   author?: string;
   jobTitle?: string;
   company?: string;
+  link?: string;
 }
