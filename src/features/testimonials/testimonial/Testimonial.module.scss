@@ -4,11 +4,16 @@
 .testimonial {
     width: fit-content;
     padding: 2.5rem 2rem 2rem 2rem;
+    text-decoration: none;
     @include mixins.glassy();
 
     @include mixins.large-screen {
         padding: 2.3rem 2rem 1.8rem 2rem;
     }
+}
+
+.link {
+    cursor: pointer;
 }
 
 .testimonialText {
